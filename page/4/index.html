@@ -238,6 +238,137 @@
       
         
   <h2 class="title">
+    <a href="/2019/03/15/%E8%88%AA%E7%A9%BA%E5%85%AC%E5%8F%B8%E5%AE%A2%E6%88%B7%E4%BB%B7%E5%80%BC%E5%88%86%E6%9E%90/">
+      航空公司客户价值分析
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="/https:/lionvison.com" rel="nofollow">
+      
+        <img src="https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg">
+      
+      <p>cxiangpeng</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-03-15</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>数据分析</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="一、挖掘目标"><a href="#一、挖掘目标" class="headerlink" title="一、挖掘目标"></a>一、挖掘目标</h1><p>通过分析航空公司用户数据，对客户进行分类，对不同类别的客户进行特征分析，比较不同客户的客户价值，针对不同客户价值的客户采取不同的营销手段，制定相应的营销手段。</p>
+<p>数据的属性主要有：客户的基本信息、乘机信息、积分信息。下面就开始介绍一下详细数据挖掘流程。</p>
+<h1 id="二、数据挖掘过程："><a href="#二、数据挖掘过程：" class="headerlink" title="二、数据挖掘过程："></a>二、数据挖掘过程：</h1><p>首先考虑我们的目标是为了进行客户价值分类，通常采用的分析模型是RFM模型，也就是消费时间间隔、消费频率、消费金额的指标。但是对于航空行业来说，通过分析可以得知对于长距离低价位和短距离高价位的票价总额相等的客户来说显然M一样但是价值相差很大。这时候选择一定时间累计的飞行里程数和平均折扣系数的平均值代替票价金额作为分析指标，同时针对航空公司有会员制度因此加入客户关系长度作为指标之一，建立起<strong>LRFMC</strong>模型。</p>
+<table>
+<thead>
+<tr>
+<th align="center">模型</th>
+<th align="center"><center>L</th>
+<th align="center"><center>R</th>
+<th align="left"><center>F</th>
+<th align="center"><center>M</th>
+<th align="center"><center>C</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">航空公司LRFMC模型</td>
+<td align="center">会员入会时间距离观测窗口结束月数</td>
+<td align="center">客户最近一次飞机乘坐距离观测窗口结束的月数</td>
+<td align="left">客户观测窗口内乘坐的飞机次数</td>
+<td align="center">客户在观测窗口中的飞行里程</td>
+<td align="center">客户在观测窗口的乘坐舱位对应的折扣系数的平均值</td>
+</tr>
+</tbody></table>
+<p>按照我们以上的RFM模型来分析的话，建立分箱图，可以很直观的显示不同客户群体，但是细分类别过多，增加的营销难度和成本。因此采取聚类的方法分析客户价值：<strong>K-means</strong></p>
+      
+        <div class="readmore">
+          <a href="/2019/03/15/%E8%88%AA%E7%A9%BA%E5%85%AC%E5%8F%B8%E5%AE%A2%E6%88%B7%E4%BB%B7%E5%80%BC%E5%88%86%E6%9E%90/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/Python/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Python</a>
+        
+          <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>数据分析</a>
+        
+          <a href="/tags/K-Means/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>K_Means</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
     <a href="/2019/03/01/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/">
       博客搭建记录
     </a>
@@ -693,7 +824,7 @@
         
           <li><a class="flat-box" title="/categories/opencv%E5%AD%A6%E4%B9%A0/" href="/categories/opencv%E5%AD%A6%E4%B9%A0/"><div class='name'>opencv学习</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/" href="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"><div class='name'>博客优化</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/" href="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"><div class='name'>博客优化</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box" title="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/" href="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"><div class='name'>向往的生活</div><div class='badge'>(6)</div></a></li>
         
@@ -876,7 +1007,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：38.2k</span>
+    <span class="post-count">字数统计：38.6k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>

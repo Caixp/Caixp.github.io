@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lionvison.com/"/>
-  <updated>2019-12-01T04:42:46.350Z</updated>
+  <updated>2019-12-01T08:57:59.110Z</updated>
   <id>https://lionvison.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>换电脑之博客迁移.md</title>
+    <link href="https://lionvison.com/2019/12/01/%E6%8D%A2%E7%94%B5%E8%84%91%E4%B9%8B%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    <id>https://lionvison.com/2019/12/01/%E6%8D%A2%E7%94%B5%E8%84%91%E4%B9%8B%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</id>
+    <published>2019-12-01T05:34:47.000Z</published>
+    <updated>2019-12-01T08:57:59.110Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="博客优化" scheme="https://lionvison.com/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>C++面试题集锦</title>
@@ -501,29 +526,6 @@
     
     
       <category term="Linux" scheme="https://lionvison.com/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>360在线笔试编程题</title>
-    <link href="https://lionvison.com/2019/04/03/360%E5%9C%A8%E7%BA%BF%E7%AC%94%E8%AF%95%E7%BC%96%E7%A8%8B%E9%A2%98/"/>
-    <id>https://lionvison.com/2019/04/03/360%E5%9C%A8%E7%BA%BF%E7%AC%94%E8%AF%95%E7%BC%96%E7%A8%8B%E9%A2%98/</id>
-    <published>2019-04-03T13:48:58.000Z</published>
-    <updated>2019-05-18T12:37:55.390Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 前一段时间，申请了360公司的机器学习实习生，今天进行了在线能力测评和在线笔试。其中早晨做的能力测试，数理题和逻辑题个15个，总共30min，题目没做完，中午和师哥他们聊起来，他们给的建议总结来说就是：能力测评，其中第一感觉也是能力的一种。题目还是不算难，有点初中生做小学奥数的感觉。&lt;/p&gt;
-&lt;p&gt;晚上7-9点是在线笔试时间，分为客观题40个和编程题3个，共80分，由于是机器学习岗位，所以前一部分是数理统计和机器学习的基础知识，后面是数据结构与算法的题，还有些Python和C++的程序题，感觉和考计算机三级差不多。&lt;/p&gt;
-&lt;p&gt;记得考的内容有：&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="笔试面试" scheme="https://lionvison.com/categories/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95/"/>
-    
-    
-      <category term="编程" scheme="https://lionvison.com/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
