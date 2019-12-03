@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>WIN10+TF2.0</title>
+      <link href="/2019/12/03/WIN10-TF2-0/"/>
+      <url>/2019/12/03/WIN10-TF2-0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="WIN10-TF2-0-CUDA10-0-cuDNN7-5-OpenCV4-1-2"><a href="#WIN10-TF2-0-CUDA10-0-cuDNN7-5-OpenCV4-1-2" class="headerlink" title="WIN10+TF2.0+CUDA10.0+cuDNN7.5+OpenCV4.1.2"></a>WIN10+TF2.0+CUDA10.0+cuDNN7.5+OpenCV4.1.2</h1><blockquote><p>配置gpu版本的tensorflow完全是小白入门tensorflow的第一步；我的电脑gpu太差也就是仅仅学习下MX250</p><p>参考了一些详细的教程，但是对于安装的版本来说有些指定的不太明确，这有个建议就是不要一味的追求新，要注意查找版本之间的关系</p></blockquote><ul><li><p>开始安装，全文无图。</p><ul><li><p>预准备工作</p><ul><li>下载<a href="https://developer.nvidia.com/cuda-toolkit-archive" target="_blank" rel="noopener">CUDA10.0</a></li><li>下载<a href="https://developer.nvidia.com/rdp/cudnn-archive" target="_blank" rel="noopener">cuDNN7.5 for CUDA10.0</a>，需要注册后下载，支持微信和QQ</li><li>下载<a href="https://www.anaconda.com/distribution/" target="_blank" rel="noopener">Anaconda</a>，直接从官网下载会很慢，推荐将下载链接复制到百度云离线下载中，保存到百度云在进行下载速度快很多。或者直接下载百度云分享：链接：<a href="https://pan.baidu.com/s/1BKtXWtUVFl4isthLj4LLPg提取码：ssjs" target="_blank" rel="noopener">https://pan.baidu.com/s/1BKtXWtUVFl4isthLj4LLPg提取码：ssjs</a></li><li>在cmd中cmd中使用nvidia-smi查看显卡驱动是否正确安装，不过一般没啥问题</li></ul></li></ul></li></ul><a id="more"></a><ul><li><p>安装CUDA10.0</p><ul><li><p>双击exe文件，只需要设置下安装路径就行，记住安装路径选择之后，左右的安装路径请保持一致。</p></li><li><p>到了驱动安装选项中，不要勾选NVIDAI Experience那个选项，因为我们用不到。</p></li><li><p>最后会提示没有vs支持，这个需要安装visual studio，勾选选择需要就行，然后就是漫长的安装vs过程，安装过程中选择C++桌面安装就行，选择好安装路径，不要都堆在C盘。</p></li><li><p>直至安装完成</p></li><li><p>最后测试下cmd中输入nvcc -V，显示正确的信息则安装完成。</p></li></ul></li><li><p>安装cuDNN7.5</p><ul><li>解压下载的安装包，打开文件夹，将文件夹中的内容复制到CUDA的安装路径中，这里以D:/CUDAv10.0为例，复制到该文件夹下。</li></ul></li><li><p>添加环境变量</p><ul><li>右击此电脑-高级系统设置-环境变量-系统变量里面的path：里面可以看到CUDA_PATH和CUDA_PATH_V10已经存在，以安装CUDA的路径为D:\CUDAv10.0为例添加以下路径到到path中：<ul><li>D:\CUDAv10.1\bin</li><li>D:\CUDAv10.1\include</li><li>D:\CUDAv10.1\lib\x64</li></ul></li></ul></li><li><p>安装Anaconda3</p><ul><li>安装过程中只需要设置下安装路径即可</li><li>添加环境变量，以安装路径为D:\Anaconda3为例，添加以下变量到Path<ul><li>D:\Anaconda3</li><li>D:\Anaconda3\Scripts</li><li>D:\Anaconda3\Library\bin</li></ul></li><li>经过上面的步骤就可以在cmd中使用conda，pip，python</li></ul></li><li><p>安装tensorflow-gpu</p><ul><li>现在cmd中升级下pip配置下pip的源，第二部分的问题中有提到具体方法；</li><li>使用pip安装<ul><li>pip install tensorflow-gpu==2.0.0-rc0</li><li>等待安装完成</li></ul></li><li>测试是安装成功，cmd下输入<ul><li>&gt; python</li><li>&gt;&gt;import tensorflow as tf</li><li>&gt;&gt;tf._<em>versioin_\</em></li><li>输出’2.0.0-rc0’</li></ul></li></ul></li><li><p>完成安装</p></li><li><p>在python中使用opencv</p><ul><li>第一步在电脑中下载编译opencv，在另一篇文章中写道<code>opencv安装与配置</code></li><li>以安装路径为D:\opencv4.1.2\opencv\build，找到D:\opencv4.1.2\opencv\build\python\cv2\python-3.7下的以pyd为后缀的文件，拷贝到python所在目录的Lib\site-packages文件夹下，有必要的话可以将D:\opencv4.1.2\opencv\build\python\cv2\python-3.7添加到环境变量中。</li><li>在python中测试：<ul><li>import cv2 as cv</li><li>cv._<em>version_</em></li><li>‘4.1.2’</li></ul></li></ul></li></ul><h1 id="Tensorflow安装过程中遇到的问题与解决办法："><a href="#Tensorflow安装过程中遇到的问题与解决办法：" class="headerlink" title="Tensorflow安装过程中遇到的问题与解决办法："></a>Tensorflow安装过程中遇到的问题与解决办法：</h1><ul><li>下载anaconda速度非常慢<ul><li>将anaconda下载链接复制到百度云离线下载中，保存到百度云进行下载，速度虽然慢（还至少比官网快）但是稳定，当然迅雷应该也是可以；</li></ul></li><li>pip安装tensorflow速度很慢<ul><li>更改pip的源改为清华的镜像源</li><li>pip install pip -U<br>pip config set global.index-url <a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple</a></li><li>更改完以后下载库文件直接从这个镜像源下载，速度很快的。</li></ul></li><li>conda更换源<ul><li>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</a></li><li>conda config –set show_channel_urls yes</li></ul></li></ul><p>参考：</p><ul><li><a href="https://blog.csdn.net/huanyingzhizai/article/details/89298964#安装tensorflow1.13(with-Anaconda)" target="_blank" rel="noopener">https://blog.csdn.net/huanyingzhizai/article/details/89298964#%E5%AE%89%E8%A3%85tensorflow1.13(with-Anaconda)</a></li><li><a href="https://blog.csdn.net/huanyingzhizai/article/details/100778893" target="_blank" rel="noopener">https://blog.csdn.net/huanyingzhizai/article/details/100778893</a></li><li><a href="https://blog.csdn.net/weixin_42267309/article/details/92800901" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42267309/article/details/92800901</a></li><li><a href="https://blog.csdn.net/qq_43673118/article/details/90140395" target="_blank" rel="noopener">https://blog.csdn.net/qq_43673118/article/details/90140395</a></li><li><a href="https://blog.csdn.net/ITLearnHall/article/details/81708148" target="_blank" rel="noopener">https://blog.csdn.net/ITLearnHall/article/details/81708148</a></li><li><a href="https://blog.csdn.net/howlclat/article/details/78783701" target="_blank" rel="noopener">https://blog.csdn.net/howlclat/article/details/78783701</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> opencv学习 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>换电脑之博客迁移.md</title>
       <link href="/2019/12/01/%E6%8D%A2%E7%94%B5%E8%84%91%E4%B9%8B%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
       <url>/2019/12/01/%E6%8D%A2%E7%94%B5%E8%84%91%E4%B9%8B%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</url>
@@ -414,31 +433,6 @@
     
     
     <entry>
-      <title>360在线笔试编程题</title>
-      <link href="/2019/04/03/360%E5%9C%A8%E7%BA%BF%E7%AC%94%E8%AF%95%E7%BC%96%E7%A8%8B%E9%A2%98/"/>
-      <url>/2019/04/03/360%E5%9C%A8%E7%BA%BF%E7%AC%94%E8%AF%95%E7%BC%96%E7%A8%8B%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[<p> 前一段时间，申请了360公司的机器学习实习生，今天进行了在线能力测评和在线笔试。其中早晨做的能力测试，数理题和逻辑题个15个，总共30min，题目没做完，中午和师哥他们聊起来，他们给的建议总结来说就是：能力测评，其中第一感觉也是能力的一种。题目还是不算难，有点初中生做小学奥数的感觉。</p><p>晚上7-9点是在线笔试时间，分为客观题40个和编程题3个，共80分，由于是机器学习岗位，所以前一部分是数理统计和机器学习的基础知识，后面是数据结构与算法的题，还有些Python和C++的程序题，感觉和考计算机三级差不多。</p><p>记得考的内容有：</p><a id="more"></a><ul><li>动态规划</li><li>prim算法</li><li>度量指标</li><li>指数平滑法</li><li>模板类</li><li>抽象类</li><li>广义表</li><li>栈等</li></ul><p><strong>从做题的情况来说，C++要好好掌握，数据结构要理解透侧，机器学习要多分析算法之间的关系，多思考使用的那些细节指标。</strong></p><p>最后是三道编程题：</p><p>1、最近一款吃鸡类型的游戏火爆全球。在组队模式下，你可以邀请自己的好友组建自己的小队，并选择是否填充（是否同意和非好友游玩），然后加入游戏。现在有A个单人队伍，B个双人队伍，C个三人队伍，D个四人队伍，并且全都同意填充，请问最多能组成多少个四人队伍。</p><p> 输入<br> 第一行一个正整数T，表示数据组数。（1≤T≤100）</p><p> 接下来T行，每行四个非负整数，A，B，C，D。（0≤A, B, C, D≤150）</p><p> 输出<br> 共T行，每行输出一个队伍数。</p><pre><code>样例输入41 2 3 44 3 2 12 2 2 10 2 0 1样例输出6542</code></pre><p>2、给定一个长度为N的序列A1到AN，现在要对序列进行M次操作，每次操作对序列的前若干项进行升序或降序排列，求经过这M次操作后得到的序列。</p><p>输入<br>第一行包含两个整数N和M，1≤N，M≤105。</p><p>第二行包含N个空格隔开的整数A1到AN，1≤Ai≤109。</p><p>接下来M行，每行包含两个整数t和x，0≤t≤1，1≤x≤N。若t=0，则表示对A1到Ax进行升序排列；若t=1，则表示对A1到Ax进行降序排列。操作执行顺序与输入顺序一致。</p><pre><code>输出输出N个空格隔开的整数，即经过M次操作后得到的序列。样例输入4 21 2 4 31 30 2样例输出2 4 1 3</code></pre><p>3、给定一个1到N的排列A1到AN，每次可以将排列的第一个数移到排列的末尾，假设经过若干次移动后得到排列B1到BN，那么|B1-1|+|B2-2|+|B3-3|+…+|BN-N|的最小值是多少？</p><p>样例解释</p><p>经过两次移动后得到排列{1 5 2 4 3}，此时|B1-1|+|B2-2|+|B3-3|+|B4-4|+|B5-5|取得最小值。</p><p>输入<br>第一行包含一个整数N，1≤N≤105。</p><p>第二行包含N个空格隔开的整数A1到AN。</p><pre><code>输出输出|B1-1|+|B2-2|+|B3-3|+...+|BN-N|的最小值。样例输入54 3 1 5 2样例输出6</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> 笔试面试 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 编程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>5G终端协同场景下的通信系统技术</title>
       <link href="/2019/04/03/5G/"/>
       <url>/2019/04/03/5G/</url>
@@ -456,6 +450,31 @@
         <tags>
             
             <tag> D2D </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>360在线笔试编程题</title>
+      <link href="/2019/04/03/360%E5%9C%A8%E7%BA%BF%E7%AC%94%E8%AF%95%E7%BC%96%E7%A8%8B%E9%A2%98/"/>
+      <url>/2019/04/03/360%E5%9C%A8%E7%BA%BF%E7%AC%94%E8%AF%95%E7%BC%96%E7%A8%8B%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p> 前一段时间，申请了360公司的机器学习实习生，今天进行了在线能力测评和在线笔试。其中早晨做的能力测试，数理题和逻辑题个15个，总共30min，题目没做完，中午和师哥他们聊起来，他们给的建议总结来说就是：能力测评，其中第一感觉也是能力的一种。题目还是不算难，有点初中生做小学奥数的感觉。</p><p>晚上7-9点是在线笔试时间，分为客观题40个和编程题3个，共80分，由于是机器学习岗位，所以前一部分是数理统计和机器学习的基础知识，后面是数据结构与算法的题，还有些Python和C++的程序题，感觉和考计算机三级差不多。</p><p>记得考的内容有：</p><a id="more"></a><ul><li>动态规划</li><li>prim算法</li><li>度量指标</li><li>指数平滑法</li><li>模板类</li><li>抽象类</li><li>广义表</li><li>栈等</li></ul><p><strong>从做题的情况来说，C++要好好掌握，数据结构要理解透侧，机器学习要多分析算法之间的关系，多思考使用的那些细节指标。</strong></p><p>最后是三道编程题：</p><p>1、最近一款吃鸡类型的游戏火爆全球。在组队模式下，你可以邀请自己的好友组建自己的小队，并选择是否填充（是否同意和非好友游玩），然后加入游戏。现在有A个单人队伍，B个双人队伍，C个三人队伍，D个四人队伍，并且全都同意填充，请问最多能组成多少个四人队伍。</p><p> 输入<br> 第一行一个正整数T，表示数据组数。（1≤T≤100）</p><p> 接下来T行，每行四个非负整数，A，B，C，D。（0≤A, B, C, D≤150）</p><p> 输出<br> 共T行，每行输出一个队伍数。</p><pre><code>样例输入41 2 3 44 3 2 12 2 2 10 2 0 1样例输出6542</code></pre><p>2、给定一个长度为N的序列A1到AN，现在要对序列进行M次操作，每次操作对序列的前若干项进行升序或降序排列，求经过这M次操作后得到的序列。</p><p>输入<br>第一行包含两个整数N和M，1≤N，M≤105。</p><p>第二行包含N个空格隔开的整数A1到AN，1≤Ai≤109。</p><p>接下来M行，每行包含两个整数t和x，0≤t≤1，1≤x≤N。若t=0，则表示对A1到Ax进行升序排列；若t=1，则表示对A1到Ax进行降序排列。操作执行顺序与输入顺序一致。</p><pre><code>输出输出N个空格隔开的整数，即经过M次操作后得到的序列。样例输入4 21 2 4 31 30 2样例输出2 4 1 3</code></pre><p>3、给定一个1到N的排列A1到AN，每次可以将排列的第一个数移到排列的末尾，假设经过若干次移动后得到排列B1到BN，那么|B1-1|+|B2-2|+|B3-3|+…+|BN-N|的最小值是多少？</p><p>样例解释</p><p>经过两次移动后得到排列{1 5 2 4 3}，此时|B1-1|+|B2-2|+|B3-3|+|B4-4|+|B5-5|取得最小值。</p><p>输入<br>第一行包含一个整数N，1≤N≤105。</p><p>第二行包含N个空格隔开的整数A1到AN。</p><pre><code>输出输出|B1-1|+|B2-2|+|B3-3|+...+|BN-N|的最小值。样例输入54 3 1 5 2样例输出6</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔试面试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编程 </tag>
             
         </tags>
       

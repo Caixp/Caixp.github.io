@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lionvison.com/"/>
-  <updated>2019-12-01T08:57:59.110Z</updated>
+  <updated>2019-12-03T04:32:19.561Z</updated>
   <id>https://lionvison.com/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WIN10+TF2.0</title>
+    <link href="https://lionvison.com/2019/12/03/WIN10-TF2-0/"/>
+    <id>https://lionvison.com/2019/12/03/WIN10-TF2-0/</id>
+    <published>2019-12-03T04:28:51.000Z</published>
+    <updated>2019-12-03T04:32:19.561Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;WIN10-TF2-0-CUDA10-0-cuDNN7-5-OpenCV4-1-2&quot;&gt;&lt;a href=&quot;#WIN10-TF2-0-CUDA10-0-cuDNN7-5-OpenCV4-1-2&quot; class=&quot;headerlink&quot; title=&quot;WIN10+TF2.0+CUDA10.0+cuDNN7.5+OpenCV4.1.2&quot;&gt;&lt;/a&gt;WIN10+TF2.0+CUDA10.0+cuDNN7.5+OpenCV4.1.2&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;配置gpu版本的tensorflow完全是小白入门tensorflow的第一步；我的电脑gpu太差也就是仅仅学习下MX250&lt;/p&gt;
+&lt;p&gt;参考了一些详细的教程，但是对于安装的版本来说有些指定的不太明确，这有个建议就是不要一味的追求新，要注意查找版本之间的关系&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;开始安装，全文无图。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;预准备工作&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;下载&lt;a href=&quot;https://developer.nvidia.com/cuda-toolkit-archive&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CUDA10.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;下载&lt;a href=&quot;https://developer.nvidia.com/rdp/cudnn-archive&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;cuDNN7.5 for CUDA10.0&lt;/a&gt;，需要注册后下载，支持微信和QQ&lt;/li&gt;
+&lt;li&gt;下载&lt;a href=&quot;https://www.anaconda.com/distribution/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Anaconda&lt;/a&gt;，直接从官网下载会很慢，推荐将下载链接复制到百度云离线下载中，保存到百度云在进行下载速度快很多。或者直接下载百度云分享：链接：&lt;a href=&quot;https://pan.baidu.com/s/1BKtXWtUVFl4isthLj4LLPg提取码：ssjs&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1BKtXWtUVFl4isthLj4LLPg提取码：ssjs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在cmd中cmd中使用nvidia-smi查看显卡驱动是否正确安装，不过一般没啥问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="opencv学习" scheme="https://lionvison.com/categories/opencv%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>换电脑之博客迁移.md</title>
@@ -494,38 +530,6 @@
     
       <category term="实用工具汇总" scheme="https://lionvison.com/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>把Linux给我我就能用！</title>
-    <link href="https://lionvison.com/2019/04/03/%E6%8A%8ALinux%E7%BB%99%E6%88%91%E6%88%91%E5%B0%B1%E8%83%BD%E7%94%A8%EF%BC%81/"/>
-    <id>https://lionvison.com/2019/04/03/%E6%8A%8ALinux%E7%BB%99%E6%88%91%E6%88%91%E5%B0%B1%E8%83%BD%E7%94%A8%EF%BC%81/</id>
-    <published>2019-04-03T15:11:35.000Z</published>
-    <updated>2019-05-17T16:56:46.299Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;原本以为这个世界只有Windows，后来才发现竟然有Linux这个妖怪，还得需要学习使用，想起天下无贼有一段范伟扮演的强盗不懂IQ是什么，说只要给他密码他就能用。学习一个新的知识，不就是拿来使用嘛，所以秉着这个思想，便开始踩坑！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;%E7%BB%99%E6%88%91%E6%88%91%E5%B0%B1%E8%83%BD%E7%94%A8.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;首先考虑怎么安装，踩坑第一步：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;安装虚拟机。现在Windows还是办公的主力，幻灯片和Word文档，还有许多工具软件，使用macOS 都不可替代，装个虚拟机还是挺好的解决方案，在家有条件了可以买个主机安装linux系统后当做一个服务器，现阶段就还是用虚拟机。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;虚拟机安装：下载：&lt;a href=&quot;https://www.vmware.com/cn.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VMware官网&lt;/a&gt;，选择版本下载Workstations Pro，然后一步步按照提示安装，最后网上收一下授权密钥。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;选择Linux发行版&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://lionvison.com/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://lionvison.com/tags/Linux/"/>
     
   </entry>
   
