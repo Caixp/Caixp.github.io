@@ -47,6 +47,14 @@
   
 <link rel="alternate" href="/atom.xml" title="Lion vison" type="application/atom+xml">
 </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 
 <body>
   
@@ -403,20 +411,22 @@
 <thead>
 <tr>
 <th>时间</th>
-<th align="center">第一象限</th>
-<th align="center">第二象限</th>
-<th align="center">第三象限</th>
-<th align="center">第四象限</th>
+<th style="text-align:center">第一象限</th>
+<th style="text-align:center">第二象限</th>
+<th style="text-align:center">第三象限</th>
+<th style="text-align:center">第四象限</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>19/9/10</td>
-<td align="center">简历的修改和润色；<br>简历投递；<br>和老师交流</td>
-<td align="center">视觉课程（需要加速）；<br>刷题剑指offer；c语言书籍</td>
-<td align="center">不重要，紧急</td>
-<td align="center">不重要，不紧急</td>
+<td style="text-align:center">简历的修改和润色；<br>简历投递；<br>和老师交流</td>
+<td style="text-align:center">视觉课程（需要加速）；<br>刷题剑指offer；c语言书籍</td>
+<td style="text-align:center">不重要，紧急</td>
+<td style="text-align:center">不重要，不紧急</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
         </div>
         
@@ -428,10 +438,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-10T16:12:32+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-12-14T02:02:51+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年9月10日</p>
+    <p>最后更新于 2019年12月14日</p>
   </a>
 </div>
 
@@ -954,7 +964,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：39.6k</span>
+    <span class="post-count">字数统计：39.7k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
@@ -1186,5 +1196,20 @@ setInterval("createtime()",250);
 
 
   <script>setLoadingBarProgress(100);</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>

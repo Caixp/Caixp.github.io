@@ -47,6 +47,14 @@
   
 <link rel="alternate" href="/atom.xml" title="Lion vison" type="application/atom+xml">
 </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 
 <body>
   
@@ -387,11 +395,13 @@
 
         <div class="article-entry" itemprop="articleBody">
           <blockquote>
-<p>解决的问题：换电脑使得原来的博客环境失效，现在需要将在新电脑上写博客。<br>解决方法：在新电脑上重新配置hexo</p>
+<p>解决的问题：换电脑使得原来的博客环境失效，现在需要将在新电脑上写博客。<br />
+解决方法：在新电脑上重新配置hexo</p>
 </blockquote>
 <p>步骤：</p>
 <ul>
-<li><p>1、准备工作</p>
+<li>
+<p>1、准备工作</p>
 <ul>
 <li>将原来博客中的文件拷贝，然后在新电脑上创建一个Blog文件夹；</li>
 <li>下载node.js,<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">官网下载</a>，之后安装，测试安装成功的方法是在cmd下，使用npm –V可以看到输出内容安装成功；</li>
@@ -400,14 +410,19 @@
 <li>安装git，<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">官网</a>。然后和配置博客时一样同样需要使用生成公钥，链接GitHub；</li>
 </ul>
 </li>
-<li><p>2、开始配置</p>
+<li>
+<p>2、开始配置</p>
 <ul>
-<li>所有的操作都在git bash中操作；在Blog的上一层文件夹下，使用hexo init Blog/命令进行初始化，然后将上面拷贝好的文件中的一下几个文件和文件夹替换Blog文件下的文件：<br>source<br>themes<br>_config.yml</li>
-<li>然后 切换到Blog文件夹下，使用命令安装所需要的依赖，这都要看你原本博客中的依赖是什么，因为依赖版本的更新比较快，建议自己重新安装依赖：npm install xxx1 xxx2 xxx3 –save</li>
-<li>依赖安装完成后，基本上就可以使用了，同样可以使用hexo s –g 来检查下博客是否能够重新显示，如果没有问题可以写博客部署到服务器试一下，一定要在本地看一下能不能使用成功，否则直接推到服务器很可能使得博客网站不显示。 </li>
+<li>所有的操作都在git bash中操作；在Blog的上一层文件夹下，使用hexo init Blog/命令进行初始化，然后将上面拷贝好的文件中的一下几个文件和文件夹替换Blog文件下的文件：<br />
+source<br />
+themes<br />
+_config.yml</li>
+<li>然后 切换到Blog文件夹下，使用命令安装所需要的依赖，这都要看你原本博客中的依赖是什么，因为依赖版本的更新比较快，建议自己重新安装依赖：npm install xxx1 xxx2 xxx3 --save</li>
+<li>依赖安装完成后，基本上就可以使用了，同样可以使用hexo s –g 来检查下博客是否能够重新显示，如果没有问题可以写博客部署到服务器试一下，一定要在本地看一下能不能使用成功，否则直接推到服务器很可能使得博客网站不显示。</li>
 </ul>
 </li>
-<li><p>参考：</p>
+<li>
+<p>参考：</p>
 <p><a href="https://blog.csdn.net/littlehaes/article/details/81503455" target="_blank" rel="noopener">https://blog.csdn.net/littlehaes/article/details/81503455</a></p>
 </li>
 </ul>
@@ -422,10 +437,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-12-01T16:57:59+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-12-14T02:02:51+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年12月1日</p>
+    <p>最后更新于 2019年12月14日</p>
   </a>
 </div>
 
@@ -948,7 +963,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：39.6k</span>
+    <span class="post-count">字数统计：39.7k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
@@ -1180,5 +1195,20 @@ setInterval("createtime()",250);
 
 
   <script>setLoadingBarProgress(100);</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>

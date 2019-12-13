@@ -47,6 +47,14 @@
   
 <link rel="alternate" href="/atom.xml" title="Lion vison" type="application/atom+xml">
 </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 
 <body>
   
@@ -394,18 +402,21 @@
 <p>下面介绍的是计算机视觉的发展方向：</p>
 <a id="more"></a>
 <ul>
-<li>1、图像处理：<ul>
+<li>1、图像处理：
+<ul>
 <li>点算子</li>
 <li>线性滤波</li>
 <li>几何变换、</li>
 <li>全局优化</li>
-<li>特征检测和匹配<ul>
+<li>特征检测和匹配
+<ul>
 <li>边缘特征</li>
 <li>线条特征</li>
 <li>特征匹配</li>
 </ul>
 </li>
-<li>运动估计<ul>
+<li>运动估计
+<ul>
 <li>平移配准</li>
 <li>层次运动</li>
 <li>光流信息</li>
@@ -415,11 +426,12 @@
 </li>
 </ul>
 <center>**深度学习很多灵感来源于传统方法**</center>
-
 <ul>
-<li><p>2、深度学习技术</p>
+<li>
+<p>2、深度学习技术</p>
 <ul>
-<li>神经网络：<ul>
+<li>神经网络：
+<ul>
 <li>输入层，隐藏层，输出层</li>
 <li>全连接</li>
 <li>激活函数</li>
@@ -427,7 +439,8 @@
 <li>损失函数：计算真实值和算法求出数据的差距</li>
 </ul>
 </li>
-<li>卷积神经网络：<ul>
+<li>卷积神经网络：
+<ul>
 <li>简单的神经网络很难处理图像二维的数据，他需要将二维转变为一维数据，很那捕捉像素之间的联系。</li>
 <li>卷积神经网络：模仿人依靠卷积核来获得一定的感受野，提取纹理特征然后一层层感受分析获得信息，首先获得比较浅层的信息，比如边缘什么，越高层获得信息越高层。</li>
 <li>卷积核：可以降低模型参数量，可以参数共享</li>
@@ -438,21 +451,25 @@
 </li>
 </ul>
 </li>
-<li><p>3、CNN应用</p>
+<li>
+<p>3、CNN应用</p>
 <ul>
-<li>图像识别：<ul>
+<li>图像识别：
+<ul>
 <li>VGG</li>
 <li>ResNet</li>
 <li>Inception</li>
 </ul>
 </li>
-<li>目标检测：<ul>
+<li>目标检测：
+<ul>
 <li>RCNN</li>
 <li>SSD</li>
 <li>YOLO</li>
 </ul>
 </li>
-<li>分割：<ul>
+<li>分割：
+<ul>
 <li>FCN</li>
 <li>Mask-RCNN</li>
 <li>U-Net</li>
@@ -461,32 +478,37 @@
 </ul>
 </li>
 </ul>
-<hr>
+<hr />
 <p>前沿探索举例：</p>
 <ul>
-<li>目标检测：<ul>
-<li>Anchor-Fre    <strong>*****</strong><ul>
+<li>
+<p>目标检测：</p>
+<ul>
+<li>Anchor-Fre    *********
+<ul>
 <li>CornerNet</li>
 </ul>
 </li>
 <li>关键点</li>
 </ul>
 </li>
-</ul>
+<li>
+<p>图像识别：</p>
 <ul>
-<li>图像识别：<ul>
 <li>粗粒度的图像识别：是猫、是狗等类间</li>
 <li><strong>细粒度图像识别</strong>：是花猫、是长尾猫等类内。</li>
 </ul>
 </li>
-</ul>
+<li>
+<p>网络结构改进：</p>
 <ul>
-<li>网络结构改进：<ul>
-<li>合理复杂度下提升效果<ul>
+<li>合理复杂度下提升效果
+<ul>
 <li>提升信息流效率(跳层连接)</li>
 </ul>
 </li>
-<li>合理效果下提升效率<ul>
+<li>合理效果下提升效率
+<ul>
 <li>降低计算损耗</li>
 <li>降低内存占用</li>
 </ul>
@@ -496,8 +518,10 @@
 </ul>
 <p>行业应用举例：</p>
 <ul>
-<li>商品识别：<ul>
-<li>数据采集：<ul>
+<li>商品识别：
+<ul>
+<li>数据采集：
+<ul>
 <li>1、手持终端(SFA)采集</li>
 <li>图像质量不一</li>
 <li>场景变换不确定</li>
@@ -510,8 +534,10 @@
 <li>模型挑战：细粒度商品识别</li>
 </ul>
 </li>
-<li>数据预处理<ul>
-<li>图像质量：<ul>
+<li>数据预处理
+<ul>
+<li>图像质量：
+<ul>
 <li>模糊检测</li>
 <li>倾斜检测</li>
 <li>超分辨率重建</li>
@@ -520,7 +546,8 @@
 </li>
 </ul>
 </li>
-<li>模型训练<ul>
+<li>模型训练
+<ul>
 <li>使用通用检测模型</li>
 </ul>
 </li>
@@ -530,8 +557,8 @@
 </li>
 </ul>
 <p>虽然有些因为知识的欠缺很难理解，但是还是可以多思考，在以后补充。</p>
-<h3 id="多读论文，多思考、了解新的思路和方法和当前方法的关系。"><a href="#多读论文，多思考、了解新的思路和方法和当前方法的关系。" class="headerlink" title="多读论文，多思考、了解新的思路和方法和当前方法的关系。"></a>多读论文，多思考、了解新的思路和方法和当前方法的关系。</h3></br>
-
+<h3 id="多读论文多思考-了解新的思路和方法和当前方法的关系"><a class="markdownIt-Anchor" href="#多读论文多思考-了解新的思路和方法和当前方法的关系"></a> 多读论文，多思考、了解新的思路和方法和当前方法的关系。</h3>
+</br>
 <p>【参考】<a href="https://www.bilibili.com/video/av66508436" target="_blank" rel="noopener">计算机视觉在新技术浪潮的革新和挑战</a></p>
 
         </div>
@@ -544,10 +571,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-10T02:06:27+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-12-14T02:02:51+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年9月10日</p>
+    <p>最后更新于 2019年12月14日</p>
   </a>
 </div>
 
@@ -787,7 +814,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#多读论文，多思考、了解新的思路和方法和当前方法的关系。"><span class="toc-text">多读论文，多思考、了解新的思路和方法和当前方法的关系。</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#多读论文多思考-了解新的思路和方法和当前方法的关系"><span class="toc-text"> 多读论文，多思考、了解新的思路和方法和当前方法的关系。</span></a></li></ol>
     </div>
   </section>
 
@@ -1099,7 +1126,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：39.6k</span>
+    <span class="post-count">字数统计：39.7k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
@@ -1331,5 +1358,20 @@ setInterval("createtime()",250);
 
 
   <script>setLoadingBarProgress(100);</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>

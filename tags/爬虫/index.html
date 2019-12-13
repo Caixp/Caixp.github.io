@@ -47,6 +47,14 @@
   
 <link rel="alternate" href="/atom.xml" title="Lion vison" type="application/atom+xml">
 </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 
 <body>
   
@@ -380,7 +388,8 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h1 id="前期准备工作"><a href="#前期准备工作" class="headerlink" title="前期准备工作"></a>前期准备工作</h1><ul>
+      <h1 id="前期准备工作"><a class="markdownIt-Anchor" href="#前期准备工作"></a> 前期准备工作</h1>
+<ul>
 <li>安装MongoDB  NoSQL 建议最后安装可视化环境，不然会面临卡在安装界面很长时间。</li>
 <li>安装pymongo模块，pip3安装</li>
 <li>安装Android开发环境，下载Android Studio，并安装相应的安卓SDK版本</li>
@@ -388,11 +397,14 @@
 <li>安装Appium，从Github中下载；另外还需要安装模块appium，后边python程序需要做接口，安装具体方法：<code>pip install Appium_Python_Client</code></li>
 <li>使用过程中要电脑连接手机，打开手机调试开关。</li>
 </ul>
-<h1 id="一、关于Appium"><a href="#一、关于Appium" class="headerlink" title="一、关于Appium"></a>一、关于Appium</h1><blockquote>
+<h1 id="一-关于appium"><a class="markdownIt-Anchor" href="#一-关于appium"></a> 一、关于Appium</h1>
+<blockquote>
 <p>Appium是一种移动端的自动化测试工具，和PC端使用的Selenium类似，该工具可以驱动Android、iOS等设备完成自动化测试。</p>
 </blockquote>
-<p>首先打开appium软件启动服务，相当于打开了一个Appium服务器，使用端口名称为：<code>4723</code>  </p>
-<p>然后<code>Start Inspecter Session</code><br>在进行如下配置：<br>需要在用adb devices -l 获取你的手机设备名字(<code>model字段的内容</code>)</p>
+<p>首先打开appium软件启动服务，相当于打开了一个Appium服务器，使用端口名称为：<code>4723</code></p>
+<p>然后<code>Start Inspecter Session</code><br />
+在进行如下配置：<br />
+需要在用adb devices -l 获取你的手机设备名字(<code>model字段的内容</code>)</p>
       
         <div class="readmore">
           <a href="/archives/45d22ee3.html" class="flat-box">
@@ -813,7 +825,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：39.6k</span>
+    <span class="post-count">字数统计：39.7k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
@@ -1026,5 +1038,20 @@ setInterval("createtime()",250);
 
 
   <script>setLoadingBarProgress(100);</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>

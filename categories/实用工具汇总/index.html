@@ -47,6 +47,14 @@
   
 <link rel="alternate" href="/atom.xml" title="Lion vison" type="application/atom+xml">
 </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 
 <body>
   
@@ -503,7 +511,8 @@
       <blockquote>
 <p>转载：<a href="https://www.jb51.net/article/141568.htm" target="_blank" rel="noopener">https://www.jb51.net/article/141568.htm</a></p>
 </blockquote>
-<h1 id="常用命令："><a href="#常用命令：" class="headerlink" title="常用命令："></a>常用命令：</h1><ul>
+<h1 id="常用命令"><a class="markdownIt-Anchor" href="#常用命令"></a> 常用命令：</h1>
+<ul>
 <li>直接输入盘符就可以进入相应盘，如：e:</li>
 <li>cd: 进入文件夹</li>
 <li>md: 创建文件夹</li>
@@ -612,9 +621,11 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h1 id="什么是Git？"><a href="#什么是Git？" class="headerlink" title="什么是Git？"></a>什么是Git？</h1><p>首先一个问题就是：什么是Git？用来干什么？</p>
+      <h1 id="什么是git"><a class="markdownIt-Anchor" href="#什么是git"></a> 什么是Git？</h1>
+<p>首先一个问题就是：什么是Git？用来干什么？</p>
 <p>维基百科中是这么说的：Git是一种分布式版本控制软件。Git是用C语言开发的，追求高性能，它的TCP监听端口是9418，刚开始是用于Linux内核开发的版本控制，不需要服务器端软件，就可以运作版本控制软件，使得源代码的发布和交流极为方便。</p>
-<h1 id="Git中的数据结构"><a href="#Git中的数据结构" class="headerlink" title="Git中的数据结构"></a>Git中的数据结构</h1><ul>
+<h1 id="git中的数据结构"><a class="markdownIt-Anchor" href="#git中的数据结构"></a> Git中的数据结构</h1>
+<ul>
 <li>可变的索引</li>
 <li>不可变的、仅追加的对象数据库</li>
 </ul>
@@ -1038,7 +1049,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：39.6k</span>
+    <span class="post-count">字数统计：39.7k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
@@ -1251,5 +1262,20 @@ setInterval("createtime()",250);
 
 
   <script>setLoadingBarProgress(100);</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>

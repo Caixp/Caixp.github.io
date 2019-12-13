@@ -47,6 +47,14 @@
   
 <link rel="alternate" href="/atom.xml" title="Lion vison" type="application/atom+xml">
 </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 
 <body>
   
@@ -386,21 +394,27 @@
 
 
         <div class="article-entry" itemprop="articleBody">
-          <h1 id="Python基础"><a href="#Python基础" class="headerlink" title="Python基础"></a>Python基础</h1><h2 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h2><pre><code>1、版本v2.x  v3.x
+          <h1 id="python基础"><a class="markdownIt-Anchor" href="#python基础"></a> Python基础</h1>
+<h2 id="一-安装"><a class="markdownIt-Anchor" href="#一-安装"></a> 一、安装</h2>
+<pre><code>1、版本v2.x  v3.x
 2、操作系统LINUX、WINDOWS、MAC OS
-3、管理工具安装anaconda、操作命令安装</code></pre><h2 id="二、变量和简单数据类型"><a href="#二、变量和简单数据类型" class="headerlink" title="二、变量和简单数据类型"></a>二、变量和简单数据类型</h2><h3 id="2-1变量"><a href="#2-1变量" class="headerlink" title="2.1变量"></a>2.1变量</h3><p>用来保存存储的内容</p>
-<h3 id="2-2字符串"><a href="#2-2字符串" class="headerlink" title="2.2字符串"></a>2.2字符串</h3><blockquote>
-<p>一系列字符。  </p>
+3、管理工具安装anaconda、操作命令安装
+</code></pre>
+<h2 id="二-变量和简单数据类型"><a class="markdownIt-Anchor" href="#二-变量和简单数据类型"></a> 二、变量和简单数据类型</h2>
+<h3 id="21变量"><a class="markdownIt-Anchor" href="#21变量"></a> 2.1变量</h3>
+<p>用来保存存储的内容</p>
+<h3 id="22字符串"><a class="markdownIt-Anchor" href="#22字符串"></a> 2.2字符串</h3>
+<blockquote>
+<p>一系列字符。</p>
 </blockquote>
 <ul>
 <li>创建字符串“”</li>
-<li>capitalize():首字母大写string.capitalize()—–&gt;String</li>
+<li>capitalize():首字母大写string.capitalize()-----&gt;String</li>
 <li>center():居中，参数添加显示字符宽度</li>
 <li>chr()</li>
 <li>cmp()</li>
 </ul>
 <a id="more"></a>
-
 <ul>
 <li>count()计数</li>
 <li>decode()解码</li>
@@ -455,67 +469,84 @@
 <li>删除空白：rstrip()、lstrip()、strip()</li>
 <li>要注意’’ 和 `的区别 如果在一起使用的话可以从trackback中看到错误信息</li>
 </ul>
-<h3 id="2-3数字"><a href="#2-3数字" class="headerlink" title="2.3数字"></a>2.3数字</h3><p>加减乘除、乘方运算(**)、取余%</p>
+<h3 id="23数字"><a class="markdownIt-Anchor" href="#23数字"></a> 2.3数字</h3>
+<p>加减乘除、乘方运算(**)、取余%</p>
 <ul>
-<li>整数： +-*/  注意地板除(//)向下取整</li>
+<li>整数： ±*/  注意地板除(//)向下取整</li>
 <li>浮点数：</li>
 <li>使用str()来避免类型错误</li>
 </ul>
-<h3 id="2-4注释"><a href="#2-4注释" class="headerlink" title="2.4注释"></a>2.4注释</h3><blockquote>
+<h3 id="24注释"><a class="markdownIt-Anchor" href="#24注释"></a> 2.4注释</h3>
+<blockquote>
 <p>使用注释的目的是阐述代码要做什么</p>
 </blockquote>
 <ul>
 <li>使用#</li>
 <li>python之禅：import this</li>
 </ul>
-<h2 id="三、列表"><a href="#三、列表" class="headerlink" title="三、列表"></a>三、列表</h2><blockquote>
+<h2 id="三-列表"><a class="markdownIt-Anchor" href="#三-列表"></a> 三、列表</h2>
+<blockquote>
 <p>由一系列特定顺序的元素组成，用[]来表示列表。元素用逗号隔开，</p>
 </blockquote>
-<h3 id="3-1访问列表"><a href="#3-1访问列表" class="headerlink" title="3.1访问列表"></a>3.1访问列表</h3><ul>
-<li><p>列表是有序集合，用索引值即可，<strong>索引值从0开始</strong></p>
+<h3 id="31访问列表"><a class="markdownIt-Anchor" href="#31访问列表"></a> 3.1访问列表</h3>
+<ul>
+<li>
+<p>列表是有序集合，用索引值即可，<strong>索引值从0开始</strong></p>
 </li>
-<li><p>可以使用负数索引：</p>
-<p>  a=[1,2,3,4]<br>  a[-1]<br>  4</p>
-<h3 id="3-2修改、添加、删除列表元素"><a href="#3-2修改、添加、删除列表元素" class="headerlink" title="3.2修改、添加、删除列表元素"></a>3.2修改、添加、删除列表元素</h3></li>
-<li><p>修改：使用列表名和索引值修改</p>
-</li>
-<li><p>增加：append()、insert(position， value)</p>
-</li>
-<li><p>删除：del()、pop()、remove()，两者的区别是第二种方法可以返回删除的元素，pop(index)可以弹出指定的值。其中remove只删除第一个指定的值</p>
-<h3 id="3-3组织列表"><a href="#3-3组织列表" class="headerlink" title="3.3组织列表"></a>3.3组织列表</h3></li>
-<li><p>排序sort(),永久性修改。可以通过修改reverse=True反向排序</p>
-</li>
-<li><p>排序sorted(),临时性修改。可以通过修改reverse=True反向排序</p>
-</li>
-<li><p>反转reverse()，注意不是排序</p>
-</li>
-<li><p>len()</p>
+<li>
+<p>可以使用负数索引：</p>
+<p>a=[1,2,3,4]<br />
+a[-1]<br />
+4</p>
 </li>
 </ul>
-<h3 id="3-4每当访问最后一个元素的时候都是用索引值-1"><a href="#3-4每当访问最后一个元素的时候都是用索引值-1" class="headerlink" title="3.4每当访问最后一个元素的时候都是用索引值-1"></a>3.4每当访问最后一个元素的时候都是用索引值-1</h3><h2 id="四、操作列表"><a href="#四、操作列表" class="headerlink" title="四、操作列表"></a>四、操作列表</h2><h3 id="4-1遍历列表"><a href="#4-1遍历列表" class="headerlink" title="4.1遍历列表"></a>4.1遍历列表</h3><blockquote>
+<h3 id="32修改-添加-删除列表元素"><a class="markdownIt-Anchor" href="#32修改-添加-删除列表元素"></a> 3.2修改、添加、删除列表元素</h3>
+<ul>
+<li>修改：使用列表名和索引值修改</li>
+<li>增加：append()、insert(position， value)</li>
+<li>删除：del()、pop()、remove()，两者的区别是第二种方法可以返回删除的元素，pop(index)可以弹出指定的值。其中remove只删除第一个指定的值</li>
+</ul>
+<h3 id="33组织列表"><a class="markdownIt-Anchor" href="#33组织列表"></a> 3.3组织列表</h3>
+<ul>
+<li>排序sort(),永久性修改。可以通过修改reverse=True反向排序</li>
+<li>排序sorted(),临时性修改。可以通过修改reverse=True反向排序</li>
+<li>反转reverse()，注意不是排序</li>
+<li>len()</li>
+</ul>
+<h3 id="34每当访问最后一个元素的时候都是用索引值-1"><a class="markdownIt-Anchor" href="#34每当访问最后一个元素的时候都是用索引值-1"></a> 3.4每当访问最后一个元素的时候都是用索引值-1</h3>
+<h2 id="四-操作列表"><a class="markdownIt-Anchor" href="#四-操作列表"></a> 四、操作列表</h2>
+<h3 id="41遍历列表"><a class="markdownIt-Anchor" href="#41遍历列表"></a> 4.1遍历列表</h3>
+<blockquote>
 <p>使用for循环，循环是计算机自动完成重复工作的常见方式之一</p>
 </blockquote>
-<p><strong>for in ：</strong><br>这时候接触到代码块了，要注意代码块的缩进规则</p>
-<h3 id="4-2创建数值列表"><a href="#4-2创建数值列表" class="headerlink" title="4.2创建数值列表"></a>4.2创建数值列表</h3><ul>
+<p><strong>for in ：</strong><br />
+这时候接触到代码块了，要注意代码块的缩进规则</p>
+<h3 id="42创建数值列表"><a class="markdownIt-Anchor" href="#42创建数值列表"></a> 4.2创建数值列表</h3>
+<ul>
 <li>使用range(start, end, steps)产生一系列数字</li>
 <li>使用list()将range()产生的数字转成列表</li>
 </ul>
-<h3 id="4-3简单统计计算"><a href="#4-3简单统计计算" class="headerlink" title="4.3简单统计计算"></a>4.3简单统计计算</h3><ul>
+<h3 id="43简单统计计算"><a class="markdownIt-Anchor" href="#43简单统计计算"></a> 4.3简单统计计算</h3>
+<ul>
 <li>max()</li>
 <li>min()</li>
 <li>sum()</li>
 </ul>
-<h3 id="4-4列表解析"><a href="#4-4列表解析" class="headerlink" title="4.4列表解析"></a>4.4列表解析</h3><blockquote>
+<h3 id="44列表解析"><a class="markdownIt-Anchor" href="#44列表解析"></a> 4.4列表解析</h3>
+<blockquote>
 <p>只需要一行代码就可以产生列表结构为：类似为[i for i in range(1,11)]</p>
 </blockquote>
-<h3 id="4-5切片"><a href="#4-5切片" class="headerlink" title="4.5切片"></a>4.5切片</h3><blockquote>
-<p>大体的索引结构为：[start:end:step]</p>
+<h3 id="45切片"><a class="markdownIt-Anchor" href="#45切片"></a> 4.5切片</h3>
+<blockquote>
+<p>大体的索引结构为：[start🔚step]</p>
 </blockquote>
 <p>可以通过切片来复制列表为一个新的列表[:]</p>
-<h3 id="4-6元组tuple"><a href="#4-6元组tuple" class="headerlink" title="4.6元组tuple"></a>4.6元组tuple</h3><blockquote>
+<h3 id="46元组tuple"><a class="markdownIt-Anchor" href="#46元组tuple"></a> 4.6元组tuple</h3>
+<blockquote>
 <p>不可变的列表，用（）来表示，不可修改</p>
 </blockquote>
-<h3 id="4-7集合"><a href="#4-7集合" class="headerlink" title="4.7集合"></a>4.7集合</h3><blockquote>
+<h3 id="47集合"><a class="markdownIt-Anchor" href="#47集合"></a> 4.7集合</h3>
+<blockquote>
 <p>集合可以用来去掉重复的列表数据</p>
 </blockquote>
 <p>集合的操作：交、并、差、是否为子集</p>
@@ -526,30 +557,41 @@
 <li>set.pop()弹出，返回任意的值，所以并不能用来获取弹出的值</li>
 <li>set.clear()清除集合</li>
 </ul>
-<h3 id="4-8PEP8"><a href="#4-8PEP8" class="headerlink" title="4.8PEP8"></a>4.8PEP8</h3><p>编码规则：</p>
+<h3 id="48pep8"><a class="markdownIt-Anchor" href="#48pep8"></a> 4.8PEP8</h3>
+<p>编码规则：</p>
 <ul>
 <li>缩进：主要不要混用制表键和空格，使用编辑器应该设置好制表键与空格的关系字符</li>
 <li>行长：不超过80个,编辑器中可以设置视觉线。</li>
 </ul>
-<h2 id="五、条件语句"><a href="#五、条件语句" class="headerlink" title="五、条件语句"></a>五、条件语句</h2><blockquote>
+<h2 id="五-条件语句"><a class="markdownIt-Anchor" href="#五-条件语句"></a> 五、条件语句</h2>
+<blockquote>
 <p>根据条件来进行选择什么样的措施</p>
 </blockquote>
-<h3 id="5-1条件测试"><a href="#5-1条件测试" class="headerlink" title="5.1条件测试"></a>5.1条件测试</h3><p>检查的标准是条件表达式返回的是True还是False，进而来判断是否执行相应语句</p>
+<h3 id="51条件测试"><a class="markdownIt-Anchor" href="#51条件测试"></a> 5.1条件测试</h3>
+<p>检查的标准是条件表达式返回的是True还是False，进而来判断是否执行相应语句</p>
 <blockquote>
-<p>=赋值 ==是检查是否相等  ！=不相等<br>检查多个条件用and或者or<br>检查是否在结构中用in或者not in</p>
+<p>=赋值 ==是检查是否相等  ！=不相等<br />
+检查多个条件用and或者or<br />
+检查是否在结构中用in或者not in</p>
 </blockquote>
-<h3 id="5-2if语句"><a href="#5-2if语句" class="headerlink" title="5.2if语句"></a>5.2if语句</h3><pre><code>if condition ：
-    pass
+<h3 id="52if语句"><a class="markdownIt-Anchor" href="#52if语句"></a> 5.2if语句</h3>
+<pre><code>if condition ：
+	pass
 elif condition：
-else：</code></pre><h3 id="5-3if语句的用处："><a href="#5-3if语句的用处：" class="headerlink" title="5.3if语句的用处："></a>5.3if语句的用处：</h3><ul>
+else：
+</code></pre>
+<h3 id="53if语句的用处"><a class="markdownIt-Anchor" href="#53if语句的用处"></a> 5.3if语句的用处：</h3>
+<ul>
 <li>检测异常值，符合异常条件的数据</li>
 <li>判断列表是不是空的</li>
 </ul>
 <p><strong>注意在使用比价运算符时PEP8提供建议是在运算符号两边添加空格，方便阅读</strong></p>
-<h2 id="六、字典"><a href="#六、字典" class="headerlink" title="六、字典"></a>六、字典</h2><blockquote>
+<h2 id="六-字典"><a class="markdownIt-Anchor" href="#六-字典"></a> 六、字典</h2>
+<blockquote>
 <p>字典是一系列键-值对  用{}表示</p>
 </blockquote>
-<h3 id="6-1使用字典"><a href="#6-1使用字典" class="headerlink" title="6.1使用字典"></a>6.1使用字典</h3><ul>
+<h3 id="61使用字典"><a class="markdownIt-Anchor" href="#61使用字典"></a> 6.1使用字典</h3>
+<ul>
 <li>通过键来访问value</li>
 <li>因为字典是一种动态的结构可以随时的添加键值对，是可变的对象，python不关心键值对的添加顺序，只关心相互关系</li>
 <li>修改字典中的value是通过key来修改</li>
@@ -559,16 +601,19 @@ else：</code></pre><h3 id="5-3if语句的用处："><a href="#5-3if语句的用
 <li>dict.formkeys(seq,val=None)创建并初始化键值的字典。</li>
 </ul>
 <p><strong>在定义好字典时候最好在最后一个键值对后再添加一个逗号，为下一对键值对插入做准备</strong></p>
-<h3 id="6-2遍历字典"><a href="#6-2遍历字典" class="headerlink" title="6.2遍历字典"></a>6.2遍历字典</h3><ul>
+<h3 id="62遍历字典"><a class="markdownIt-Anchor" href="#62遍历字典"></a> 6.2遍历字典</h3>
+<ul>
 <li>遍历键值对   item()返回键、值</li>
 <li>遍历键keys()或者值 values()</li>
 <li>遍历时考虑顺序遍历的话可以使用sorted()函数来进行对keys排序</li>
 <li>遍历值得时考虑重复数据可以使用set做一个转换消除重复值</li>
 </ul>
-<h3 id="6-3嵌套"><a href="#6-3嵌套" class="headerlink" title="6.3嵌套"></a>6.3嵌套</h3><blockquote>
+<h3 id="63嵌套"><a class="markdownIt-Anchor" href="#63嵌套"></a> 6.3嵌套</h3>
+<blockquote>
 <p>{[]}、[{}].但是在字典中存储列表只能作为value存储</p>
 </blockquote>
-<h3 id="6-4字典类型内置方法"><a href="#6-4字典类型内置方法" class="headerlink" title="6.4字典类型内置方法"></a>6.4字典类型内置方法</h3><ul>
+<h3 id="64字典类型内置方法"><a class="markdownIt-Anchor" href="#64字典类型内置方法"></a> 6.4字典类型内置方法</h3>
+<ul>
 <li>dict.clear()清空字典</li>
 <li>dict.copy()浅拷贝字典</li>
 <li>dict.fromkeys(seq，default=None)，创建一个字典，seq是key，并初始化values为默认值。</li>
@@ -581,36 +626,53 @@ else：</code></pre><h3 id="5-3if语句的用处："><a href="#5-3if语句的用
 <li>dict.setdefault(key,default=None)</li>
 <li>dict.update(dict2)将dict中的键值加入到dict中，并且更新原字典。</li>
 </ul>
-<h2 id="七、检测用户输入和while循环"><a href="#七、检测用户输入和while循环" class="headerlink" title="七、检测用户输入和while循环"></a>七、检测用户输入和while循环</h2><blockquote>
-<p>input(info):让程序暂停，等待用户输入一些文本，其中info为提示信息。同样在python2.7中使用raw_input()<br>while用来不断检测</p>
+<h2 id="七-检测用户输入和while循环"><a class="markdownIt-Anchor" href="#七-检测用户输入和while循环"></a> 七、检测用户输入和while循环</h2>
+<blockquote>
+<p>input(info):让程序暂停，等待用户输入一些文本，其中info为提示信息。同样在python2.7中使用raw_input()<br />
+while用来不断检测</p>
 </blockquote>
 <p><strong>input函数没什么可说的就是使用用户输入数据时要注意做类型的变换</strong></p>
-<h3 id="7-1标志"><a href="#7-1标志" class="headerlink" title="7.1标志"></a>7.1标志</h3><p>对于while，为了使用简单，当条件比较多的时候，可以通过设置标志来判断是否结束循环。</p>
-<h3 id="7-2break"><a href="#7-2break" class="headerlink" title="7.2break"></a>7.2break</h3><p>break用来控制程序，退出循环程序，不在执行剩余代码。</p>
-<h3 id="7-3continue"><a href="#7-3continue" class="headerlink" title="7.3continue"></a>7.3continue</h3><p>continue用来控制程序流程，退出当次循环不在进行一下代码，直接跳到下一循环。</p>
-<h2 id="八、函数"><a href="#八、函数" class="headerlink" title="八、函数"></a>八、函数</h2><blockquote>
+<h3 id="71标志"><a class="markdownIt-Anchor" href="#71标志"></a> 7.1标志</h3>
+<p>对于while，为了使用简单，当条件比较多的时候，可以通过设置标志来判断是否结束循环。</p>
+<h3 id="72break"><a class="markdownIt-Anchor" href="#72break"></a> 7.2break</h3>
+<p>break用来控制程序，退出循环程序，不在执行剩余代码。</p>
+<h3 id="73continue"><a class="markdownIt-Anchor" href="#73continue"></a> 7.3continue</h3>
+<p>continue用来控制程序流程，退出当次循环不在进行一下代码，直接跳到下一循环。</p>
+<h2 id="八-函数"><a class="markdownIt-Anchor" href="#八-函数"></a> 八、函数</h2>
+<blockquote>
 <p>函数是带有名字的代码块。用来完成特定的功能。</p>
 </blockquote>
-<h3 id="8-1参数"><a href="#8-1参数" class="headerlink" title="8.1参数"></a>8.1参数</h3><ul>
+<h3 id="81参数"><a class="markdownIt-Anchor" href="#81参数"></a> 8.1参数</h3>
+<ul>
 <li>实参：函数调用过程中传递进去的参数</li>
-<li>形参：函数定义中的参数<h3 id="8-2传递参数"><a href="#8-2传递参数" class="headerlink" title="8.2传递参数"></a>8.2传递参数</h3></li>
+<li>形参：函数定义中的参数</li>
+</ul>
+<h3 id="82传递参数"><a class="markdownIt-Anchor" href="#82传递参数"></a> 8.2传递参数</h3>
+<ul>
 <li>位置实参：实参与形参位置相同</li>
 <li>关键字实参：实参由变量和值组成</li>
 <li>使用字典和列表：</li>
 <li>函数定义中使用默认值时，要是不传进去实参，函数将会使用默认值</li>
 <li>传参方式可以混合使用</li>
 </ul>
-<h3 id="8-3返回值"><a href="#8-3返回值" class="headerlink" title="8.3返回值"></a>8.3返回值</h3><blockquote>
-<p>返回值可以简化主程序，将大量的工作放在函数中，使用return返回函数的运算结果。<br>让参数变成可选的在函数定义时设置为空，可以扩展函数的适用范围。</p>
+<h3 id="83返回值"><a class="markdownIt-Anchor" href="#83返回值"></a> 8.3返回值</h3>
+<blockquote>
+<p>返回值可以简化主程序，将大量的工作放在函数中，使用return返回函数的运算结果。<br />
+让参数变成可选的在函数定义时设置为空，可以扩展函数的适用范围。</p>
 </blockquote>
-<h3 id="8-4传递任意数量的实参"><a href="#8-4传递任意数量的实参" class="headerlink" title="8.4传递任意数量的实参"></a>8.4传递任意数量的实参</h3><ul>
+<h3 id="84传递任意数量的实参"><a class="markdownIt-Anchor" href="#84传递任意数量的实参"></a> 8.4传递任意数量的实参</h3>
+<ul>
 <li>*args</li>
 </ul>
-<h3 id="8-5将函数存储在模块中"><a href="#8-5将函数存储在模块中" class="headerlink" title="8.5将函数存储在模块中"></a>8.5将函数存储在模块中</h3><blockquote>
-<p>使用module_name.function_name()来调用模块中的函数<br>模块</p>
+<h3 id="85将函数存储在模块中"><a class="markdownIt-Anchor" href="#85将函数存储在模块中"></a> 8.5将函数存储在模块中</h3>
+<blockquote>
+<p>使用module_name.function_name()来调用模块中的函数<br />
+模块</p>
 </blockquote>
-<h3 id="8-6注意事项"><a href="#8-6注意事项" class="headerlink" title="8.6注意事项"></a>8.6注意事项</h3><p>编写函数时应该注意到，函数名字尽量使用小写字母和下划线，名字要容易解释功能，另外要包含阐述函数功能的注释。</p>
-<h2 id="九、类"><a href="#九、类" class="headerlink" title="九、类"></a>九、类</h2><blockquote>
+<h3 id="86注意事项"><a class="markdownIt-Anchor" href="#86注意事项"></a> 8.6注意事项</h3>
+<p>编写函数时应该注意到，函数名字尽量使用小写字母和下划线，名字要容易解释功能，另外要包含阐述函数功能的注释。</p>
+<h2 id="九-类"><a class="markdownIt-Anchor" href="#九-类"></a> 九、类</h2>
+<blockquote>
 <p>面对对象编程是最有效的软件编写方法之一，根据类来创建对象，类中定义的是一类对象都有的通用的行为，可以根据对象赋予不同的个性行为。类是用来描述具有同类属性实例的概括词汇，对象是类实例化的个体。Python中类即对象</p>
 </blockquote>
 <p>面对对象设计的三大特性：</p>
@@ -619,99 +681,151 @@ else：</code></pre><h3 id="5-3if语句的用处："><a href="#5-3if语句的用
 <li>继承</li>
 <li>多态</li>
 </ul>
-<h3 id="9-1创建使用类："><a href="#9-1创建使用类：" class="headerlink" title="9.1创建使用类："></a>9.1创建使用类：</h3><pre><code>class A(object):
-    def __init__(self, *xxx)：
-        pass
-    def a(*xxx):
-        pass
-    ...</code></pre><p><em>一般在Python中首字母大写的是类</em></p>
+<h3 id="91创建使用类"><a class="markdownIt-Anchor" href="#91创建使用类"></a> 9.1创建使用类：</h3>
+<pre><code>class A(object):
+	def __init__(self, *xxx)：
+		pass
+	def a(*xxx):
+		pass
+	...
+</code></pre>
+<p><em>一般在Python中首字母大写的是类</em></p>
 <p>类中包含<strong>方法（类中的函数）、属性</strong>，<strong>init</strong>()中形参必不可少必须位于其他参数之前在python创建实例的时候，将自动传给self，它是一个指定实例本身的引用。以self为前缀的类中的变量都可以被类中其他方法使用。</p>
-<p>使用句点表示法使用类中属性和调用类中方法<strong>.</strong></p>
-<h3 id="9-2修改属性的值"><a href="#9-2修改属性的值" class="headerlink" title="9.2修改属性的值"></a>9.2修改属性的值</h3><ul>
+<p>使用句点表示法使用类中属性和调用类中方法**.**</p>
+<h3 id="92修改属性的值"><a class="markdownIt-Anchor" href="#92修改属性的值"></a> 9.2修改属性的值</h3>
+<ul>
 <li>直接修改，使用实例访问</li>
 <li>通过方法修改属性的值</li>
 <li>通过方法对属性的值进行递增</li>
 </ul>
-<h3 id="9-3继承"><a href="#9-3继承" class="headerlink" title="9.3继承"></a>9.3继承</h3><blockquote>
-<p>一个类继承另一个类时，将自动获得另一个类的所有属性和方法：<code>父类</code>-&gt;<code>子类</code><br>子类继承了父类的所有属性和方法，还可以定义自己的属性和方法。</p>
+<h3 id="93继承"><a class="markdownIt-Anchor" href="#93继承"></a> 9.3继承</h3>
+<blockquote>
+<p>一个类继承另一个类时，将自动获得另一个类的所有属性和方法：<code>父类</code>-&gt;<code>子类</code><br />
+子类继承了父类的所有属性和方法，还可以定义自己的属性和方法。</p>
 </blockquote>
-<p>子类方法的<strong>init</strong>()方法：需要先设置父类的属性：  </p>
+<p>子类方法的__init__()方法：需要先设置父类的属性：</p>
 <pre><code>class Car(object):
-    def __init__(self, *xxx):
-        pass
+	def __init__(self, *xxx):
+		pass
 class Necar(Car):
-    def __init__(self, *xxx):
-        super().__init__(*xxx)</code></pre><p>继承之后，可以定义子类的属性和方法，并且可以重写父类的方法，<strong>要与父类方法重名</strong><br>当了解了类的之后，在考虑问题是后就需要考虑属性的归属，要根据具体的业务分析编写代码，每种建模思想都没有错只是有效率高低之分，要从实践中总结。</p>
-<h3 id="9-4导入类"><a href="#9-4导入类" class="headerlink" title="9.4导入类"></a>9.4导入类</h3><blockquote>
+	def __init__(self, *xxx):
+		super().__init__(*xxx)
+</code></pre>
+<p>继承之后，可以定义子类的属性和方法，并且可以重写父类的方法，<strong>要与父类方法重名</strong><br />
+当了解了类的之后，在考虑问题是后就需要考虑属性的归属，要根据具体的业务分析编写代码，每种建模思想都没有错只是有效率高低之分，要从实践中总结。</p>
+<h3 id="94导入类"><a class="markdownIt-Anchor" href="#94导入类"></a> 9.4导入类</h3>
+<blockquote>
 <p>类可以保存在模块中，然后在需要的时候导入到程序中</p>
 </blockquote>
 <pre><code>from a import A #导入一个类
-from a impoert A,B #导入模块中多个类        
+from a impoert A,B #导入模块中多个类		
 import a #导入整个模块
-from a import b #一个模块中导入另一个模块</code></pre><p>自定义工作流程:<code>先开始让代码尽可能简单---确保功能正常后提取功能模块，进行模块独立-----进行模块和文件交互</code>  </p>
+from a import b #一个模块中导入另一个模块
+</code></pre>
+<p>自定义工作流程:<code>先开始让代码尽可能简单---确保功能正常后提取功能模块，进行模块独立-----进行模块和文件交互</code></p>
 <p>类中的特殊方法：</p>
 <ul>
-<li>_<em>init_</em>(self,)构造函数</li>
-<li>_<em>new_</em>(slef)通常用于创建不可变数据类型的子类</li>
-<li>_<em>del_</em>(self)析构函数</li>
-<li>_<em>str_</em>(self)可打印字符串表示</li>
-<li>_<em>repr_</em>(self)</li>
-<li>_<em>unicode_</em>(self)</li>
-<li>_<em>call_</em>(self)可调用的实例</li>
-<li>_<em>nonzero_</em>(self)对对象定义false值</li>
-<li>_<em>len_</em>(self)</li>
-<li>_<em>cmp_</em>(self)对象比较</li>
-<li>_<em>lt_</em>(self)</li>
-<li>_<em>le_</em>(self)</li>
-<li>_<em>gt_</em>(self)</li>
-<li>_<em>ge_</em>(self)</li>
-<li>_<em>eq_</em>(self)</li>
-<li>_<em>getattr_</em>(self)</li>
-<li>_<em>setattr_</em>(self)</li>
-<li>_<em>delattr_</em>(self)</li>
-<li>_<em>get_</em>(self)</li>
-<li>_<em>set_</em>(self)</li>
-<li>_<em>delete_</em>(self)</li>
-<li>_<em>iter_</em>(self)创建迭代器类</li>
-<li>_<em>hash_</em>(self)散列函数值</li>
+<li>_<em>init</em>_(self,)构造函数</li>
+<li>_<em>new</em>_(slef)通常用于创建不可变数据类型的子类</li>
+<li>_<em>del</em>_(self)析构函数</li>
+<li>_<em>str</em>_(self)可打印字符串表示</li>
+<li>_<em>repr</em>_(self)</li>
+<li>_<em>unicode</em>_(self)</li>
+<li>_<em>call</em>_(self)可调用的实例</li>
+<li>_<em>nonzero</em>_(self)对对象定义false值</li>
+<li>_<em>len</em>_(self)</li>
+<li>_<em>cmp</em>_(self)对象比较</li>
+<li>_<em>lt</em>_(self)</li>
+<li>_<em>le</em>_(self)</li>
+<li>_<em>gt</em>_(self)</li>
+<li>_<em>ge</em>_(self)</li>
+<li>_<em>eq</em>_(self)</li>
+<li>_<em>getattr</em>_(self)</li>
+<li>_<em>setattr</em>_(self)</li>
+<li>_<em>delattr</em>_(self)</li>
+<li>_<em>get</em>_(self)</li>
+<li>_<em>set</em>_(self)</li>
+<li>_<em>delete</em>_(self)</li>
+<li>_<em>iter</em>_(self)创建迭代器类</li>
+<li>_<em>hash</em>_(self)散列函数值</li>
 </ul>
-<h2 id="十、文件和异常"><a href="#十、文件和异常" class="headerlink" title="十、文件和异常"></a>十、文件和异常</h2><blockquote>
+<h2 id="十-文件和异常"><a class="markdownIt-Anchor" href="#十-文件和异常"></a> 十、文件和异常</h2>
+<blockquote>
 <p>异常：python创建的特殊对象，用于管理程序运行时出现的错误，让程序在面对错误的数据室更健壮。</p>
 </blockquote>
-<h3 id="10-1文件读写"><a href="#10-1文件读写" class="headerlink" title="10.1文件读写"></a>10.1文件读写</h3><p>打开模式：</p>
+<h3 id="101文件读写"><a class="markdownIt-Anchor" href="#101文件读写"></a> 10.1文件读写</h3>
+<p>打开模式：</p>
 <ul>
-<li>t默认文本格式打开</li>
-<li>x写模式新建一个文件，如果已经存在会报错。</li>
-<li>b二进制模式</li>
-<li>+打开一个文件可读可写</li>
-<li>r只读，从头开始</li>
-<li>rb</li>
-<li>r+从开头开始可读可写</li>
-<li>rb+</li>
-<li>w文件不存在会创建文件，如果存在则从头开始写，原内容删除</li>
-<li>w+</li>
-<li>wb</li>
-<li>wb+</li>
-<li>a如果文件不存在则会创建文件，如果存在则会追加进行写入</li>
-<li>ab</li>
-<li>a+</li>
-<li>ab+</li>
-</ul>
-<ul>
-<li><p>相对路径：一般是当前文件夹内的文件</p>
+<li>
+<p>t默认文本格式打开</p>
 </li>
-<li><p>绝对路径：制定文件夹内的文件  </p>
-<pre><code>with open(datafile) as file:  
-&apos;&apos;&apos;打开文件读取，并自动关闭&apos;&apos;&apos;  
-    data = file.read()
-    print(data)</code></pre></li>
-<li><p>写入write()</p>
+<li>
+<p>x写模式新建一个文件，如果已经存在会报错。</p>
 </li>
-<li><p>打开文件时可以传入第二个参数，来确定打开的文件操作形式 r：可读 r+：可读写 w+：写到文件末尾 a:附加到文件</p>
+<li>
+<p>b二进制模式</p>
 </li>
-<li><p>主义写入时如果文件不存在会自动生成一个新文件，如果存在设定是w模式时，会自动清除对象文件重新写入。</p>
+<li>
+<p>+打开一个文件可读可写</p>
 </li>
-<li><p>读取read():返回文件内容readline()：读取一行文件内容，并记录读取位置readlines()：读取每行返回一个列表</p>
+<li>
+<p>r只读，从头开始</p>
+</li>
+<li>
+<p>rb</p>
+</li>
+<li>
+<p>r+从开头开始可读可写</p>
+</li>
+<li>
+<p>rb+</p>
+</li>
+<li>
+<p>w文件不存在会创建文件，如果存在则从头开始写，原内容删除</p>
+</li>
+<li>
+<p>w+</p>
+</li>
+<li>
+<p>wb</p>
+</li>
+<li>
+<p>wb+</p>
+</li>
+<li>
+<p>a如果文件不存在则会创建文件，如果存在则会追加进行写入</p>
+</li>
+<li>
+<p>ab</p>
+</li>
+<li>
+<p>a+</p>
+</li>
+<li>
+<p>ab+</p>
+</li>
+<li>
+<p>相对路径：一般是当前文件夹内的文件</p>
+</li>
+<li>
+<p>绝对路径：制定文件夹内的文件</p>
+<pre><code>  with open(datafile) as file:  
+  '''打开文件读取，并自动关闭'''  
+  	data = file.read()
+  	print(data)
+</code></pre>
+</li>
+<li>
+<p>写入write()</p>
+</li>
+<li>
+<p>打开文件时可以传入第二个参数，来确定打开的文件操作形式 r：可读 r+：可读写 w+：写到文件末尾 a:附加到文件</p>
+</li>
+<li>
+<p>主义写入时如果文件不存在会自动生成一个新文件，如果存在设定是w模式时，会自动清除对象文件重新写入。</p>
+</li>
+<li>
+<p>读取read():返回文件内容readline()：读取一行文件内容，并记录读取位置readlines()：读取每行返回一个列表</p>
 </li>
 </ul>
 <p>文件对象方法和数据属性：</p>
@@ -734,26 +848,33 @@ from a import b #一个模块中导入另一个模块</code></pre><p>自定义�
 <li>f.name返回文件名称</li>
 <li>f.newlines如果读取到行分隔符则为None</li>
 </ul>
-<h3 id="10-2异常"><a href="#10-2异常" class="headerlink" title="10.2异常"></a>10.2异常</h3><blockquote>
+<h3 id="102异常"><a class="markdownIt-Anchor" href="#102异常"></a> 10.2异常</h3>
+<blockquote>
 <p>异常是使用try-except代码块来处理的,通过将可能引发错误的代码放进代码块中，可以提高抵御崩溃的能力</p>
 </blockquote>
 <pre><code>try:
-    pass
+	pass
 except XxxError:
-    pass
+	pass
 else:
-    pass</code></pre><p>上面的大致原理是，python尝试执行try中的代码，有一些try代码执行成功的信息放在else中,except告诉程序try中代码执行不成功时应该怎么做。</p>
-<h3 id="10-3存储数据"><a href="#10-3存储数据" class="headerlink" title="10.3存储数据"></a>10.3存储数据</h3><blockquote>
+	pass
+</code></pre>
+<p>上面的大致原理是，python尝试执行try中的代码，有一些try代码执行成功的信息放在else中,except告诉程序try中代码执行不成功时应该怎么做。</p>
+<h3 id="103存储数据"><a class="markdownIt-Anchor" href="#103存储数据"></a> 10.3存储数据</h3>
+<blockquote>
 <p>json：是一种数据存储格式，并且会保存数据结构。</p>
 </blockquote>
 <ul>
 <li>json.dump()存储</li>
 <li>json.load()加载</li>
 </ul>
-<h3 id="10-4重构"><a href="#10-4重构" class="headerlink" title="10.4重构"></a>10.4重构</h3><blockquote>
-<p>重构将代码进行改进，使代码更清晰、容易扩展。<br>将功能代码分成几个小的或者函数进行实现</p>
+<h3 id="104重构"><a class="markdownIt-Anchor" href="#104重构"></a> 10.4重构</h3>
+<blockquote>
+<p>重构将代码进行改进，使代码更清晰、容易扩展。<br />
+将功能代码分成几个小的或者函数进行实现</p>
 </blockquote>
-<h2 id="十一、测试"><a href="#十一、测试" class="headerlink" title="十一、测试"></a>十一、测试</h2><p><strong>待续</strong></p>
+<h2 id="十一-测试"><a class="markdownIt-Anchor" href="#十一-测试"></a> 十一、测试</h2>
+<p><strong>待续</strong></p>
 
         </div>
         
@@ -765,10 +886,10 @@ else:
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-05-18T20:37:09+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-12-14T02:02:51+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年5月18日</p>
+    <p>最后更新于 2019年12月14日</p>
   </a>
 </div>
 
@@ -790,15 +911,22 @@ else:
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="https://connect.qq.com/widget/shareqq/index.html?url=https://lionvison.com/archives/8409c1ac.html&title=PYTHON编程：从入门到实践（学习笔记） | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary=Python基础一、安装1、版本v2.x  v3.x
+          href="https://connect.qq.com/widget/shareqq/index.html?url=https://lionvison.com/archives/8409c1ac.html&title=PYTHON编程：从入门到实践（学习笔记） | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary= Python基础
+ 一、安装
+1、版本v2.x  v3.x
 2、操作系统LINUX、WINDOWS、MAC OS
-3、管理工具安装anaconda、操作命令安装二、变量和简单数据类型2.1变量用来保存存储的内容
-2.2字符串
-一系列字符。  
+3、管理工具安装anaconda、操作命令安装
+
+ 二、变量和简单数据类型
+ 2.1变量
+用来保存存储的内容
+ 2.2字符串
+
+一系列字符。
 
 
 创建字符串“”
-capitalize():首字母大写string.capitalize()—–&gt;String
+capitalize():首字母大写string.capitalize()-----&gt;String
 center():居中，参数添加显示字符宽度
 chr()
 cmp()
@@ -814,15 +942,22 @@ cmp()
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lionvison.com/archives/8409c1ac.html&title=PYTHON编程：从入门到实践（学习笔记） | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary=Python基础一、安装1、版本v2.x  v3.x
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lionvison.com/archives/8409c1ac.html&title=PYTHON编程：从入门到实践（学习笔记） | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary= Python基础
+ 一、安装
+1、版本v2.x  v3.x
 2、操作系统LINUX、WINDOWS、MAC OS
-3、管理工具安装anaconda、操作命令安装二、变量和简单数据类型2.1变量用来保存存储的内容
-2.2字符串
-一系列字符。  
+3、管理工具安装anaconda、操作命令安装
+
+ 二、变量和简单数据类型
+ 2.1变量
+用来保存存储的内容
+ 2.2字符串
+
+一系列字符。
 
 
 创建字符串“”
-capitalize():首字母大写string.capitalize()—–&gt;String
+capitalize():首字母大写string.capitalize()-----&gt;String
 center():居中，参数添加显示字符宽度
 chr()
 cmp()
@@ -838,15 +973,22 @@ cmp()
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="https://service.weibo.com/share/share.php?url=https://lionvison.com/archives/8409c1ac.html&title=PYTHON编程：从入门到实践（学习笔记） | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary=Python基础一、安装1、版本v2.x  v3.x
+          href="https://service.weibo.com/share/share.php?url=https://lionvison.com/archives/8409c1ac.html&title=PYTHON编程：从入门到实践（学习笔记） | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary= Python基础
+ 一、安装
+1、版本v2.x  v3.x
 2、操作系统LINUX、WINDOWS、MAC OS
-3、管理工具安装anaconda、操作命令安装二、变量和简单数据类型2.1变量用来保存存储的内容
-2.2字符串
-一系列字符。  
+3、管理工具安装anaconda、操作命令安装
+
+ 二、变量和简单数据类型
+ 2.1变量
+用来保存存储的内容
+ 2.2字符串
+
+一系列字符。
 
 
 创建字符串“”
-capitalize():首字母大写string.capitalize()—–&gt;String
+capitalize():首字母大写string.capitalize()-----&gt;String
 center():居中，参数添加显示字符宽度
 chr()
 cmp()
@@ -1042,7 +1184,7 @@ cmp()
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Python基础"><span class="toc-text">Python基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、安装"><span class="toc-text">一、安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、变量和简单数据类型"><span class="toc-text">二、变量和简单数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1变量"><span class="toc-text">2.1变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2字符串"><span class="toc-text">2.2字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3数字"><span class="toc-text">2.3数字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4注释"><span class="toc-text">2.4注释</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、列表"><span class="toc-text">三、列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1访问列表"><span class="toc-text">3.1访问列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2修改、添加、删除列表元素"><span class="toc-text">3.2修改、添加、删除列表元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3组织列表"><span class="toc-text">3.3组织列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4每当访问最后一个元素的时候都是用索引值-1"><span class="toc-text">3.4每当访问最后一个元素的时候都是用索引值-1</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、操作列表"><span class="toc-text">四、操作列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1遍历列表"><span class="toc-text">4.1遍历列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2创建数值列表"><span class="toc-text">4.2创建数值列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3简单统计计算"><span class="toc-text">4.3简单统计计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4列表解析"><span class="toc-text">4.4列表解析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5切片"><span class="toc-text">4.5切片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-6元组tuple"><span class="toc-text">4.6元组tuple</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-7集合"><span class="toc-text">4.7集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-8PEP8"><span class="toc-text">4.8PEP8</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、条件语句"><span class="toc-text">五、条件语句</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1条件测试"><span class="toc-text">5.1条件测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2if语句"><span class="toc-text">5.2if语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3if语句的用处："><span class="toc-text">5.3if语句的用处：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六、字典"><span class="toc-text">六、字典</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1使用字典"><span class="toc-text">6.1使用字典</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2遍历字典"><span class="toc-text">6.2遍历字典</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3嵌套"><span class="toc-text">6.3嵌套</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-4字典类型内置方法"><span class="toc-text">6.4字典类型内置方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#七、检测用户输入和while循环"><span class="toc-text">七、检测用户输入和while循环</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-1标志"><span class="toc-text">7.1标志</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2break"><span class="toc-text">7.2break</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-3continue"><span class="toc-text">7.3continue</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#八、函数"><span class="toc-text">八、函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-1参数"><span class="toc-text">8.1参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-2传递参数"><span class="toc-text">8.2传递参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-3返回值"><span class="toc-text">8.3返回值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-4传递任意数量的实参"><span class="toc-text">8.4传递任意数量的实参</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-5将函数存储在模块中"><span class="toc-text">8.5将函数存储在模块中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-6注意事项"><span class="toc-text">8.6注意事项</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#九、类"><span class="toc-text">九、类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#9-1创建使用类："><span class="toc-text">9.1创建使用类：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-2修改属性的值"><span class="toc-text">9.2修改属性的值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-3继承"><span class="toc-text">9.3继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-4导入类"><span class="toc-text">9.4导入类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十、文件和异常"><span class="toc-text">十、文件和异常</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#10-1文件读写"><span class="toc-text">10.1文件读写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-2异常"><span class="toc-text">10.2异常</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-3存储数据"><span class="toc-text">10.3存储数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-4重构"><span class="toc-text">10.4重构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十一、测试"><span class="toc-text">十一、测试</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#python基础"><span class="toc-text"> Python基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-安装"><span class="toc-text"> 一、安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-变量和简单数据类型"><span class="toc-text"> 二、变量和简单数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#21变量"><span class="toc-text"> 2.1变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#22字符串"><span class="toc-text"> 2.2字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#23数字"><span class="toc-text"> 2.3数字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#24注释"><span class="toc-text"> 2.4注释</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-列表"><span class="toc-text"> 三、列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#31访问列表"><span class="toc-text"> 3.1访问列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#32修改-添加-删除列表元素"><span class="toc-text"> 3.2修改、添加、删除列表元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#33组织列表"><span class="toc-text"> 3.3组织列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#34每当访问最后一个元素的时候都是用索引值-1"><span class="toc-text"> 3.4每当访问最后一个元素的时候都是用索引值-1</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四-操作列表"><span class="toc-text"> 四、操作列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#41遍历列表"><span class="toc-text"> 4.1遍历列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#42创建数值列表"><span class="toc-text"> 4.2创建数值列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#43简单统计计算"><span class="toc-text"> 4.3简单统计计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#44列表解析"><span class="toc-text"> 4.4列表解析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#45切片"><span class="toc-text"> 4.5切片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#46元组tuple"><span class="toc-text"> 4.6元组tuple</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#47集合"><span class="toc-text"> 4.7集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#48pep8"><span class="toc-text"> 4.8PEP8</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五-条件语句"><span class="toc-text"> 五、条件语句</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#51条件测试"><span class="toc-text"> 5.1条件测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#52if语句"><span class="toc-text"> 5.2if语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#53if语句的用处"><span class="toc-text"> 5.3if语句的用处：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六-字典"><span class="toc-text"> 六、字典</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#61使用字典"><span class="toc-text"> 6.1使用字典</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#62遍历字典"><span class="toc-text"> 6.2遍历字典</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#63嵌套"><span class="toc-text"> 6.3嵌套</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#64字典类型内置方法"><span class="toc-text"> 6.4字典类型内置方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#七-检测用户输入和while循环"><span class="toc-text"> 七、检测用户输入和while循环</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#71标志"><span class="toc-text"> 7.1标志</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#72break"><span class="toc-text"> 7.2break</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#73continue"><span class="toc-text"> 7.3continue</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#八-函数"><span class="toc-text"> 八、函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#81参数"><span class="toc-text"> 8.1参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#82传递参数"><span class="toc-text"> 8.2传递参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#83返回值"><span class="toc-text"> 8.3返回值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#84传递任意数量的实参"><span class="toc-text"> 8.4传递任意数量的实参</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#85将函数存储在模块中"><span class="toc-text"> 8.5将函数存储在模块中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#86注意事项"><span class="toc-text"> 8.6注意事项</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#九-类"><span class="toc-text"> 九、类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#91创建使用类"><span class="toc-text"> 9.1创建使用类：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#92修改属性的值"><span class="toc-text"> 9.2修改属性的值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#93继承"><span class="toc-text"> 9.3继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#94导入类"><span class="toc-text"> 9.4导入类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十-文件和异常"><span class="toc-text"> 十、文件和异常</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#101文件读写"><span class="toc-text"> 10.1文件读写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#102异常"><span class="toc-text"> 10.2异常</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#103存储数据"><span class="toc-text"> 10.3存储数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#104重构"><span class="toc-text"> 10.4重构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十一-测试"><span class="toc-text"> 十一、测试</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -1354,7 +1496,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：39.6k</span>
+    <span class="post-count">字数统计：39.7k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
@@ -1586,5 +1728,20 @@ setInterval("createtime()",250);
 
 
   <script>setLoadingBarProgress(100);</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>

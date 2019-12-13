@@ -47,6 +47,14 @@
   
 <link rel="alternate" href="/atom.xml" title="Lion vison" type="application/atom+xml">
 </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 
 <body>
   
@@ -396,38 +404,55 @@
 <li><a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="noopener">shadowsocks</a>:用作系统代理，在Windows中下载安装使用</li>
 </ul>
 <a id="more"></a>
-
 <p>基本上是按照步骤介绍的工具准备,然后是按照下面的步骤进行</p>
 <ol>
 <li>注册账号，没什么可说的，简单</li>
 <li>右上角选择区域，选择东京或者新加坡</li>
-<li>右上角我的账户-控制台，找到左上角：服务-计算-EC2，点击进去，然后点击启动实例<br><img src="00.bmp" alt=""></li>
-<li>选择AMI<br><img src="01.bmp" alt=""></li>
-<li>选择实例类型<br><img src="02.bmp" alt=""></li>
+<li>右上角我的账户-控制台，找到左上角：服务-计算-EC2，点击进去，然后点击启动实例<br />
+<img src="00.bmp" alt="" /></li>
+<li>选择AMI<br />
+<img src="01.bmp" alt="" /></li>
+<li>选择实例类型<br />
+<img src="02.bmp" alt="" /></li>
 <li>配置实例，下一步</li>
-<li>添加存储<br><img src="03.bmp" alt=""></li>
+<li>添加存储<br />
+<img src="03.bmp" alt="" /></li>
 <li>添加标签，下一步</li>
-<li>配置安全组<br><img src="04.bmp" alt=""></li>
+<li>配置安全组<br />
+<img src="04.bmp" alt="" /></li>
 <li>下一步进行审核审核，选择生成密钥对，下载，用来在Xshell远程连接。</li>
 </ol>
 <p>这样就生成了一个实例：</p>
-<p><img src="05.bmp" alt=""></p>
-<p>下面通过Xshell远程登录：<br>步骤如下：</p>
-<p><img src="06.bmp" alt=""><br><img src="07.png" alt=""></p>
+<p><img src="05.bmp" alt="" /></p>
+<p>下面通过Xshell远程登录：<br />
+步骤如下：</p>
+<p><img src="06.bmp" alt="" /><br />
+<img src="07.png" alt="" /></p>
 <p>在实例中安装shadowsocks服务端</p>
 <ul>
-<li><p>安装pip</p>
-<pre><code>sudo apt update
-sudo apt-get install python-pip</code></pre></li>
-<li><p>利用pip安装shadowsocks</p>
-<pre><code>sudo pip install shadowsocks</code></pre></li>
-<li><p>开启服务</p>
-<pre><code>sudo ssserver -p port -k password -m aes-256-cfb -d start #这里的port和password都是自己指定</code></pre></li>
+<li>
+<p>安装pip</p>
+<pre><code>  sudo apt update
+  sudo apt-get install python-pip
+</code></pre>
+</li>
+<li>
+<p>利用pip安装shadowsocks</p>
+<pre><code>  sudo pip install shadowsocks
+</code></pre>
+</li>
+<li>
+<p>开启服务</p>
+<pre><code>  sudo ssserver -p port -k password -m aes-256-cfb -d start #这里的port和password都是自己指定
+</code></pre>
+</li>
 </ul>
-<p>下载shadowsocks客户端进行如下配置：<br><img src="08.bmp" alt=""><br><img src="09.bmp" alt=""></p>
+<p>下载shadowsocks客户端进行如下配置：<br />
+<img src="08.bmp" alt="" /><br />
+<img src="09.bmp" alt="" /></p>
 <p>最后一步，就是进入<a href="https://www.google.com/" target="_blank" rel="noopener">Google</a></p>
 <p>Enjoy it！</p>
-<p><img src="10.png" alt=""></p>
+<p><img src="10.png" alt="" /></p>
 
         </div>
         
@@ -439,10 +464,10 @@ sudo apt-get install python-pip</code></pre></li>
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-05-18T15:08:02+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-12-14T02:02:51+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年5月18日</p>
+    <p>最后更新于 2019年12月14日</p>
   </a>
 </div>
 
@@ -997,7 +1022,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：39.6k</span>
+    <span class="post-count">字数统计：39.7k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
@@ -1229,5 +1254,20 @@ setInterval("createtime()",250);
 
 
   <script>setLoadingBarProgress(100);</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>

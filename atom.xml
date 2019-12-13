@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lionvison.com/"/>
-  <updated>2019-12-03T04:54:45.517Z</updated>
+  <updated>2019-12-13T18:02:51.010Z</updated>
   <id>https://lionvison.com/</id>
   
   <author>
@@ -21,22 +21,25 @@
     <link href="https://lionvison.com/archives/bb4fe864.html"/>
     <id>https://lionvison.com/archives/bb4fe864.html</id>
     <published>2019-12-03T04:28:51.000Z</published>
-    <updated>2019-12-03T04:54:45.517Z</updated>
+    <updated>2019-12-13T18:02:51.010Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;WIN10-TF2-0-CUDA10-0-cuDNN7-5-OpenCV4-1-2&quot;&gt;&lt;a href=&quot;#WIN10-TF2-0-CUDA10-0-cuDNN7-5-OpenCV4-1-2&quot; class=&quot;headerlink&quot; title=&quot;WIN10+TF2.0+CUDA10.0+cuDNN7.5+OpenCV4.1.2&quot;&gt;&lt;/a&gt;WIN10+TF2.0+CUDA10.0+cuDNN7.5+OpenCV4.1.2&lt;/h1&gt;&lt;blockquote&gt;
+      &lt;h1 id=&quot;win10tf20cuda100cudnn75opencv412&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#win10tf20cuda100cudnn75opencv412&quot;&gt;&lt;/a&gt; WIN10+TF2.0+CUDA10.0+cuDNN7.5+OpenCV4.1.2&lt;/h1&gt;
+&lt;blockquote&gt;
 &lt;p&gt;配置gpu版本的tensorflow完全是小白入门tensorflow的第一步；我的电脑gpu太差也就是仅仅学习下MX250&lt;/p&gt;
 &lt;p&gt;参考了一些详细的教程，但是对于安装的版本来说有些指定的不太明确，这有个建议就是不要一味的追求新，要注意查找版本之间的关系&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;开始安装，全文无图。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;开始安装，全文无图。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;预准备工作&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;预准备工作&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;下载&lt;a href=&quot;https://developer.nvidia.com/cuda-toolkit-archive&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CUDA10.0&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;下载&lt;a href=&quot;https://developer.nvidia.com/rdp/cudnn-archive&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;cuDNN7.5 for CUDA10.0&lt;/a&gt;，需要注册后下载，支持微信和QQ&lt;/li&gt;
-&lt;li&gt;下载&lt;a href=&quot;https://www.anaconda.com/distribution/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Anaconda&lt;/a&gt;，直接从官网下载会很慢，推荐将下载链接复制到百度云离线下载中，保存到百度云在进行下载速度快很多。或者直接下载百度云分享：链接：&lt;a href=&quot;https://pan.baidu.com/s/1BKtXWtUVFl4isthLj4LLPg提取码：ssjs&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1BKtXWtUVFl4isthLj4LLPg提取码：ssjs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;下载&lt;a href=&quot;https://www.anaconda.com/distribution/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Anaconda&lt;/a&gt;，直接从官网下载会很慢，推荐将下载链接复制到百度云离线下载中，保存到百度云在进行下载速度快很多。或者直接下载百度云分享：链接：&lt;a href=&quot;https://pan.baidu.com/s/1BKtXWtUVFl4isthLj4LLPg%E6%8F%90%E5%8F%96%E7%A0%81%EF%BC%9Assjs&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1BKtXWtUVFl4isthLj4LLPg提取码：ssjs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;在cmd中cmd中使用nvidia-smi查看显卡驱动是否正确安装，不过一般没啥问题&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -57,7 +60,7 @@
     <link href="https://lionvison.com/archives/b3404e24.html"/>
     <id>https://lionvison.com/archives/b3404e24.html</id>
     <published>2019-12-01T05:34:47.000Z</published>
-    <updated>2019-12-01T08:57:59.110Z</updated>
+    <updated>2019-12-13T18:02:51.018Z</updated>
     
     <summary type="html">
     
@@ -82,7 +85,7 @@
     <link href="https://lionvison.com/archives/c0254e4b.html"/>
     <id>https://lionvison.com/archives/c0254e4b.html</id>
     <published>2019-09-10T07:50:41.000Z</published>
-    <updated>2019-12-01T04:42:46.350Z</updated>
+    <updated>2019-12-13T18:02:51.002Z</updated>
     
     <summary type="html">
     
@@ -105,7 +108,7 @@
     <link href="https://lionvison.com/archives/2b5a1c3a.html"/>
     <id>https://lionvison.com/archives/2b5a1c3a.html</id>
     <published>2019-09-10T07:14:48.000Z</published>
-    <updated>2019-09-10T08:12:32.677Z</updated>
+    <updated>2019-12-13T18:02:51.013Z</updated>
     
     <summary type="html">
     
@@ -130,7 +133,7 @@
     <link href="https://lionvison.com/archives/9bb65d10.html"/>
     <id>https://lionvison.com/archives/9bb65d10.html</id>
     <published>2019-09-09T15:15:51.000Z</published>
-    <updated>2019-09-09T18:06:27.092Z</updated>
+    <updated>2019-12-13T18:02:51.022Z</updated>
     
     <summary type="html">
     
@@ -154,7 +157,7 @@
     <link href="https://lionvison.com/archives/a66037f0.html"/>
     <id>https://lionvison.com/archives/a66037f0.html</id>
     <published>2019-09-09T08:49:17.000Z</published>
-    <updated>2019-09-09T18:23:20.082Z</updated>
+    <updated>2019-12-13T18:02:51.014Z</updated>
     
     <summary type="html">
     
@@ -162,19 +165,21 @@
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;第一象限&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;第二象限&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;第三象限&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;第四象限&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;第一象限&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;第二象限&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;第三象限&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;第四象限&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;重要，紧急&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;重要，不紧急&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;不重要，紧急&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;不重要，不紧急&lt;/td&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;重要，紧急&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;重要，不紧急&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;不重要，紧急&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;不重要，不紧急&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;当我们知道了四象限的具体分类标准，那么下一步的问题应该就是怎么来区分生活中的各种事情呢，来里自律的人更进一步呢。&lt;/p&gt;
     
     </summary>
@@ -190,7 +195,7 @@
     <link href="https://lionvison.com/archives/2fa3a8c0.html"/>
     <id>https://lionvison.com/archives/2fa3a8c0.html</id>
     <published>2019-09-05T15:38:36.000Z</published>
-    <updated>2019-09-05T16:04:44.303Z</updated>
+    <updated>2019-12-13T18:02:51.009Z</updated>
     
     <summary type="html">
     
@@ -215,7 +220,7 @@
     <link href="https://lionvison.com/archives/c9ac5c9b.html"/>
     <id>https://lionvison.com/archives/c9ac5c9b.html</id>
     <published>2019-09-05T15:38:36.000Z</published>
-    <updated>2019-09-05T16:06:11.362Z</updated>
+    <updated>2019-12-13T18:02:51.019Z</updated>
     
     <summary type="html">
     
@@ -240,11 +245,12 @@
     <link href="https://lionvison.com/archives/494fcdcb.html"/>
     <id>https://lionvison.com/archives/494fcdcb.html</id>
     <published>2019-09-01T06:56:39.000Z</published>
-    <updated>2019-09-10T07:12:31.764Z</updated>
+    <updated>2019-12-13T18:02:51.013Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;减肥的方法：每天创造热量缺口&quot;&gt;&lt;a href=&quot;#减肥的方法：每天创造热量缺口&quot; class=&quot;headerlink&quot; title=&quot;减肥的方法：每天创造热量缺口&quot;&gt;&lt;/a&gt;减肥的方法：&lt;code&gt;每天创造热量缺口&lt;/code&gt;&lt;/h2&gt;&lt;ul&gt;
+      &lt;h2 id=&quot;减肥的方法每天创造热量缺口&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#减肥的方法每天创造热量缺口&quot;&gt;&lt;/a&gt; 减肥的方法：&lt;code&gt;每天创造热量缺口&lt;/code&gt;&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;热量计算方式：大卡=千焦/4&lt;/li&gt;
 &lt;li&gt;基础代谢：90kg-2100大卡&lt;/li&gt;
 &lt;li&gt;热量缺口：热量的缺口指的是每天的基础代谢+运动-摄入热量（饮食），每天保持热量缺口400-700就可以进行减肥&lt;/li&gt;
@@ -264,7 +270,7 @@
     <link href="https://lionvison.com/archives/a4692f1.html"/>
     <id>https://lionvison.com/archives/a4692f1.html</id>
     <published>2019-06-01T06:56:39.000Z</published>
-    <updated>2019-06-01T07:04:53.494Z</updated>
+    <updated>2019-12-13T18:02:51.012Z</updated>
     
     <summary type="html">
     
@@ -287,7 +293,7 @@
     <link href="https://lionvison.com/archives/4555512d.html"/>
     <id>https://lionvison.com/archives/4555512d.html</id>
     <published>2019-05-13T02:35:49.000Z</published>
-    <updated>2019-09-01T06:00:09.294Z</updated>
+    <updated>2019-12-13T18:02:51.023Z</updated>
     
     <summary type="html">
     
@@ -306,13 +312,14 @@
     <link href="https://lionvison.com/archives/1b44cf9e.html"/>
     <id>https://lionvison.com/archives/1b44cf9e.html</id>
     <published>2019-05-10T11:51:59.000Z</published>
-    <updated>2019-05-18T09:09:18.572Z</updated>
+    <updated>2019-12-13T18:02:51.012Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;ssh被用来远程登录，是一种安全外壳协议，可以在不安全的网络中可以和远程通信。&lt;/p&gt;
 &lt;p&gt;在Windows中Xshell 和 SecureCRT都是可以使用ssh协议来进行远程连接服务器的工具软件。在这里我使用的是Xshell6软件，首先要确保已经安装了软件，并且在本地有了服务器的公钥，前面的一篇文章已经提到了，怎么申请AWS服务器一年的使用，怎么样在本地连接服务器。这篇文章是考虑到实验室环境中为了安全防火，会在夜晚关掉电闸，所以想在服务器上跑代码，体毛需求。&lt;/p&gt;
-&lt;p&gt;打开文件–打开–会话中属性–然后做下面的修改：&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2019/05/18/5cdfcba92396524284.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;打开文件–打开–会话中属性–然后做下面的修改：&lt;br /&gt;
+&lt;img src=&quot;https://i.loli.net/2019/05/18/5cdfcba92396524284.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
     
     </summary>
     
@@ -327,7 +334,7 @@
     <link href="https://lionvison.com/archives/bdb009c5.html"/>
     <id>https://lionvison.com/archives/bdb009c5.html</id>
     <published>2019-04-28T11:03:55.000Z</published>
-    <updated>2019-05-18T07:08:02.712Z</updated>
+    <updated>2019-12-13T18:02:51.021Z</updated>
     
     <summary type="html">
     
@@ -360,7 +367,7 @@
     <link href="https://lionvison.com/archives/ac4af3ca.html"/>
     <id>https://lionvison.com/archives/ac4af3ca.html</id>
     <published>2019-04-24T07:34:54.000Z</published>
-    <updated>2019-05-18T12:37:47.905Z</updated>
+    <updated>2019-12-13T18:02:51.008Z</updated>
     
     <summary type="html">
     
@@ -381,13 +388,14 @@
     <link href="https://lionvison.com/archives/fe2495d8.html"/>
     <id>https://lionvison.com/archives/fe2495d8.html</id>
     <published>2019-04-18T14:07:58.000Z</published>
-    <updated>2019-05-18T12:37:34.555Z</updated>
+    <updated>2019-12-13T18:02:51.008Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;关于模块：&quot;&gt;&lt;a href=&quot;#关于模块：&quot; class=&quot;headerlink&quot; title=&quot;关于模块：&quot;&gt;&lt;/a&gt;关于模块：&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://docs.python.org/3.8/py-modindex.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Python模块索引大全&lt;/a&gt;&lt;/p&gt;
+      &lt;h1 id=&quot;关于模块&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#关于模块&quot;&gt;&lt;/a&gt; 关于模块：&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.python.org/3.8/py-modindex.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Python模块索引大全&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;随着程序的不断变大，需要将程序分为很多文件，创建成模块，一个.py文件就是一个模块。&lt;/p&gt;
-&lt;p&gt;   从目录中来导入模块，相应的目录称之为包package。使用import语句创建了一个命名空间，并在该命名空间中执行与.py相关的所有语句，要在导入后访问命名空间的内容，只要使用模块的名称当做前缀，就可以访问模块中的内容。&lt;/p&gt;
+&lt;p&gt;从目录中来导入模块，相应的目录称之为包package。使用import语句创建了一个命名空间，并在该命名空间中执行与.py相关的所有语句，要在导入后访问命名空间的内容，只要使用模块的名称当做前缀，就可以访问模块中的内容。&lt;/p&gt;
     
     </summary>
     
@@ -406,18 +414,20 @@
     <link href="https://lionvison.com/archives/55a385d1.html"/>
     <id>https://lionvison.com/archives/55a385d1.html</id>
     <published>2019-04-16T09:05:20.000Z</published>
-    <updated>2019-05-18T12:37:27.234Z</updated>
+    <updated>2019-12-13T18:02:51.007Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;怎么样使用Python才会显得高大上呢！，用Python来解决一些问题相当简单，有了思路就可以动手去做了，但是既然知道了Python的特性，就要在coding中注意代码的质量和简洁性。&lt;/p&gt;
 &lt;p&gt;一、首先，Python含有很多类库、可扩展库，还有很多开源项目，但是不能忽略其中的内置函数库，下面通过演示使用内置函数，提高编写代码的质量的简洁性。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;内置函数enumerate来代替range()进行迭代。enumerate可以返回每个元素的索引和值。&lt;/p&gt;
-&lt;p&gt; enumerate(list, start=num)# 可以通过设置start来设置其实偏移量&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;内置函数enumerate来代替range()进行迭代。enumerate可以返回每个元素的索引和值。&lt;/p&gt;
+&lt;p&gt;enumerate(list, start=num)# 可以通过设置start来设置其实偏移量&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;列表推导式比map和filter函数表达更加清晰&lt;/p&gt;
-&lt;p&gt; 列表推导式更容易使得代码变得可读。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;列表推导式比map和filter函数表达更加清晰&lt;/p&gt;
+&lt;p&gt;列表推导式更容易使得代码变得可读。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
     
@@ -436,7 +446,7 @@
     <link href="https://lionvison.com/archives/c82868cc.html"/>
     <id>https://lionvison.com/archives/c82868cc.html</id>
     <published>2019-04-16T08:29:00.000Z</published>
-    <updated>2019-09-10T07:13:47.482Z</updated>
+    <updated>2019-12-13T18:02:51.016Z</updated>
     
     <summary type="html">
     
@@ -458,7 +468,7 @@
     <link href="https://lionvison.com/archives/b759e75d.html"/>
     <id>https://lionvison.com/archives/b759e75d.html</id>
     <published>2019-04-16T05:13:09.000Z</published>
-    <updated>2019-05-18T12:36:39.985Z</updated>
+    <updated>2019-12-13T18:02:51.016Z</updated>
     
     <summary type="html">
     
@@ -478,15 +488,17 @@
     <link href="https://lionvison.com/archives/fcc57c4c.html"/>
     <id>https://lionvison.com/archives/fcc57c4c.html</id>
     <published>2019-04-13T10:19:19.000Z</published>
-    <updated>2019-05-17T16:59:18.441Z</updated>
+    <updated>2019-12-13T18:02:51.001Z</updated>
     
     <summary type="html">
     
       &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;set的特点是：集合中的元素根据键值自动排序，没有重复元素&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;set的特点是：集合中的元素根据键值自动排序，没有重复元素&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;声明：&lt;/p&gt;
-&lt;p&gt;  set &amp;lt;类型&amp;gt; 名称   如： set&lt;int&gt;s1;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;声明：&lt;/p&gt;
+&lt;p&gt;set &amp;lt;类型&amp;gt; 名称   如： set&lt;int&gt;s1;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
     
@@ -505,14 +517,15 @@
     <link href="https://lionvison.com/archives/aee69fbc.html"/>
     <id>https://lionvison.com/archives/aee69fbc.html</id>
     <published>2019-04-13T10:19:19.000Z</published>
-    <updated>2019-05-17T16:57:55.938Z</updated>
+    <updated>2019-12-13T18:02:51.011Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
 &lt;p&gt;转载：&lt;a href=&quot;https://www.jb51.net/article/141568.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.jb51.net/article/141568.htm&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;常用命令：&quot;&gt;&lt;a href=&quot;#常用命令：&quot; class=&quot;headerlink&quot; title=&quot;常用命令：&quot;&gt;&lt;/a&gt;常用命令：&lt;/h1&gt;&lt;ul&gt;
+&lt;h1 id=&quot;常用命令&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#常用命令&quot;&gt;&lt;/a&gt; 常用命令：&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;直接输入盘符就可以进入相应盘，如：e:&lt;/li&gt;
 &lt;li&gt;cd: 进入文件夹&lt;/li&gt;
 &lt;li&gt;md: 创建文件夹&lt;/li&gt;
