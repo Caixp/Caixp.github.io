@@ -394,7 +394,8 @@
 
 
         <div class="article-entry" itemprop="articleBody">
-          <h1 id="Q1、数据仓库（Data-Warehouse-DW）和数据库的区别"><a href="#Q1、数据仓库（Data-Warehouse-DW）和数据库的区别" class="headerlink" title="Q1、数据仓库（Data Warehouse, DW）和数据库的区别"></a>Q1、数据仓库（Data Warehouse, DW）和数据库的区别</h1><blockquote>
+          <h1 id="q1-数据仓库data-warehouse-dw和数据库的区别"><a class="markdownIt-Anchor" href="#q1-数据仓库data-warehouse-dw和数据库的区别"></a> Q1、数据仓库（Data Warehouse, DW）和数据库的区别</h1>
+<blockquote>
 <p>数据仓库是一个很大的数据存储集合，出于企业的分析性报告和决策支持目的而创建。对于多种的业务数据进行筛选和整合，为企业提供一定的BI能力，知道业务流程改进、监视时间、成本、质量、控制。</p>
 </blockquote>
 <ul>
@@ -403,7 +404,8 @@
 <li>不同源的数据整合依靠的是ETL,指的是Extract-Transform-Load过程，描述的是将数据从来源迁移到目标的过程（数据抽取-数据转换-数据加载）</li>
 </ul>
 <p>数据仓库：Hive、Teradata、Oracle、Db2等</p>
-<h1 id="Q2、数据分析：怎么获取数据？"><a href="#Q2、数据分析：怎么获取数据？" class="headerlink" title="Q2、数据分析：怎么获取数据？"></a>Q2、数据分析：怎么获取数据？</h1><ul>
+<h1 id="q2-数据分析怎么获取数据"><a class="markdownIt-Anchor" href="#q2-数据分析怎么获取数据"></a> Q2、数据分析：怎么获取数据？</h1>
+<ul>
 <li>从数据仓库中获取</li>
 <li>数据监测，如传感器等的数据来源</li>
 <li>利用爬虫获取 urllib、urllib2、request、scrapy等各种抓取包，爬虫涉及分布式爬虫、反爬虫技术等。</li>
@@ -411,37 +413,42 @@
 <li>分析已有数据来进行计算，获得具有实际意义的数据。</li>
 </ul>
 <a id="more"></a>
-<h1 id="Q3、学习资源"><a href="#Q3、学习资源" class="headerlink" title="Q3、学习资源"></a>Q3、学习资源</h1><ul>
+<h1 id="q3-学习资源"><a class="markdownIt-Anchor" href="#q3-学习资源"></a> Q3、学习资源</h1>
+<ul>
 <li>数据学习网站kaggle、天池、</li>
 <li>数据网站：ImageNet/Open Images、</li>
 <li>统计数据（统计局、公司财报、政府机构等）</li>
 </ul>
-<h1 id="Q4、怎么进行数据探索"><a href="#Q4、怎么进行数据探索" class="headerlink" title="Q4、怎么进行数据探索"></a>Q4、怎么进行数据探索</h1><p><strong>拿到一个数据集，应该首先了解相关文档，熟悉文件中的统计名称。</strong></p>
+<h1 id="q4-怎么进行数据探索"><a class="markdownIt-Anchor" href="#q4-怎么进行数据探索"></a> Q4、怎么进行数据探索</h1>
+<p><strong>拿到一个数据集，应该首先了解相关文档，熟悉文件中的统计名称。</strong></p>
 <p>对于数据集中的人数据我们可以先研究数据的分布趋势：<code>集中趋势、离中趋势</code></p>
 <ol>
-<li>集中趋势：<ul>
+<li>
+<p>集中趋势：</p>
+<ul>
 <li>均值</li>
 <li>中位数</li>
 <li>分位数: <code>(n+1)*[0.25,0.5,0.75]</code>求解时要根据数据个数的奇偶分为求算</li>
 <li>众数</li>
 </ul>
 </li>
-</ol>
-<ol>
-<li><p>离中趋势：</p>
+<li>
+<p>离中趋势：</p>
 <ul>
 <li>标准差 std()</li>
 <li>方差 var()</li>
 <li>1倍std（69%） 1.96倍std（95%）2.58倍std（99%）</li>
 </ul>
 </li>
-<li><p>数据分布：</p>
+<li>
+<p>数据分布：</p>
 <ul>
 <li>偏态系数：正偏、负偏</li>
-<li>峰态系数（对集中强度的衡量，数值越大峰值越尖）：正态分布的数据峰态系数一般是3，一般相差大于2（<1,>5）的话，那么就可以认为不是正态分布了。</li>
+<li>峰态系数（对集中强度的衡量，数值越大峰值越尖）：正态分布的数据峰态系数一般是3，一般相差大于2（&lt;1,&gt;5）的话，那么就可以认为不是正态分布了。</li>
 </ul>
 </li>
-<li><p>常用分布为：</p>
+<li>
+<p>常用分布为：</p>
 <ul>
 <li>正态分布（标准正态分布）</li>
 <li>t分布</li>
@@ -449,16 +456,16 @@
 <li>卡方分布</li>
 </ul>
 </li>
-<li><p>抽样:一是全量计算的成本比较大、二是不要进行全量计算就可以满足需求</p>
+<li>
+<p>抽样:一是全量计算的成本比较大、二是不要进行全量计算就可以满足需求</p>
 <ul>
 <li>分层抽样</li>
 <li>等距抽样</li>
 <li>…</li>
 </ul>
 </li>
-</ol>
-<ol>
-<li><p>数据分类：</p>
+<li>
+<p>数据分类：</p>
 <ul>
 <li>定类：类别间没有差距的，</li>
 <li>定序分类：数据间有了差距</li>
@@ -466,9 +473,8 @@
 <li>定比分类：可以界定数据大小，如常用的度量数据等</li>
 </ul>
 </li>
-</ol>
-<ol>
-<li><p>单属性分析</p>
+<li>
+<p>单属性分析</p>
 <ul>
 <li>异常值分析（连续使用分位数来求、离散、知识异常值）</li>
 <li>对比分析（绝对数比较（数字直接进行比较）、相对数比较（结构部分和整体、比例（整体内的不同比例比较）、（比较，同质进行比较）、动态、强度（密度、人均等））怎么比较时间下进行比较（同比、环比）、空间（城市、部门、公司）、经验与计划（实施进度和排期的比较）</li>
@@ -477,7 +483,8 @@
 <li>极大似然</li>
 </ul>
 </li>
-<li><p>相关API</p>
+<li>
+<p>相关API</p>
 <ul>
 <li>max()</li>
 <li>min()</li>
@@ -536,7 +543,8 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="https://connect.qq.com/widget/shareqq/index.html?url=https://lionvison.com/archives/9c2ffa7.html&title=数据分析与挖掘_01 | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary=Q1、数据仓库（Data Warehouse, DW）和数据库的区别
+          href="https://connect.qq.com/widget/shareqq/index.html?url=https://lionvison.com/archives/9c2ffa7.html&title=数据分析与挖掘_01 | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary= Q1、数据仓库（Data Warehouse, DW）和数据库的区别
+
 数据仓库是一个很大的数据存储集合，出于企业的分析性报告和决策支持目的而创建。对于多种的业务数据进行筛选和整合，为企业提供一定的BI能力，知道业务流程改进、监视时间、成本、质量、控制。
 
 
@@ -545,7 +553,8 @@
 不同源的数据整合依靠的是ETL,指的是Extract-Transform-Load过程，描述的是将数据从来源迁移到目标的过程（数据抽取-数据转换-数据加载）
 
 数据仓库：Hive、Teradata、Oracle、Db2等
-Q2、数据分析：怎么获取数据？
+ Q2、数据分析：怎么获取数据？
+
 从数据仓库中获取
 数据监测，如传感器等的数据来源
 利用爬虫获取 urllib、urllib2、request、scrapy等各种抓取包，爬虫涉及分布式爬虫、反爬虫技术等。
@@ -563,7 +572,8 @@ Q2、数据分析：怎么获取数据？
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lionvison.com/archives/9c2ffa7.html&title=数据分析与挖掘_01 | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary=Q1、数据仓库（Data Warehouse, DW）和数据库的区别
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lionvison.com/archives/9c2ffa7.html&title=数据分析与挖掘_01 | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary= Q1、数据仓库（Data Warehouse, DW）和数据库的区别
+
 数据仓库是一个很大的数据存储集合，出于企业的分析性报告和决策支持目的而创建。对于多种的业务数据进行筛选和整合，为企业提供一定的BI能力，知道业务流程改进、监视时间、成本、质量、控制。
 
 
@@ -572,7 +582,8 @@ Q2、数据分析：怎么获取数据？
 不同源的数据整合依靠的是ETL,指的是Extract-Transform-Load过程，描述的是将数据从来源迁移到目标的过程（数据抽取-数据转换-数据加载）
 
 数据仓库：Hive、Teradata、Oracle、Db2等
-Q2、数据分析：怎么获取数据？
+ Q2、数据分析：怎么获取数据？
+
 从数据仓库中获取
 数据监测，如传感器等的数据来源
 利用爬虫获取 urllib、urllib2、request、scrapy等各种抓取包，爬虫涉及分布式爬虫、反爬虫技术等。
@@ -590,7 +601,8 @@ Q2、数据分析：怎么获取数据？
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="https://service.weibo.com/share/share.php?url=https://lionvison.com/archives/9c2ffa7.html&title=数据分析与挖掘_01 | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary=Q1、数据仓库（Data Warehouse, DW）和数据库的区别
+          href="https://service.weibo.com/share/share.php?url=https://lionvison.com/archives/9c2ffa7.html&title=数据分析与挖掘_01 | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary= Q1、数据仓库（Data Warehouse, DW）和数据库的区别
+
 数据仓库是一个很大的数据存储集合，出于企业的分析性报告和决策支持目的而创建。对于多种的业务数据进行筛选和整合，为企业提供一定的BI能力，知道业务流程改进、监视时间、成本、质量、控制。
 
 
@@ -599,7 +611,8 @@ Q2、数据分析：怎么获取数据？
 不同源的数据整合依靠的是ETL,指的是Extract-Transform-Load过程，描述的是将数据从来源迁移到目标的过程（数据抽取-数据转换-数据加载）
 
 数据仓库：Hive、Teradata、Oracle、Db2等
-Q2、数据分析：怎么获取数据？
+ Q2、数据分析：怎么获取数据？
+
 从数据仓库中获取
 数据监测，如传感器等的数据来源
 利用爬虫获取 urllib、urllib2、request、scrapy等各种抓取包，爬虫涉及分布式爬虫、反爬虫技术等。
@@ -797,7 +810,7 @@ Q2、数据分析：怎么获取数据？
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Q1、数据仓库（Data-Warehouse-DW）和数据库的区别"><span class="toc-text">Q1、数据仓库（Data Warehouse, DW）和数据库的区别</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Q2、数据分析：怎么获取数据？"><span class="toc-text">Q2、数据分析：怎么获取数据？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Q3、学习资源"><span class="toc-text">Q3、学习资源</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Q4、怎么进行数据探索"><span class="toc-text">Q4、怎么进行数据探索</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#q1-数据仓库data-warehouse-dw和数据库的区别"><span class="toc-text"> Q1、数据仓库（Data Warehouse, DW）和数据库的区别</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#q2-数据分析怎么获取数据"><span class="toc-text"> Q2、数据分析：怎么获取数据？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#q3-学习资源"><span class="toc-text"> Q3、学习资源</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#q4-怎么进行数据探索"><span class="toc-text"> Q4、怎么进行数据探索</span></a></li></ol>
     </div>
   </section>
 
@@ -1109,7 +1122,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：40.3k</span>
+    <span class="post-count">字数统计：40.4k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>

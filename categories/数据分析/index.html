@@ -390,7 +390,8 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h1 id="Q1、数据仓库（Data-Warehouse-DW）和数据库的区别"><a href="#Q1、数据仓库（Data-Warehouse-DW）和数据库的区别" class="headerlink" title="Q1、数据仓库（Data Warehouse, DW）和数据库的区别"></a>Q1、数据仓库（Data Warehouse, DW）和数据库的区别</h1><blockquote>
+      <h1 id="q1-数据仓库data-warehouse-dw和数据库的区别"><a class="markdownIt-Anchor" href="#q1-数据仓库data-warehouse-dw和数据库的区别"></a> Q1、数据仓库（Data Warehouse, DW）和数据库的区别</h1>
+<blockquote>
 <p>数据仓库是一个很大的数据存储集合，出于企业的分析性报告和决策支持目的而创建。对于多种的业务数据进行筛选和整合，为企业提供一定的BI能力，知道业务流程改进、监视时间、成本、质量、控制。</p>
 </blockquote>
 <ul>
@@ -399,7 +400,8 @@
 <li>不同源的数据整合依靠的是ETL,指的是Extract-Transform-Load过程，描述的是将数据从来源迁移到目标的过程（数据抽取-数据转换-数据加载）</li>
 </ul>
 <p>数据仓库：Hive、Teradata、Oracle、Db2等</p>
-<h1 id="Q2、数据分析：怎么获取数据？"><a href="#Q2、数据分析：怎么获取数据？" class="headerlink" title="Q2、数据分析：怎么获取数据？"></a>Q2、数据分析：怎么获取数据？</h1><ul>
+<h1 id="q2-数据分析怎么获取数据"><a class="markdownIt-Anchor" href="#q2-数据分析怎么获取数据"></a> Q2、数据分析：怎么获取数据？</h1>
+<ul>
 <li>从数据仓库中获取</li>
 <li>数据监测，如传感器等的数据来源</li>
 <li>利用爬虫获取 urllib、urllib2、request、scrapy等各种抓取包，爬虫涉及分布式爬虫、反爬虫技术等。</li>
@@ -513,10 +515,11 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h1 id="一、挖掘目标"><a href="#一、挖掘目标" class="headerlink" title="一、挖掘目标"></a>一、挖掘目标</h1><p>通过分析航空公司用户数据，对客户进行分类，对不同类别的客户进行特征分析，比较不同客户的客户价值，针对不同客户价值的客户采取不同的营销手段，制定相应的营销手段。</p>
+      <h1 id="一-挖掘目标"><a class="markdownIt-Anchor" href="#一-挖掘目标"></a> 一、挖掘目标</h1>
+<p>通过分析航空公司用户数据，对客户进行分类，对不同类别的客户进行特征分析，比较不同客户的客户价值，针对不同客户价值的客户采取不同的营销手段，制定相应的营销手段。</p>
 <p>数据的属性主要有：客户的基本信息、乘机信息、积分信息。下面就开始介绍一下详细数据挖掘流程。</p>
-<h1 id="二、数据挖掘过程："><a href="#二、数据挖掘过程：" class="headerlink" title="二、数据挖掘过程："></a>二、数据挖掘过程：</h1><p>首先考虑我们的目标是为了进行客户价值分类，通常采用的分析模型是RFM模型，也就是消费时间间隔、消费频率、消费金额的指标。但是对于航空行业来说，通过分析可以得知对于长距离低价位和短距离高价位的票价总额相等的客户来说显然M一样但是价值相差很大。这时候选择一定时间累计的飞行里程数和平均折扣系数的平均值代替票价金额作为分析指标，同时针对航空公司有会员制度因此加入客户关系长度作为指标之一，建立起<strong>LRFMC</strong>模型。</p>
-<div class="table-container">
+<h1 id="二-数据挖掘过程"><a class="markdownIt-Anchor" href="#二-数据挖掘过程"></a> 二、数据挖掘过程：</h1>
+<p>首先考虑我们的目标是为了进行客户价值分类，通常采用的分析模型是RFM模型，也就是消费时间间隔、消费频率、消费金额的指标。但是对于航空行业来说，通过分析可以得知对于长距离低价位和短距离高价位的票价总额相等的客户来说显然M一样但是价值相差很大。这时候选择一定时间累计的飞行里程数和平均折扣系数的平均值代替票价金额作为分析指标，同时针对航空公司有会员制度因此加入客户关系长度作为指标之一，建立起<strong>LRFMC</strong>模型。</p>
 <table>
 <thead>
 <tr>
@@ -539,7 +542,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 <p>按照我们以上的RFM模型来分析的话，建立分箱图，可以很直观的显示不同客户群体，但是细分类别过多，增加的营销难度和成本。因此采取聚类的方法分析客户价值：<strong>K-means</strong></p>
       
         <div class="readmore">
@@ -964,7 +966,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：40.3k</span>
+    <span class="post-count">字数统计：40.4k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>

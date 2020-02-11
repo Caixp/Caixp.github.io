@@ -408,36 +408,51 @@
 <ol>
 <li>注册账号，没什么可说的，简单</li>
 <li>右上角选择区域，选择东京或者新加坡</li>
-<li>右上角我的账户-控制台，找到左上角：服务-计算-EC2，点击进去，然后点击启动实例<br><img src="00.bmp" alt=""></li>
-<li>选择AMI<br><img src="01.bmp" alt=""></li>
-<li>选择实例类型<br><img src="02.bmp" alt=""></li>
+<li>右上角我的账户-控制台，找到左上角：服务-计算-EC2，点击进去，然后点击启动实例<br />
+<img src="00.bmp" alt="" /></li>
+<li>选择AMI<br />
+<img src="01.bmp" alt="" /></li>
+<li>选择实例类型<br />
+<img src="02.bmp" alt="" /></li>
 <li>配置实例，下一步</li>
-<li>添加存储<br><img src="03.bmp" alt=""></li>
+<li>添加存储<br />
+<img src="03.bmp" alt="" /></li>
 <li>添加标签，下一步</li>
-<li>配置安全组<br><img src="04.bmp" alt=""></li>
+<li>配置安全组<br />
+<img src="04.bmp" alt="" /></li>
 <li>下一步进行审核审核，选择生成密钥对，下载，用来在Xshell远程连接。</li>
 </ol>
 <p>这样就生成了一个实例：</p>
-<p><img src="05.bmp" alt=""></p>
-<p>下面通过Xshell远程登录：<br>步骤如下：</p>
-<p><img src="06.bmp" alt=""><br><img src="07.png" alt=""></p>
+<p><img src="05.bmp" alt="" /></p>
+<p>下面通过Xshell远程登录：<br />
+步骤如下：</p>
+<p><img src="06.bmp" alt="" /><br />
+<img src="07.png" alt="" /></p>
 <p>在实例中安装shadowsocks服务端</p>
 <ul>
-<li><p>安装pip</p>
+<li>
+<p>安装pip</p>
 <pre><code>  sudo apt update
   sudo apt-get install python-pip
-</code></pre></li>
-<li><p>利用pip安装shadowsocks</p>
+</code></pre>
+</li>
+<li>
+<p>利用pip安装shadowsocks</p>
 <pre><code>  sudo pip install shadowsocks
-</code></pre></li>
-<li><p>开启服务</p>
+</code></pre>
+</li>
+<li>
+<p>开启服务</p>
 <pre><code>  sudo ssserver -p port -k password -m aes-256-cfb -d start #这里的port和password都是自己指定
-</code></pre></li>
+</code></pre>
+</li>
 </ul>
-<p>下载shadowsocks客户端进行如下配置：<br><img src="08.bmp" alt=""><br><img src="09.bmp" alt=""></p>
+<p>下载shadowsocks客户端进行如下配置：<br />
+<img src="08.bmp" alt="" /><br />
+<img src="09.bmp" alt="" /></p>
 <p>最后一步，就是进入<a href="https://www.google.com/" target="_blank" rel="noopener">Google</a></p>
 <p>Enjoy it！</p>
-<p><img src="10.png" alt=""></p>
+<p><img src="10.png" alt="" /></p>
 
         </div>
         
@@ -1007,7 +1022,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：40.3k</span>
+    <span class="post-count">字数统计：40.4k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lionvison.com/"/>
-  <updated>2020-02-01T12:48:11.936Z</updated>
+  <updated>2020-02-11T04:05:26.594Z</updated>
   <id>https://lionvison.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://lionvison.com/archives/154a8569.html"/>
     <id>https://lionvison.com/archives/154a8569.html</id>
     <published>2020-02-01T12:45:22.000Z</published>
-    <updated>2020-02-01T12:48:11.936Z</updated>
+    <updated>2020-02-11T04:05:26.594Z</updated>
     
     <summary type="html">
     
@@ -50,18 +50,21 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;WIN10-TF2-0-CUDA10-0-cuDNN7-5-OpenCV4-1-2&quot;&gt;&lt;a href=&quot;#WIN10-TF2-0-CUDA10-0-cuDNN7-5-OpenCV4-1-2&quot; class=&quot;headerlink&quot; title=&quot;WIN10+TF2.0+CUDA10.0+cuDNN7.5+OpenCV4.1.2&quot;&gt;&lt;/a&gt;WIN10+TF2.0+CUDA10.0+cuDNN7.5+OpenCV4.1.2&lt;/h1&gt;&lt;blockquote&gt;
+      &lt;h1 id=&quot;win10tf20cuda100cudnn75opencv412&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#win10tf20cuda100cudnn75opencv412&quot;&gt;&lt;/a&gt; WIN10+TF2.0+CUDA10.0+cuDNN7.5+OpenCV4.1.2&lt;/h1&gt;
+&lt;blockquote&gt;
 &lt;p&gt;配置gpu版本的tensorflow完全是小白入门tensorflow的第一步；我的电脑gpu太差也就是仅仅学习下MX250&lt;/p&gt;
 &lt;p&gt;参考了一些详细的教程，但是对于安装的版本来说有些指定的不太明确，这有个建议就是不要一味的追求新，要注意查找版本之间的关系&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;开始安装，全文无图。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;开始安装，全文无图。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;预准备工作&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;预准备工作&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;下载&lt;a href=&quot;https://developer.nvidia.com/cuda-toolkit-archive&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CUDA10.0&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;下载&lt;a href=&quot;https://developer.nvidia.com/rdp/cudnn-archive&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;cuDNN7.5 for CUDA10.0&lt;/a&gt;，需要注册后下载，支持微信和QQ&lt;/li&gt;
-&lt;li&gt;下载&lt;a href=&quot;https://www.anaconda.com/distribution/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Anaconda&lt;/a&gt;，直接从官网下载会很慢，推荐将下载链接复制到百度云离线下载中，保存到百度云在进行下载速度快很多。或者直接下载百度云分享：链接：&lt;a href=&quot;https://pan.baidu.com/s/1BKtXWtUVFl4isthLj4LLPg提取码：ssjs&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1BKtXWtUVFl4isthLj4LLPg提取码：ssjs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;下载&lt;a href=&quot;https://www.anaconda.com/distribution/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Anaconda&lt;/a&gt;，直接从官网下载会很慢，推荐将下载链接复制到百度云离线下载中，保存到百度云在进行下载速度快很多。或者直接下载百度云分享：链接：&lt;a href=&quot;https://pan.baidu.com/s/1BKtXWtUVFl4isthLj4LLPg%E6%8F%90%E5%8F%96%E7%A0%81%EF%BC%9Assjs&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1BKtXWtUVFl4isthLj4LLPg提取码：ssjs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;在cmd中cmd中使用nvidia-smi查看显卡驱动是否正确安装，不过一般没啥问题&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -164,7 +167,7 @@
 &lt;p&gt;计算机视觉的发展离不开硬件和算法的进步。&lt;/p&gt;
 &lt;p&gt;使用的案例：美国的NASA火星探测器，使用的双目的摄像头。利用双目摄像头采集图像，通过分析图像来得出一些计算和探测的数据信息。&lt;/p&gt;
 &lt;p&gt;计算机视觉的系统大多是前端和后端两部分：前端使用摄像头，后端借助GPU进行算法计算（机器视觉、图像处理、卷及神经网络）。&lt;/p&gt;
-&lt;p&gt;下面介绍的是计算机视觉的发展方向：&lt;br&gt;
+&lt;p&gt;下面介绍的是计算机视觉的发展方向：&lt;/p&gt;
     
     </summary>
     
@@ -184,7 +187,6 @@
     <summary type="html">
     
       &lt;p&gt;时间管理是为了更高的规划自己的时间，更高效的处理身边事务。&lt;/p&gt;
-&lt;div class=&quot;table-container&quot;&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -203,8 +205,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;/div&gt;
-&lt;p&gt;当我们知道了四象限的具体分类标准，那么下一步的问题应该就是怎么来区分生活中的各种事情呢，来里自律的人更进一步呢。&lt;br&gt;
+&lt;p&gt;当我们知道了四象限的具体分类标准，那么下一步的问题应该就是怎么来区分生活中的各种事情呢，来里自律的人更进一步呢。&lt;/p&gt;
     
     </summary>
     
@@ -273,7 +274,8 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;减肥的方法：每天创造热量缺口&quot;&gt;&lt;a href=&quot;#减肥的方法：每天创造热量缺口&quot; class=&quot;headerlink&quot; title=&quot;减肥的方法：每天创造热量缺口&quot;&gt;&lt;/a&gt;减肥的方法：&lt;code&gt;每天创造热量缺口&lt;/code&gt;&lt;/h2&gt;&lt;ul&gt;
+      &lt;h2 id=&quot;减肥的方法每天创造热量缺口&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#减肥的方法每天创造热量缺口&quot;&gt;&lt;/a&gt; 减肥的方法：&lt;code&gt;每天创造热量缺口&lt;/code&gt;&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;热量计算方式：大卡=千焦/4&lt;/li&gt;
 &lt;li&gt;基础代谢：90kg-2100大卡&lt;/li&gt;
 &lt;li&gt;热量缺口：热量的缺口指的是每天的基础代谢+运动-摄入热量（饮食），每天保持热量缺口400-700就可以进行减肥&lt;/li&gt;
@@ -320,7 +322,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;1、无论什么语言：首先需要掌握好基本的使用知识，能够做到去实际只用代码工具之后，在详细的研究其内在原理，更容易掌握该语言。也就是说学习过程一般经历新手小白-熟练使用-熟练创造工具-大师级别&lt;br&gt;
+      &lt;p&gt;1、无论什么语言：首先需要掌握好基本的使用知识，能够做到去实际只用代码工具之后，在详细的研究其内在原理，更容易掌握该语言。也就是说学习过程一般经历新手小白-熟练使用-熟练创造工具-大师级别&lt;/p&gt;
     
     </summary>
     
@@ -341,7 +343,8 @@
     
       &lt;p&gt;ssh被用来远程登录，是一种安全外壳协议，可以在不安全的网络中可以和远程通信。&lt;/p&gt;
 &lt;p&gt;在Windows中Xshell 和 SecureCRT都是可以使用ssh协议来进行远程连接服务器的工具软件。在这里我使用的是Xshell6软件，首先要确保已经安装了软件，并且在本地有了服务器的公钥，前面的一篇文章已经提到了，怎么申请AWS服务器一年的使用，怎么样在本地连接服务器。这篇文章是考虑到实验室环境中为了安全防火，会在夜晚关掉电闸，所以想在服务器上跑代码，体毛需求。&lt;/p&gt;
-&lt;p&gt;打开文件—打开—会话中属性—然后做下面的修改：&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2019/05/18/5cdfcba92396524284.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;打开文件–打开–会话中属性–然后做下面的修改：&lt;br /&gt;
+&lt;img src=&quot;https://i.loli.net/2019/05/18/5cdfcba92396524284.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
     
     </summary>
     
@@ -414,9 +417,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;关于模块：&quot;&gt;&lt;a href=&quot;#关于模块：&quot; class=&quot;headerlink&quot; title=&quot;关于模块：&quot;&gt;&lt;/a&gt;关于模块：&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://docs.python.org/3.8/py-modindex.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Python模块索引大全&lt;/a&gt;&lt;/p&gt;
+      &lt;h1 id=&quot;关于模块&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#关于模块&quot;&gt;&lt;/a&gt; 关于模块：&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.python.org/3.8/py-modindex.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Python模块索引大全&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;随着程序的不断变大，需要将程序分为很多文件，创建成模块，一个.py文件就是一个模块。&lt;/p&gt;
-&lt;p&gt;   从目录中来导入模块，相应的目录称之为包package。使用import语句创建了一个命名空间，并在该命名空间中执行与.py相关的所有语句，要在导入后访问命名空间的内容，只要使用模块的名称当做前缀，就可以访问模块中的内容。&lt;/p&gt;
+&lt;p&gt;从目录中来导入模块，相应的目录称之为包package。使用import语句创建了一个命名空间，并在该命名空间中执行与.py相关的所有语句，要在导入后访问命名空间的内容，只要使用模块的名称当做前缀，就可以访问模块中的内容。&lt;/p&gt;
     
     </summary>
     
@@ -442,11 +446,13 @@
       &lt;p&gt;怎么样使用Python才会显得高大上呢！，用Python来解决一些问题相当简单，有了思路就可以动手去做了，但是既然知道了Python的特性，就要在coding中注意代码的质量和简洁性。&lt;/p&gt;
 &lt;p&gt;一、首先，Python含有很多类库、可扩展库，还有很多开源项目，但是不能忽略其中的内置函数库，下面通过演示使用内置函数，提高编写代码的质量的简洁性。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;内置函数enumerate来代替range()进行迭代。enumerate可以返回每个元素的索引和值。&lt;/p&gt;
-&lt;p&gt; enumerate(list, start=num)# 可以通过设置start来设置其实偏移量&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;内置函数enumerate来代替range()进行迭代。enumerate可以返回每个元素的索引和值。&lt;/p&gt;
+&lt;p&gt;enumerate(list, start=num)# 可以通过设置start来设置其实偏移量&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;列表推导式比map和filter函数表达更加清晰&lt;/p&gt;
-&lt;p&gt; 列表推导式更容易使得代码变得可读。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;列表推导式比map和filter函数表达更加清晰&lt;/p&gt;
+&lt;p&gt;列表推导式更容易使得代码变得可读。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
     
@@ -472,7 +478,7 @@
       &lt;blockquote&gt;
 &lt;p&gt;悠悠天地，奈何独立苍茫！&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;又一届师哥师姐毕业了，看着实验室只剩自己一个人关电闸，差点眼泪掉下来。自己一个人呆着就回忆起来这两年的读研经历。&lt;br&gt;
+&lt;p&gt;又一届师哥师姐毕业了，看着实验室只剩自己一个人关电闸，差点眼泪掉下来。自己一个人呆着就回忆起来这两年的读研经历。&lt;/p&gt;
     
     </summary>
     
@@ -512,10 +518,12 @@
     <summary type="html">
     
       &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;set的特点是：集合中的元素根据键值自动排序，没有重复元素&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;set的特点是：集合中的元素根据键值自动排序，没有重复元素&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;声明：&lt;/p&gt;
-&lt;p&gt;  set &amp;lt;类型&amp;gt; 名称   如： set&lt;int&gt;s1;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;声明：&lt;/p&gt;
+&lt;p&gt;set &amp;lt;类型&amp;gt; 名称   如： set&lt;int&gt;s1;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
     
