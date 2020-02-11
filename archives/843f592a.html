@@ -394,34 +394,27 @@
 
 
         <div class="article-entry" itemprop="articleBody">
-          <h1 id="一-linux命令行"><a class="markdownIt-Anchor" href="#一-linux命令行"></a> 一、Linux命令行</h1>
-<h2 id="1-什么是linux"><a class="markdownIt-Anchor" href="#1-什么是linux"></a> 1、什么是linux？</h2>
-<p><code>Linux</code>可分为内核（内存、文件系统、软件、硬件）、GNU工具（运用操作系统的一套标准工具；shell）、图形化桌面环境（文本操作界面演变为图形化操作界面：X Window、KDE、Unity、GNOME）、应用软件.</p>
+          <h1 id="一、Linux命令行"><a href="#一、Linux命令行" class="headerlink" title="一、Linux命令行"></a>一、Linux命令行</h1><h2 id="1、什么是linux？"><a href="#1、什么是linux？" class="headerlink" title="1、什么是linux？"></a>1、什么是linux？</h2><p><code>Linux</code>可分为内核（内存、文件系统、软件、硬件）、GNU工具（运用操作系统的一套标准工具；shell）、图形化桌面环境（文本操作界面演变为图形化操作界面：X Window、KDE、Unity、GNOME）、应用软件.</p>
 <p>Linux发行版（精简化定制类型的版本；专业版本，适合不同的办公应用环境）：Debian、Redhat、Centos、Ubuntu、Fedora、OpenSUSE等</p>
 <a id="more"></a>
-<h2 id="2-什么是shell"><a class="markdownIt-Anchor" href="#2-什么是shell"></a> 2、什么是shell？</h2>
-<ul>
-<li>
-<p>Shell:用户与操作系统之间交互工具（壳）</p>
+<h2 id="2、什么是shell？"><a href="#2、什么是shell？" class="headerlink" title="2、什么是shell？"></a>2、什么是shell？</h2><ul>
+<li><p>Shell:用户与操作系统之间交互工具（壳）</p>
 </li>
-<li>
-<p>发展：CLI（文本界面）–&gt;命令终端仿真器/控制台终端</p>
+<li><p>发展：CLI（文本界面）—&gt;命令终端仿真器/控制台终端</p>
 </li>
-<li>
-<p>一般在图形化桌面环境中只要从菜单栏就可以找到虚拟控制台终端的入口：Terminal</p>
+<li><p>一般在图形化桌面环境中只要从菜单栏就可以找到虚拟控制台终端的入口：Terminal</p>
 </li>
 </ul>
-<h2 id="3-基本shell命令"><a class="markdownIt-Anchor" href="#3-基本shell命令"></a> 3、基本shell命令</h2>
-<p>命令提示符$:辅助提示功能</p>
+<h2 id="3、基本shell命令"><a href="#3、基本shell命令" class="headerlink" title="3、基本shell命令"></a>3、基本shell命令</h2><p>命令提示符$:辅助提示功能</p>
 <ul>
 <li>help/man 命令名称:查看命令使用手册</li>
-<li>cd：遍历目录，.代表当前目录…代表当前目录的父目录</li>
+<li>cd：遍历目录，.代表当前目录..代表当前目录的父目录</li>
 <li>ls：文件目录显示 -F 区分文件和目录 -R递归显示目录 -la，同时还可以根据通配符进行有选择性的显示查看文件和目录信息</li>
 <li>touch：创建文件</li>
 <li>cp：复制文件，如果选择参数-i则会强制shell进行提示，-R都知道是递归的意思</li>
 <li>ln 源文件 链接文件：创建链接文件 -s创建软连接，不加就是创建硬链接，注意区分软和硬的区别；所谓硬就是文件共享iNode编号，是一个文件。软链接只是指向了数据文件</li>
 </ul>
-<p><img src="1.png" alt="" /></p>
+<p><img src="1.png" alt=""></p>
 <ul>
 <li>mv：重命名剪切</li>
 <li>rm：删除文件</li>
@@ -429,16 +422,15 @@
 <li>rmdir：删除目录，注意是删除空目录。</li>
 <li>file：查看文件类型</li>
 </ul>
-<p><img src="2.png" alt="" /></p>
+<p><img src="2.png" alt=""></p>
 <ul>
 <li>cat：查看整个文件 -n显示行号 -b只给文本显示行号 -T禁止显示制表符</li>
 <li>more less tail head最为特殊的是head和tail分别是显示文件的前几行和后几行，可以通过参数-n number来控制显示的行数</li>
-<li>ps：默认情况下只显示运行在当前控制台下的属于当前用户的进程。 -ef    --forest可以展示嵌套结构</li>
+<li>ps：默认情况下只显示运行在当前控制台下的属于当前用户的进程。 -ef    —forest可以展示嵌套结构</li>
 <li>top：实时监控进程</li>
 <li>kill pid：杀死进程</li>
 <li>killall pid或者进程名称同时支持通配符：结束进程 参数-9强制结束进程</li>
-<li>为了检测系统磁盘的使用情况，需要运用命令来帮助管理存储媒体<br />
-mount -t type dev directory：挂载媒体到制定目录</li>
+<li>为了检测系统磁盘的使用情况，需要运用命令来帮助管理存储媒体<br>mount -t type dev directory：挂载媒体到制定目录</li>
 <li>umount：删除媒体设备卸载</li>
 <li>df -h：显示每个有数据的已挂载的文件系统的磁盘使用情况</li>
 <li>du -h：显示当前文件夹下的磁盘使用情况</li>
@@ -449,11 +441,11 @@ mount -t type dev directory：挂载媒体到制定目录</li>
 <li>bzip2: .bz2</li>
 <li>tar:文件归档，常用进行文件打包压缩备份，解压缩。</li>
 </ul>
-<p><img src="3.png" alt="" /></p>
+<p><img src="3.png" alt=""></p>
 <ul>
 <li>jobs：显示后台左右用户的进程（作业）</li>
 </ul>
-<p><img src="4.png" alt="" /></p>
+<p><img src="4.png" alt=""></p>
 <ul>
 <li>coproc：协程，会在后台生成一份shell，并在这个新的shell中运行命令。并且可以和进程列表进行联合使用（命令；）</li>
 <li>&amp;：让命令到后台运行，就在命令后面添加$</li>
@@ -467,17 +459,15 @@ mount -t type dev directory：挂载媒体到制定目录</li>
 <li>Export：将变量变为全局变量</li>
 <li>unset：删除变量</li>
 </ul>
-<h2 id="4-初识环境变量以及怎么样设置环境变量"><a class="markdownIt-Anchor" href="#4-初识环境变量以及怎么样设置环境变量"></a> 4、初识环境变量以及怎么样设置环境变量</h2>
-<p>环境变量：</p>
+<h2 id="4、初识环境变量以及怎么样设置环境变量"><a href="#4、初识环境变量以及怎么样设置环境变量" class="headerlink" title="4、初识环境变量以及怎么样设置环境变量"></a>4、初识环境变量以及怎么样设置环境变量</h2><p>环境变量：</p>
 <ul>
 <li>局部环境变量</li>
 <li>全局环境变量</li>
 </ul>
 <p>如何设置环境变量</p>
 <p>命令的可执行文件所在目录路径必须在PATH变量中，添加方式：PATH=$PATH:路径;环境变量可以作为数组使用，能够设置多个值，（值1  值2  值3）</p>
-<h2 id="5-文件管理及文件权限设置"><a class="markdownIt-Anchor" href="#5-文件管理及文件权限设置"></a> 5、文件管理及文件权限设置</h2>
-<p>Linux将文件存储在单个目录结构中–虚拟目录，然后虚拟目录将安装在PC上所有的存储设备的文件路径纳入到单个目录结构中。虚拟目录结构只包含一个称为根目录的基础目录</p>
-<p><img src="5.png" alt="" /></p>
+<h2 id="5、文件管理及文件权限设置"><a href="#5、文件管理及文件权限设置" class="headerlink" title="5、文件管理及文件权限设置"></a>5、文件管理及文件权限设置</h2><p>Linux将文件存储在单个目录结构中—虚拟目录，然后虚拟目录将安装在PC上所有的存储设备的文件路径纳入到单个目录结构中。虚拟目录结构只包含一个称为根目录的基础目录</p>
+<p><img src="5.png" alt=""></p>
 <ul>
 <li>/bin:存放用户级的GNU工具</li>
 <li>/boot</li>
@@ -498,8 +488,7 @@ mount -t type dev directory：挂载媒体到制定目录</li>
 <li>/srv:服务目录存放本地服务的相关文件</li>
 <li>/etc/passwd文件存储用户信息 /etc/shadow存储用户的登录密码</li>
 </ul>
-<p><img src="6.png" alt="" /><br />
-<img src="7.png" alt="" /></p>
+<p><img src="6.png" alt=""><br><img src="7.png" alt=""></p>
 <p>用户添加、修改、删除</p>
 <ul>
 <li>useradd、userdel、usermod（-l修改用户登录的用户名，-L锁定 -U解除锁定 -p修改账户密码）</li>
@@ -511,8 +500,7 @@ mount -t type dev directory：挂载媒体到制定目录</li>
 <li>groupadd、groupmod、groupdel</li>
 <li>更改权限chmod（ugoa）chown（更改属主）、chgrp（更改属组）</li>
 </ul>
-<h2 id="6-安装卸载更新程序的步骤"><a class="markdownIt-Anchor" href="#6-安装卸载更新程序的步骤"></a> 6、安装卸载更新程序的步骤</h2>
-<p>了解包管理系统（PMS）：</p>
+<h2 id="6、安装卸载更新程序的步骤"><a href="#6、安装卸载更新程序的步骤" class="headerlink" title="6、安装卸载更新程序的步骤"></a>6、安装卸载更新程序的步骤</h2><p>了解包管理系统（PMS）：</p>
 <ul>
 <li>Debian下的是dpkg命令 前端工具：apt-get apt-cache aptitude；</li>
 <li>Redhat下的是rpm命令 前端工具：yum、urpm、zpper。</li>
@@ -541,14 +529,11 @@ mount -t type dev directory：挂载媒体到制定目录</li>
 <li>解压安装包 tar -zvxf a.gz</li>
 <li>进入解压目录 cd b</li>
 <li>进行安装 ./configure</li>
-<li>进行编译 make	 make install</li>
+<li>进行编译 make     make install</li>
 </ol>
-<h2 id="7-常见编辑器及其操作命令"><a class="markdownIt-Anchor" href="#7-常见编辑器及其操作命令"></a> 7、常见编辑器及其操作命令</h2>
-<p>常见编辑器：vim、nano、emacs、KWrite、Kate、GNOME编辑器</p>
+<h2 id="7、常见编辑器及其操作命令"><a href="#7、常见编辑器及其操作命令" class="headerlink" title="7、常见编辑器及其操作命令"></a>7、常见编辑器及其操作命令</h2><p>常见编辑器：vim、nano、emacs、KWrite、Kate、GNOME编辑器</p>
 <p>检查别名alias name</p>
-<p>VIM：<br />
-插入模式模式、命令模式、末行模式<br />
-移动：</p>
+<p>VIM：<br>插入模式模式、命令模式、末行模式<br>移动：</p>
 <ul>
 <li>k↑</li>
 <li>j↓</li>
@@ -564,21 +549,17 @@ mount -t type dev directory：挂载媒体到制定目录</li>
 <li>q！取消修改退出</li>
 <li>zz保存退出</li>
 </ul>
-<h2 id="8-网络配置方法"><a class="markdownIt-Anchor" href="#8-网络配置方法"></a> 8、网络配置方法</h2>
-<p><a href="https://blog.csdn.net/rzc666/article/details/50491305" target="_blank" rel="noopener" title="【参考】网络配置方法">https://blog.csdn.net/rzc666/article/details/50491305</a></p>
-<h1 id="二-shell脚本编程基础"><a class="markdownIt-Anchor" href="#二-shell脚本编程基础"></a> 二、Shell脚本编程基础</h1>
-<p>1、构建基本脚本</p>
+<h2 id="8、网络配置方法"><a href="#8、网络配置方法" class="headerlink" title="8、网络配置方法"></a>8、网络配置方法</h2><p><a href="https://blog.csdn.net/rzc666/article/details/50491305" target="_blank" rel="noopener" title="【参考】网络配置方法">https://blog.csdn.net/rzc666/article/details/50491305</a></p>
+<h1 id="二、Shell脚本编程基础"><a href="#二、Shell脚本编程基础" class="headerlink" title="二、Shell脚本编程基础"></a>二、Shell脚本编程基础</h1><p>1、构建基本脚本</p>
 <p>2、使用结构化命令</p>
 <p>3、处理用户输入</p>
 <p>4、呈现数据</p>
 <p>5、控制脚本</p>
-<h1 id="三-高级shell脚本编程"><a class="markdownIt-Anchor" href="#三-高级shell脚本编程"></a> 三、 高级shell脚本编程</h1>
-<p>1、创建函数</p>
+<h1 id="三、-高级shell脚本编程"><a href="#三、-高级shell脚本编程" class="headerlink" title="三、 高级shell脚本编程"></a>三、 高级shell脚本编程</h1><p>1、创建函数</p>
 <p>2、图形化界面进行脚本编程</p>
 <p>3、正则表达式</p>
 <p>4、Sed、awk</p>
-<h1 id="四-脚本实例"><a class="markdownIt-Anchor" href="#四-脚本实例"></a> 四、 脚本实例</h1>
-<p>1、简单脚本工具</p>
+<h1 id="四、-脚本实例"><a href="#四、-脚本实例" class="headerlink" title="四、 脚本实例"></a>四、 脚本实例</h1><p>1、简单脚本工具</p>
 <p>2、创建与数据库和web以及电子邮件有关的脚本</p>
 
         </div>
@@ -616,9 +597,7 @@ mount -t type dev directory：挂载媒体到制定目录</li>
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="https://connect.qq.com/widget/shareqq/index.html?url=https://lionvison.com/archives/843f592a.html&title=Linux基础（一） | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary= 一、Linux命令行
- 1、什么是linux？
-Linux可分为内核（内存、文件系统、软件、硬件）、GNU工具（运用操作系统的一套标准工具；shell）、图形化桌面环境（文本操作界面演变为图形化操作界面：X Window、KDE、Unity、GNOME）、应用软件.
+          href="https://connect.qq.com/widget/shareqq/index.html?url=https://lionvison.com/archives/843f592a.html&title=Linux基础（一） | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary=一、Linux命令行1、什么是linux？Linux可分为内核（内存、文件系统、软件、硬件）、GNU工具（运用操作系统的一套标准工具；shell）、图形化桌面环境（文本操作界面演变为图形化操作界面：X Window、KDE、Unity、GNOME）、应用软件.
 Linux发行版（精简化定制类型的版本；专业版本，适合不同的办公应用环境）：Debian、Redhat、Centos、Ubuntu、Fedora、OpenSUSE等"
           
           >
@@ -631,9 +610,7 @@ Linux发行版（精简化定制类型的版本；专业版本，适合不同的
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lionvison.com/archives/843f592a.html&title=Linux基础（一） | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary= 一、Linux命令行
- 1、什么是linux？
-Linux可分为内核（内存、文件系统、软件、硬件）、GNU工具（运用操作系统的一套标准工具；shell）、图形化桌面环境（文本操作界面演变为图形化操作界面：X Window、KDE、Unity、GNOME）、应用软件.
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lionvison.com/archives/843f592a.html&title=Linux基础（一） | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary=一、Linux命令行1、什么是linux？Linux可分为内核（内存、文件系统、软件、硬件）、GNU工具（运用操作系统的一套标准工具；shell）、图形化桌面环境（文本操作界面演变为图形化操作界面：X Window、KDE、Unity、GNOME）、应用软件.
 Linux发行版（精简化定制类型的版本；专业版本，适合不同的办公应用环境）：Debian、Redhat、Centos、Ubuntu、Fedora、OpenSUSE等"
           
           >
@@ -646,9 +623,7 @@ Linux发行版（精简化定制类型的版本；专业版本，适合不同的
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="https://service.weibo.com/share/share.php?url=https://lionvison.com/archives/843f592a.html&title=Linux基础（一） | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary= 一、Linux命令行
- 1、什么是linux？
-Linux可分为内核（内存、文件系统、软件、硬件）、GNU工具（运用操作系统的一套标准工具；shell）、图形化桌面环境（文本操作界面演变为图形化操作界面：X Window、KDE、Unity、GNOME）、应用软件.
+          href="https://service.weibo.com/share/share.php?url=https://lionvison.com/archives/843f592a.html&title=Linux基础（一） | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary=一、Linux命令行1、什么是linux？Linux可分为内核（内存、文件系统、软件、硬件）、GNU工具（运用操作系统的一套标准工具；shell）、图形化桌面环境（文本操作界面演变为图形化操作界面：X Window、KDE、Unity、GNOME）、应用软件.
 Linux发行版（精简化定制类型的版本；专业版本，适合不同的办公应用环境）：Debian、Redhat、Centos、Ubuntu、Fedora、OpenSUSE等"
           
           >
@@ -841,7 +816,7 @@ Linux发行版（精简化定制类型的版本；专业版本，适合不同的
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一-linux命令行"><span class="toc-text"> 一、Linux命令行</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-什么是linux"><span class="toc-text"> 1、什么是linux？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-什么是shell"><span class="toc-text"> 2、什么是shell？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-基本shell命令"><span class="toc-text"> 3、基本shell命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-初识环境变量以及怎么样设置环境变量"><span class="toc-text"> 4、初识环境变量以及怎么样设置环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-文件管理及文件权限设置"><span class="toc-text"> 5、文件管理及文件权限设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-安装卸载更新程序的步骤"><span class="toc-text"> 6、安装卸载更新程序的步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-常见编辑器及其操作命令"><span class="toc-text"> 7、常见编辑器及其操作命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-网络配置方法"><span class="toc-text"> 8、网络配置方法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二-shell脚本编程基础"><span class="toc-text"> 二、Shell脚本编程基础</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三-高级shell脚本编程"><span class="toc-text"> 三、 高级shell脚本编程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四-脚本实例"><span class="toc-text"> 四、 脚本实例</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、Linux命令行"><span class="toc-text">一、Linux命令行</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、什么是linux？"><span class="toc-text">1、什么是linux？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、什么是shell？"><span class="toc-text">2、什么是shell？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、基本shell命令"><span class="toc-text">3、基本shell命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、初识环境变量以及怎么样设置环境变量"><span class="toc-text">4、初识环境变量以及怎么样设置环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5、文件管理及文件权限设置"><span class="toc-text">5、文件管理及文件权限设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6、安装卸载更新程序的步骤"><span class="toc-text">6、安装卸载更新程序的步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7、常见编辑器及其操作命令"><span class="toc-text">7、常见编辑器及其操作命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8、网络配置方法"><span class="toc-text">8、网络配置方法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、Shell脚本编程基础"><span class="toc-text">二、Shell脚本编程基础</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、-高级shell脚本编程"><span class="toc-text">三、 高级shell脚本编程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、-脚本实例"><span class="toc-text">四、 脚本实例</span></a></li></ol>
     </div>
   </section>
 
@@ -972,7 +947,7 @@ Linux发行版（精简化定制类型的版本；专业版本，适合不同的
         
           <li><a class="flat-box" title="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/" href="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"><div class='name'>博客优化</div><div class='badge'>(2)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/" href="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"><div class='name'>向往的生活</div><div class='badge'>(6)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/" href="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"><div class='name'>向往的生活</div><div class='badge'>(7)</div></a></li>
         
           <li><a class="flat-box" title="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/"><div class='name'>实用工具汇总</div><div class='badge'>(3)</div></a></li>
         
@@ -1153,7 +1128,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：39.7k</span>
+    <span class="post-count">字数统计：40.3k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>

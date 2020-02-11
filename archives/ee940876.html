@@ -394,68 +394,43 @@
 
 
         <div class="article-entry" itemprop="articleBody">
-          <h1 id="一-前言"><a class="markdownIt-Anchor" href="#一-前言"></a> 一、前言</h1>
-<p>从去年开始就一直想部署一个可以自己使用的博客，用来记录点东西，省的到后来用到的时候害的重新查询，一直百度。直到这个月要开始找工作了，有一个自己的博客不仅能够用来记录学习路线，还能够更直观的把自己展示给他人看，因此决定自己一搞一个人博客。花了点时间对比部署方案后，选择了最省钱的Hexo+Github,跟随教程花了点时间配置，下面主要记录下配置过程。</p>
-<a id="more"></a>
-<h1 id="二-准备阶段"><a class="markdownIt-Anchor" href="#二-准备阶段"></a> 二、准备阶段</h1>
-<ol>
+          <h1 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h1><p>从去年开始就一直想部署一个可以自己使用的博客，用来记录点东西，省的到后来用到的时候害的重新查询，一直百度。直到这个月要开始找工作了，有一个自己的博客不仅能够用来记录学习路线，还能够更直观的把自己展示给他人看，因此决定自己一搞一个人博客。花了点时间对比部署方案后，选择了最省钱的Hexo+Github,跟随教程花了点时间配置，下面主要记录下配置过程。<br><a id="more"></a></p>
+<h1 id="二、准备阶段"><a href="#二、准备阶段" class="headerlink" title="二、准备阶段"></a>二、准备阶段</h1><ol>
 <li>注册一个github账号</li>
 <li>安装node.js、npm</li>
 <li>安装git</li>
 </ol>
 <p><strong>注：我是在Windows7 里面进行设置部署</strong></p>
-<h1 id="三-开始搭建博客"><a class="markdownIt-Anchor" href="#三-开始搭建博客"></a> 三、开始搭建博客</h1>
-<h2 id="1-github中创建仓库"><a class="markdownIt-Anchor" href="#1-github中创建仓库"></a> 1、github中创建仓库</h2>
-<p>在github中新建仓库，<a href="http://xn--xxx-c88d89xgtao27c.github.io" target="_blank" rel="noopener">并命名为xxx.github.io</a>,注意<strong>xxx</strong>和你的github的账户名是相同的，后来你网站的域名将会是https：<a href="//xxx.github.io.xn--siq0gnk75pyofnxs">//xxx.github.io.所以为了域名</a>，你可以设置一个好听的仓库名。<br />
-创建成功后，所有的网站文件都会被上传到这个仓库中。</p>
-<h2 id="2-配置ssh-key"><a class="markdownIt-Anchor" href="#2-配置ssh-key"></a> 2、配置SSH key</h2>
-<p>这是为了让自己有权限用git，提交文件到github中来。具体的步骤是在本机中找到./ssh文件夹，我换系统的时候经常没有因此，需要生成：用git bash：</p>
-<pre><code>ssk-keygen -t rsa -C 'emailaddress'
-</code></pre>
-<p>然后按三次回车，就会在c盘user下面生成./ssh文件，将id_rsa.pub中的文本根据下面的配置添加到key中，其中title可以随便起名。<br />
-<img src="https://i.imgur.com/ZgiejaH.png" alt="" /><img src="https://i.imgur.com/5MmJjHP.png" alt="" /></p>
+<h1 id="三、开始搭建博客"><a href="#三、开始搭建博客" class="headerlink" title="三、开始搭建博客"></a>三、开始搭建博客</h1><h2 id="1、github中创建仓库"><a href="#1、github中创建仓库" class="headerlink" title="1、github中创建仓库"></a>1、github中创建仓库</h2><p>在github中新建仓库，并命名为xxx.github.io,注意<strong>xxx</strong>和你的github的账户名是相同的，后来你网站的域名将会是https：//xxx.github.io.所以为了域名，你可以设置一个好听的仓库名。<br>创建成功后，所有的网站文件都会被上传到这个仓库中。</p>
+<h2 id="2、配置SSH-key"><a href="#2、配置SSH-key" class="headerlink" title="2、配置SSH key"></a>2、配置SSH key</h2><p>这是为了让自己有权限用git，提交文件到github中来。具体的步骤是在本机中找到./ssh文件夹，我换系统的时候经常没有因此，需要生成：用git bash：</p>
+<pre><code>ssk-keygen -t rsa -C &#39;emailaddress&#39;
+</code></pre><p>然后按三次回车，就会在c盘user下面生成./ssh文件，将id_rsa.pub中的文本根据下面的配置添加到key中，其中title可以随便起名。<br><img src="https://i.imgur.com/ZgiejaH.png" alt=""><img src="https://i.imgur.com/5MmJjHP.png" alt=""></p>
 <p>还需要进行配置：</p>
 <pre><code>git config --global user.name &quot;xxx&quot;// 你的github用户名，非昵称
 git config --global user.email  &quot;email&quot;// github注册邮箱
-</code></pre>
-<h2 id="3-搭建博客雏形"><a class="markdownIt-Anchor" href="#3-搭建博客雏形"></a> 3、搭建博客雏形</h2>
-<ol>
-<li>
-<p>安装hexo、初始化<br />
-npm install -g hexo<br />
-建立一个文件夹，用于本地blog存储，进入文件夹内，打开git bash并进行初始化：</p>
-<p>hexo init<br />
-hexo g #生成<br />
-hexo s #启动服务<br />
-如下：<br />
-<img src="https://i.imgur.com/8pAiFNI.png" alt="" /></p>
+</code></pre><h2 id="3、搭建博客雏形"><a href="#3、搭建博客雏形" class="headerlink" title="3、搭建博客雏形"></a>3、搭建博客雏形</h2><ol>
+<li><p>安装hexo、初始化<br> npm install -g hexo<br>建立一个文件夹，用于本地blog存储，进入文件夹内，打开git bash并进行初始化：</p>
+<p> hexo init<br> hexo g #生成<br> hexo s #启动服务<br>如下：<br><img src="https://i.imgur.com/8pAiFNI.png" alt=""></p>
+<h2 id="4、修改主题"><a href="#4、修改主题" class="headerlink" title="4、修改主题"></a>4、修改主题</h2><p>博客还是用来进行阅读的因此稳定性比较重要，现在用户最多的还是next主题，因此我选用的也是next：<br>下载，还是在刚才的文件夹下<br>使用git bash：</p>
+<p> git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next</p>
 </li>
 </ol>
-<h2 id="4-修改主题"><a class="markdownIt-Anchor" href="#4-修改主题"></a> 4、修改主题</h2>
-<p>博客还是用来进行阅读的因此稳定性比较重要，现在用户最多的还是next主题，因此我选用的也是next：<br />
-下载，还是在刚才的文件夹下<br />
-使用git bash：</p>
-<pre><code>git clone https://github.com/iissnan/hexo-theme-next themes/next
-</code></pre>
-<p>done之后就可以在根目录下发现有一个theme的文件夹里面有next文件，更改样式时，一般是时修改next文件里面的配置文件。安装好主题之后，可以浏览器打开本地<br />
-localhost:4000站点进行访问</p>
+<p>done之后就可以在根目录下发现有一个theme的文件夹里面有next文件，更改样式时，一般是时修改next文件里面的配置文件。安装好主题之后，可以浏览器打开本地<br>localhost:4000站点进行访问</p>
 <p>到现在，基本的博客雏形已经出现了，下面就是开始hexo的配置。</p>
 <p>配置部分我直接贴链接了，非常感谢下面大神的指导！</p>
-<h2 id="5-主题优化"><a class="markdownIt-Anchor" href="#5-主题优化"></a> 5、主题优化</h2>
-<ul>
+<h2 id="5、主题优化"><a href="#5、主题优化" class="headerlink" title="5、主题优化"></a>5、主题优化</h2><ul>
 <li><a href="http://blog.ynxiu.com/2016/hexo-next-theme-optimize.html" target="_blank" rel="noopener" title="量子广告的博客">http://blog.ynxiu.com/2016/hexo-next-theme-optimize.html</a></li>
 <li><a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener" title="遇见西门">https://www.simon96.online/2018/10/12/hexo-tutorial/</a></li>
 <li><a href="http://blog.321zou.com/" target="_blank" rel="noopener" title="TOP猜想">http://blog.321zou.com/</a></li>
 </ul>
-<h1 id="四-问题汇总"><a class="markdownIt-Anchor" href="#四-问题汇总"></a> 四、问题汇总</h1>
-<blockquote>
+<h1 id="四、问题汇总"><a href="#四、问题汇总" class="headerlink" title="四、问题汇总"></a>四、问题汇总</h1><blockquote>
 <p>后续更新</p>
 </blockquote>
 <ul>
 <li><strong>MarkdownPad2中添加的图片不能显示</strong>：先要配置<code>_config.yml</code>,找到<code>post_asset_folder</code>设为<code>true</code>后，以后再创建文章就会在文章目录生成一个同名文件夹，可以将文章配图放在此文件夹中，然后在写文章时下入相对路径就可以。<code>![](图片名)</code></li>
 <li><strong>怎么在文章中添加文件下载</strong>：和上一个问题解决办法一样，先修改配置文件，然后再在source下新建文件夹downloads，把需要下载的文件放入到该文件夹下就可以，在以后发布文章时，只要在文中添加 <code>[点击下载](/downloads/filename)</code>之后，这样部署之后的网站，就可以看到下载链接和进行下载文件了。</li>
 </ul>
-<p><img src="%E9%BB%84.gif" alt="" /></p>
+<p><img src="黄.gif" alt=""></p>
 
         </div>
         
@@ -489,8 +464,7 @@ localhost:4000站点进行访问</p>
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="https://connect.qq.com/widget/shareqq/index.html?url=https://lionvison.com/archives/ee940876.html&title=博客搭建记录 | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary= 一、前言
-从去年开始就一直想部署一个可以自己使用的博客，用来记录点东西，省的到后来用到的时候害的重新查询，一直百度。直到这个月要开始找工作了，有一个自己的博客不仅能够用来记录学习路线，还能够更直观的把自己展示给他人看，因此决定自己一搞一个人博客。花了点时间对比部署方案后，选择了最省钱的Hexo+Github,跟随教程花了点时间配置，下面主要记录下配置过程。"
+          href="https://connect.qq.com/widget/shareqq/index.html?url=https://lionvison.com/archives/ee940876.html&title=博客搭建记录 | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary=一、前言从去年开始就一直想部署一个可以自己使用的博客，用来记录点东西，省的到后来用到的时候害的重新查询，一直百度。直到这个月要开始找工作了，有一个自己的博客不仅能够用来记录学习路线，还能够更直观的把自己展示给他人看，因此决定自己一搞一个人博客。花了点时间对比部署方案后，选择了最省钱的Hexo+Github,跟随教程花了点时间配置，下面主要记录下配置过程。"
           
           >
           
@@ -502,8 +476,7 @@ localhost:4000站点进行访问</p>
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lionvison.com/archives/ee940876.html&title=博客搭建记录 | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary= 一、前言
-从去年开始就一直想部署一个可以自己使用的博客，用来记录点东西，省的到后来用到的时候害的重新查询，一直百度。直到这个月要开始找工作了，有一个自己的博客不仅能够用来记录学习路线，还能够更直观的把自己展示给他人看，因此决定自己一搞一个人博客。花了点时间对比部署方案后，选择了最省钱的Hexo+Github,跟随教程花了点时间配置，下面主要记录下配置过程。"
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lionvison.com/archives/ee940876.html&title=博客搭建记录 | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary=一、前言从去年开始就一直想部署一个可以自己使用的博客，用来记录点东西，省的到后来用到的时候害的重新查询，一直百度。直到这个月要开始找工作了，有一个自己的博客不仅能够用来记录学习路线，还能够更直观的把自己展示给他人看，因此决定自己一搞一个人博客。花了点时间对比部署方案后，选择了最省钱的Hexo+Github,跟随教程花了点时间配置，下面主要记录下配置过程。"
           
           >
           
@@ -515,8 +488,7 @@ localhost:4000站点进行访问</p>
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="https://service.weibo.com/share/share.php?url=https://lionvison.com/archives/ee940876.html&title=博客搭建记录 | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary= 一、前言
-从去年开始就一直想部署一个可以自己使用的博客，用来记录点东西，省的到后来用到的时候害的重新查询，一直百度。直到这个月要开始找工作了，有一个自己的博客不仅能够用来记录学习路线，还能够更直观的把自己展示给他人看，因此决定自己一搞一个人博客。花了点时间对比部署方案后，选择了最省钱的Hexo+Github,跟随教程花了点时间配置，下面主要记录下配置过程。"
+          href="https://service.weibo.com/share/share.php?url=https://lionvison.com/archives/ee940876.html&title=博客搭建记录 | Lion vison&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary=一、前言从去年开始就一直想部署一个可以自己使用的博客，用来记录点东西，省的到后来用到的时候害的重新查询，一直百度。直到这个月要开始找工作了，有一个自己的博客不仅能够用来记录学习路线，还能够更直观的把自己展示给他人看，因此决定自己一搞一个人博客。花了点时间对比部署方案后，选择了最省钱的Hexo+Github,跟随教程花了点时间配置，下面主要记录下配置过程。"
           
           >
           
@@ -696,7 +668,7 @@ localhost:4000站点进行访问</p>
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一-前言"><span class="toc-text"> 一、前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二-准备阶段"><span class="toc-text"> 二、准备阶段</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三-开始搭建博客"><span class="toc-text"> 三、开始搭建博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-github中创建仓库"><span class="toc-text"> 1、github中创建仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-配置ssh-key"><span class="toc-text"> 2、配置SSH key</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-搭建博客雏形"><span class="toc-text"> 3、搭建博客雏形</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-修改主题"><span class="toc-text"> 4、修改主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-主题优化"><span class="toc-text"> 5、主题优化</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四-问题汇总"><span class="toc-text"> 四、问题汇总</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、前言"><span class="toc-text">一、前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、准备阶段"><span class="toc-text">二、准备阶段</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、开始搭建博客"><span class="toc-text">三、开始搭建博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、github中创建仓库"><span class="toc-text">1、github中创建仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、配置SSH-key"><span class="toc-text">2、配置SSH key</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、搭建博客雏形"><span class="toc-text">3、搭建博客雏形</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、修改主题"><span class="toc-text">4、修改主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5、主题优化"><span class="toc-text">5、主题优化</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、问题汇总"><span class="toc-text">四、问题汇总</span></a></li></ol>
     </div>
   </section>
 
@@ -827,7 +799,7 @@ localhost:4000站点进行访问</p>
         
           <li><a class="flat-box" title="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/" href="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"><div class='name'>博客优化</div><div class='badge'>(2)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/" href="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"><div class='name'>向往的生活</div><div class='badge'>(6)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/" href="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"><div class='name'>向往的生活</div><div class='badge'>(7)</div></a></li>
         
           <li><a class="flat-box" title="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/"><div class='name'>实用工具汇总</div><div class='badge'>(3)</div></a></li>
         
@@ -1008,7 +980,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：39.7k</span>
+    <span class="post-count">字数统计：40.3k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>

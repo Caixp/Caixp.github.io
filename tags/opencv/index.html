@@ -388,22 +388,19 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h1 id="linux安装opencv和vscode工具配置"><a class="markdownIt-Anchor" href="#linux安装opencv和vscode工具配置"></a> Linux安装opencv和vscode工具配置</h1>
-<p>1、参考opencv官网在Linux上安装opencv的步骤</p>
+      <h1 id="Linux安装opencv和vscode工具配置"><a href="#Linux安装opencv和vscode工具配置" class="headerlink" title="Linux安装opencv和vscode工具配置"></a>Linux安装opencv和vscode工具配置</h1><p>1、参考opencv官网在Linux上安装opencv的步骤</p>
 <ul>
 <li>按照官网文档安装依赖，</li>
 <li>官网下载opencv和扩展包的源码source。也可以通过github克隆到本地，注意版本一定是相同的。</li>
-<li>利用cmake编译安装：
-<ul>
+<li>利用cmake编译安装：<ul>
 <li>新建文件夹opencv：mkdir opencv</li>
 <li>将扩展包cp到opencv文件夹中</li>
 <li>在opencv文件夹中新建build文件夹:mkdir build</li>
 <li>进入文件夹：cd build</li>
-<li>使用cmake命令进行编译（下面的目录名字我已经统一去掉版本信息）：cmake -D CMAKE_INSTALL_PREFIX=/usr/local -D CMAKE_BUILD_TYPE=Release -D OPENCV_EXTRA_MODULES_PATH=…/opencv_contrib/modules …</li>
+<li>使用cmake命令进行编译（下面的目录名字我已经统一去掉版本信息）：cmake -D CMAKE_INSTALL_PREFIX=/usr/local -D CMAKE_BUILD_TYPE=Release -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules ..</li>
 <li>编译过程中出现的问题参考第二部分</li>
 <li>然后进行安装：sudo make install</li>
-<li>安装完成后，可以在终端中使用python，导入opencv的包进行使用：
-<ul>
+<li>安装完成后，可以在终端中使用python，导入opencv的包进行使用：<ul>
 <li>python</li>
 <li>import cv2 as cv</li>
 <li>cv.__version__  #查看安装的opencv版本</li>
@@ -411,8 +408,7 @@
 </li>
 </ul>
 </li>
-<li>将opencv的库路径添加到系统路径中去
-<ul>
+<li>将opencv的库路径添加到系统路径中去<ul>
 <li>cd /etc/ld.so.conf.d</li>
 <li>sudo touch opencv.conf,此时文件中是空的。</li>
 <li>写入：/usr/local/lib</li>
@@ -423,15 +419,13 @@
 </ul>
 <p>2、安装过程中遇到的问题。</p>
 <ul>
-<li>
-<p>安装依赖中出现<code>errorE: unable to locate libjasper-dev</code>。</p>
+<li><p>安装依赖中出现<code>errorE: unable to locate libjasper-dev</code>。</p>
 <p>解决办法：</p>
-<p>sudo add-apt-repository “deb <a href="http://security.ubuntu.com/ubuntu" target="_blank" rel="noopener">http://security.ubuntu.com/ubuntu</a> xenial-security main”</p>
-<p>sudo apt update</p>
-<p>sudo apt install libjasper1 libjasper-dev</p>
+<p>  sudo add-apt-repository “deb <a href="http://security.ubuntu.com/ubuntu" target="_blank" rel="noopener">http://security.ubuntu.com/ubuntu</a> xenial-security main”</p>
+<p>  sudo apt update</p>
+<p>  sudo apt install libjasper1 libjasper-dev</p>
 </li>
-<li>
-<p>编译过程中出现：xxx :No such file or directory</p>
+<li><p>编译过程中出现：xxx :No such file or directory</p>
 <p>解决办法：</p>
 <p>find ～ -name xxx</p>
 <p>将出现问题的文件路径修改下，在重新编译。</p>
@@ -669,7 +663,7 @@
         
           <li><a class="flat-box" title="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/" href="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"><div class='name'>博客优化</div><div class='badge'>(2)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/" href="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"><div class='name'>向往的生活</div><div class='badge'>(6)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/" href="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"><div class='name'>向往的生活</div><div class='badge'>(7)</div></a></li>
         
           <li><a class="flat-box" title="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/"><div class='name'>实用工具汇总</div><div class='badge'>(3)</div></a></li>
         
@@ -850,7 +844,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：39.7k</span>
+    <span class="post-count">字数统计：40.3k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
