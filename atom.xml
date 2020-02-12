@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Lion vison</title>
+  <title>蔡祥朋的博客|clove_juan</title>
   
-  <subtitle>lionvison</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://lionvison.com/"/>
+  <link href="https://cxpeng.cn/"/>
   <updated>2020-02-11T04:05:26.594Z</updated>
-  <id>https://lionvison.com/</id>
+  <id>https://cxpeng.cn/</id>
   
   <author>
     <name>Alex</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>2019年总结</title>
-    <link href="https://lionvison.com/archives/154a8569.html"/>
-    <id>https://lionvison.com/archives/154a8569.html</id>
+    <link href="https://cxpeng.cn/archives/154a8569.html"/>
+    <id>https://cxpeng.cn/archives/154a8569.html</id>
     <published>2020-02-01T12:45:22.000Z</published>
     <updated>2020-02-11T04:05:26.594Z</updated>
     
@@ -36,15 +36,15 @@
     </summary>
     
     
-      <category term="向往的生活" scheme="https://lionvison.com/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <category term="向往的生活" scheme="https://cxpeng.cn/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
     
     
   </entry>
   
   <entry>
     <title>WIN10+TF2.0</title>
-    <link href="https://lionvison.com/archives/bb4fe864.html"/>
-    <id>https://lionvison.com/archives/bb4fe864.html</id>
+    <link href="https://cxpeng.cn/archives/bb4fe864.html"/>
+    <id>https://cxpeng.cn/archives/bb4fe864.html</id>
     <published>2019-12-03T04:28:51.000Z</published>
     <updated>2019-12-13T18:02:51.010Z</updated>
     
@@ -75,15 +75,15 @@
     </summary>
     
     
-      <category term="opencv学习" scheme="https://lionvison.com/categories/opencv%E5%AD%A6%E4%B9%A0/"/>
+      <category term="opencv学习" scheme="https://cxpeng.cn/categories/opencv%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
   
   <entry>
     <title>换电脑之博客迁移.md</title>
-    <link href="https://lionvison.com/archives/b3404e24.html"/>
-    <id>https://lionvison.com/archives/b3404e24.html</id>
+    <link href="https://cxpeng.cn/archives/b3404e24.html"/>
+    <id>https://cxpeng.cn/archives/b3404e24.html</id>
     <published>2019-12-01T05:34:47.000Z</published>
     <updated>2019-12-13T18:02:51.018Z</updated>
     
@@ -100,15 +100,15 @@
     </summary>
     
     
-      <category term="博客优化" scheme="https://lionvison.com/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
+      <category term="博客优化" scheme="https://cxpeng.cn/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
     
     
   </entry>
   
   <entry>
     <title>C++面试题集锦</title>
-    <link href="https://lionvison.com/archives/c0254e4b.html"/>
-    <id>https://lionvison.com/archives/c0254e4b.html</id>
+    <link href="https://cxpeng.cn/archives/c0254e4b.html"/>
+    <id>https://cxpeng.cn/archives/c0254e4b.html</id>
     <published>2019-09-10T07:50:41.000Z</published>
     <updated>2019-12-13T18:02:51.002Z</updated>
     
@@ -130,8 +130,8 @@
   
   <entry>
     <title>安排事项</title>
-    <link href="https://lionvison.com/archives/2b5a1c3a.html"/>
-    <id>https://lionvison.com/archives/2b5a1c3a.html</id>
+    <link href="https://cxpeng.cn/archives/2b5a1c3a.html"/>
+    <id>https://cxpeng.cn/archives/2b5a1c3a.html</id>
     <published>2019-09-10T07:14:48.000Z</published>
     <updated>2019-12-13T18:02:51.013Z</updated>
     
@@ -148,15 +148,15 @@
     </summary>
     
     
-      <category term="向往的生活" scheme="https://lionvison.com/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <category term="向往的生活" scheme="https://cxpeng.cn/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
     
     
   </entry>
   
   <entry>
     <title>计算机视觉在新技术浪潮的革新和挑战</title>
-    <link href="https://lionvison.com/archives/9bb65d10.html"/>
-    <id>https://lionvison.com/archives/9bb65d10.html</id>
+    <link href="https://cxpeng.cn/archives/9bb65d10.html"/>
+    <id>https://cxpeng.cn/archives/9bb65d10.html</id>
     <published>2019-09-09T15:15:51.000Z</published>
     <updated>2019-12-13T18:02:51.022Z</updated>
     
@@ -172,15 +172,15 @@
     </summary>
     
     
-      <category term="计算机视觉" scheme="https://lionvison.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
+      <category term="计算机视觉" scheme="https://cxpeng.cn/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
     
     
   </entry>
   
   <entry>
     <title>四象限法则</title>
-    <link href="https://lionvison.com/archives/a66037f0.html"/>
-    <id>https://lionvison.com/archives/a66037f0.html</id>
+    <link href="https://cxpeng.cn/archives/a66037f0.html"/>
+    <id>https://cxpeng.cn/archives/a66037f0.html</id>
     <published>2019-09-09T08:49:17.000Z</published>
     <updated>2019-12-13T18:02:51.014Z</updated>
     
@@ -210,15 +210,15 @@
     </summary>
     
     
-      <category term="向往的生活" scheme="https://lionvison.com/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <category term="向往的生活" scheme="https://cxpeng.cn/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
     
     
   </entry>
   
   <entry>
     <title>Ubuntu修改系统编码</title>
-    <link href="https://lionvison.com/archives/2fa3a8c0.html"/>
-    <id>https://lionvison.com/archives/2fa3a8c0.html</id>
+    <link href="https://cxpeng.cn/archives/2fa3a8c0.html"/>
+    <id>https://cxpeng.cn/archives/2fa3a8c0.html</id>
     <published>2019-09-05T15:38:36.000Z</published>
     <updated>2019-12-13T18:02:51.009Z</updated>
     
@@ -235,15 +235,15 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://lionvison.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://cxpeng.cn/categories/Linux/"/>
     
     
   </entry>
   
   <entry>
     <title>9月计划表</title>
-    <link href="https://lionvison.com/archives/c9ac5c9b.html"/>
-    <id>https://lionvison.com/archives/c9ac5c9b.html</id>
+    <link href="https://cxpeng.cn/archives/c9ac5c9b.html"/>
+    <id>https://cxpeng.cn/archives/c9ac5c9b.html</id>
     <published>2019-09-05T15:38:36.000Z</published>
     <updated>2019-12-13T18:02:51.019Z</updated>
     
@@ -260,15 +260,15 @@
     </summary>
     
     
-      <category term="向往的生活" scheme="https://lionvison.com/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <category term="向往的生活" scheme="https://cxpeng.cn/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
     
     
   </entry>
   
   <entry>
     <title>减肥</title>
-    <link href="https://lionvison.com/archives/494fcdcb.html"/>
-    <id>https://lionvison.com/archives/494fcdcb.html</id>
+    <link href="https://cxpeng.cn/archives/494fcdcb.html"/>
+    <id>https://cxpeng.cn/archives/494fcdcb.html</id>
     <published>2019-09-01T06:56:39.000Z</published>
     <updated>2019-12-13T18:02:51.013Z</updated>
     
@@ -285,15 +285,15 @@
     </summary>
     
     
-      <category term="向往的生活" scheme="https://lionvison.com/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <category term="向往的生活" scheme="https://cxpeng.cn/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
     
     
   </entry>
   
   <entry>
     <title>关闭vpn之后浏览器无法连接网络</title>
-    <link href="https://lionvison.com/archives/a4692f1.html"/>
-    <id>https://lionvison.com/archives/a4692f1.html</id>
+    <link href="https://cxpeng.cn/archives/a4692f1.html"/>
+    <id>https://cxpeng.cn/archives/a4692f1.html</id>
     <published>2019-06-01T06:56:39.000Z</published>
     <updated>2019-12-13T18:02:51.012Z</updated>
     
@@ -315,8 +315,8 @@
   
   <entry>
     <title>阶段学习心得</title>
-    <link href="https://lionvison.com/archives/4555512d.html"/>
-    <id>https://lionvison.com/archives/4555512d.html</id>
+    <link href="https://cxpeng.cn/archives/4555512d.html"/>
+    <id>https://cxpeng.cn/archives/4555512d.html</id>
     <published>2019-05-13T02:35:49.000Z</published>
     <updated>2019-12-13T18:02:51.023Z</updated>
     
@@ -327,15 +327,15 @@
     </summary>
     
     
-      <category term="向往的生活" scheme="https://lionvison.com/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <category term="向往的生活" scheme="https://cxpeng.cn/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
     
     
   </entry>
   
   <entry>
     <title>Xshell连接远程主机</title>
-    <link href="https://lionvison.com/archives/1b44cf9e.html"/>
-    <id>https://lionvison.com/archives/1b44cf9e.html</id>
+    <link href="https://cxpeng.cn/archives/1b44cf9e.html"/>
+    <id>https://cxpeng.cn/archives/1b44cf9e.html</id>
     <published>2019-05-10T11:51:59.000Z</published>
     <updated>2019-12-13T18:02:51.012Z</updated>
     
@@ -349,15 +349,15 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://lionvison.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://cxpeng.cn/categories/Linux/"/>
     
     
   </entry>
   
   <entry>
     <title>[科学上网]使用AWS搭梯子记录</title>
-    <link href="https://lionvison.com/archives/bdb009c5.html"/>
-    <id>https://lionvison.com/archives/bdb009c5.html</id>
+    <link href="https://cxpeng.cn/archives/bdb009c5.html"/>
+    <id>https://cxpeng.cn/archives/bdb009c5.html</id>
     <published>2019-04-28T11:03:55.000Z</published>
     <updated>2019-12-13T18:02:51.021Z</updated>
     
@@ -376,21 +376,21 @@
     </summary>
     
     
-      <category term="实用工具汇总" scheme="https://lionvison.com/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/"/>
+      <category term="实用工具汇总" scheme="https://cxpeng.cn/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/"/>
     
     
-      <category term="科学上网" scheme="https://lionvison.com/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+      <category term="科学上网" scheme="https://cxpeng.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
-      <category term="AWS" scheme="https://lionvison.com/tags/AWS/"/>
+      <category term="AWS" scheme="https://cxpeng.cn/tags/AWS/"/>
     
-      <category term="免费" scheme="https://lionvison.com/tags/%E5%85%8D%E8%B4%B9/"/>
+      <category term="免费" scheme="https://cxpeng.cn/tags/%E5%85%8D%E8%B4%B9/"/>
     
   </entry>
   
   <entry>
     <title>Python2和Python3的区别</title>
-    <link href="https://lionvison.com/archives/ac4af3ca.html"/>
-    <id>https://lionvison.com/archives/ac4af3ca.html</id>
+    <link href="https://cxpeng.cn/archives/ac4af3ca.html"/>
+    <id>https://cxpeng.cn/archives/ac4af3ca.html</id>
     <published>2019-04-24T07:34:54.000Z</published>
     <updated>2019-12-13T18:02:51.008Z</updated>
     
@@ -401,17 +401,17 @@
     </summary>
     
     
-      <category term="Python" scheme="https://lionvison.com/categories/Python/"/>
+      <category term="Python" scheme="https://cxpeng.cn/categories/Python/"/>
     
     
-      <category term="Python" scheme="https://lionvison.com/tags/Python/"/>
+      <category term="Python" scheme="https://cxpeng.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Python中模块的使用</title>
-    <link href="https://lionvison.com/archives/fe2495d8.html"/>
-    <id>https://lionvison.com/archives/fe2495d8.html</id>
+    <link href="https://cxpeng.cn/archives/fe2495d8.html"/>
+    <id>https://cxpeng.cn/archives/fe2495d8.html</id>
     <published>2019-04-18T14:07:58.000Z</published>
     <updated>2019-12-13T18:02:51.008Z</updated>
     
@@ -425,19 +425,19 @@
     </summary>
     
     
-      <category term="Python" scheme="https://lionvison.com/categories/Python/"/>
+      <category term="Python" scheme="https://cxpeng.cn/categories/Python/"/>
     
     
-      <category term="Python" scheme="https://lionvison.com/tags/Python/"/>
+      <category term="Python" scheme="https://cxpeng.cn/tags/Python/"/>
     
-      <category term="模块" scheme="https://lionvison.com/tags/%E6%A8%A1%E5%9D%97/"/>
+      <category term="模块" scheme="https://cxpeng.cn/tags/%E6%A8%A1%E5%9D%97/"/>
     
   </entry>
   
   <entry>
     <title>Python中的小知识</title>
-    <link href="https://lionvison.com/archives/55a385d1.html"/>
-    <id>https://lionvison.com/archives/55a385d1.html</id>
+    <link href="https://cxpeng.cn/archives/55a385d1.html"/>
+    <id>https://cxpeng.cn/archives/55a385d1.html</id>
     <published>2019-04-16T09:05:20.000Z</published>
     <updated>2019-12-13T18:02:51.007Z</updated>
     
@@ -459,17 +459,17 @@
     </summary>
     
     
-      <category term="Python" scheme="https://lionvison.com/categories/Python/"/>
+      <category term="Python" scheme="https://cxpeng.cn/categories/Python/"/>
     
     
-      <category term="Python" scheme="https://lionvison.com/tags/Python/"/>
+      <category term="Python" scheme="https://cxpeng.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>悠悠天地，奈何独立苍茫</title>
-    <link href="https://lionvison.com/archives/c82868cc.html"/>
-    <id>https://lionvison.com/archives/c82868cc.html</id>
+    <link href="https://cxpeng.cn/archives/c82868cc.html"/>
+    <id>https://cxpeng.cn/archives/c82868cc.html</id>
     <published>2019-04-16T08:29:00.000Z</published>
     <updated>2019-12-13T18:02:51.016Z</updated>
     
@@ -483,15 +483,15 @@
     </summary>
     
     
-      <category term="向往的生活" scheme="https://lionvison.com/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <category term="向往的生活" scheme="https://cxpeng.cn/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
     
     
   </entry>
   
   <entry>
     <title>批量添加无序号列表格式</title>
-    <link href="https://lionvison.com/archives/b759e75d.html"/>
-    <id>https://lionvison.com/archives/b759e75d.html</id>
+    <link href="https://cxpeng.cn/archives/b759e75d.html"/>
+    <id>https://cxpeng.cn/archives/b759e75d.html</id>
     <published>2019-04-16T05:13:09.000Z</published>
     <updated>2019-12-13T18:02:51.016Z</updated>
     
@@ -503,15 +503,15 @@
     </summary>
     
     
-      <category term="Python" scheme="https://lionvison.com/categories/Python/"/>
+      <category term="Python" scheme="https://cxpeng.cn/categories/Python/"/>
     
     
   </entry>
   
   <entry>
     <title>C++中的set！</title>
-    <link href="https://lionvison.com/archives/fcc57c4c.html"/>
-    <id>https://lionvison.com/archives/fcc57c4c.html</id>
+    <link href="https://cxpeng.cn/archives/fcc57c4c.html"/>
+    <id>https://cxpeng.cn/archives/fcc57c4c.html</id>
     <published>2019-04-13T10:19:19.000Z</published>
     <updated>2019-12-13T18:02:51.001Z</updated>
     
@@ -530,10 +530,10 @@
     </summary>
     
     
-      <category term="C/C++" scheme="https://lionvison.com/categories/C-C/"/>
+      <category term="C/C++" scheme="https://cxpeng.cn/categories/C-C/"/>
     
     
-      <category term="C++" scheme="https://lionvison.com/tags/C/"/>
+      <category term="C++" scheme="https://cxpeng.cn/tags/C/"/>
     
   </entry>
   
