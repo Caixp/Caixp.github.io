@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>蔡祥朋的博客|clove_juan</title>
+  <title>cxp&#39;s blog</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxpeng.cn/"/>
-  <updated>2020-02-12T12:15:58.951Z</updated>
+  <updated>2020-02-12T16:22:09.798Z</updated>
   <id>https://cxpeng.cn/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="https://cxpeng.cn/archives/154a8569.html"/>
     <id>https://cxpeng.cn/archives/154a8569.html</id>
     <published>2020-02-01T12:45:22.000Z</published>
-    <updated>2020-02-12T12:15:58.951Z</updated>
+    <updated>2020-02-12T16:22:09.798Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      新的一年，新的希冀！
     
     </summary>
     
@@ -404,9 +398,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;关于模块：&quot;&gt;&lt;a href=&quot;#关于模块：&quot; class=&quot;headerlink&quot; title=&quot;关于模块：&quot;&gt;&lt;/a&gt;关于模块：&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://docs.python.org/3.8/py-modindex.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Python模块索引大全&lt;/a&gt;&lt;/p&gt;
+      &lt;h1 id=&quot;关于模块&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#关于模块&quot;&gt;&lt;/a&gt; 关于模块：&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.python.org/3.8/py-modindex.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Python模块索引大全&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;随着程序的不断变大，需要将程序分为很多文件，创建成模块，一个.py文件就是一个模块。&lt;/p&gt;
-&lt;p&gt;   从目录中来导入模块，相应的目录称之为包package。使用import语句创建了一个命名空间，并在该命名空间中执行与.py相关的所有语句，要在导入后访问命名空间的内容，只要使用模块的名称当做前缀，就可以访问模块中的内容。&lt;/p&gt;
+&lt;p&gt;从目录中来导入模块，相应的目录称之为包package。使用import语句创建了一个命名空间，并在该命名空间中执行与.py相关的所有语句，要在导入后访问命名空间的内容，只要使用模块的名称当做前缀，就可以访问模块中的内容。&lt;/p&gt;
     
     </summary>
     
