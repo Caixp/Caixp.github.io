@@ -13,7 +13,7 @@
       
       <categories>
           
-          <category> 向往的生活 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
@@ -32,7 +32,7 @@
       
       <categories>
           
-          <category> opencv学习 </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -51,39 +51,7 @@
       
       <categories>
           
-          <category> 博客优化 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>C++面试题集锦</title>
-      <link href="/archives/c0254e4b.html"/>
-      <url>/archives/c0254e4b.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="面试集锦没有面试哪里来的集锦"><a class="markdownIt-Anchor" href="#面试集锦没有面试哪里来的集锦"></a> 面试集锦，没有面试哪里来的集锦</h1>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>安排事项</title>
-      <link href="/archives/2b5a1c3a.html"/>
-      <url>/archives/2b5a1c3a.html</url>
-      
-        <content type="html"><![CDATA[<p>需要做的事情要进行细分和削减：</p><p>就业：9-11月，</p><ul><li>今晚列出简历的大纲（）、</li><li>刷题（刷题课程，先从剑指offer开始）</li><li>视觉课程（主要是为了后面的项目经历）</li><li>c语言，是为了进行保底的offer，加油！！！</li><li>c++：从面试题入手；</li><li></li></ul><p>毕业：论文，（今天和老师商量下能不能换个课题进行）包括论文实验部分（需要一个月）和论文的实际撰写时间（需要两个月）。从10月份就需要全心全意的进行论文。不要着急</p><p>中秋回家：定好日子就不要考虑了。</p><p>回上海：10月一之后，</p><table><thead><tr><th>时间</th><th style="text-align:center">第一象限</th><th style="text-align:center">第二象限</th><th style="text-align:center">第三象限</th><th style="text-align:center">第四象限</th></tr></thead><tbody><tr><td>19/9/10</td><td style="text-align:center">简历的修改和润色；<br>简历投递；<br>和老师交流</td><td style="text-align:center">视觉课程（需要加速）；<br>刷题剑指offer；c语言书籍</td><td style="text-align:center">不重要，紧急</td><td style="text-align:center">不重要，不紧急</td></tr></tbody></table>]]></content>
-      
-      
-      <categories>
-          
-          <category> 向往的生活 </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -102,7 +70,7 @@
       
       <categories>
           
-          <category> 计算机视觉 </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -121,7 +89,7 @@
       
       <categories>
           
-          <category> 向往的生活 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
@@ -140,7 +108,7 @@
       
       <categories>
           
-          <category> Linux </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -159,7 +127,7 @@
       
       <categories>
           
-          <category> 向往的生活 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
@@ -178,7 +146,7 @@
       
       <categories>
           
-          <category> 向往的生活 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
@@ -195,6 +163,12 @@
         <content type="html"><![CDATA[<p>原本使用了学校的vpn和买的vpn可以访问某些外网，但是在访问国内的网络时需要经常验证，所以为了省去验证时间需要关闭vpn，但是关闭vpn之后浏览器就不能够上网。</p><p>解决的方法记录：</p><ul><li>就chrome而言：</li><li>打开设置</li><li>滑到底部打开高级</li><li>点击使用代理设置</li><li>点击LAN设置</li><li>如下图设置<br /><img src="https://i.loli.net/2019/06/01/5cf2233201e0a92894.jpg" alt="" /></li></ul><p><strong>大功告成！</strong></p>]]></content>
       
       
+      <categories>
+          
+          <category> 技术经验 </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -210,7 +184,7 @@
       
       <categories>
           
-          <category> 向往的生活 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
@@ -229,7 +203,7 @@
       
       <categories>
           
-          <category> Linux </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -248,7 +222,7 @@
       
       <categories>
           
-          <category> 实用工具汇总 </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -277,7 +251,7 @@
       
       <categories>
           
-          <category> Python </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -297,12 +271,12 @@
       <link href="/archives/fe2495d8.html"/>
       <url>/archives/fe2495d8.html</url>
       
-        <content type="html"><![CDATA[<h1 id="关于模块"><a class="markdownIt-Anchor" href="#关于模块"></a> 关于模块：</h1><p><a href="https://docs.python.org/3.8/py-modindex.html" target="_blank" rel="noopener">Python模块索引大全</a></p><p>随着程序的不断变大，需要将程序分为很多文件，创建成模块，一个.py文件就是一个模块。</p><p>从目录中来导入模块，相应的目录称之为包package。使用import语句创建了一个命名空间，并在该命名空间中执行与.py相关的所有语句，要在导入后访问命名空间的内容，只要使用模块的名称当做前缀，就可以访问模块中的内容。</p><a id="more"></a><p>为了避免使用的模块名字与他人的重名，可以将模块打包成一个特定的包，<strong>要求包名不能与系统模块重名，并且包内必须有__init__.py</strong>，它也是一个模块，并且模块的名字就为包的名字。</p><ol><li><p>在程序中时经常要对模块的功能进行测试时候，在模块中的话经常用到下面一句：</p><p>if <strong>name</strong> == “<strong>main</strong>”:</p><pre><code> test()</code></pre><p>当我们在命令行运行模块文件时，Python解释器把一个特殊变量__name__置为__main__，这样就可以使得test代码在模块内部使用，而在模块外部调用模块时不运行test函数。</p></li><li><p>编写模块时需要考虑隐藏内部细节，设置私有函数来隐藏细节，需要访问时可以在公开访问的函数中函数中可以调用这些私有方法而不让模块使用者看到内部操作细节。<strong>这样可以做到代码的封装和抽象。</strong></p></li><li><p>dir()可以列出模块的内容，访问__doc__()可以得到描述函数用途的字符串</p></li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="关于模块"><a class="markdownIt-Anchor" href="#关于模块"></a> 关于模块：</h1><p><a href="https://docs.python.org/3.8/py-modindex.html" target="_blank" rel="noopener">Python模块索引大全</a></p><p>随着程序的不断变大，需要将程序分为很多文件，创建成模块，一个.py文件就是一个模块。</p><p>从目录中来导入模块，相应的目录称之为包package。使用import语句创建了一个命名空间，并在该命名空间中执行与.py相关的所有语句，要在导入后访问命名空间的内容，只要使用模块的名称当做前缀，就可以访问模块中的内容。</p><p>为了避免使用的模块名字与他人的重名，可以将模块打包成一个特定的包，<strong>要求包名不能与系统模块重名，并且包内必须有__init__.py</strong>，它也是一个模块，并且模块的名字就为包的名字。</p><ol><li><p>在程序中时经常要对模块的功能进行测试时候，在模块中的话经常用到下面一句：</p><p>if <strong>name</strong> == “<strong>main</strong>”:</p><pre><code> test()</code></pre><p>当我们在命令行运行模块文件时，Python解释器把一个特殊变量__name__置为__main__，这样就可以使得test代码在模块内部使用，而在模块外部调用模块时不运行test函数。</p></li><li><p>编写模块时需要考虑隐藏内部细节，设置私有函数来隐藏细节，需要访问时可以在公开访问的函数中函数中可以调用这些私有方法而不让模块使用者看到内部操作细节。<strong>这样可以做到代码的封装和抽象。</strong></p></li><li><p>dir()可以列出模块的内容，访问__doc__()可以得到描述函数用途的字符串</p></li></ol>]]></content>
       
       
       <categories>
           
-          <category> Python </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -329,7 +303,7 @@
       
       <categories>
           
-          <category> Python </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -354,7 +328,7 @@
       
       <categories>
           
-          <category> 向往的生活 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
@@ -373,7 +347,7 @@
       
       <categories>
           
-          <category> Python </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -392,7 +366,7 @@
       
       <categories>
           
-          <category> C/C++ </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -417,7 +391,7 @@
       
       <categories>
           
-          <category> 实用工具汇总 </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -436,7 +410,7 @@
       
       <categories>
           
-          <category> Linux </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -444,31 +418,6 @@
         <tags>
             
             <tag> Linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>5G终端协同场景下的通信系统技术</title>
-      <link href="/archives/60bf0728.html"/>
-      <url>/archives/60bf0728.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="center整理5g终端协同场景下通信性能分析以及优化策略研究"><a class="markdownIt-Anchor" href="#center整理5g终端协同场景下通信性能分析以及优化策略研究"></a> <center>【整理】5G终端协同场景下通信性能分析以及优化策略研究</h1><p>由于无线移动通信的不断发展，落地的新兴产业应用使得，用户对于网络的传输速率、时延、吞吐量有了更高的要求。-----新一代移动通信技术5G。</p><p>所谓用户体验：网速快，时延低，通信可靠，传输距离远等，</p><p>D2D ，一定范围内的用户进行直接通信，不需要基站的转接，</p><p>我们的D2D技术和中继技术的D2D辅助中继通信技术，可以使得用户UE作为中继，来辅助用户-用户、用户-基站进行通信。</p><ul><li>用户到网络中继技术UE-to-Network Relay。 借助用户用户间的近距离通信，特定用户可以作为中继来辅助其他用户与基站之间的通信交互传输，使得小区边缘用户获得良好的连接体验。</li></ul><p>上面解决了小区边缘用户进行快速通信传输的问题，但是针对密集节点的部署带来的网络能耗高的问题，可以从传输链路入手解决。</p><ul><li>上面提到的用户网络中继技术，在扩展小区服务范围和提升用户体验上面有显著的成效，但是在用户数量急剧增加的情况下，回城链路的压力是很大的，所以考虑使用内容缓存技术，减少数据的流量。所以联合两种技术来分析5G终端协同通信场景下的性能。</li></ul><p>最后要达到的目的，降低用户的功耗情况下，同时降低中断概率等。</p><h3 id="一-移动通信技术的发展"><a class="markdownIt-Anchor" href="#一-移动通信技术的发展"></a> 一、移动通信技术的发展</h3><ul><li>20`80，1G，频分多址，模拟通信</li><li>20`90，2G，时分多址，数字语音通信</li><li>21初，3G，码分多址，</li><li>4G，正交频分多址技术，两种调制方式TD-LTE，FDD-LTE</li></ul><p>然后通过发展的背景来看，通信系统的链路性能已经接近<code>香农极限</code></p><ul><li><p>5G出现，对应高速率、高容量、高可靠、低时延</p><ul><li>应用场景：eMBB增强移动宽带、mMTC大规模机器通信、超高可靠低时延通信uRLL。</li></ul></li><li><p>5G终端协同场景TCS：指的是用户侧的若干个终端设备之间互为协同关系。充分发挥网络与终端协同融合带来的服务能力的提升。</p></li></ul><h4 id="在以前主要是考虑在基站侧通过设计超密集异构网络来提高频谱效率但是对于移动运营商来说需要考虑大部分用户的需求并能够保证网络分配合理统一所以d2d技术就是为了应对移动用户的激增依靠终端侧设备之间的特点-优势和限制合理分配资源和选择缓存策略来提高频谱利用效率实现绿色高效的通信"><a class="markdownIt-Anchor" href="#在以前主要是考虑在基站侧通过设计超密集异构网络来提高频谱效率但是对于移动运营商来说需要考虑大部分用户的需求并能够保证网络分配合理统一所以d2d技术就是为了应对移动用户的激增依靠终端侧设备之间的特点-优势和限制合理分配资源和选择缓存策略来提高频谱利用效率实现绿色高效的通信"></a> 在以前主要是考虑在基站侧，通过设计超密集异构网络，来提高频谱效率，但是对于移动运营商来说，需要考虑大部分用户的需求，并能够保证网络分配合理统一，所以D2D技术就是为了应对移动用户的激增，依靠终端侧设备之间的特点、优势和限制，合理分配资源和选择缓存策略，来提高频谱利用效率，实现绿色高效的通信。</h4><h3 id="二-d2d技术"><a class="markdownIt-Anchor" href="#二-d2d技术"></a> 二、D2D技术</h3><p>传统蜂窝网络系统采用的是基站为中心的覆盖形式，任何用户之间的通信必须经过基站转接。D2D技术可以依靠用户位置的分布，允许一定范围内的特性用户之间进行通信。</p><ul><li>简单D2D通信，终端之间距离较近</li><li>中继用户辅助D2D通信，终端之间距离比较远的时候，选择特性用户作为中继用户</li><li>中继用户辅助蜂窝通信，将D2D对中的其中一个用户作为中继，让另一个用户来和基站进行通信。</li><li>D2D协同通信，若干个终端通过D2D技术进行建立自组织网络，互相进行数据传输</li></ul><p>1、为了提升移动通信系统的整体性能，可以在发送端和接收端中间增加中继节点，中继用户辅助蜂窝网络技术利用特定条件的用户作为中继节点，这种技术虽然提升了整体性能，但是也增加了能耗，因此需要采用合理的策略来管理中继节点的资源分配、节点选择等。</p><p>按功能：</p><ul><li>层一中继：只是简单的将接受的信号进行放大转发，但是噪声会随着有用的信号一同放大</li><li>层二中继：解码转发中继，对接收的信号进行解调解码处理，复杂度高，处理时延，但是噪声控制好。</li><li>层三中继：有完整的无线资源控制层、介质访问控制层、物理层，可以当做低功率的基站。</li></ul><p>2、通信模式选择算法：</p><ul><li>基于链路质量：若D2D用户之间的链路质量（信号强度、速率）高于蜂窝链路，就采用D2D直接通信</li><li>基于距离：考虑长期平均链路质量可以简化为距离，当D2D用户之间距离小于某一阈值时，就采用D2D直接通信</li><li>基于位置：中心区域和边缘区域</li></ul><h3 id="需要解决的问题中继节点的选择问题-资源分配问题-中继节点一般电量充足-与基站的链路稳定-存储能力强-有一定计算处理能力等"><a class="markdownIt-Anchor" href="#需要解决的问题中继节点的选择问题-资源分配问题-中继节点一般电量充足-与基站的链路稳定-存储能力强-有一定计算处理能力等"></a> 需要解决的问题中继节点的选择问题、资源分配问题。（中继节点一般电量充足、与基站的链路稳定、存储能力强、有一定计算处理能力等）</h3><h3 id="三-内容缓存"><a class="markdownIt-Anchor" href="#三-内容缓存"></a> 三、内容缓存</h3><p>未来5G应用场景下，会由点与点通信发展到接收海量数据，因此5G系统下系统的容量至少提升1000倍。在云计算与5G相结合的今天，可以通过基于缓存技术的移动边缘计算，对用户请求的内容流行性进行分析和预测，将重复请求的内容放在移动网络边缘节点中，从而降低业务时延，减轻回程链路的负载压力。<br />说的好理解点，就是用户在请求网络资源的时候，大部分是集中在流行度较高的热门内容，通过分析用户请求，将这些热门内容文件提前缓存或者动态缓存在网络中。这样可以缓解下行链路的负载、降低响应时延。</p><p>内容缓存技术分类：</p><ul><li>终端缓存：降低用户功耗，可以直接从自身设备或者周边智能设备获取缓存文件，无须与基站进行连接；减少基础设施的建设；减轻回程负载压力</li><li>基站缓存：降低回程链路带宽需求。</li></ul><p>目前的缓存技术：</p><ul><li>等概率随机缓存EPRC：命中率低</li><li>流行文件缓存策略MPC：丰富度低。过度冗余。</li></ul><h3 id="四-随机集合理论"><a class="markdownIt-Anchor" href="#四-随机集合理论"></a> 四、随机集合理论：</h3><ul><li>传统的蜂窝均匀分布模型，被验证不适用于当今节点随机分布且不均匀的现代移动通信网络。</li><li>点过程可以指区域中随机分布的点的集合，在满足一定随机分布过程的情况用来表示网络拓扑结构。</li></ul><p>利用随机几何理论对通信网络进行建模分析。可以使用的是随机集合理论可以较好的建模蜂窝网络中基站随机分布特点，通过在二维平面上做统计平均，推导出相关网络性能指标的数学表达式。</p><h3 id="五-基于随机几何的系统建模"><a class="markdownIt-Anchor" href="#五-基于随机几何的系统建模"></a> 五、基于随机几何的系统建模</h3>]]></content>
-      
-      
-      <categories>
-          
-          <category> 5G </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> D2D </tag>
             
         </tags>
       
@@ -486,7 +435,7 @@
       
       <categories>
           
-          <category> 笔试面试 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
@@ -494,6 +443,31 @@
         <tags>
             
             <tag> 编程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>5G终端协同场景下的通信系统技术</title>
+      <link href="/archives/60bf0728.html"/>
+      <url>/archives/60bf0728.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="center整理5g终端协同场景下通信性能分析以及优化策略研究"><a class="markdownIt-Anchor" href="#center整理5g终端协同场景下通信性能分析以及优化策略研究"></a> <center>【整理】5G终端协同场景下通信性能分析以及优化策略研究</h1><p>由于无线移动通信的不断发展，落地的新兴产业应用使得，用户对于网络的传输速率、时延、吞吐量有了更高的要求。-----新一代移动通信技术5G。</p><p>所谓用户体验：网速快，时延低，通信可靠，传输距离远等，</p><p>D2D ，一定范围内的用户进行直接通信，不需要基站的转接，</p><p>我们的D2D技术和中继技术的D2D辅助中继通信技术，可以使得用户UE作为中继，来辅助用户-用户、用户-基站进行通信。</p><ul><li>用户到网络中继技术UE-to-Network Relay。 借助用户用户间的近距离通信，特定用户可以作为中继来辅助其他用户与基站之间的通信交互传输，使得小区边缘用户获得良好的连接体验。</li></ul><p>上面解决了小区边缘用户进行快速通信传输的问题，但是针对密集节点的部署带来的网络能耗高的问题，可以从传输链路入手解决。</p><ul><li>上面提到的用户网络中继技术，在扩展小区服务范围和提升用户体验上面有显著的成效，但是在用户数量急剧增加的情况下，回城链路的压力是很大的，所以考虑使用内容缓存技术，减少数据的流量。所以联合两种技术来分析5G终端协同通信场景下的性能。</li></ul><p>最后要达到的目的，降低用户的功耗情况下，同时降低中断概率等。</p><h3 id="一-移动通信技术的发展"><a class="markdownIt-Anchor" href="#一-移动通信技术的发展"></a> 一、移动通信技术的发展</h3><ul><li>20`80，1G，频分多址，模拟通信</li><li>20`90，2G，时分多址，数字语音通信</li><li>21初，3G，码分多址，</li><li>4G，正交频分多址技术，两种调制方式TD-LTE，FDD-LTE</li></ul><p>然后通过发展的背景来看，通信系统的链路性能已经接近<code>香农极限</code></p><ul><li><p>5G出现，对应高速率、高容量、高可靠、低时延</p><ul><li>应用场景：eMBB增强移动宽带、mMTC大规模机器通信、超高可靠低时延通信uRLL。</li></ul></li><li><p>5G终端协同场景TCS：指的是用户侧的若干个终端设备之间互为协同关系。充分发挥网络与终端协同融合带来的服务能力的提升。</p></li></ul><h4 id="在以前主要是考虑在基站侧通过设计超密集异构网络来提高频谱效率但是对于移动运营商来说需要考虑大部分用户的需求并能够保证网络分配合理统一所以d2d技术就是为了应对移动用户的激增依靠终端侧设备之间的特点-优势和限制合理分配资源和选择缓存策略来提高频谱利用效率实现绿色高效的通信"><a class="markdownIt-Anchor" href="#在以前主要是考虑在基站侧通过设计超密集异构网络来提高频谱效率但是对于移动运营商来说需要考虑大部分用户的需求并能够保证网络分配合理统一所以d2d技术就是为了应对移动用户的激增依靠终端侧设备之间的特点-优势和限制合理分配资源和选择缓存策略来提高频谱利用效率实现绿色高效的通信"></a> 在以前主要是考虑在基站侧，通过设计超密集异构网络，来提高频谱效率，但是对于移动运营商来说，需要考虑大部分用户的需求，并能够保证网络分配合理统一，所以D2D技术就是为了应对移动用户的激增，依靠终端侧设备之间的特点、优势和限制，合理分配资源和选择缓存策略，来提高频谱利用效率，实现绿色高效的通信。</h4><h3 id="二-d2d技术"><a class="markdownIt-Anchor" href="#二-d2d技术"></a> 二、D2D技术</h3><p>传统蜂窝网络系统采用的是基站为中心的覆盖形式，任何用户之间的通信必须经过基站转接。D2D技术可以依靠用户位置的分布，允许一定范围内的特性用户之间进行通信。</p><ul><li>简单D2D通信，终端之间距离较近</li><li>中继用户辅助D2D通信，终端之间距离比较远的时候，选择特性用户作为中继用户</li><li>中继用户辅助蜂窝通信，将D2D对中的其中一个用户作为中继，让另一个用户来和基站进行通信。</li><li>D2D协同通信，若干个终端通过D2D技术进行建立自组织网络，互相进行数据传输</li></ul><p>1、为了提升移动通信系统的整体性能，可以在发送端和接收端中间增加中继节点，中继用户辅助蜂窝网络技术利用特定条件的用户作为中继节点，这种技术虽然提升了整体性能，但是也增加了能耗，因此需要采用合理的策略来管理中继节点的资源分配、节点选择等。</p><p>按功能：</p><ul><li>层一中继：只是简单的将接受的信号进行放大转发，但是噪声会随着有用的信号一同放大</li><li>层二中继：解码转发中继，对接收的信号进行解调解码处理，复杂度高，处理时延，但是噪声控制好。</li><li>层三中继：有完整的无线资源控制层、介质访问控制层、物理层，可以当做低功率的基站。</li></ul><p>2、通信模式选择算法：</p><ul><li>基于链路质量：若D2D用户之间的链路质量（信号强度、速率）高于蜂窝链路，就采用D2D直接通信</li><li>基于距离：考虑长期平均链路质量可以简化为距离，当D2D用户之间距离小于某一阈值时，就采用D2D直接通信</li><li>基于位置：中心区域和边缘区域</li></ul><h3 id="需要解决的问题中继节点的选择问题-资源分配问题-中继节点一般电量充足-与基站的链路稳定-存储能力强-有一定计算处理能力等"><a class="markdownIt-Anchor" href="#需要解决的问题中继节点的选择问题-资源分配问题-中继节点一般电量充足-与基站的链路稳定-存储能力强-有一定计算处理能力等"></a> 需要解决的问题中继节点的选择问题、资源分配问题。（中继节点一般电量充足、与基站的链路稳定、存储能力强、有一定计算处理能力等）</h3><h3 id="三-内容缓存"><a class="markdownIt-Anchor" href="#三-内容缓存"></a> 三、内容缓存</h3><p>未来5G应用场景下，会由点与点通信发展到接收海量数据，因此5G系统下系统的容量至少提升1000倍。在云计算与5G相结合的今天，可以通过基于缓存技术的移动边缘计算，对用户请求的内容流行性进行分析和预测，将重复请求的内容放在移动网络边缘节点中，从而降低业务时延，减轻回程链路的负载压力。<br />说的好理解点，就是用户在请求网络资源的时候，大部分是集中在流行度较高的热门内容，通过分析用户请求，将这些热门内容文件提前缓存或者动态缓存在网络中。这样可以缓解下行链路的负载、降低响应时延。</p><p>内容缓存技术分类：</p><ul><li>终端缓存：降低用户功耗，可以直接从自身设备或者周边智能设备获取缓存文件，无须与基站进行连接；减少基础设施的建设；减轻回程负载压力</li><li>基站缓存：降低回程链路带宽需求。</li></ul><p>目前的缓存技术：</p><ul><li>等概率随机缓存EPRC：命中率低</li><li>流行文件缓存策略MPC：丰富度低。过度冗余。</li></ul><h3 id="四-随机集合理论"><a class="markdownIt-Anchor" href="#四-随机集合理论"></a> 四、随机集合理论：</h3><ul><li>传统的蜂窝均匀分布模型，被验证不适用于当今节点随机分布且不均匀的现代移动通信网络。</li><li>点过程可以指区域中随机分布的点的集合，在满足一定随机分布过程的情况用来表示网络拓扑结构。</li></ul><p>利用随机几何理论对通信网络进行建模分析。可以使用的是随机集合理论可以较好的建模蜂窝网络中基站随机分布特点，通过在二维平面上做统计平均，推导出相关网络性能指标的数学表达式。</p><h3 id="五-基于随机几何的系统建模"><a class="markdownIt-Anchor" href="#五-基于随机几何的系统建模"></a> 五、基于随机几何的系统建模</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术经验 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> D2D </tag>
             
         </tags>
       
@@ -511,7 +485,7 @@
       
       <categories>
           
-          <category> Python </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -538,7 +512,7 @@
       
       <categories>
           
-          <category> 实用工具汇总 </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -563,7 +537,7 @@
       
       <categories>
           
-          <category> 数据库 </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -590,7 +564,7 @@
       
       <categories>
           
-          <category> Linux </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -606,7 +580,7 @@
     
     
     <entry>
-      <title>数据分析与挖掘_01</title>
+      <title>数据分析与挖掘（一）</title>
       <link href="/archives/9c2ffa7.html"/>
       <url>/archives/9c2ffa7.html</url>
       
@@ -615,7 +589,7 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -644,7 +618,7 @@
       
       <categories>
           
-          <category> 爬虫 </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -671,7 +645,7 @@
       
       <categories>
           
-          <category> Python </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -698,7 +672,7 @@
       
       <categories>
           
-          <category> Python </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -723,7 +697,7 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -752,7 +726,7 @@
       
       <categories>
           
-          <category> 博客优化 </category>
+          <category> 技术经验 </category>
           
       </categories>
       
@@ -771,7 +745,7 @@
       
       <categories>
           
-          <category> opencv学习 </category>
+          <category> 技术经验 </category>
           
       </categories>
       

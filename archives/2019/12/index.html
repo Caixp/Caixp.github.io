@@ -321,9 +321,9 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/opencv%E5%AD%A6%E4%B9%A0/' rel="nofollow">
+    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>opencv学习</p>
+      <p>技术经验</p>
     </a>
   </div>
 
@@ -350,148 +350,14 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h1 id="win10tf20cuda100cudnn75opencv412"><a class="markdownIt-Anchor" href="#win10tf20cuda100cudnn75opencv412"></a> WIN10+TF2.0+CUDA10.0+cuDNN7.5+OpenCV4.1.2</h1>
-<blockquote>
-<p>配置gpu版本的tensorflow完全是小白入门tensorflow的第一步；我的电脑gpu太差也就是仅仅学习下MX250</p>
-<p>参考了一些详细的教程，但是对于安装的版本来说有些指定的不太明确，这有个建议就是不要一味的追求新，要注意查找版本之间的关系</p>
-</blockquote>
-<ul>
-<li>
-<p>开始安装，全文无图。</p>
-<ul>
-<li>
-<p>预准备工作</p>
-<ul>
-<li>下载<a href="https://developer.nvidia.com/cuda-toolkit-archive" target="_blank" rel="noopener">CUDA10.0</a></li>
-<li>下载<a href="https://developer.nvidia.com/rdp/cudnn-archive" target="_blank" rel="noopener">cuDNN7.5 for CUDA10.0</a>，需要注册后下载，支持微信和QQ</li>
-<li>下载<a href="https://www.anaconda.com/distribution/" target="_blank" rel="noopener">Anaconda</a>，直接从官网下载会很慢，推荐将下载链接复制到百度云离线下载中，保存到百度云在进行下载速度快很多。或者直接下载百度云分享：链接：<a href="https://pan.baidu.com/s/1BKtXWtUVFl4isthLj4LLPg%E6%8F%90%E5%8F%96%E7%A0%81%EF%BC%9Assjs" target="_blank" rel="noopener">https://pan.baidu.com/s/1BKtXWtUVFl4isthLj4LLPg提取码：ssjs</a></li>
-<li>在cmd中cmd中使用nvidia-smi查看显卡驱动是否正确安装，不过一般没啥问题</li>
-</ul>
-</li>
-<li>
-<p>安装CUDA10.0</p>
-<ul>
-<li>
-<p>双击exe文件，只需要设置下安装路径就行，记住安装路径选择之后，左右的安装路径请保持一致。</p>
-</li>
-<li>
-<p>到了驱动安装选项中，不要勾选NVIDAI Experience那个选项，因为我们用不到。</p>
-</li>
-<li>
-<p>最后会提示没有vs支持，这个需要安装visual studio，勾选选择需要就行，然后就是漫长的安装vs过程，安装过程中选择C++桌面安装就行，选择好安装路径，不要都堆在C盘。</p>
-</li>
-<li>
-<p>直至安装完成</p>
-</li>
-<li>
-<p>最后测试下cmd中输入nvcc -V，显示正确的信息则安装完成。</p>
-</li>
-</ul>
-</li>
-<li>
-<p>安装cuDNN7.5</p>
-<ul>
-<li>解压下载的安装包，打开文件夹，将文件夹中的内容复制到CUDA的安装路径中，这里以D:/CUDAv10.0为例，复制到该文件夹下。</li>
-</ul>
-</li>
-<li>
-<p>添加环境变量</p>
-<ul>
-<li>右击此电脑-高级系统设置-环境变量-系统变量里面的path：里面可以看到CUDA_PATH和CUDA_PATH_V10已经存在，以安装CUDA的路径为D:\CUDAv10.0为例添加以下路径到到path中：
-<ul>
-<li>D:\CUDAv10.1\bin</li>
-<li>D:\CUDAv10.1\include</li>
-<li>D:\CUDAv10.1\lib\x64</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>安装Anaconda3</p>
-<ul>
-<li>安装过程中只需要设置下安装路径即可</li>
-<li>添加环境变量，以安装路径为D:\Anaconda3为例，添加以下变量到Path
-<ul>
-<li>D:\Anaconda3</li>
-<li>D:\Anaconda3\Scripts</li>
-<li>D:\Anaconda3\Library\bin</li>
-</ul>
-</li>
-<li>经过上面的步骤就可以在cmd中使用conda，pip，python</li>
-</ul>
-</li>
-<li>
-<p>安装tensorflow-gpu</p>
-<ul>
-<li>现在cmd中升级下pip配置下pip的源，第二部分的问题中有提到具体方法；</li>
-<li>使用pip安装
-<ul>
-<li>pip install tensorflow-gpu==2.0.0-rc0</li>
-<li>等待安装完成</li>
-</ul>
-</li>
-<li>测试是安装成功，cmd下输入
-<ul>
-<li>&gt; python</li>
-<li>&gt;&gt;import tensorflow as tf</li>
-<li>&gt;&gt;tf.__versioin__</li>
-<li>输出’2.0.0-rc0’</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>完成安装</p>
-</li>
-<li>
-<p>在python中使用opencv</p>
-<ul>
-<li>第一步在电脑中下载编译opencv，在另一篇文章中写道<code>opencv安装与配置</code></li>
-<li>以安装路径为D:\opencv4.1.2\opencv\build，找到D:\opencv4.1.2\opencv\build\python\cv2\python-3.7下的以pyd为后缀的文件，拷贝到python所在目录的Lib\site-packages文件夹下，有必要的话可以将D:\opencv4.1.2\opencv\build\python\cv2\python-3.7添加到环境变量中。</li>
-<li>在python中测试：
-<ul>
-<li>import cv2 as cv</li>
-<li>cv._<em>version</em>_</li>
-<li>‘4.1.2’</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="tensorflow安装过程中遇到的问题与解决办法"><a class="markdownIt-Anchor" href="#tensorflow安装过程中遇到的问题与解决办法"></a> Tensorflow安装过程中遇到的问题与解决办法：</h1>
-<ul>
-<li>下载anaconda速度非常慢
-<ul>
-<li>将anaconda下载链接复制到百度云离线下载中，保存到百度云进行下载，速度虽然慢（还至少比官网快）但是稳定，当然迅雷应该也是可以；</li>
-</ul>
-</li>
-<li>pip安装tensorflow速度很慢
-<ul>
-<li>更改pip的源改为清华的镜像源</li>
-<li>pip install pip -U<br />
-pip config set global.index-url <a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple</a></li>
-<li>更改完以后下载库文件直接从这个镜像源下载，速度很快的。</li>
-</ul>
-</li>
-<li>conda更换源
-<ul>
-<li>conda config --add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</a></li>
-<li>conda config --set show_channel_urls yes</li>
-</ul>
-</li>
-</ul>
-<p>参考：</p>
-<ul>
-<li><a href="https://blog.csdn.net/huanyingzhizai/article/details/89298964#%E5%AE%89%E8%A3%85tensorflow1.13(with-Anaconda)" target="_blank" rel="noopener">https://blog.csdn.net/huanyingzhizai/article/details/89298964#%E5%AE%89%E8%A3%85tensorflow1.13(with-Anaconda)</a></li>
-<li><a href="https://blog.csdn.net/huanyingzhizai/article/details/100778893" target="_blank" rel="noopener">https://blog.csdn.net/huanyingzhizai/article/details/100778893</a></li>
-<li><a href="https://blog.csdn.net/weixin_42267309/article/details/92800901" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42267309/article/details/92800901</a></li>
-<li><a href="https://blog.csdn.net/qq_43673118/article/details/90140395" target="_blank" rel="noopener">https://blog.csdn.net/qq_43673118/article/details/90140395</a></li>
-<li><a href="https://blog.csdn.net/ITLearnHall/article/details/81708148" target="_blank" rel="noopener">https://blog.csdn.net/ITLearnHall/article/details/81708148</a></li>
-<li><a href="https://blog.csdn.net/howlclat/article/details/78783701" target="_blank" rel="noopener">https://blog.csdn.net/howlclat/article/details/78783701</a></li>
-</ul>
-
+      记录笔记本配置tf2.0的过程，笔记本matebook13、显卡MX250。
+      
+        <div class="readmore">
+          <a href="/archives/bb4fe864.html" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -553,9 +419,9 @@ pip config set global.index-url <a href="https://pypi.tuna.tsinghua.edu.cn/simpl
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/' rel="nofollow">
+    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>博客优化</p>
+      <p>技术经验</p>
     </a>
   </div>
 
@@ -582,39 +448,14 @@ pip config set global.index-url <a href="https://pypi.tuna.tsinghua.edu.cn/simpl
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <blockquote>
-<p>解决的问题：换电脑使得原来的博客环境失效，现在需要将在新电脑上写博客。<br />
-解决方法：在新电脑上重新配置hexo</p>
-</blockquote>
-<p>步骤：</p>
-<ul>
-<li>
-<p>1、准备工作</p>
-<ul>
-<li>将原来博客中的文件拷贝，然后在新电脑上创建一个Blog文件夹；</li>
-<li>下载node.js,<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">官网下载</a>，之后安装，测试安装成功的方法是在cmd下，使用npm –V可以看到输出内容安装成功；</li>
-<li>使用npm包管理工具下载hexo，命令为：npm install hexo-cli –g；<a href="https://hexo.io/" target="_blank" rel="noopener">参考官网</a></li>
-<li>测试hexo安装成功的方式同npm：hexo –V</li>
-<li>安装git，<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">官网</a>。然后和配置博客时一样同样需要使用生成公钥，链接GitHub；</li>
-</ul>
-</li>
-<li>
-<p>2、开始配置</p>
-<ul>
-<li>所有的操作都在git bash中操作；在Blog的上一层文件夹下，使用hexo init Blog/命令进行初始化，然后将上面拷贝好的文件中的一下几个文件和文件夹替换Blog文件下的文件：<br />
-source<br />
-themes<br />
-_config.yml</li>
-<li>然后 切换到Blog文件夹下，使用命令安装所需要的依赖，这都要看你原本博客中的依赖是什么，因为依赖版本的更新比较快，建议自己重新安装依赖：npm install xxx1 xxx2 xxx3 --save</li>
-<li>依赖安装完成后，基本上就可以使用了，同样可以使用hexo s –g 来检查下博客是否能够重新显示，如果没有问题可以写博客部署到服务器试一下，一定要在本地看一下能不能使用成功，否则直接推到服务器很可能使得博客网站不显示。</li>
-</ul>
-</li>
-<li>
-<p>参考：</p>
-<p><a href="https://blog.csdn.net/littlehaes/article/details/81503455" target="_blank" rel="noopener">https://blog.csdn.net/littlehaes/article/details/81503455</a></p>
-</li>
-</ul>
-
+      买新电脑，换系统了，都可以来取经。
+      
+        <div class="readmore">
+          <a href="/archives/b3404e24.html" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -794,31 +635,9 @@ _config.yml</li>
     <div class='content pure'>
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/5G/" href="/categories/5G/"><div class='name'>5G</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/" href="/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"><div class='name'>技术经验</div><div class='badge'>(26)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/C-C/" href="/categories/C-C/"><div class='name'>C/C++</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/Linux/" href="/categories/Linux/"><div class='name'>Linux</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/Python/" href="/categories/Python/"><div class='name'>Python</div><div class='badge'>(7)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/opencv%E5%AD%A6%E4%B9%A0/" href="/categories/opencv%E5%AD%A6%E4%B9%A0/"><div class='name'>opencv学习</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/" href="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"><div class='name'>博客优化</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/" href="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"><div class='name'>向往的生活</div><div class='badge'>(7)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/"><div class='name'>实用工具汇总</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"><div class='name'>数据分析</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"><div class='name'>数据库</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E7%88%AC%E8%99%AB/" href="/categories/%E7%88%AC%E8%99%AB/"><div class='name'>爬虫</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95/" href="/categories/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95/"><div class='name'>笔试面试</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"><div class='name'>计算机视觉</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"><div class='name'>生活随笔</div><div class='badge'>(7)</div></a></li>
         
       </ul>
     </div>
@@ -987,7 +806,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：40.4k</span>
+    <span class="post-count">字数统计：40.1k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>

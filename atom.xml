@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxpeng.cn/"/>
-  <updated>2020-02-12T16:22:09.798Z</updated>
+  <updated>2020-02-13T03:21:20.027Z</updated>
   <id>https://cxpeng.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://cxpeng.cn/archives/154a8569.html"/>
     <id>https://cxpeng.cn/archives/154a8569.html</id>
     <published>2020-02-01T12:45:22.000Z</published>
-    <updated>2020-02-12T16:22:09.798Z</updated>
+    <updated>2020-02-13T03:21:20.027Z</updated>
     
     <summary type="html">
     
@@ -30,7 +30,7 @@
     </summary>
     
     
-      <category term="向往的生活" scheme="https://cxpeng.cn/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活随笔" scheme="https://cxpeng.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
@@ -40,22 +40,16 @@
     <link href="https://cxpeng.cn/archives/bb4fe864.html"/>
     <id>https://cxpeng.cn/archives/bb4fe864.html</id>
     <published>2019-12-03T04:28:51.000Z</published>
-    <updated>2020-02-12T12:17:39.810Z</updated>
+    <updated>2020-02-13T03:24:32.978Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      记录笔记本配置tf2.0的过程，笔记本matebook13、显卡MX250。
     
     </summary>
     
     
-      <category term="opencv学习" scheme="https://cxpeng.cn/categories/opencv%E5%AD%A6%E4%B9%A0/"/>
+      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
     
     
   </entry>
@@ -65,70 +59,16 @@
     <link href="https://cxpeng.cn/archives/b3404e24.html"/>
     <id>https://cxpeng.cn/archives/b3404e24.html</id>
     <published>2019-12-01T05:34:47.000Z</published>
-    <updated>2019-12-13T18:02:51.018Z</updated>
+    <updated>2020-02-13T03:25:27.203Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      买新电脑，换系统了，都可以来取经。
     
     </summary>
     
     
-      <category term="博客优化" scheme="https://cxpeng.cn/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>C++面试题集锦</title>
-    <link href="https://cxpeng.cn/archives/c0254e4b.html"/>
-    <id>https://cxpeng.cn/archives/c0254e4b.html</id>
-    <published>2019-09-10T07:50:41.000Z</published>
-    <updated>2019-12-13T18:02:51.002Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>安排事项</title>
-    <link href="https://cxpeng.cn/archives/2b5a1c3a.html"/>
-    <id>https://cxpeng.cn/archives/2b5a1c3a.html</id>
-    <published>2019-09-10T07:14:48.000Z</published>
-    <updated>2019-12-13T18:02:51.013Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-      <category term="向往的生活" scheme="https://cxpeng.cn/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
     
     
   </entry>
@@ -138,22 +78,16 @@
     <link href="https://cxpeng.cn/archives/9bb65d10.html"/>
     <id>https://cxpeng.cn/archives/9bb65d10.html</id>
     <published>2019-09-09T15:15:51.000Z</published>
-    <updated>2020-02-12T12:18:57.921Z</updated>
+    <updated>2020-02-13T03:25:54.096Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      计算机视觉现在入门是否还能跟上时代潮流?
     
     </summary>
     
     
-      <category term="计算机视觉" scheme="https://cxpeng.cn/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
+      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
     
     
   </entry>
@@ -163,22 +97,16 @@
     <link href="https://cxpeng.cn/archives/a66037f0.html"/>
     <id>https://cxpeng.cn/archives/a66037f0.html</id>
     <published>2019-09-09T08:49:17.000Z</published>
-    <updated>2020-02-12T12:18:02.619Z</updated>
+    <updated>2020-02-13T03:21:51.482Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      时间管理是为了更高效地工作，然后放肆的玩。
     
     </summary>
     
     
-      <category term="向往的生活" scheme="https://cxpeng.cn/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活随笔" scheme="https://cxpeng.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
@@ -188,22 +116,16 @@
     <link href="https://cxpeng.cn/archives/2fa3a8c0.html"/>
     <id>https://cxpeng.cn/archives/2fa3a8c0.html</id>
     <published>2019-09-05T15:38:36.000Z</published>
-    <updated>2019-12-13T18:02:51.009Z</updated>
+    <updated>2020-02-13T03:24:27.805Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      刚开始装系统的时候是全英文的环境，可是出现一些中文乱码。所以改为中文编码方式
     
     </summary>
     
     
-      <category term="Linux" scheme="https://cxpeng.cn/categories/Linux/"/>
+      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
     
     
   </entry>
@@ -213,22 +135,16 @@
     <link href="https://cxpeng.cn/archives/c9ac5c9b.html"/>
     <id>https://cxpeng.cn/archives/c9ac5c9b.html</id>
     <published>2019-09-05T15:38:36.000Z</published>
-    <updated>2019-12-13T18:02:51.019Z</updated>
+    <updated>2020-02-13T03:22:12.600Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      计划不如变化快！
     
     </summary>
     
     
-      <category term="向往的生活" scheme="https://cxpeng.cn/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活随笔" scheme="https://cxpeng.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
@@ -238,22 +154,16 @@
     <link href="https://cxpeng.cn/archives/494fcdcb.html"/>
     <id>https://cxpeng.cn/archives/494fcdcb.html</id>
     <published>2019-09-01T06:56:39.000Z</published>
-    <updated>2020-02-12T12:17:54.670Z</updated>
+    <updated>2020-02-13T03:21:44.362Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      减肥方法不就是管住嘴迈开腿？
     
     </summary>
     
     
-      <category term="向往的生活" scheme="https://cxpeng.cn/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活随笔" scheme="https://cxpeng.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
@@ -263,20 +173,16 @@
     <link href="https://cxpeng.cn/archives/a4692f1.html"/>
     <id>https://cxpeng.cn/archives/a4692f1.html</id>
     <published>2019-06-01T06:56:39.000Z</published>
-    <updated>2019-12-13T18:02:51.012Z</updated>
+    <updated>2020-02-13T03:25:02.331Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      为什么关闭vpn不能连接网络？
     
     </summary>
     
+    
+      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
     
     
   </entry>
@@ -286,22 +192,16 @@
     <link href="https://cxpeng.cn/archives/4555512d.html"/>
     <id>https://cxpeng.cn/archives/4555512d.html</id>
     <published>2019-05-13T02:35:49.000Z</published>
-    <updated>2020-02-12T12:19:08.790Z</updated>
+    <updated>2020-02-13T03:26:17.413Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      认清现实。
     
     </summary>
     
     
-      <category term="向往的生活" scheme="https://cxpeng.cn/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活随笔" scheme="https://cxpeng.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
@@ -311,22 +211,16 @@
     <link href="https://cxpeng.cn/archives/1b44cf9e.html"/>
     <id>https://cxpeng.cn/archives/1b44cf9e.html</id>
     <published>2019-05-10T11:51:59.000Z</published>
-    <updated>2020-02-12T12:17:48.560Z</updated>
+    <updated>2020-02-13T03:24:43.930Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      需要用到ssh工具来登录远程主机，大部分人推荐使用Xshell，我是用来登录亚马逊服务器。
     
     </summary>
     
     
-      <category term="Linux" scheme="https://cxpeng.cn/categories/Linux/"/>
+      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
     
     
   </entry>
@@ -336,22 +230,16 @@
     <link href="https://cxpeng.cn/archives/bdb009c5.html"/>
     <id>https://cxpeng.cn/archives/bdb009c5.html</id>
     <published>2019-04-28T11:03:55.000Z</published>
-    <updated>2020-02-12T12:18:46.376Z</updated>
+    <updated>2020-02-13T03:25:39.844Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      免费试用aws，免费！
     
     </summary>
     
     
-      <category term="实用工具汇总" scheme="https://cxpeng.cn/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/"/>
+      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
     
     
       <category term="科学上网" scheme="https://cxpeng.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
@@ -367,22 +255,16 @@
     <link href="https://cxpeng.cn/archives/ac4af3ca.html"/>
     <id>https://cxpeng.cn/archives/ac4af3ca.html</id>
     <published>2019-04-24T07:34:54.000Z</published>
-    <updated>2020-02-12T12:19:24.381Z</updated>
+    <updated>2020-02-13T03:24:03.436Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      常常会被问到你是用Python2还是Python3啊，有什么不同？
     
     </summary>
     
     
-      <category term="Python" scheme="https://cxpeng.cn/categories/Python/"/>
+      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
     
     
       <category term="Python" scheme="https://cxpeng.cn/tags/Python/"/>
@@ -394,19 +276,16 @@
     <link href="https://cxpeng.cn/archives/fe2495d8.html"/>
     <id>https://cxpeng.cn/archives/fe2495d8.html</id>
     <published>2019-04-18T14:07:58.000Z</published>
-    <updated>2020-02-12T12:17:07.635Z</updated>
+    <updated>2020-02-13T03:24:07.070Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;关于模块&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#关于模块&quot;&gt;&lt;/a&gt; 关于模块：&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://docs.python.org/3.8/py-modindex.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Python模块索引大全&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;随着程序的不断变大，需要将程序分为很多文件，创建成模块，一个.py文件就是一个模块。&lt;/p&gt;
-&lt;p&gt;从目录中来导入模块，相应的目录称之为包package。使用import语句创建了一个命名空间，并在该命名空间中执行与.py相关的所有语句，要在导入后访问命名空间的内容，只要使用模块的名称当做前缀，就可以访问模块中的内容。&lt;/p&gt;
+      使用模块和生成相关模块，可以大大提高开发效率。
     
     </summary>
     
     
-      <category term="Python" scheme="https://cxpeng.cn/categories/Python/"/>
+      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
     
     
       <category term="Python" scheme="https://cxpeng.cn/tags/Python/"/>
@@ -420,22 +299,16 @@
     <link href="https://cxpeng.cn/archives/55a385d1.html"/>
     <id>https://cxpeng.cn/archives/55a385d1.html</id>
     <published>2019-04-16T09:05:20.000Z</published>
-    <updated>2020-02-12T12:17:19.389Z</updated>
+    <updated>2020-02-13T03:24:15.744Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      微信公众号中经常发一些Python实现的小工具，在这里汇总记录下。
     
     </summary>
     
     
-      <category term="Python" scheme="https://cxpeng.cn/categories/Python/"/>
+      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
     
     
       <category term="Python" scheme="https://cxpeng.cn/tags/Python/"/>
@@ -447,22 +320,16 @@
     <link href="https://cxpeng.cn/archives/c82868cc.html"/>
     <id>https://cxpeng.cn/archives/c82868cc.html</id>
     <published>2019-04-16T08:29:00.000Z</published>
-    <updated>2020-02-12T12:18:14.030Z</updated>
+    <updated>2020-02-13T03:21:56.830Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      又一届师哥师姐毕业了，看着实验室只剩自己一个人关电闸，差点眼泪掉下来。自己一个人呆着就回忆起来这两年的读研经历。
     
     </summary>
     
     
-      <category term="向往的生活" scheme="https://cxpeng.cn/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活随笔" scheme="https://cxpeng.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
@@ -472,22 +339,16 @@
     <link href="https://cxpeng.cn/archives/b759e75d.html"/>
     <id>https://cxpeng.cn/archives/b759e75d.html</id>
     <published>2019-04-16T05:13:09.000Z</published>
-    <updated>2020-02-12T12:18:18.074Z</updated>
+    <updated>2020-02-13T03:25:18.203Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      在编写Markdown文档时候批量生成无序列表
     
     </summary>
     
     
-      <category term="Python" scheme="https://cxpeng.cn/categories/Python/"/>
+      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
     
     
   </entry>
@@ -497,25 +358,59 @@
     <link href="https://cxpeng.cn/archives/fcc57c4c.html"/>
     <id>https://cxpeng.cn/archives/fcc57c4c.html</id>
     <published>2019-04-13T10:19:19.000Z</published>
-    <updated>2020-02-12T12:16:17.783Z</updated>
+    <updated>2020-02-13T03:23:36.156Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      记录集合的用法和相关接口。
     
     </summary>
     
     
-      <category term="C/C++" scheme="https://cxpeng.cn/categories/C-C/"/>
+      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
     
     
       <category term="C++" scheme="https://cxpeng.cn/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows下常用命令</title>
+    <link href="https://cxpeng.cn/archives/aee69fbc.html"/>
+    <id>https://cxpeng.cn/archives/aee69fbc.html</id>
+    <published>2019-04-13T10:19:19.000Z</published>
+    <updated>2020-02-13T03:24:38.650Z</updated>
+    
+    <summary type="html">
+    
+      转载，用于查询工具。
+    
+    </summary>
+    
+    
+      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>把Linux给我我就能用！</title>
+    <link href="https://cxpeng.cn/archives/7ef58b2f.html"/>
+    <id>https://cxpeng.cn/archives/7ef58b2f.html</id>
+    <published>2019-04-03T15:11:35.000Z</published>
+    <updated>2020-02-13T03:25:22.390Z</updated>
+    
+    <summary type="html">
+    
+      开启使用学习的新世界！
+    
+    </summary>
+    
+    
+      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
+    
+    
+      <category term="Linux" scheme="https://cxpeng.cn/tags/Linux/"/>
     
   </entry>
   

@@ -287,7 +287,7 @@
         
   <h2 class="title">
     <a href="/archives/9c2ffa7.html">
-      数据分析与挖掘_01
+      数据分析与挖掘（一）
     </a>
   </h2>
 
@@ -325,9 +325,9 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/' rel="nofollow">
+    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>数据分析</p>
+      <p>技术经验</p>
     </a>
   </div>
 
@@ -354,119 +354,14 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h1 id="q1-数据仓库data-warehouse-dw和数据库的区别"><a class="markdownIt-Anchor" href="#q1-数据仓库data-warehouse-dw和数据库的区别"></a> Q1、数据仓库（Data Warehouse, DW）和数据库的区别</h1>
-<blockquote>
-<p>数据仓库是一个很大的数据存储集合，出于企业的分析性报告和决策支持目的而创建。对于多种的业务数据进行筛选和整合，为企业提供一定的BI能力，知道业务流程改进、监视时间、成本、质量、控制。</p>
-</blockquote>
-<ul>
-<li>数据仓库的输入方是各种各样的数据源，最终的输出用于企业的数据分析、数据挖掘、数据报表等方向。</li>
-<li>数据仓库可以对数据库存储的同一主题的数据进行整合处理</li>
-<li>不同源的数据整合依靠的是ETL,指的是Extract-Transform-Load过程，描述的是将数据从来源迁移到目标的过程（数据抽取-数据转换-数据加载）</li>
-</ul>
-<p>数据仓库：Hive、Teradata、Oracle、Db2等</p>
-<h1 id="q2-数据分析怎么获取数据"><a class="markdownIt-Anchor" href="#q2-数据分析怎么获取数据"></a> Q2、数据分析：怎么获取数据？</h1>
-<ul>
-<li>从数据仓库中获取</li>
-<li>数据监测，如传感器等的数据来源</li>
-<li>利用爬虫获取 urllib、urllib2、request、scrapy等各种抓取包，爬虫涉及分布式爬虫、反爬虫技术等。</li>
-<li>填写、埋点、日志。埋点记录用户与互联网交互过程；日志记录的信息更加精简，同时方便定位问题。一般以文件存储。包括前端日志、后端日志，前端日志需要加载到后端查看。</li>
-<li>分析已有数据来进行计算，获得具有实际意义的数据。</li>
-</ul>
-<h1 id="q3-学习资源"><a class="markdownIt-Anchor" href="#q3-学习资源"></a> Q3、学习资源</h1>
-<ul>
-<li>数据学习网站kaggle、天池、</li>
-<li>数据网站：ImageNet/Open Images、</li>
-<li>统计数据（统计局、公司财报、政府机构等）</li>
-</ul>
-<h1 id="q4-怎么进行数据探索"><a class="markdownIt-Anchor" href="#q4-怎么进行数据探索"></a> Q4、怎么进行数据探索</h1>
-<p><strong>拿到一个数据集，应该首先了解相关文档，熟悉文件中的统计名称。</strong></p>
-<p>对于数据集中的人数据我们可以先研究数据的分布趋势：<code>集中趋势、离中趋势</code></p>
-<ol>
-<li>
-<p>集中趋势：</p>
-<ul>
-<li>均值</li>
-<li>中位数</li>
-<li>分位数: <code>(n+1)*[0.25,0.5,0.75]</code>求解时要根据数据个数的奇偶分为求算</li>
-<li>众数</li>
-</ul>
-</li>
-<li>
-<p>离中趋势：</p>
-<ul>
-<li>标准差 std()</li>
-<li>方差 var()</li>
-<li>1倍std（69%） 1.96倍std（95%）2.58倍std（99%）</li>
-</ul>
-</li>
-<li>
-<p>数据分布：</p>
-<ul>
-<li>偏态系数：正偏、负偏</li>
-<li>峰态系数（对集中强度的衡量，数值越大峰值越尖）：正态分布的数据峰态系数一般是3，一般相差大于2（&lt;1,&gt;5）的话，那么就可以认为不是正态分布了。</li>
-</ul>
-</li>
-<li>
-<p>常用分布为：</p>
-<ul>
-<li>正态分布（标准正态分布）</li>
-<li>t分布</li>
-<li>F分布</li>
-<li>卡方分布</li>
-</ul>
-</li>
-<li>
-<p>抽样:一是全量计算的成本比较大、二是不要进行全量计算就可以满足需求</p>
-<ul>
-<li>分层抽样</li>
-<li>等距抽样</li>
-<li>…</li>
-</ul>
-</li>
-<li>
-<p>数据分类：</p>
-<ul>
-<li>定类：类别间没有差距的，</li>
-<li>定序分类：数据间有了差距</li>
-<li>定距分类：没有绝对零点。不能进行相应计算，如温度</li>
-<li>定比分类：可以界定数据大小，如常用的度量数据等</li>
-</ul>
-</li>
-<li>
-<p>单属性分析</p>
-<ul>
-<li>异常值分析（连续使用分位数来求、离散、知识异常值）</li>
-<li>对比分析（绝对数比较（数字直接进行比较）、相对数比较（结构部分和整体、比例（整体内的不同比例比较）、（比较，同质进行比较）、动态、强度（密度、人均等））怎么比较时间下进行比较（同比、环比）、空间（城市、部门、公司）、经验与计划（实施进度和排期的比较）</li>
-<li>结构分析（部分与总体）（静态、动态）</li>
-<li>分布分析：直接概率分布、判断是不是正态分布</li>
-<li>极大似然</li>
-</ul>
-</li>
-<li>
-<p>相关API</p>
-<ul>
-<li>max()</li>
-<li>min()</li>
-<li>median()中位数</li>
-<li>var()方差</li>
-<li>std()标准差</li>
-<li>skew()偏态系数</li>
-<li>kurt()峰态系数</li>
-<li>quantitle()分位数</li>
-<li>fillna()</li>
-<li>dropna(axis=0，how=‘any’)</li>
-<li>value_counts()可以添加bins左开有闭(]</li>
-<li>value_counts(normalize=True)按照比例进行分析</li>
-<li>sort_index()</li>
-<li>直方图histogram(value, bins=10);分成几份</li>
-<li>histogram(value, bins=np.arrange(0,1,0.1))  左闭右开[)</li>
-<li>groupby()分组  可以根据根据需要选择聚合方式。</li>
-<li>apply()</li>
-<li>loc()切片</li>
-</ul>
-</li>
-</ol>
-
+      我要开始学数据分析，不为工作，为了求知。
+      
+        <div class="readmore">
+          <a href="/archives/9c2ffa7.html" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -538,9 +433,9 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/Python/' rel="nofollow">
+    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>Python</p>
+      <p>技术经验</p>
     </a>
   </div>
 
@@ -567,134 +462,14 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h1 id="数据可视化"><a class="markdownIt-Anchor" href="#数据可视化"></a> 数据可视化</h1>
-<blockquote>
-<p>数据可视化是指的通过可视化来表示探索数据，与数据挖掘紧密相关，<code>数据挖掘</code>是指的使用代码来探索数据集的规律和关联。可视化的目的是为了简洁的展示给观看者数据的规律和意义。<br />
-本文中使用的可视化模块为matplotlib和pygal</p>
-</blockquote>
-<h2 id="一-准备工作"><a class="markdownIt-Anchor" href="#一-准备工作"></a> 一、准备工作</h2>
-<h3 id="11安装matplotlib"><a class="markdownIt-Anchor" href="#11安装matplotlib"></a> 1.1安装matplotlib</h3>
-<ul>
-<li>linux：sudo apt-get install python3-matplotlib</li>
-<li>windows:使用anaconda安装或者安装pip之后用pip install matplotlib</li>
-<li>mac OS：pip install --user matplotlib</li>
-</ul>
-<h3 id="12测试并进行简单绘画"><a class="markdownIt-Anchor" href="#12测试并进行简单绘画"></a> 1.2测试并进行简单绘画</h3>
-<p>可以访问http://matlplotlib.org/ 的示例画廊，来查看相应图标的的代码</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#简单的折线图</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">squares = [<span class="number">1</span>,<span class="number">4</span>,<span class="number">9</span>,<span class="number">16</span>,<span class="number">25</span>]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">plt.plot(squares)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">plt.show()</span></pre></td></tr></table></figure>
-<p><img src="PYTHON%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96_1_0.png" alt="" /></p>
-<h3 id="13修改标签文字和线条粗细"><a class="markdownIt-Anchor" href="#13修改标签文字和线条粗细"></a> 1.3修改标签文字和线条粗细</h3>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">plt.plot(squares, linewidth=size)<span class="comment">#修改线条粗细</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">plt.title(<span class="string">'name'</span>, fontsize=n)<span class="comment">#修改图表名字</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#给坐标轴加上标签</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">plt.xlabel(<span class="string">'name'</span>, fontsize=n)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">plt.ylabel(<span class="string">'name'</span>, fontsize=n)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#设置刻度标记的大小</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">plt.tick_params(axis=<span class="string">'both'</span>, labelsize=<span class="number">14</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#plot函数可以同时传入自变量和因变量</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">plt.plot(x, y, linewidth=<span class="number">14</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#图标区域涂色</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#利用plt.fill_between(x,y1,y2,facecolor='red',alpha=0.1)其中alpha设置透明度0为透明，1为不透明</span></span></pre></td></tr></table></figure>
-<h3 id="14散点图"><a class="markdownIt-Anchor" href="#14散点图"></a> 1.4散点图</h3>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#scatter_squares.py</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">plt.scatter(<span class="number">2</span>, <span class="number">4</span>, s=<span class="number">200</span>)<span class="comment">#s可以设置散点的大小</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">plt.show()</span></pre></td></tr></table></figure>
-<p><img src="PYTHON%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96_5_0.png" alt="" /></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#绘制系列散点</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">x=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">y=[<span class="number">3</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">8</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">plt.scatter(x, y, c=<span class="string">'yellow'</span>, edgecolor=<span class="string">'none'</span>, s=<span class="number">100</span>)<span class="comment">#去除数据点的轮廓</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">plt.axis([<span class="number">0</span>, <span class="number">8</span>, <span class="number">0</span>, <span class="number">11</span>])<span class="comment">#设置坐标轴范围</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">plt.show()</span></pre></td></tr></table></figure>
-<p><img src="PYTHON%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96_6_0.png" alt="" /></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#绘制系列散点,并使用颜色映射colormap</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">x=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">y=[<span class="number">3</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">8</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">plt.scatter(x, y, c=y, cmap=plt.cm.Blues, edgecolor=<span class="string">'none'</span>, s=<span class="number">100</span>)<span class="comment">#colormap颜色映射，看出数据的变化趋势</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">plt.axis([<span class="number">0</span>, <span class="number">8</span>, <span class="number">0</span>, <span class="number">11</span>])<span class="comment">#设置坐标轴范围</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">plt.show()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">plt.savefig(<span class="string">'filename'</span>, bbox_inches=<span class="string">'tight'</span>)<span class="comment">#自动保存图表，第二参数是裁掉多余空白区域</span></span></pre></td></tr></table></figure>
-<p><img src="PYTHON%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96_7_0.png" alt="" /></p>
-<h3 id="15随机漫步"><a class="markdownIt-Anchor" href="#15随机漫步"></a> 1.5随机漫步</h3>
-<p>每次行走都是随机的，意味着方向不一定，行走步数不一定。</p>
-<h4 id="151创建randwalk类"><a class="markdownIt-Anchor" href="#151创建randwalk类"></a> 1.5.1创建RandWalk类</h4>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> random <span class="keyword">import</span> choice</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">RandWalk</span><span class="params">()</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    <span class="string">'''随机生成漫步数据的类'''</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, num_points=<span class="number">5000</span>)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">        <span class="string">'''初始化属性'''</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">        self.num_points = num_points</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">        self.x_values = [<span class="number">0</span>]<span class="comment">#随机漫步从（0,0）出发</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">        self.y_values = [<span class="number">0</span>]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">fill_walk</span><span class="params">(self)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">        <span class="string">'''计算随机漫步的所有点'''</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">        <span class="comment">#不断漫步，直到达到指定的长度</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">while</span> len(self.x_values) &lt; self.num_points:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">            <span class="comment">#决定前进的方向和前进距离</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">            x_direction = choice([<span class="number">1</span>,<span class="number">-1</span>])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">            x_distance = choice([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">            x_step = x_direction * x_distance</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">            y_direction = choice([<span class="number">1</span>,<span class="number">-1</span>])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">            y_distance = choice([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">            y_step = y_direction * y_distance</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">            <span class="comment">#拒绝原地踏步</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">if</span> x_step == <span class="number">0</span> <span class="keyword">and</span> y_step == <span class="number">0</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">                <span class="keyword">continue</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">            <span class="comment">#计算下一个点的xy的值</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">            next_x = self.x_values[<span class="number">-1</span>] + x_step</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">            next_y = self.y_values[<span class="number">-1</span>] + y_step</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line">            <span class="comment">#更新坐标值</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">            self.x_values.append(next_x)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line">            self.y_values.append(next_y)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#开始绘制</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">plt.figure(figsize=(<span class="number">10</span>,<span class="number">6</span>)) <span class="comment">#可以传入的参数包括dpi像素，大小，背景色</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line">rw = RandWalk()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line">rw.fill_walk()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line">plt.scatter(rw.x_values, rw.y_values, c=list(range(rw.num_points)), cmap=plt.cm.Blues, edgecolor=<span class="string">'none'</span>, s=<span class="number">1</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#突出起点和终点</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line">plt.scatter(<span class="number">0</span>, <span class="number">0</span>, edgecolors=<span class="string">'none'</span>, c=<span class="string">'red'</span>, s=<span class="number">40</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">42</span></pre></td><td class="code"><pre><span class="line">plt.scatter(rw.x_values[<span class="number">-1</span>], rw.y_values[<span class="number">-1</span>], edgecolors=<span class="string">'none'</span>, c=<span class="string">'yellow'</span>, s=<span class="number">40</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">43</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">44</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#隐藏坐标轴</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">45</span></pre></td><td class="code"><pre><span class="line">plt.axes().get_xaxis().set_visible(<span class="literal">False</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">46</span></pre></td><td class="code"><pre><span class="line">plt.axes().get_yaxis().set_visible(<span class="literal">False</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">47</span></pre></td><td class="code"><pre><span class="line">plt.show()</span></pre></td></tr></table></figure>
-<p><img src="PYTHON%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96_9_1.png" alt="" /></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> random <span class="keyword">import</span> choice</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">RandWalk</span><span class="params">()</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="string">'''随机生成漫步数据的类'''</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, num_points=<span class="number">5000</span>)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        self.num_points = num_points</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">        self.x_values = [<span class="number">0</span>]<span class="comment">#随机漫步从（0,0）出发</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">        self.y_values = [<span class="number">0</span>]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">fill_walk</span><span class="params">(self)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">        <span class="string">'''计算随机漫步的所有点'''</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">        <span class="comment">#不断漫步，直到达到指定的长度</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">while</span> len(self.x_values) &lt; self.num_points:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">            <span class="comment">#决定前进的方向和前进距离</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">            x_direction = choice([<span class="number">1</span>,<span class="number">-1</span>])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">            x_distance = choice([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">            x_step = x_direction * x_distance</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">            y_direction = choice([<span class="number">1</span>,<span class="number">-1</span>])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">            y_distance = choice([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">            y_step = y_direction * y_distance</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">            <span class="comment">#拒绝原地踏步</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">if</span> x_step == <span class="number">0</span> <span class="keyword">and</span> y_step == <span class="number">0</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">                <span class="keyword">continue</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">            <span class="comment">#计算下一个点的xy的值</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">            next_x = self.x_values[<span class="number">-1</span>] + x_step</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">            next_y = self.y_values[<span class="number">-1</span>] +y_step</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">            <span class="comment">#更新坐标值</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">            self.x_values.append(next_x)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line">            self.y_values.append(next_y)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#开始绘制</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">plt.figure(figsize=(<span class="number">10</span>,<span class="number">6</span>))<span class="comment">#可以传入的参数包括dpi像素，大小，背景色</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line">rw = RandWalk()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line">rw.fill_walk()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">plt.plot(rw.x_values, rw.y_values, linewidth=<span class="number">1</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#突出起点和终点</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#plt.plot(0, 0, edgecolors='none', c='red', s=40)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#plt.plot(rw.x_values[-1], rw.y_values[-1], edgecolors='none', c='yellow', linewidth=4)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line">plt.show()</span></pre></td></tr></table></figure>
-<p><img src="PYTHON%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96_10_0.png" alt="" /></p>
-<h3 id="16pygal"><a class="markdownIt-Anchor" href="#16pygal"></a> 1.6Pygal</h3>
-<p>参考图表类画廊http://www.pygal.org 每个示例都包含产生代码。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#掷骰子的类</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> random <span class="keyword">import</span> randint</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pygal</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Die</span><span class="params">()</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    <span class="string">'''表示一个骰子的类'''</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, num_sides)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">        self.num_sides = num_sides</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">roll</span><span class="params">(self)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">return</span> randint(<span class="number">1</span>,self.num_sides)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#测试上面的类是否可行</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">sides = <span class="number">6</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">die = Die(sides)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">results = []</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> roll_num <span class="keyword">in</span> range(<span class="number">1000</span>):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">    result = die.roll()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">    results.append(result)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#print(results)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">num_values = []</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#分析结果，做统计</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> value <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">1</span>+sides):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">    values = results.count(value)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">    num_values.append(values)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#print(num_values)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#绘制直方图，将数据可视化</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">hist = pygal.Bar()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line">hist.title= <span class="string">'Results of rolling D6 1000 times'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">hist.x_labels = [<span class="string">'1'</span>,<span class="string">'2'</span>,<span class="string">'3'</span>,<span class="string">'4'</span>,<span class="string">'5'</span>,<span class="string">'6'</span>]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line">hist.x_title = <span class="string">'num_values'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line">hist.y_title = <span class="string">'Frequency of Result'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#add函数</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line">hist.add(<span class="string">'D6'</span>,num_values)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line">hist.render_to_file(<span class="string">'die_visual.svg'</span>)</span></pre></td></tr></table></figure>
-<h2 id="二-下载数据后的数据的处理"><a class="markdownIt-Anchor" href="#二-下载数据后的数据的处理"></a> 二、下载数据后的数据的处理</h2>
-<p>下载后的数据文件一般分为两种格式：</p>
-<ul>
-<li>csv格式 用逗号隔开</li>
-<li>json格式 列表中的元素是字典类型[{}, {}, {}]  json.load() json.dump()</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> csv</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">filename = <span class="string">''</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(filename) <span class="keyword">as</span> f:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    reader = csv.reader(f)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    header_csv = next(reader)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">#获取文件头的数据和索引</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">for</span> index,value = enumerate(header_csv):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">        print(index+<span class="string">':'</span>+value)</span></pre></td></tr></table></figure>
-<pre><code>  File &quot;&lt;ipython-input-57-64c6bbc4aaa4&gt;&quot;, line 8
-    for index,value = enumerate(header_csv):
-                    ^
-SyntaxError: invalid syntax
-</code></pre>
-<h2 id="三-使用api"><a class="markdownIt-Anchor" href="#三-使用api"></a> 三、使用API</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#导入requests模块，使用pygal来可视化数据</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pygal</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pygal.style <span class="keyword">import</span> LightColorizedStyle <span class="keyword">as</span> LCS, LightenStyle <span class="keyword">as</span> LS</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">url = <span class="string">'https://api.github.com/search/repositories?q=language:python&amp;sort=stars'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">r = requests.get(url)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">print(<span class="string">'status code：'</span>, r.status_code)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">reponse_dict = r.json()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">print(reponse_dict.keys())<span class="comment">#响应字典</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#研究第一个仓库</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">repo_dicts = reponse_dict[<span class="string">'items'</span>]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">repo_dict = repo_dicts[<span class="number">0</span>]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#第一个仓库包含的信息</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">print(len(repo_dict.keys()))</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> sorted(repo_dict.keys()):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">    print(key)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">names,stars = [],[]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> repo_dict <span class="keyword">in</span> repo_dicts:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">    names.append(repo_dict[<span class="string">'name'</span>])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">    stars.append(repo_dict[<span class="string">'stargazers_count'</span>])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">my_style = LS(<span class="string">'#333366'</span>,base_style=LCS)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">chart = pygal.Bar(style=my_style, x_label_rotation=<span class="number">45</span>, show_legend=<span class="literal">False</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">chart.title = <span class="string">'Most-Starred Python Projects on Github'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">chart.x_labels = names</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">chart.add(<span class="string">''</span>,stars)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">chart.render_to_file(<span class="string">'python_repos.svg'</span>)</span></pre></td></tr></table></figure>
-<pre><code>status code： 200
-dict_keys(['total_count', 'incomplete_results', 'items'])
-73
-archive_url
-archived
-assignees_url
-blobs_url
-branches_url
-clone_url
-collaborators_url
-comments_url
-commits_url
-compare_url
-contents_url
-contributors_url
-created_at
-default_branch
-deployments_url
-description
-downloads_url
-events_url
-fork
-forks
-forks_count
-forks_url
-full_name
-git_commits_url
-git_refs_url
-git_tags_url
-git_url
-has_downloads
-has_issues
-has_pages
-has_projects
-has_wiki
-homepage
-hooks_url
-html_url
-id
-issue_comment_url
-issue_events_url
-issues_url
-keys_url
-labels_url
-language
-languages_url
-license
-merges_url
-milestones_url
-mirror_url
-name
-node_id
-notifications_url
-open_issues
-open_issues_count
-owner
-private
-pulls_url
-pushed_at
-releases_url
-score
-size
-ssh_url
-stargazers_count
-stargazers_url
-statuses_url
-subscribers_url
-subscription_url
-svn_url
-tags_url
-teams_url
-trees_url
-updated_at
-url
-watchers
-watchers_count
-</code></pre>
-<p>下面还有hacker news示例，就不再总结了，主要包括通过api请求资源，将响应按照json格式进行处理，最后进行信息提取展示。还是要熟练<code>json</code>的格式</p>
-
+      学习分析数据，挖掘数据中的价值，最为直观的数据可视化，通过可视化数据来探索数据之间的关系，可以更为简洁的展示数据的规律和价值。
+      
+        <div class="readmore">
+          <a href="/archives/270bf2b5.html" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -764,9 +539,9 @@ watchers_count
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/' rel="nofollow">
+    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>数据分析</p>
+      <p>技术经验</p>
     </a>
   </div>
 
@@ -793,83 +568,14 @@ watchers_count
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h1 id="一-挖掘目标"><a class="markdownIt-Anchor" href="#一-挖掘目标"></a> 一、挖掘目标</h1>
-<p>通过分析航空公司用户数据，对客户进行分类，对不同类别的客户进行特征分析，比较不同客户的客户价值，针对不同客户价值的客户采取不同的营销手段，制定相应的营销手段。</p>
-<p>数据的属性主要有：客户的基本信息、乘机信息、积分信息。下面就开始介绍一下详细数据挖掘流程。</p>
-<h1 id="二-数据挖掘过程"><a class="markdownIt-Anchor" href="#二-数据挖掘过程"></a> 二、数据挖掘过程：</h1>
-<p>首先考虑我们的目标是为了进行客户价值分类，通常采用的分析模型是RFM模型，也就是消费时间间隔、消费频率、消费金额的指标。但是对于航空行业来说，通过分析可以得知对于长距离低价位和短距离高价位的票价总额相等的客户来说显然M一样但是价值相差很大。这时候选择一定时间累计的飞行里程数和平均折扣系数的平均值代替票价金额作为分析指标，同时针对航空公司有会员制度因此加入客户关系长度作为指标之一，建立起<strong>LRFMC</strong>模型。</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">模型</th>
-<th style="text-align:center"><center>L</th>
-<th style="text-align:center"><center>R</th>
-<th style="text-align:left"><center>F</th>
-<th style="text-align:center"><center>M</th>
-<th style="text-align:center"><center>C</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">航空公司LRFMC模型</td>
-<td style="text-align:center">会员入会时间距离观测窗口结束月数</td>
-<td style="text-align:center">客户最近一次飞机乘坐距离观测窗口结束的月数</td>
-<td style="text-align:left">客户观测窗口内乘坐的飞机次数</td>
-<td style="text-align:center">客户在观测窗口中的飞行里程</td>
-<td style="text-align:center">客户在观测窗口的乘坐舱位对应的折扣系数的平均值</td>
-</tr>
-</tbody>
-</table>
-<p>按照我们以上的RFM模型来分析的话，建立分箱图，可以很直观的显示不同客户群体，但是细分类别过多，增加的营销难度和成本。因此采取聚类的方法分析客户价值：<strong>K-means</strong></p>
-<h2 id="1数据抽取"><a class="markdownIt-Anchor" href="#1数据抽取"></a> 1.数据抽取</h2>
-<blockquote>
-<p>选取观测窗口，包括起始日期和时间间隔。</p>
-</blockquote>
-<p><strong>观测窗口内的数据为历史数据，观测结束日期到最新时间点的数据为增量数据。</strong></p>
-<h2 id="2数据探索explore"><a class="markdownIt-Anchor" href="#2数据探索explore"></a> 2.数据探索（explore）</h2>
-<p>数据探索是对异常值和缺失值进行分析，分析出数据的规律和异常值。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#-*- coding: utf-8 -*-</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#对数据进行基本的探索</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#返回缺失值个数以及最大最小值</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">datafile= <span class="string">'E:\Test_learning\data\chapter7\demo\data/air_data.csv'</span> <span class="comment">#航空原始数据,第一行为属性标签</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">resultfile = <span class="string">'E:\Test_learning\data\chapter7\demo\data/explore.xls'</span> <span class="comment">#数据探索结果表</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">data = pd.read_csv(datafile, encoding = <span class="string">'utf-8'</span>) <span class="comment">#读取原始数据，指定UTF-8编码（需要用文本编辑器将数据装换为UTF-8编码）</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">explore = data.describe(percentiles = [], include = <span class="string">'all'</span>).T <span class="comment">#包括对数据的基本描述，percentiles参数是指定计算多少的分位数表（如1/4分位数、中位数等）；T是转置，转置后更方便查阅</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">explore[<span class="string">'null'</span>] = len(data)-explore[<span class="string">'count'</span>] <span class="comment">#describe()函数自动计算非空值数，需要手动计算空值数</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">explore = explore[[<span class="string">'null'</span>, <span class="string">'max'</span>, <span class="string">'min'</span>]]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">explore.columns = [<span class="string">u'空值数'</span>, <span class="string">u'最大值'</span>, <span class="string">u'最小值'</span>] <span class="comment">#表头重命名</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line"><span class="string">'''这里只选取部分探索结果。describe()函数自动计算的字段有count（非空值数）、unique（唯一值数）、top（频数最高者）、freq（最高频数）、mean（平均值）、std（方差）、min（最小值）、50%（中位数）、max（最大值）'''</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">explore.to_excel(resultfile) <span class="comment">#导出结果</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">print(<span class="string">"over"</span>)</span></pre></td></tr></table></figure>
-<p><strong>经过数据探索得到了数据的空值数和最大最小值，并保存结果</strong></p>
-<h2 id="3数据预处理"><a class="markdownIt-Anchor" href="#3数据预处理"></a> 3.数据预处理</h2>
-<blockquote>
-<p>数据预处理包括数据清洗、属性规约、数据变换</p>
-</blockquote>
-<p>在pandas中数据清洗的处理方式是一次性把满足清洗条件的一行数据全部丢弃。<br />
-在案例中清洗的是票价为空和（票价为0，折扣不为0，总飞行里程数大于0的记录） 。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#-*- coding: utf-8 -*-</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#数据清洗，过滤掉不符合规则的数据</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">datafile= <span class="string">'../data/air_data.csv'</span> <span class="comment">#航空原始数据,第一行为属性标签</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">cleanedfile = <span class="string">'../tmp/data_cleaned.csv'</span> <span class="comment">#数据清洗后保存的文件</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">data = pd.read_csv(datafile,encoding=<span class="string">'utf-8'</span>) <span class="comment">#读取原始数据，指定UTF-8编码（需要用文本编辑器将数据装换为UTF-8编码）</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">data = data[data[<span class="string">'SUM_YR_1'</span>].notnull()*data[<span class="string">'SUM_YR_2'</span>].notnull()] <span class="comment">#票价非空值才保留</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#只保留票价非零的，或者平均折扣率与总飞行公里数同时为0的记录。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">index1 = data[<span class="string">'SUM_YR_1'</span>] != <span class="number">0</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">index2 = data[<span class="string">'SUM_YR_2'</span>] != <span class="number">0</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">index3 = (data[<span class="string">'SEG_KM_SUM'</span>] == <span class="number">0</span>) &amp; (data[<span class="string">'avg_discount'</span>] == <span class="number">0</span>) <span class="comment">#该规则是“与”</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">data = data[index1 | index2 | index3] <span class="comment">#该规则是“或”</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">data.to_excel(cleanedfile) <span class="comment">#导出结果</span></span></pre></td></tr></table></figure>
-<p>第二步数据清洗完之后进行属性规约，选择与模型分析相关的属性，去掉一些不相关、弱相关、和冗余的属性。<br />
-第三步是进行数据变换。将数据进行转换，达到适合模型使用的要求。包括属性的构造和数据标准化<br />
-根据已有属性分别计算L、R、F、M、C，然后进行数据标准化：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#-*- coding: utf-8 -*-</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#标准差标准化</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">datafile = <span class="string">'../data/zscoredata.xls'</span> <span class="comment">#需要进行标准化的数据文件；</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">zscoredfile = <span class="string">'../tmp/zscoreddata.xls'</span> <span class="comment">#标准差化后的数据存储路径文件；</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="comment">#标准化处理</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">data = pd.read_excel(datafile)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">data = (data - data.mean(axis = <span class="number">0</span>))/(data.std(axis = <span class="number">0</span>)) <span class="comment">#简洁的语句实现了标准化变换，类似地可以实现任何想要的变换。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">data.columns=[<span class="string">'Z'</span>+i <span class="keyword">for</span> i <span class="keyword">in</span> data.columns] <span class="comment">#表头重命名。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">data.to_excel(zscoredfile, index = <span class="literal">False</span>) <span class="comment">#数据写入</span></span></pre></td></tr></table></figure>
-<p>上面已经通过数据探索和数据与处理处理完数据，下面就是模型构建和训练的过程了。</p>
-<h2 id="4模型构建"><a class="markdownIt-Anchor" href="#4模型构建"></a> 4.模型构建</h2>
-<h3 id="41客户聚类"><a class="markdownIt-Anchor" href="#41客户聚类"></a> 4.1客户聚类</h3>
-<p><strong>结合业务的理解和分析来确定客户的类别数</strong></p>
-<blockquote>
-<p>使用算法为：K-means算法<br />
-调用库为：Scikit-Learn下的聚类子库(sklearn.cluster)</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">   <span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> KMeans <span class="comment">#导入kmeans算法</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">datafile = <span class="string">''</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">data = pd.read_excel(datafile)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">kmodel = KMeans(n_cluster = k, n_jobs = <span class="number">4</span>)<span class="comment">#n_jobs是并行数，一般设置为CPU的个数</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">kmodel.fit(data)<span class="comment">#训练模型</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">kmodel.cluster_center_<span class="comment">#查看聚类中心</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">kmodel.labels_  <span class="comment">#查看个样本对应的类别</span></span></pre></td></tr></table></figure>
-<h3 id="42客户价值分析rank"><a class="markdownIt-Anchor" href="#42客户价值分析rank"></a> 4.2客户价值分析（Rank）</h3>
-<p>上面根据模型训练可以得到聚类中心和样本类别，下面对聚类结果进行客户价值的分析。<br />
-L：客户关系时间长度、R：上次乘坐航班距离观测窗口至结束的时间间隔、F：观测窗口内乘坐航班次数、M：观测窗口内的总的飞行里程、C、舱位票价平均折扣系数。通过对每个客户群体进行分析着五个指标可以将客户分为：</p>
-<ul>
-<li>重要保持客户：属于航空公司客户生命周期的稳定期。这类人对公司的贡献最大，也是对理想的客户类型，应该针对这类客户进行差异化管理，提高这类用户的满意度和忠诚度，尽可能延长这类客户的高消费。</li>
-<li>重要发展客户：属于航空公司客户生命周期的发展期。这类人在当前贡献值可能不是很高，但是具有发展潜力。航空公司应该努力促使这类人增加在本公司的乘机消费和合作伙伴处的消费，增加他们转向竞争对手的转移成本。</li>
-<li>重要挽留客户：属于航空公司客户生命周期管理的衰退期，航空公司应关注这类客户的消费时间和消费次数的变化，要掌握最新的客户信息。对其重点联系，及时营销。</li>
-<li>一般客户与低价值客户：这种类型的客户对于航空公司的贡献比较低</li>
-</ul>
-<p><strong>对于上面的分类进行客户群体rank，可以得到上诉5类客户群体的优先级别。对于新增的客户信息，考虑业务的实际情况，建议每个月运行模型，对新增客户进行特征分析，适时调整营销策略。最后主要要随着观测窗口的变动进行模型的更新。一般是根据经验进行模型重新训练。</strong></p>
-<h3 id="43模型应用"><a class="markdownIt-Anchor" href="#43模型应用"></a> 4.3模型应用</h3>
-<p>对各个客户群进行特征分析，制定的营销手段如下：</p>
-<ul>
-<li>会员升级与保级：会员等级制度，做的工作是在时间节点进行提醒，或者提供会员促销活动，提高人们的消费欲望和满意度。</li>
-<li>交叉销售：跟非航空公司企业合作，会员可以在合作企业消费获得本公司积分，增强与公司的联系。</li>
-<li>首次兑换：达到一定的里程数可以兑换免费票或者折扣票，做到deadline提醒，或者提供优惠服务。</li>
-</ul>
-<h1 id="三-总结"><a class="markdownIt-Anchor" href="#三-总结"></a> 三、总结</h1>
-<p>业务上来说客户的识别期和发展期很重要，但是最重要还是在稳定期要有一批优质的稳定客户。因此在进行业务分析时，应该将优先资源投入到这批客户中，做到一对一定制服务。</p>
-
+      分析航空公司的客户价值，发现自己还是潜在客户。
+      
+        <div class="readmore">
+          <a href="/archives/e5d37995.html" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
@@ -1060,31 +766,9 @@ L：客户关系时间长度、R：上次乘坐航班距离观测窗口至结束
     <div class='content pure'>
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/5G/" href="/categories/5G/"><div class='name'>5G</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/" href="/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"><div class='name'>技术经验</div><div class='badge'>(26)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/C-C/" href="/categories/C-C/"><div class='name'>C/C++</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/Linux/" href="/categories/Linux/"><div class='name'>Linux</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/Python/" href="/categories/Python/"><div class='name'>Python</div><div class='badge'>(7)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/opencv%E5%AD%A6%E4%B9%A0/" href="/categories/opencv%E5%AD%A6%E4%B9%A0/"><div class='name'>opencv学习</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/" href="/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"><div class='name'>博客优化</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/" href="/categories/%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB/"><div class='name'>向往的生活</div><div class='badge'>(7)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/"><div class='name'>实用工具汇总</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"><div class='name'>数据分析</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"><div class='name'>数据库</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E7%88%AC%E8%99%AB/" href="/categories/%E7%88%AC%E8%99%AB/"><div class='name'>爬虫</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95/" href="/categories/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95/"><div class='name'>笔试面试</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"><div class='name'>计算机视觉</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"><div class='name'>生活随笔</div><div class='badge'>(7)</div></a></li>
         
       </ul>
     </div>
@@ -1253,7 +937,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：40.4k</span>
+    <span class="post-count">字数统计：40.1k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
