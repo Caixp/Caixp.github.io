@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxpeng.cn/"/>
-  <updated>2020-03-06T05:07:11.897Z</updated>
+  <updated>2020-05-07T02:56:27.251Z</updated>
   <id>https://cxpeng.cn/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>7天减肥食谱</title>
+    <link href="https://cxpeng.cn/archives/1c62288a.html"/>
+    <id>https://cxpeng.cn/archives/1c62288a.html</id>
+    <published>2020-05-07T02:49:49.000Z</published>
+    <updated>2020-05-07T02:56:27.251Z</updated>
+    
+    <summary type="html">
+    
+      明年见丈母娘，不瘦怎么可以！
+    
+    </summary>
+    
+    
+      <category term="我要减肥" scheme="https://cxpeng.cn/categories/%E6%88%91%E8%A6%81%E5%87%8F%E8%82%A5/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>追寻偶像是一种精神追随吗？</title>
+    <link href="https://cxpeng.cn/archives/19c7f8c2.html"/>
+    <id>https://cxpeng.cn/archives/19c7f8c2.html</id>
+    <published>2020-03-13T02:28:05.000Z</published>
+    <updated>2020-03-15T14:26:32.829Z</updated>
+    
+    <summary type="html">
+    
+      没有理想的人不伤心，似浮萍无依，没有偶像的人，是不是也这个样子。
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="https://cxpeng.cn/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>算法精解：C语言描述（二）</title>
@@ -371,46 +409,6 @@
     
       <category term="生活随笔" scheme="https://cxpeng.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>批量添加无序号列表格式</title>
-    <link href="https://cxpeng.cn/archives/b759e75d.html"/>
-    <id>https://cxpeng.cn/archives/b759e75d.html</id>
-    <published>2019-04-16T05:13:09.000Z</published>
-    <updated>2020-02-13T03:25:18.203Z</updated>
-    
-    <summary type="html">
-    
-      在编写Markdown文档时候批量生成无序列表
-    
-    </summary>
-    
-    
-      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>C++中的set！</title>
-    <link href="https://cxpeng.cn/archives/fcc57c4c.html"/>
-    <id>https://cxpeng.cn/archives/fcc57c4c.html</id>
-    <published>2019-04-13T10:19:19.000Z</published>
-    <updated>2020-02-13T03:23:36.156Z</updated>
-    
-    <summary type="html">
-    
-      记录集合的用法和相关接口。
-    
-    </summary>
-    
-    
-      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
-    
-    
-      <category term="C++" scheme="https://cxpeng.cn/tags/C/"/>
     
   </entry>
   
