@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>计算机视觉在新技术浪潮的革新和挑战 | cxp&#39;s blog</title>
+  <title>掌握一门语言之c++ | cxp&#39;s blog</title>
   
   
-  <meta name="description" content="计算机视觉现在入门是否还能跟上时代潮流?, When the going gets tough,the tough get going!">
+  <meta name="description" content="When the going gets tough,the tough get going!">
   
 
   
@@ -271,8 +271,8 @@
         
   
     <h1 class="title">
-      <a href="/archives/9bb65d10.html">
-        计算机视觉在新技术浪潮的革新和挑战
+      <a href="/archives/e3bfd105.html">
+        掌握一门语言之c++
       </a>
     </h1>
   
@@ -301,7 +301,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-09-09</p>
+    <p>2020-05-12</p>
   </a>
 </div>
 
@@ -309,14 +309,6 @@
         
           
             
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>技术经验</p>
-    </a>
-  </div>
-
 
           
         
@@ -356,172 +348,7 @@
 
 
         <div class="article-entry" itemprop="articleBody">
-          <p>计算机视觉技术：</p>
-<p>让计算机利用抽象出来的算法来进行处理现实中的问题。</p>
-<p>计算机视觉的发展离不开硬件和算法的进步。</p>
-<p>使用的案例：美国的NASA火星探测器，使用的双目的摄像头。利用双目摄像头采集图像，通过分析图像来得出一些计算和探测的数据信息。</p>
-<p>计算机视觉的系统大多是前端和后端两部分：前端使用摄像头，后端借助GPU进行算法计算（机器视觉、图像处理、卷及神经网络）。</p>
-<p>下面介绍的是计算机视觉的发展方向：</p>
-<ul>
-<li>1、图像处理：
-<ul>
-<li>点算子</li>
-<li>线性滤波</li>
-<li>几何变换、</li>
-<li>全局优化</li>
-<li>特征检测和匹配
-<ul>
-<li>边缘特征</li>
-<li>线条特征</li>
-<li>特征匹配</li>
-</ul>
-</li>
-<li>运动估计
-<ul>
-<li>平移配准</li>
-<li>层次运动</li>
-<li>光流信息</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<center>**深度学习很多灵感来源于传统方法**</center>
-<ul>
-<li>
-<p>2、深度学习技术</p>
-<ul>
-<li>神经网络：
-<ul>
-<li>输入层，隐藏层，输出层</li>
-<li>全连接</li>
-<li>激活函数</li>
-<li>反向传播BP：提到的是GOOGLE最新提出的论文不需要反向传播的算法，不需要反向传播的原理是什么。</li>
-<li>损失函数：计算真实值和算法求出数据的差距</li>
-</ul>
-</li>
-<li>卷积神经网络：
-<ul>
-<li>简单的神经网络很难处理图像二维的数据，他需要将二维转变为一维数据，很那捕捉像素之间的联系。</li>
-<li>卷积神经网络：模仿人依靠卷积核来获得一定的感受野，提取纹理特征然后一层层感受分析获得信息，首先获得比较浅层的信息，比如边缘什么，越高层获得信息越高层。</li>
-<li>卷积核：可以降低模型参数量，可以参数共享</li>
-<li>降采样层：降低输入图像在网络中一层一层不断深入的维度，减小内存浪费</li>
-<li>全连接：</li>
-<li>Dropout：解决过拟合的方法之一</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>3、CNN应用</p>
-<ul>
-<li>图像识别：
-<ul>
-<li>VGG</li>
-<li>ResNet</li>
-<li>Inception</li>
-</ul>
-</li>
-<li>目标检测：
-<ul>
-<li>RCNN</li>
-<li>SSD</li>
-<li>YOLO</li>
-</ul>
-</li>
-<li>分割：
-<ul>
-<li>FCN</li>
-<li>Mask-RCNN</li>
-<li>U-Net</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr />
-<p>前沿探索举例：</p>
-<ul>
-<li>
-<p>目标检测：</p>
-<ul>
-<li>Anchor-Fre    *********
-<ul>
-<li>CornerNet</li>
-</ul>
-</li>
-<li>关键点</li>
-</ul>
-</li>
-<li>
-<p>图像识别：</p>
-<ul>
-<li>粗粒度的图像识别：是猫、是狗等类间</li>
-<li><strong>细粒度图像识别</strong>：是花猫、是长尾猫等类内。</li>
-</ul>
-</li>
-<li>
-<p>网络结构改进：</p>
-<ul>
-<li>合理复杂度下提升效果
-<ul>
-<li>提升信息流效率(跳层连接)</li>
-</ul>
-</li>
-<li>合理效果下提升效率
-<ul>
-<li>降低计算损耗</li>
-<li>降低内存占用</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>行业应用举例：</p>
-<ul>
-<li>商品识别：
-<ul>
-<li>数据采集：
-<ul>
-<li>1、手持终端(SFA)采集</li>
-<li>图像质量不一</li>
-<li>场景变换不确定</li>
-<li>数据可用性</li>
-<li>模型挑战：增强适应恶劣场景</li>
-<li>2、利用机器人特定固定（超市）</li>
-<li>图像质量：高像素摄像头</li>
-<li>场景变换：固定</li>
-<li>数据可用性：高可用</li>
-<li>模型挑战：细粒度商品识别</li>
-</ul>
-</li>
-<li>数据预处理
-<ul>
-<li>图像质量：
-<ul>
-<li>模糊检测</li>
-<li>倾斜检测</li>
-<li>超分辨率重建</li>
-<li>背景去除</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>模型训练
-<ul>
-<li>使用通用检测模型</li>
-</ul>
-</li>
-<li>模型测试</li>
-<li>模型服务：实际场景应用</li>
-</ul>
-</li>
-</ul>
-<p>虽然有些因为知识的欠缺很难理解，但是还是可以多思考，在以后补充。</p>
-<h3 id="多读论文多思考-了解新的思路和方法和当前方法的关系"><a class="markdownIt-Anchor" href="#多读论文多思考-了解新的思路和方法和当前方法的关系"></a> 多读论文，多思考、了解新的思路和方法和当前方法的关系。</h3>
-</br>
-<p>【参考】<a href="https://www.bilibili.com/video/av66508436" target="_blank" rel="noopener">计算机视觉在新技术浪潮的革新和挑战</a></p>
-
+          
         </div>
         
           
@@ -532,10 +359,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-13T11:25:54+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-05-12T16:18:14+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2020年2月13日</p>
+    <p>最后更新于 2020年5月12日</p>
   </a>
 </div>
 
@@ -554,7 +381,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="https://connect.qq.com/widget/shareqq/index.html?url=https://cxpeng.cn/archives/9bb65d10.html&title=计算机视觉在新技术浪潮的革新和挑战 | cxp's blog&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary="
+          href="https://connect.qq.com/widget/shareqq/index.html?url=https://cxpeng.cn/archives/e3bfd105.html&title=掌握一门语言之c++ | cxp's blog&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary="
           
           >
           
@@ -566,7 +393,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://cxpeng.cn/archives/9bb65d10.html&title=计算机视觉在新技术浪潮的革新和挑战 | cxp's blog&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary="
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://cxpeng.cn/archives/e3bfd105.html&title=掌握一门语言之c++ | cxp's blog&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary="
           
           >
           
@@ -578,7 +405,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="https://service.weibo.com/share/share.php?url=https://cxpeng.cn/archives/9bb65d10.html&title=计算机视觉在新技术浪潮的革新和挑战 | cxp's blog&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary="
+          href="https://service.weibo.com/share/share.php?url=https://cxpeng.cn/archives/e3bfd105.html&title=掌握一门语言之c++ | cxp's blog&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary="
           
           >
           
@@ -603,28 +430,14 @@
         
             <div class="prev-next">
                 
-                    <section class="prev">
-                        <span class="art-item-left">
-                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
-                            <h4>
-                                <a href="/archives/b3404e24.html" rel="prev" title="换电脑之博客迁移.md">
-                                  
-                                      换电脑之博客迁移.md
-                                  
-                                </a>
-                            </h4>
-                            
-                        </span>
-                    </section>
-                
                 
                     <section class="next">
                         <span class="art-item-right" aria-hidden="true">
                             <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                             <h4>
-                                <a href="/archives/a66037f0.html" rel="prev" title="四象限法则">
+                                <a href="/archives/1c62288a.html" rel="prev" title="7天减肥食谱">
                                     
-                                        四象限法则
+                                        7天减肥食谱
                                     
                                 </a>
                             </h4>
@@ -669,7 +482,7 @@
 
   <script>
     window.subData = {
-      title: '计算机视觉在新技术浪潮的革新和挑战',
+      title: '掌握一门语言之c++',
       tools: true
     }
   </script>
@@ -750,20 +563,6 @@
           
           
             
-  <section class='widget toc-wrapper'>
-    
-<header class='pure'>
-  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
-  
-    <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer noopener" href="javascript:void(0)" target="_blank"><i class="fas fa-thumbtack fa-fw"></i></a></div>
-  
-</header>
-
-    <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#多读论文多思考-了解新的思路和方法和当前方法的关系"><span class="toc-text"> 多读论文，多思考、了解新的思路和方法和当前方法的关系。</span></a></li></ol>
-    </div>
-  </section>
-
 
           
         

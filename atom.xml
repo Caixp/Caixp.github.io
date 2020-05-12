@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxpeng.cn/"/>
-  <updated>2020-05-07T02:57:02.213Z</updated>
+  <updated>2020-05-12T08:18:14.373Z</updated>
   <id>https://cxpeng.cn/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>掌握一门语言之c++</title>
+    <link href="https://cxpeng.cn/archives/e3bfd105.html"/>
+    <id>https://cxpeng.cn/archives/e3bfd105.html</id>
+    <published>2020-05-12T08:14:51.000Z</published>
+    <updated>2020-05-12T08:18:14.373Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>7天减肥食谱</title>
@@ -232,7 +247,7 @@
     <link href="https://cxpeng.cn/archives/494fcdcb.html"/>
     <id>https://cxpeng.cn/archives/494fcdcb.html</id>
     <published>2019-09-01T06:56:39.000Z</published>
-    <updated>2020-02-13T03:21:44.362Z</updated>
+    <updated>2020-05-12T08:18:43.352Z</updated>
     
     <summary type="html">
     
@@ -241,7 +256,7 @@
     </summary>
     
     
-      <category term="生活随笔" scheme="https://cxpeng.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+      <category term="我要减肥" scheme="https://cxpeng.cn/categories/%E6%88%91%E8%A6%81%E5%87%8F%E8%82%A5/"/>
     
     
   </entry>
@@ -390,25 +405,6 @@
     
     
       <category term="Python" scheme="https://cxpeng.cn/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>悠悠天地，奈何独立苍茫</title>
-    <link href="https://cxpeng.cn/archives/c82868cc.html"/>
-    <id>https://cxpeng.cn/archives/c82868cc.html</id>
-    <published>2019-04-16T08:29:00.000Z</published>
-    <updated>2020-02-13T03:21:56.830Z</updated>
-    
-    <summary type="html">
-    
-      又一届师哥师姐毕业了，看着实验室只剩自己一个人关电闸，差点眼泪掉下来。自己一个人呆着就回忆起来这两年的读研经历。
-    
-    </summary>
-    
-    
-      <category term="生活随笔" scheme="https://cxpeng.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-    
     
   </entry>
   
