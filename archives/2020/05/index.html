@@ -265,9 +265,317 @@
         
           
         
+          
+        
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/archives/72f72ceb.html">
+      C++之引用
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="/https:/cxpeng.cn" rel="nofollow">
+      
+        <img src="https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg">
+      
+      <p>Alex</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2020-05-13</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/C-%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>C++系列学习</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+    </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/archives/26a73c29.html">
+      C到C++还有哪些升级
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="/https:/cxpeng.cn" rel="nofollow">
+      
+        <img src="https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg">
+      
+      <p>Alex</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2020-05-13</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/C-%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>C++系列学习</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <p><strong>1、新增类型之bool类型</strong></p>
+<p>布尔类型是C++新增的基础类型。利用关键字true和false来表示真值和非真值。但是在实际处理中，是利用整数类型来表示，占用一个字节。也就是真为1非真为0，任何非0的值都是别人定为真，为0则为假。这样说有点绕，用代码更清晰。</p>
+<p>‘’’</p>
+<p>bool a = false;           //编译器在编译中就会将a用一个字节的整数0来存储</p>
+<p>int b = -2;</p>
+<p>a = b;                        //将b赋值给a，那么a就变为了-2非0值，那么编译器就会将a处理为1来保存，</p>
+<p>‘’’</p>
+<p>bool类型是可以进行运算的，运算的结果在编译器的处理下只有两个整数值，0和1。或者说true和false</p>
+<p><strong>2、C++中三目运算符</strong></p>
+<p>在C语言中三目运算符是不能作为左值，C++中可以。</p>
+<p>原因在于C语言中三目运算符返回的是值，而不是具体的变量，这是不能作为左值使用的；在C<ins>中只要可能的返回都是变量时，那么返回的是引用而不是具体的值，引用在C</ins>中就是某一变量的别名，可以作为左值使用。</p>
+<p><strong>3、新增引用–变量的别名</strong></p>
+<p>引用是已经定义的变量的别名，因此引用的类型和变量类型相同，并且必须定义初始化。&amp;</p>
+<p>由于引用是别名，那么可以对原变量的存储空间进行操作。</p>
+
+      
+    </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/archives/49f01bdb.html">
+      const关键字
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="/https:/cxpeng.cn" rel="nofollow">
+      
+        <img src="https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg">
+      
+      <p>Alex</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2020-05-13</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/C-%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>C++系列学习</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <p>学过C语言首先一个问题就是C语言能不能定义常量？</p>
+<p>可能首先想到的就是通过const关键字来定义常量，或者说是enum枚举类型来定义常量。但是我们通过指针可以更改const修饰的常量，是因为C语言在遇到const修饰的常量会分配存储空间，也就允许了在制定存储位置被修改。那么就做不到从根本上定义常量。</p>
+<p>在C++中是不是也有这样的，不是。</p>
+<p>C++中虽然也是可能为const常量分配存储空间，但是不使用存储空间中的值，它使用的是编译过程中产生的符号表。在编译过程中当遇到extern修饰const变量也就是修饰全局变量和使用&amp;取地址符时候，就会开辟一段新的存储空间和C语言一样。而具体使用的时候就是直接查询静态编译中提前存储的值，就不回在运行时被指针修改。</p>
+<p>区别：</p>
+<ul>
+<li>C语言中const变量只是只读变量，会分配存储空间</li>
+<li>C++中可能分配存储空间，到那时不一定使用其中的值。</li>
+</ul>
+<p><strong>const常量和宏定义的区别</strong></p>
+<ul>
+<li>宏定义是被预编译器处理的，只是简单的文本替换</li>
+<li>const常量是被编译器处理的，编译器会进行类型检查和作用域检查。</li>
+<li>也就是说在使用过程中const常来给你是有作用域范围的，而宏定义是在全局范围内都可以进行文本替换。类型检查也更严格。</li>
+</ul>
+
+      
+    </div>
+    
+  </section>
+</article>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -635,7 +943,7 @@
     <div class='content pure'>
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/C-%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/" href="/categories/C-%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/"><div class='name'>C++系列学习</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/C-%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/" href="/categories/C-%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/"><div class='name'>C++系列学习</div><div class='badge'>(4)</div></a></li>
         
           <li><a class="flat-box" title="/categories/%E6%88%91%E8%A6%81%E5%87%8F%E8%82%A5/" href="/categories/%E6%88%91%E8%A6%81%E5%87%8F%E8%82%A5/"><div class='name'>我要减肥</div><div class='badge'>(2)</div></a></li>
         
@@ -810,7 +1118,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：42.6k</span>
+    <span class="post-count">字数统计：43.4k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>

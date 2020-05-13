@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Ubuntu修改系统编码 | cxp&#39;s blog</title>
+  <title>const关键字 | cxp&#39;s blog</title>
   
   
-  <meta name="description" content="刚开始装系统的时候是全英文的环境，可是出现一些中文乱码。所以改为中文编码方式, When the going gets tough,the tough get going!">
+  <meta name="description" content="When the going gets tough,the tough get going!">
   
 
   
@@ -271,8 +271,8 @@
         
   
     <h1 class="title">
-      <a href="/archives/2fa3a8c0.html">
-        Ubuntu修改系统编码
+      <a href="/archives/49f01bdb.html">
+        const关键字
       </a>
     </h1>
   
@@ -301,7 +301,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-09-05</p>
+    <p>2020-05-13</p>
   </a>
 </div>
 
@@ -311,9 +311,9 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/' rel="nofollow">
+    <a href='/categories/C-%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>技术经验</p>
+      <p>C++系列学习</p>
     </a>
   </div>
 
@@ -356,16 +356,21 @@
 
 
         <div class="article-entry" itemprop="articleBody">
-          <p>问题：刚开始装系统的时候是全英文的环境，可是出现一些中文乱码。所以改为中文编码方式</p>
-<p>解决：</p>
-<p>1、使用 <code>locale</code> 命令查看系统当前编码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">LANG&#x3D;zh_CN.UTF-8</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">LANGUAGE&#x3D;zh_CN:zh</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">LC_CTYPE&#x3D;&quot;zh_CN.UTF-8&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">LC_NUMERIC&#x3D;&quot;zh_CN.UTF-8&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">LC_TIME&#x3D;&quot;zh_CN.UTF-8&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">LC_COLLATE&#x3D;&quot;zh_CN.UTF-8&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">LC_MONETARY&#x3D;&quot;zh_CN.UTF-8&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">LC_MESSAGES&#x3D;&quot;zh_CN.UTF-8&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">LC_PAPER&#x3D;&quot;zh_CN.UTF-8&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">LC_NAME&#x3D;&quot;zh_CN.UTF-8&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">LC_ADDRESS&#x3D;&quot;zh_CN.UTF-8&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">LC_TELEPHONE&#x3D;&quot;zh_CN.UTF-8&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">LC_MEASUREMENT&#x3D;&quot;zh_CN.UTF-8&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">LC_IDENTIFICATION&#x3D;&quot;zh_CN.UTF-8&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">LC_ALL&#x3D;zh_CN.UTF-8</span></pre></td></tr></table></figure>
-<p>2、修改 <code>/etc/default/locales</code> 文件:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">LANG&#x3D;&quot;zh_CN.UTF-8&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">LANGUAGE&#x3D;&quot;zh_CN:zh&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">LC_ALL&#x3D;&quot;zh_CN.UTF-8&quot;</span></pre></td></tr></table></figure>
-<p>3、最后重启Ubuntu系统：</p>
-<pre><code>reboot -n
-</code></pre>
-<p>重启之后系统提示是否要进行修改名称，可选择保留旧名称，方便以后在终端的使用。</p>
+          <p>学过C语言首先一个问题就是C语言能不能定义常量？</p>
+<p>可能首先想到的就是通过const关键字来定义常量，或者说是enum枚举类型来定义常量。但是我们通过指针可以更改const修饰的常量，是因为C语言在遇到const修饰的常量会分配存储空间，也就允许了在制定存储位置被修改。那么就做不到从根本上定义常量。</p>
+<p>在C++中是不是也有这样的，不是。</p>
+<p>C++中虽然也是可能为const常量分配存储空间，但是不使用存储空间中的值，它使用的是编译过程中产生的符号表。在编译过程中当遇到extern修饰const变量也就是修饰全局变量和使用&amp;取地址符时候，就会开辟一段新的存储空间和C语言一样。而具体使用的时候就是直接查询静态编译中提前存储的值，就不回在运行时被指针修改。</p>
+<p>区别：</p>
+<ul>
+<li>C语言中const变量只是只读变量，会分配存储空间</li>
+<li>C++中可能分配存储空间，到那时不一定使用其中的值。</li>
+</ul>
+<p><strong>const常量和宏定义的区别</strong></p>
+<ul>
+<li>宏定义是被预编译器处理的，只是简单的文本替换</li>
+<li>const常量是被编译器处理的，编译器会进行类型检查和作用域检查。</li>
+<li>也就是说在使用过程中const常来给你是有作用域范围的，而宏定义是在全局范围内都可以进行文本替换。类型检查也更严格。</li>
+</ul>
 
         </div>
         
@@ -377,10 +382,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-13T11:24:27+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-05-13T18:45:54+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2020年2月13日</p>
+    <p>最后更新于 2020年5月13日</p>
   </a>
 </div>
 
@@ -399,7 +404,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="https://connect.qq.com/widget/shareqq/index.html?url=https://cxpeng.cn/archives/2fa3a8c0.html&title=Ubuntu修改系统编码 | cxp's blog&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary="
+          href="https://connect.qq.com/widget/shareqq/index.html?url=https://cxpeng.cn/archives/49f01bdb.html&title=const关键字 | cxp's blog&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary="
           
           >
           
@@ -411,7 +416,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://cxpeng.cn/archives/2fa3a8c0.html&title=Ubuntu修改系统编码 | cxp's blog&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary="
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://cxpeng.cn/archives/49f01bdb.html&title=const关键字 | cxp's blog&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary="
           
           >
           
@@ -423,7 +428,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="https://service.weibo.com/share/share.php?url=https://cxpeng.cn/archives/2fa3a8c0.html&title=Ubuntu修改系统编码 | cxp's blog&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary="
+          href="https://service.weibo.com/share/share.php?url=https://cxpeng.cn/archives/49f01bdb.html&title=const关键字 | cxp's blog&pics=https://i.loli.net/2019/05/17/5cde5331de4a260723.jpg&summary="
           
           >
           
@@ -452,9 +457,9 @@
                         <span class="art-item-left">
                             <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
                             <h4>
-                                <a href="/archives/a66037f0.html" rel="prev" title="四象限法则">
+                                <a href="/archives/26a73c29.html" rel="prev" title="C到C++还有哪些升级">
                                   
-                                      四象限法则
+                                      C到C++还有哪些升级
                                   
                                 </a>
                             </h4>
@@ -467,9 +472,9 @@
                         <span class="art-item-right" aria-hidden="true">
                             <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                             <h4>
-                                <a href="/archives/c9ac5c9b.html" rel="prev" title="9月计划表">
+                                <a href="/archives/e3bfd105.html" rel="prev" title="掌握一门语言之c++">
                                     
-                                        9月计划表
+                                        掌握一门语言之c++
                                     
                                 </a>
                             </h4>
@@ -514,7 +519,7 @@
 
   <script>
     window.subData = {
-      title: 'Ubuntu修改系统编码',
+      title: 'const关键字',
       tools: true
     }
   </script>
