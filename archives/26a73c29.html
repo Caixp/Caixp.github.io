@@ -358,11 +358,7 @@
         <div class="article-entry" itemprop="articleBody">
           <p><strong>1、新增类型之bool类型</strong></p>
 <p>布尔类型是C++新增的基础类型。利用关键字true和false来表示真值和非真值。但是在实际处理中，是利用整数类型来表示，占用一个字节。也就是真为1非真为0，任何非0的值都是别人定为真，为0则为假。这样说有点绕，用代码更清晰。</p>
-<p>‘’’</p>
-<p>bool a = false;           //编译器在编译中就会将a用一个字节的整数0来存储</p>
-<p>int b = -2;</p>
-<p>a = b;                        //将b赋值给a，那么a就变为了-2非0值，那么编译器就会将a处理为1来保存，</p>
-<p>‘’’</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">bool</span> a = <span class="literal">false</span>;           <span class="comment">//编译器在编译中就会将a用一个字节的整数0来存储</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> b = <span class="number">-2</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">a = b;                        <span class="comment">//将b赋值给a，那么a就变为了-2非0值，那么编译器就会将a处理为1来保存，</span></span></pre></td></tr></table></figure>
 <p>bool类型是可以进行运算的，运算的结果在编译器的处理下只有两个整数值，0和1。或者说true和false</p>
 <p><strong>2、C++中三目运算符</strong></p>
 <p>在C语言中三目运算符是不能作为左值，C++中可以。</p>
@@ -381,7 +377,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-05-13T19:06:29+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-05-13T19:10:04+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
     <p>最后更新于 2020年5月13日</p>
