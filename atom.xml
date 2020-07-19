@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxpeng.cn/"/>
-  <updated>2020-06-06T07:19:57.506Z</updated>
+  <updated>2020-07-19T16:16:44.077Z</updated>
   <id>https://cxpeng.cn/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一次出差心得-02</title>
+    <link href="https://cxpeng.cn/archives/27f29441.html"/>
+    <id>https://cxpeng.cn/archives/27f29441.html</id>
+    <published>2020-07-19T16:14:59.000Z</published>
+    <updated>2020-07-19T16:16:44.077Z</updated>
+    
+    <summary type="html">
+    
+      第二天心得总结
+    
+    </summary>
+    
+    
+      <category term="生活随笔" scheme="https://cxpeng.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>第一次出差心得-01</title>
+    <link href="https://cxpeng.cn/archives/befbc5fb.html"/>
+    <id>https://cxpeng.cn/archives/befbc5fb.html</id>
+    <published>2020-07-19T16:14:52.000Z</published>
+    <updated>2020-07-19T16:19:33.014Z</updated>
+    
+    <summary type="html">
+    
+      第一天心得总结
+    
+    </summary>
+    
+    
+      <category term="生活随笔" scheme="https://cxpeng.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C/C++初级工程师学习路线</title>
+    <link href="https://cxpeng.cn/archives/867a622d.html"/>
+    <id>https://cxpeng.cn/archives/867a622d.html</id>
+    <published>2020-06-10T03:44:57.000Z</published>
+    <updated>2020-06-11T02:37:02.255Z</updated>
+    
+    <summary type="html">
+    
+      最近一年总是浑浑噩噩，学习也没有章法可言，通过进一步细化学习思路，来提高学习效率，总之到了现在这种局面已经没有撤退可言，只能往前冲了。
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>阶段性总结（2）</title>
@@ -342,63 +397,6 @@
     <summary type="html">
     
       计划不如变化快！
-    
-    </summary>
-    
-    
-      <category term="生活随笔" scheme="https://cxpeng.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>减肥</title>
-    <link href="https://cxpeng.cn/archives/494fcdcb.html"/>
-    <id>https://cxpeng.cn/archives/494fcdcb.html</id>
-    <published>2019-09-01T06:56:39.000Z</published>
-    <updated>2020-06-06T07:21:44.041Z</updated>
-    
-    <summary type="html">
-    
-      减肥方法不就是管住嘴迈开腿？
-    
-    </summary>
-    
-    
-      <category term="减肥之路" scheme="https://cxpeng.cn/categories/%E5%87%8F%E8%82%A5%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>关闭vpn之后浏览器无法连接网络</title>
-    <link href="https://cxpeng.cn/archives/a4692f1.html"/>
-    <id>https://cxpeng.cn/archives/a4692f1.html</id>
-    <published>2019-06-01T06:56:39.000Z</published>
-    <updated>2020-02-13T03:25:02.331Z</updated>
-    
-    <summary type="html">
-    
-      为什么关闭vpn不能连接网络？
-    
-    </summary>
-    
-    
-      <category term="技术经验" scheme="https://cxpeng.cn/categories/%E6%8A%80%E6%9C%AF%E7%BB%8F%E9%AA%8C/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>阶段学习心得</title>
-    <link href="https://cxpeng.cn/archives/4555512d.html"/>
-    <id>https://cxpeng.cn/archives/4555512d.html</id>
-    <published>2019-05-13T02:35:49.000Z</published>
-    <updated>2020-02-13T03:26:17.413Z</updated>
-    
-    <summary type="html">
-    
-      认清现实。
     
     </summary>
     
