@@ -356,25 +356,20 @@
 
 
         <div class="article-entry" itemprop="articleBody">
-          <h1 id="关于模块"><a class="markdownIt-Anchor" href="#关于模块"></a> 关于模块：</h1>
-<p><a href="https://docs.python.org/3.8/py-modindex.html" target="_blank" rel="noopener">Python模块索引大全</a></p>
+          <h1 id="关于模块："><a href="#关于模块：" class="headerlink" title="关于模块："></a>关于模块：</h1><p><a href="https://docs.python.org/3.8/py-modindex.html" target="_blank" rel="noopener">Python模块索引大全</a></p>
 <p>随着程序的不断变大，需要将程序分为很多文件，创建成模块，一个.py文件就是一个模块。</p>
-<p>从目录中来导入模块，相应的目录称之为包package。使用import语句创建了一个命名空间，并在该命名空间中执行与.py相关的所有语句，要在导入后访问命名空间的内容，只要使用模块的名称当做前缀，就可以访问模块中的内容。</p>
-<p>为了避免使用的模块名字与他人的重名，可以将模块打包成一个特定的包，<strong>要求包名不能与系统模块重名，并且包内必须有__init__.py</strong>，它也是一个模块，并且模块的名字就为包的名字。</p>
+<p>   从目录中来导入模块，相应的目录称之为包package。使用import语句创建了一个命名空间，并在该命名空间中执行与.py相关的所有语句，要在导入后访问命名空间的内容，只要使用模块的名称当做前缀，就可以访问模块中的内容。</p>
+<p>为了避免使用的模块名字与他人的重名，可以将模块打包成一个特定的包，<strong>要求包名不能与系统模块重名，并且包内必须有<strong>init</strong>.py</strong>，它也是一个模块，并且模块的名字就为包的名字。</p>
 <ol>
-<li>
-<p>在程序中时经常要对模块的功能进行测试时候，在模块中的话经常用到下面一句：</p>
-<p>if <strong>name</strong> == “<strong>main</strong>”:</p>
+<li><p>在程序中时经常要对模块的功能进行测试时候，在模块中的话经常用到下面一句：</p>
+<p> if <strong>name</strong> == “<strong>main</strong>“:</p>
 <pre><code> test()
-</code></pre>
-<p>当我们在命令行运行模块文件时，Python解释器把一个特殊变量__name__置为__main__，这样就可以使得test代码在模块内部使用，而在模块外部调用模块时不运行test函数。</p>
+</code></pre><p> 当我们在命令行运行模块文件时，Python解释器把一个特殊变量<strong>name</strong>置为<strong>main</strong>，这样就可以使得test代码在模块内部使用，而在模块外部调用模块时不运行test函数。</p>
 </li>
-<li>
-<p>编写模块时需要考虑隐藏内部细节，设置私有函数来隐藏细节，需要访问时可以在公开访问的函数中函数中可以调用这些私有方法而不让模块使用者看到内部操作细节。<strong>这样可以做到代码的封装和抽象。</strong></p>
-</li>
-<li>
-<p>dir()可以列出模块的内容，访问__doc__()可以得到描述函数用途的字符串</p>
-</li>
+</ol>
+<ol>
+<li>编写模块时需要考虑隐藏内部细节，设置私有函数来隐藏细节，需要访问时可以在公开访问的函数中函数中可以调用这些私有方法而不让模块使用者看到内部操作细节。<strong>这样可以做到代码的封装和抽象。</strong></li>
+<li>dir()可以列出模块的内容，访问<strong>doc</strong>()可以得到描述函数用途的字符串</li>
 </ol>
 
         </div>
@@ -628,7 +623,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#关于模块"><span class="toc-text"> 关于模块：</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#关于模块："><span class="toc-text">关于模块：</span></a></li></ol>
     </div>
   </section>
 

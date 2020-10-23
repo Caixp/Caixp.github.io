@@ -357,48 +357,42 @@
 
         <div class="article-entry" itemprop="articleBody">
           <p>原本以为这个世界只有Windows，后来才发现竟然有Linux这个妖怪，还得需要学习使用，想起天下无贼有一段范伟扮演的强盗不懂IQ是什么，说只要给他密码他就能用。学习一个新的知识，不就是拿来使用嘛，所以秉着这个思想，便开始踩坑！</p>
-<p><img src="%E7%BB%99%E6%88%91%E6%88%91%E5%B0%B1%E8%83%BD%E7%94%A8.png" alt="" /></p>
+<p><img src="给我我就能用.png" alt=""></p>
 <p>首先考虑怎么安装，踩坑第一步：</p>
 <ol>
-<li>安装虚拟机。现在Windows还是办公的主力，幻灯片和Word文档，还有许多工具软件，使用macOS 都不可替代，装个虚拟机还是挺好的解决方案，在家有条件了可以买个主机安装linux系统后当做一个服务器，现阶段就还是用虚拟机。</li>
-</ol>
+<li><p>安装虚拟机。现在Windows还是办公的主力，幻灯片和Word文档，还有许多工具软件，使用macOS 都不可替代，装个虚拟机还是挺好的解决方案，在家有条件了可以买个主机安装linux系统后当做一个服务器，现阶段就还是用虚拟机。</p>
 <ul>
 <li>虚拟机安装：下载：<a href="https://www.vmware.com/cn.html" target="_blank" rel="noopener">VMware官网</a>，选择版本下载Workstations Pro，然后一步步按照提示安装，最后网上收一下授权密钥。</li>
 </ul>
-<ol start="2">
-<li>选择Linux发行版</li>
+</li>
+<li><p>选择Linux发行版</p>
+</li>
 </ol>
 <ul>
 <li>Ubuntu：选择桌面版本对比win，使用习惯改一下就行，不会让人难接受</li>
 <li>CentOS：我安装最小安装版本，之后在Windows软件中通过ssh访问就行。</li>
 <li>原本选择的是centOS.不过后来出了挺多问题，就换回Ubuntu使用，不过桌面还是比字符界面慢好多，但是还是那句话用ssh工具软件远程登录就行，不影响。</li>
 </ul>
-<ol start="3">
-<li>下载</li>
-</ol>
+<ol>
+<li><p>下载</p>
 <ul>
 <li>可以去一些镜像网站下载，比如我们学校的镜像网站校园网，速度挺快，之前也去过交大下过，也可以去<a href="http://mirrors.ustc.edu.cn/" target="_blank" rel="noopener">中科大</a>、<a href="https://mirrors.tuna.tsinghua.edu.cn/" target="_blank" rel="noopener">清华</a>下载相应的版本。</li>
 </ul>
-<ol start="4">
-<li>具体怎么安装，打开虚拟机-创建虚拟机-找到镜像文件-下一步-填写一个用户名方便登录使用-配置硬件等-安装。基本是按照一步步走下来不需要具体设置</li>
-</ol>
+</li>
+<li><p>具体怎么安装，打开虚拟机-创建虚拟机-找到镜像文件-下一步-填写一个用户名方便登录使用-配置硬件等-安装。基本是按照一步步走下来不需要具体设置</p>
 <ul>
 <li>这里设置时候有时会牵扯到日后想把文件或者文字在虚拟机和主机之间传递，需要在虚拟机-设置-添加CD/DVD，选择自动检测。一般就可以粘贴了，或者什么都不用设置，以后在远程端操作也行。</li>
 </ul>
-<ol start="5">
-<li>
-<p>设置网络</p>
-<p>要让虚拟机运行起来怎么能够忘了配置网络呢。</p>
 </li>
-</ol>
+<li><p>设置网络</p>
+<p> 要让虚拟机运行起来怎么能够忘了配置网络呢。</p>
 <ul>
 <li>打开虚拟机-设置-网络适配器：网络连接提供三种连接方式，由于我们是在主机联网的情况，所以选择NAT模式，通过主机联网，具体三种的区别，出现问题时再去探究。</li>
 <li>这时候我们Linux使用的是我们Windows中的VMnet8，所以和主机是处在一个网段的。</li>
 <li>使用ifconfig可查看Linux中的IP地址，在Windows中ping以下，看看能不能接通，好为下一步进行操作做准备。</li>
 </ul>
-<ol start="6">
-<li>
-<p>好了前面坑比较少，真正的坑在慢慢到来。第一个远程连接，不是你给我密码我就能用的！！！</p>
+</li>
+<li><p>好了前面坑比较少，真正的坑在慢慢到来。第一个远程连接，不是你给我密码我就能用的！！！</p>
 <ul>
 <li>怎么下载安装<a href="https://www.cnblogs.com/yjd_hycf_space/p/7729796.html" target="_blank" rel="noopener">SecureCRT</a>点击参考安装破解</li>
 <li>开始通过ssh连接了，刚开始我使用quick connect发现linux拒绝我的请求，不对啊，我查看了虚拟机和主机ping过了。后来百度发现是Linux 中ssh没有安装，感觉去Linux中安装，但是安装时，也给我提示<code>Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?</code>好了，这个原因说明我们需要更换Linux的软件源，既然自带的源不好使，还在国外速度慢，那就用我们自己的，前面提到清华源正好用上</li>
@@ -407,16 +401,14 @@
 </li>
 </ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">安装openssh-client</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">sudo apt-get install openssh-client</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">安装openssh-server</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">sudo apt-get install openssh-server</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">验证ssh服务开启</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">ps -A|grep ssh</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">没有开启的话就开启：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">sudo service sshd start</span></pre></td></tr></table></figure>
-<ol start="7">
-<li>替换Linux中的软件源</li>
-</ol>
-<ul>
+<ol>
+<li>替换Linux中的软件源<ul>
 <li>Linux中所有的东西都可以通过修改文件来实现，更改源这种小事情当然是一样</li>
 </ul>
+</li>
+</ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">切换目录</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">cd /etc/apt/</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">备份一下</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">sudo cp sources.list copy_sources.list</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">进行编辑把下面的清华的源加进去</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial universe</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates universe</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial multiverse</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates multiverse</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security universe</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security multiverse</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">最后更新下：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span></pre></td></tr></table></figure>
-<p>这时候还不能用再加下面：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">sudo vim /etc/resolv.conf</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">添加下面内容</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">nameserver <span class="number">8.8</span><span class="number">.8</span><span class="number">.8</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">nameserver <span class="number">223.5</span><span class="number">.5</span><span class="number">.5</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">nameserver <span class="number">223.6</span><span class="number">.6</span><span class="number">.6</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">   最后更新一下：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span></pre></td></tr></table></figure>
-<p>这时候填坑完毕。</p>
+<p>这时候还不能用再加下面：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">sudo vim /etc/resolv.conf</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">添加下面内容</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">nameserver <span class="number">8.8</span><span class="number">.8</span><span class="number">.8</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">nameserver <span class="number">223.5</span><span class="number">.5</span><span class="number">.5</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">nameserver <span class="number">223.6</span><span class="number">.6</span><span class="number">.6</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">   最后更新一下：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span></pre></td></tr></table></figure><br>这时候填坑完毕。</p>
 <p>打开Windows中的SecureCRT，file-quick connect，填写username，密码，之后记住密码，这时候就可以在软件中操作Linux系统。<a href="https://caixp0612.github.io/Linux/Linux%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/" target="_blank" rel="noopener">Linux使用命令学习</a></p>
 
         </div>
