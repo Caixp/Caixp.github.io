@@ -7,16 +7,14 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>C++中的set！ - cxp&#39;s blog</title>
+  <title>技术经验 - cxp&#39;s blog</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
 
   
   
-  <meta name="description" content="
-
-set的特点是：集合中的元素根据键值自动排序，没有..."> 
+  <meta name="description" content="When the going gets tough,the tough get going!"> 
   
   <meta name="author" content="Alex"> 
 
@@ -101,7 +99,7 @@ set的特点是：集合中的元素根据键值自动排序，没有...">
 
 <nav class="navbar">
   <div class="left"></div>
-  <div class="center">C++中的set！</div>
+  <div class="center">分类</div>
   <div class="right">
     <i class="iconfont iconmenu j-navbar-menu"></i>
   </div>
@@ -149,159 +147,23 @@ set的特点是：集合中的元素根据键值自动排序，没有...">
   </div>
 </nav>
   <main id="main">
-  <div class="container" id="container">
-    <article class="article">
-  <div class="wrap">
-    <section class="head">
-  <img   class="lazyload" data-original="/my_blog/images/theme/post-image.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
-  <div class="head-mask">
-    <h1 class="head-title">C++中的set！</h1>
-    <div class="head-info">
-      <span class="post-info-item"><i class="iconfont iconcalendar"></i>四月 13, 2019</span
-        class="post-info-item">
-      
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>814</span>
+  <section class="archive">
+    <div class="archive-container">
+      <div class="archive-post">
+        <h3 class="archive-total"># 技术经验</h3>
+        
+        
+        
+        <h3 class="archive-year">2018</h3>
+        
+        <div class="archive-item">
+          <a class="archive-date" href="/my_blog/archives/e27e22b8.html">12/03</a>
+          <a class="archive-title" href="/my_blog/archives/e27e22b8.html">Linux安装opencv和vscode工具配置</a>
+        </div>
+        
+      </div>
     </div>
-  </div>
-</section>
-    <section class="main">
-      <section class="content">
-        <ul>
-<li>
-<p>set的特点是：集合中的元素根据键值自动排序，没有重复元素</p>
-</li>
-<li>
-<p>声明：</p>
-<p>set &lt;类型&gt; 名称   如： set<int>s1;</p>
-</li>
-<li>
-<p>set中的函数</p>
-<ul>
-<li>
-<p>begin()返回指向第一个元素的迭代器</p>
-</li>
-<li>
-<p>end()返回指向最后一个元素的迭代器</p>
-</li>
-<li>
-<p>erase()–删除元素      只能根据元素的值删除元素，不能根据第几个元素进行删除</p>
-</li>
-<li>
-<p>insert()–插入元素</p>
-</li>
-<li>
-<p>clear()–清除所有元素</p>
-</li>
-</ul>
-</li>
-<li>
-<p>count()–返回某个值元素的个数</p>
-</li>
-<li>
-<p>empty()–如果集合为空，返回true equal_range()–返回集合中与给定值相等的上下限的两个迭代器</p>
-</li>
-<li>
-<p>find()–返回一个指向被查找到元素的迭代器</p>
-</li>
-<li>
-<p>get_allocator()–返回集合的分配器</p>
-</li>
-<li>
-<p>lower_bound()–返回指向大于（或等于）某值的第一个元素的迭代器</p>
-</li>
-<li>
-<p>key_comp()–返回一个用于元素间值比较的函数</p>
-</li>
-<li>
-<p>max_size()–返回集合能容纳的元素的最大限值</p>
-</li>
-<li>
-<p>rbegin()–返回指向集合中最后一个元素的反向迭代器</p>
-</li>
-<li>
-<p>rend()–返回指向集合中第一个元素的反向迭代器</p>
-</li>
-<li>
-<p>size()–集合中元素的数目</p>
-</li>
-<li>
-<p>swap()–交换两个集合变量</p>
-</li>
-<li>
-<p>upper_bound()–返回大于某个值元素的迭代器</p>
-</li>
-<li>
-<p>value_comp()–返回一个用于比较元素间的值的函数</p>
-</li>
-</ul>
-<p>关于迭代器：<br />
-声明：set&lt;类型&gt;::iterator 名称<br />
-set<int>::iterator it=s.begin();</p>
-<p>注**迭代器的类型要与定义的set类型相同<br />
-**<br />
-访问迭代器指向元素时使用  *名称<br />
-cout&lt;&lt;*it&lt;&lt;endl;</p>
-<p>迭代器能自增<code>++it</code>;，</p>
-<p>也可以使用</p>
-<ul>
-<li>it + n;</li>
-<li>it - n;</li>
-<li>it += n;</li>
-<li>it -= n;</li>
-<li>it1 - it2;</li>
-</ul>
-<p>以上操作的结果还是迭代器；</p>
-<p></p>
-
-      </section>
-      <section class="extra">
-        
-        <ul class="copyright">
-  
-  <li><strong>本文作者：</strong>Alex</li>
-  <li><strong>本文链接：</strong><a href="https://caixp0612.gitee.io/my_blog/archives/fcc57c4c.html">https://caixp0612.gitee.io/my_blog/archives/fcc57c4c.html</a></li>
-  <li><strong>版权声明：</strong>本博客所有文章均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
-      rel="external nofollow" target="_blank"> BY-NC-SA </a>许可协议，转载请注明出处！</li>
-  
-</ul>
-        
-        
-        <section class="donate">
-  <div class="qrcode">
-    <img   class="lazyload" data-original="https://pic.izhaoo.com/alipay.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" >
-  </div>
-  <div class="icon">
-    <a href="javascript:;" target="_blank" rel="noopener" id="alipay"><i class="iconfont iconalipay"></i></a>
-    <a href="javascript:;" target="_blank" rel="noopener" id="wechat"><i class="iconfont iconwechat-fill"></i></a>
-  </div>
-</section>
-        
-        
-  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/my_blog/tags/C/" rel="tag">C++</a></li></ul>
-
-        
-<nav class="nav">
-  
-    <a href="/my_blog/archives/b759e75d.html"><i class="iconfont iconleft"></i>批量添加无序号列表格式</a>
-  
-  
-    <a href="/my_blog/archives/aee69fbc.html">Windows下常用命令<i class="iconfont iconright"></i></a>
-  
-</nav>
-
-      </section>
-      
-      <section class="comments">
-  
-  <div class="btn" id="comments-btn">查看评论</div>
-  
-  
-</section>
-      
-    </section>
-  </div>
-</article>
-  </div>
+  </section>
 </main>
   <footer class="footer">
   <div class="footer-social">
