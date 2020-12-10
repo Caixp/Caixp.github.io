@@ -356,82 +356,64 @@
 
 
         <div class="article-entry" itemprop="articleBody">
-          <h1 id="什么是git"><a class="markdownIt-Anchor" href="#什么是git"></a> 什么是Git？</h1>
-<p>首先一个问题就是：什么是Git？用来干什么？</p>
+          <h1 id="什么是Git？"><a href="#什么是Git？" class="headerlink" title="什么是Git？"></a>什么是Git？</h1><p>首先一个问题就是：什么是Git？用来干什么？</p>
 <p>维基百科中是这么说的：Git是一种分布式版本控制软件。Git是用C语言开发的，追求高性能，它的TCP监听端口是9418，刚开始是用于Linux内核开发的版本控制，不需要服务器端软件，就可以运作版本控制软件，使得源代码的发布和交流极为方便。</p>
-<h1 id="git中的数据结构"><a class="markdownIt-Anchor" href="#git中的数据结构"></a> Git中的数据结构</h1>
-<ul>
+<h1 id="Git中的数据结构"><a href="#Git中的数据结构" class="headerlink" title="Git中的数据结构"></a>Git中的数据结构</h1><ul>
 <li>可变的索引</li>
 <li>不可变的、仅追加的对象数据库</li>
 </ul>
 <p>下面总结下常用的基本语法</p>
-<h1 id="基本使用方法"><a class="markdownIt-Anchor" href="#基本使用方法"></a> 基本使用方法</h1>
-<p>使用之前需要先安装，附官网地址：<a href="https://www.git-scm.com/download/" target="_blank" rel="noopener" title="Git下载">https://www.git-scm.com/download/</a></p>
-<p>使用Git，要知道什么是工作区、暂存区、版本库。<br />
-本地进行存储的称之为工作区，然后修改文件之后，先将文件add暂存区，暂存区保存未提交的修改，最后将暂存区的修改commit到版本库（之后还需要push远程）。</p>
+<h1 id="基本使用方法"><a href="#基本使用方法" class="headerlink" title="基本使用方法"></a>基本使用方法</h1><p>使用之前需要先安装，附官网地址：<a href="https://www.git-scm.com/download/" target="_blank" rel="noopener" title="Git下载">https://www.git-scm.com/download/</a></p>
+<p>使用Git，要知道什么是工作区、暂存区、版本库。<br>本地进行存储的称之为工作区，然后修改文件之后，先将文件add暂存区，暂存区保存未提交的修改，最后将暂存区的修改commit到版本库（之后还需要push远程）。</p>
 <ol>
-<li>在windows中安装使用Git，打开Git Bash新建一个空文件夹，用于本地项目的存储，文件夹路径不要使用中文名字。</li>
-</ol>
-<ul>
+<li>在windows中安装使用Git，打开Git Bash新建一个空文件夹，用于本地项目的存储，文件夹路径不要使用中文名字。<ul>
 <li>mkdir  xxx：创建文件夹</li>
 <li>cd xxx：进入文件夹</li>
 <li>git init：文件夹初始化为本地库</li>
 </ul>
-<ol start="2">
-<li>修改、添加、提交</li>
-</ol>
-<ul>
-<li>vi <a href="http://README.md" target="_blank" rel="noopener">README.md</a>：新建编辑文档</li>
-<li>git add <a href="http://README.md" target="_blank" rel="noopener">README.md</a>：将本地文档添加入暂存区</li>
-<li>git commit -m <a href="http://README.md" target="_blank" rel="noopener">README.md</a>：提交到版本分支上</li>
+</li>
+<li>修改、添加、提交<ul>
+<li>vi README.md：新建编辑文档</li>
+<li>git add README.md：将本地文档添加入暂存区</li>
+<li>git commit -m README.md：提交到版本分支上</li>
 <li>git status：查看暂存区状态</li>
-<li>git diff <a href="http://README.md" target="_blank" rel="noopener">README.md</a>：查看修改</li>
+<li>git diff README.md：查看修改</li>
 </ul>
-<ol start="3">
-<li>查看日志和回退功能</li>
-</ol>
-<ul>
+</li>
+<li>查看日志和回退功能<ul>
 <li>git log：查看提交日志</li>
 <li>git reflog：记录所有的操作</li>
-<li>git reset --hard HEAD^：版本回退当前版本的上一个版本</li>
-<li>git reset --hard id：根据版本号进行回退，版本号可以在log中看到</li>
-<li>git checkout – <a href="http://README.md" target="_blank" rel="noopener">README.md</a> ：当没有进行add时，可以撤销上一版本add或者提交之后的所有修改</li>
-<li>git reset HEAD <a href="http://README.md" target="_blank" rel="noopener">README.md</a>：当这是add之后没有commit，这一步加上一步进行撤销修改</li>
-<li>git reset --hard id：当已经commit之后，可以通过回退进行退回到以前版本。</li>
+<li>git reset —hard HEAD^：版本回退当前版本的上一个版本</li>
+<li>git reset —hard id：根据版本号进行回退，版本号可以在log中看到</li>
+<li>git checkout — README.md ：当没有进行add时，可以撤销上一版本add或者提交之后的所有修改</li>
+<li>git reset HEAD README.md：当这是add之后没有commit，这一步加上一步进行撤销修改</li>
+<li>git reset —hard id：当已经commit之后，可以通过回退进行退回到以前版本。</li>
 </ul>
-<ol start="4">
-<li>删除操作和误操作解决办法</li>
-</ol>
-<ul>
-<li>git rm <a href="http://README.md" target="_blank" rel="noopener">README.md</a>：删除文档，并告诉暂存区</li>
+</li>
+<li>删除操作和误操作解决办法<ul>
+<li>git rm README.md：删除文档，并告诉暂存区</li>
 <li>git commit -m “remove a file”：提交删除信息</li>
-<li>git reset --hard HEAD^：撤销修改</li>
-<li>git checkout – <a href="http://READMD.md" target="_blank" rel="noopener">READMD.md</a>：找回删除的文件</li>
+<li>git reset —hard HEAD^：撤销修改</li>
+<li>git checkout — READMD.md：找回删除的文件</li>
 </ul>
-<ol start="5">
-<li>连接、克隆远程库，下面还涉及到连接多个远程库，进行共同管理</li>
-</ol>
-<ul>
-<li>git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:Caixp0612/dragon.git：远程连接github上的远程库</li>
+</li>
+<li>连接、克隆远程库，下面还涉及到连接多个远程库，进行共同管理<ul>
+<li>git remote add origin git@github.com:Caixp0612/dragon.git：远程连接github上的远程库</li>
 <li>git push -u origin master：将本地库推送到远程</li>
-<li>git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:Caixp0612/dragon.git：克隆远程库到本地</li>
+<li>git clone git@github.com:Caixp0612/dragon.git：克隆远程库到本地</li>
 </ul>
-<ol start="6">
-<li>分支管理</li>
-</ol>
-<ul>
+</li>
+<li>分支管理<ul>
 <li>git checkout -b dev：创建并切换分支</li>
 <li>git checkout master：切换分支</li>
 <li>git branch：查看分支信息</li>
 <li>git merge dev：在分支完成修改开发，可以在mater下进行合并</li>
 <li>git branch -d dev：当不在分支上进行工作时可以删除分支</li>
-<li>git log --graph --pretty=oneline --abbrev-commit：该命令可以看到分支合并情况。</li>
-<li>git merge --no-ff -m “merge with no-ff” dev：合并新的分支并禁用fast-forward模式，可以看到分支合并的信息</li>
+<li>git log —graph —pretty=oneline —abbrev-commit：该命令可以看到分支合并情况。</li>
+<li>git merge —no-ff -m “merge with no-ff” dev：合并新的分支并禁用fast-forward模式，可以看到分支合并的信息</li>
 </ul>
-<ol start="7">
-<li>保存和恢复工作现场</li>
-</ol>
-<ul>
+</li>
+<li>保存和恢复工作现场<ul>
 <li>git stash：保存当前工作，</li>
 <li>git stash list：查看当前保存的工作区</li>
 <li>git stash apply stash@{n} 恢复制定的工作区</li>
@@ -439,37 +421,33 @@
 <li>git stash pop：恢复同时清空stash内容</li>
 <li>git branch -D dev：丢弃未被合并的分支，需要使用参数D</li>
 </ul>
-<ol start="8">
-<li>标签管理，通过打标签使得版本更新更清晰</li>
-</ol>
+</li>
+<li><p>标签管理，通过打标签使得版本更新更清晰</p>
 <ul>
 <li>git tag v0.1 commit_id：给指定的ID上标签</li>
 <li>git show v0.1：查看标签信息</li>
 <li>git tag -a v0.1 -m  “xxx”：创建带有说明的标签</li>
 <li>git tag -d v0.1：删除标签</li>
 <li>git push origin v0.1：将标签推送到远程</li>
-<li>git push origin --tags：将全部标签推送到远程</li>
+<li>git push origin —tags：将全部标签推送到远程</li>
 <li>git push origin :refs/tags/v0.9：若已经把标签推送到远程再删除标签的话，先执行本地的删除标签，然后再进行这一步进行远程删除。</li>
 </ul>
-<ol start="9">
-<li>
-<p><strong>连接多个远程库进行管理，需要先将本地.ssh文件夹保存的公钥传到远程平台上，使得可以通过ssh通信</strong></p>
-<p><code>码云</code></p>
 </li>
-</ol>
+<li><p><strong>连接多个远程库进行管理，需要先将本地.ssh文件夹保存的公钥传到远程平台上，使得可以通过ssh通信</strong></p>
+<p> <code>码云</code></p>
 <ul>
-<li>git remote add gitee <a href="mailto:git@gitee.com" target="_blank" rel="noopener">git@gitee.com</a>:Caixpeng/dragon.git</li>
+<li>git remote add gitee git@gitee.com:Caixpeng/dragon.git</li>
 <li>git remote -v</li>
-<li>git pull gitee master：将远程的库同步到本地，这时候可能会遇到了一个问题就是提示两个库创建历史不一样，这种情况选择忽略，解决方法是在命令后面添加参数 --allow-unrelated–histories，之后就是需要更改合并冲突等一些问题。</li>
+<li>git pull gitee master：将远程的库同步到本地，这时候可能会遇到了一个问题就是提示两个库创建历史不一样，这种情况选择忽略，解决方法是在命令后面添加参数 —allow-unrelated—histories，之后就是需要更改合并冲突等一些问题。</li>
 <li>git push xxx master：将本地的分支推送到远程，xxx是制定远程库时起的名字</li>
 </ul>
-<h1 id="待续"><a class="markdownIt-Anchor" href="#待续"></a> 待续</h1>
-<pre><code> 之后可以进行定制化Git，学习Git，从使用入手，之后遇到问题时候在进行补充。
+</li>
+</ol>
+<h1 id="待续"><a href="#待续" class="headerlink" title="待续"></a>待续</h1><pre><code> 之后可以进行定制化Git，学习Git，从使用入手，之后遇到问题时候在进行补充。
 
 
  定制化Git可以更改显示颜色，忽略不重要文件，设置别名alias等，设置别名可以在配置文件`.git/config`中进行批量修改。
 </code></pre>
-
         </div>
         
           
@@ -721,7 +699,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#什么是git"><span class="toc-text"> 什么是Git？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git中的数据结构"><span class="toc-text"> Git中的数据结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#基本使用方法"><span class="toc-text"> 基本使用方法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#待续"><span class="toc-text"> 待续</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#什么是Git？"><span class="toc-text">什么是Git？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Git中的数据结构"><span class="toc-text">Git中的数据结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#基本使用方法"><span class="toc-text">基本使用方法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#待续"><span class="toc-text">待续</span></a></li></ol>
     </div>
   </section>
 
@@ -983,7 +961,7 @@ setInterval("createtime()",250);
     ｜
 
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：48k</span>
+    <span class="post-count">字数统计：47.9k</span>
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
