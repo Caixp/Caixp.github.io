@@ -14,8 +14,7 @@
 
   
   
-  <meta name="description" content=" Linux安装opencv和vscode工具配置
-1..."> 
+  <meta name="description" content="Linux安装opencv和vscode工具配置1、参..."> 
   
   <meta name="author" content="Alex"> 
 
@@ -36,7 +35,7 @@
     <meta rel="msapplication-TileColor" content="#000000">
   
 
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/my_blog/css/style.css">
 
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1445822_h1619vhl1nr.css">
@@ -91,7 +90,7 @@
   
 
   
-<link rel="alternate" href="/atom.xml" title="cxp's blog" type="application/atom+xml">
+<link rel="alternate" href="/my_blog/atom.xml" title="cxp's blog" type="application/atom+xml">
 </head>
 <body class="lock-screen">
   <div class="loading"></div>
@@ -152,35 +151,32 @@
     <article class="article">
   <div class="wrap">
     <section class="head">
-  <img   class="lazyload" data-original="/images/theme/post-image.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <img   class="lazyload" data-original="/my_blog/images/theme/post-image.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
   <div class="head-mask">
     <h1 class="head-title">Linux安装opencv和vscode工具配置</h1>
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>十二月 03, 2018</span
         class="post-info-item">
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>994</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>995</span>
     </div>
   </div>
 </section>
     <section class="main">
       <section class="content">
-        <h1 id="linux安装opencv和vscode工具配置"><a class="markdownIt-Anchor" href="#linux安装opencv和vscode工具配置"></a> Linux安装opencv和vscode工具配置</h1>
-<p>1、参考opencv官网在Linux上安装opencv的步骤</p>
+        <h1 id="Linux安装opencv和vscode工具配置"><a href="#Linux安装opencv和vscode工具配置" class="headerlink" title="Linux安装opencv和vscode工具配置"></a>Linux安装opencv和vscode工具配置</h1><p>1、参考opencv官网在Linux上安装opencv的步骤</p>
 <ul>
 <li>按照官网文档安装依赖，</li>
 <li>官网下载opencv和扩展包的源码source。也可以通过github克隆到本地，注意版本一定是相同的。</li>
-<li>利用cmake编译安装：
-<ul>
+<li>利用cmake编译安装：<ul>
 <li>新建文件夹opencv：mkdir opencv</li>
 <li>将扩展包cp到opencv文件夹中</li>
 <li>在opencv文件夹中新建build文件夹:mkdir build</li>
 <li>进入文件夹：cd build</li>
-<li>使用cmake命令进行编译（下面的目录名字我已经统一去掉版本信息）：cmake -D CMAKE_INSTALL_PREFIX=/usr/local -D CMAKE_BUILD_TYPE=Release -D OPENCV_EXTRA_MODULES_PATH=…/opencv_contrib/modules …</li>
+<li>使用cmake命令进行编译（下面的目录名字我已经统一去掉版本信息）：cmake -D CMAKE_INSTALL_PREFIX=/usr/local -D CMAKE_BUILD_TYPE=Release -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules ..</li>
 <li>编译过程中出现的问题参考第二部分</li>
 <li>然后进行安装：sudo make install</li>
-<li>安装完成后，可以在终端中使用python，导入opencv的包进行使用：
-<ul>
+<li>安装完成后，可以在终端中使用python，导入opencv的包进行使用：<ul>
 <li>python</li>
 <li>import cv2 as cv</li>
 <li>cv.__version__  #查看安装的opencv版本</li>
@@ -188,8 +184,7 @@
 </li>
 </ul>
 </li>
-<li>将opencv的库路径添加到系统路径中去
-<ul>
+<li>将opencv的库路径添加到系统路径中去<ul>
 <li>cd /etc/ld.so.conf.d</li>
 <li>sudo touch opencv.conf,此时文件中是空的。</li>
 <li>写入：/usr/local/lib</li>
@@ -200,15 +195,13 @@
 </ul>
 <p>2、安装过程中遇到的问题。</p>
 <ul>
-<li>
-<p>安装依赖中出现<code>errorE: unable to locate libjasper-dev</code>。</p>
+<li><p>安装依赖中出现<code>errorE: unable to locate libjasper-dev</code>。</p>
 <p>解决办法：</p>
-<p>sudo add-apt-repository “deb <a href="http://security.ubuntu.com/ubuntu" target="_blank" rel="noopener">http://security.ubuntu.com/ubuntu</a> xenial-security main”</p>
-<p>sudo apt update</p>
-<p>sudo apt install libjasper1 libjasper-dev</p>
+<p>  sudo add-apt-repository “deb <a href="http://security.ubuntu.com/ubuntu" target="_blank" rel="noopener">http://security.ubuntu.com/ubuntu</a> xenial-security main”</p>
+<p>  sudo apt update</p>
+<p>  sudo apt install libjasper1 libjasper-dev</p>
 </li>
-<li>
-<p>编译过程中出现：xxx :No such file or directory</p>
+<li><p>编译过程中出现：xxx :No such file or directory</p>
 <p>解决办法：</p>
 <p>find ～ -name xxx</p>
 <p>将出现问题的文件路径修改下，在重新编译。</p>
@@ -222,7 +215,7 @@
         <ul class="copyright">
   
   <li><strong>本文作者：</strong>Alex</li>
-  <li><strong>本文链接：</strong><a href="https://cxpeng.cn/archives/e27e22b8.html">https://cxpeng.cn/archives/e27e22b8.html</a></li>
+  <li><strong>本文链接：</strong><a href="https://caixp0612.gitee.io/my_blog/archives/e27e22b8.html">https://caixp0612.gitee.io/my_blog/archives/e27e22b8.html</a></li>
   <li><strong>版权声明：</strong>本博客所有文章均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
       rel="external nofollow" target="_blank"> BY-NC-SA </a>许可协议，转载请注明出处！</li>
   
@@ -240,12 +233,12 @@
 </section>
         
         
-  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/opencv/" rel="tag">opencv</a></li></ul>
+  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/my_blog/tags/opencv/" rel="tag">opencv</a></li></ul>
 
         
 <nav class="nav">
   
-    <a href="/archives/ee940876.html"><i class="iconfont iconleft"></i>博客搭建记录</a>
+    <a href="/my_blog/archives/ee940876.html"><i class="iconfont iconleft"></i>博客搭建记录</a>
   
   
 </nav>
@@ -360,10 +353,10 @@
 
 
 
-<script src="/js/utils.js"></script>
-<script src="/js/modules.js"></script>
-<script src="/js/zui.js"></script>
-<script src="/js/script.js"></script>
+<script src="/my_blog/js/utils.js"></script>
+<script src="/my_blog/js/modules.js"></script>
+<script src="/my_blog/js/zui.js"></script>
+<script src="/my_blog/js/script.js"></script>
 
 
 

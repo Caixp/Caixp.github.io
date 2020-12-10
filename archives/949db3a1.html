@@ -14,12 +14,10 @@
 
   
   
-  <meta name="description" content=" 多线程、多进程
-
-
+  <meta name="description" content="多线程、多进程
 概念
 
-进程：计算机中需要执行的..."> 
+进程：计算机中需要执行的任务称..."> 
   
   <meta name="author" content="Alex"> 
 
@@ -40,7 +38,7 @@
     <meta rel="msapplication-TileColor" content="#000000">
   
 
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/my_blog/css/style.css">
 
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1445822_h1619vhl1nr.css">
@@ -95,7 +93,7 @@
   
 
   
-<link rel="alternate" href="/atom.xml" title="cxp's blog" type="application/atom+xml">
+<link rel="alternate" href="/my_blog/atom.xml" title="cxp's blog" type="application/atom+xml">
 </head>
 <body class="lock-screen">
   <div class="loading"></div>
@@ -156,112 +154,83 @@
     <article class="article">
   <div class="wrap">
     <section class="head">
-  <img   class="lazyload" data-original="/images/theme/post-image.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <img   class="lazyload" data-original="/my_blog/images/theme/post-image.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
   <div class="head-mask">
     <h1 class="head-title">Python中的多线程</h1>
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>四月 02, 2019</span
         class="post-info-item">
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1956</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1924</span>
     </div>
   </div>
 </section>
     <section class="main">
       <section class="content">
-        <h1 id="多线程-多进程"><a class="markdownIt-Anchor" href="#多线程-多进程"></a> 多线程、多进程</h1>
-<ol>
-<li>
-<p>概念</p>
+        <h1 id="多线程、多进程"><a href="#多线程、多进程" class="headerlink" title="多线程、多进程"></a>多线程、多进程</h1><ol>
+<li><p>概念</p>
 <ul>
 <li>进程：计算机中需要执行的任务称之为进程，比如浏览器的运行、播放音乐。可以通过fork和spawn派生出新的进程来执行其他任务。进程间通过进程间通信方式进行通信。</li>
-<li>线程：进程中，需要完成的一个多个任务称之为线程，共享相同的上下文，被称之为迷你进程。比如播放音乐中需要输出歌词和音频。同一进程下线程间时共享数据空间。</li>
-</ul>
+<li><p>线程：进程中，需要完成的一个多个任务称之为线程，共享相同的上下文，被称之为迷你进程。比如播放音乐中需要输出歌词和音频。同一进程下线程间时共享数据空间。</p>
 </li>
-</ol>
-<ul>
-<li>
-<p>让步：线程中有指令指针，当其他的线程进行时，指针可以被抢占和挂起。</p>
+<li><p>让步：线程中有指令指针，当其他的线程进行时，指针可以被抢占和挂起。</p>
 </li>
-<li>
-<p>竞态条件：多个线程访问同一片数据，访问顺序不同可能造成的结果不同。</p>
+<li><p>竞态条件：多个线程访问同一片数据，访问顺序不同可能造成的结果不同。  </p>
 <p>进程和线程都是执行多任务的实现方法。</p>
 </li>
 </ul>
-<ol start="2">
-<li>
-<p>实现多任务的方式</p>
-<p>采用以下三种方式：</p>
 </li>
 </ol>
+<ol>
+<li><p>实现多任务的方式</p>
+<p> 采用以下三种方式：</p>
 <ul>
 <li>多进程</li>
 <li>多线程</li>
 <li>多进程中多线程（较为复杂，使用较少）</li>
 </ul>
-<ol start="3">
-<li>
-<p>多线程的适用类型</p>
+</li>
+<li><p>多线程的适用类型</p>
 <p>适用于的任务类型：</p>
-</li>
-</ol>
 <ul>
-<li>
-<p>本质是异步</p>
+<li><p>本质是异步</p>
 </li>
-<li>
-<p>多个并发</p>
+<li><p>多个并发</p>
 </li>
-<li>
-<p>根据应用需求，执行顺序不确定</p>
-<p>根据应用的不同，子任务可能需要先运算出中间结果，在合并为最终结果。</p>
-<p>计算密集型/IO密集型</p>
-</li>
-<li>
-<p>计算密集型任务的特点是要进行大量的计算，消耗CPU资源，靠CPU的运算能力。这种任务一般需要高效利用CPU，对于代码的执行效率要求很高，可以设置同时进行的任务数为CPU的核心数。</p>
-</li>
-<li>
-<p>IO密集型，涉及到网络、磁盘IO的任务，这种任务的大部分时间都在等待IO操作完成（因为IO的速度远远低于CPU和内存的速度）。对于IO密集型任务，任务越多，CPU效率越高，但也有一个限度。常见的大部分任务都是IO密集型任务，比如Web应用。对于IO密集型任务，最合适的语言就是开发效率最高（代码量最少）的语言，脚本语言是首选，C语言最差。</p>
-<p>在Python中由于代码是在Python虚拟机中执行（解释器主循环），而主循环中只允许同时只有一个线程运行，对虚拟机的访问时利用全局解释器锁GIL控制的，所以在Python中多线程更适合IO密集型任务。</p>
+<li><p>根据应用需求，执行顺序不确定</p>
 </li>
 </ul>
-<ol start="4">
-<li>
-<p>多线程能提高系统的性能</p>
-<p>通过适用多线程编程可以通过将复杂问题简化，比如将编程任务规划成几个特定函数的线程。个线程之间功能明确、清晰。</p>
+<p>根据应用的不同，子任务可能需要先运算出中间结果，在合并为最终结果。</p>
+<p>计算密集型/IO密集型</p>
+<ul>
+<li>计算密集型任务的特点是要进行大量的计算，消耗CPU资源，靠CPU的运算能力。这种任务一般需要高效利用CPU，对于代码的执行效率要求很高，可以设置同时进行的任务数为CPU的核心数。</li>
+<li>IO密集型，涉及到网络、磁盘IO的任务，这种任务的大部分时间都在等待IO操作完成（因为IO的速度远远低于CPU和内存的速度）。对于IO密集型任务，任务越多，CPU效率越高，但也有一个限度。常见的大部分任务都是IO密集型任务，比如Web应用。对于IO密集型任务，最合适的语言就是开发效率最高（代码量最少）的语言，脚本语言是首选，C语言最差。</li>
+</ul>
+<p>在Python中由于代码是在Python虚拟机中执行（解释器主循环），而主循环中只允许同时只有一个线程运行，对虚拟机的访问时利用全局解释器锁GIL控制的，所以在Python中多线程更适合IO密集型任务。</p>
 </li>
-</ol>
+<li><p>多线程能提高系统的性能  </p>
+<p> 通过适用多线程编程可以通过将复杂问题简化，比如将编程任务规划成几个特定函数的线程。个线程之间功能明确、清晰。</p>
 <ul>
 <li>UserRequestThread：读取输入</li>
 <li>RequestProcessor：根据输入处理请求</li>
 <li>ReplyThread：向用户输出</li>
 </ul>
-<h2 id="python解释器执行流程"><a class="markdownIt-Anchor" href="#python解释器执行流程"></a> Python解释器执行流程：</h2>
-<ul>
-<li>
-<p>设置GIL</p>
 </li>
-<li>
-<p>切换到一个线程执行</p>
-</li>
-<li>
-<ol>
+</ol>
+<h2 id="Python解释器执行流程："><a href="#Python解释器执行流程：" class="headerlink" title="Python解释器执行流程："></a>Python解释器执行流程：</h2><ul>
+<li>设置GIL</li>
+<li>切换到一个线程执行</li>
+<li><ol>
 <li>指定数量的字节码指令</li>
 <li>线程让出控制权time.sleep()</li>
 </ol>
 </li>
-<li>
-<p>切换出线程</p>
+<li><p>切换出线程</p>
 </li>
-<li>
-<p>解锁GIL</p>
-</li>
-<li>
-<p>重复以上步骤</p>
-</li>
+<li>解锁GIL</li>
+<li>重复以上步骤</li>
 </ul>
-<h2 id="_thread-threading"><a class="markdownIt-Anchor" href="#_thread-threading"></a> _thread、threading</h2>
-<p>Python中实现多线程使用到的模块为_thread和threading模块，Python核心编程中建议使用threading，他们之间的差别是：</p>
+<h2 id="thread、threading"><a href="#thread、threading" class="headerlink" title="_thread、threading"></a>_thread、threading</h2><p>Python中实现多线程使用到的模块为_thread和threading模块，Python核心编程中建议使用threading，他们之间的差别是：</p>
 <ul>
 <li>前者更为底层基础，后者功能更加丰富，有着更多的同步原语可供操作</li>
 <li>前者对于进程何时退出没有控制，当主线程结束时，其他线程也将结束，并没有警告；后者能够保证重要的子线程在进程退出前结束</li>
@@ -279,8 +248,7 @@
 <li>concurrent.futures</li>
 <li>SocketServer：创建/管理线程控制的TCP/UDP服务器</li>
 </ul>
-<h2 id="threading中的对象"><a class="markdownIt-Anchor" href="#threading中的对象"></a> threading中的对象</h2>
-<ul>
+<h2 id="threading中的对象"><a href="#threading中的对象" class="headerlink" title="threading中的对象"></a>threading中的对象</h2><ul>
 <li>Thread</li>
 <li>Lock</li>
 <li>RLock</li>
@@ -299,7 +267,7 @@
 <li>start()</li>
 <li>run()：定义线程功能的方法。创建子类时，被用户重写</li>
 <li>join()</li>
-<li>__ init __(group=None, target= None, name=None,args=None,kwargs={}, verbose=None,daemon=None)</li>
+<li><strong> init </strong>(group=None, target= None, name=None,args=None,kwargs={}, verbose=None,daemon=None)</li>
 </ul>
 <p>使用Thread类，来创建线程的方式：</p>
 <ul>
@@ -315,7 +283,7 @@
         <ul class="copyright">
   
   <li><strong>本文作者：</strong>Alex</li>
-  <li><strong>本文链接：</strong><a href="https://cxpeng.cn/archives/949db3a1.html">https://cxpeng.cn/archives/949db3a1.html</a></li>
+  <li><strong>本文链接：</strong><a href="https://caixp0612.gitee.io/my_blog/archives/949db3a1.html">https://caixp0612.gitee.io/my_blog/archives/949db3a1.html</a></li>
   <li><strong>版权声明：</strong>本博客所有文章均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
       rel="external nofollow" target="_blank"> BY-NC-SA </a>许可协议，转载请注明出处！</li>
   
@@ -333,15 +301,15 @@
 </section>
         
         
-  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a></li></ul>
+  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/my_blog/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/my_blog/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a></li></ul>
 
         
 <nav class="nav">
   
-    <a href="/archives/749620d3.html"><i class="iconfont iconleft"></i>360在线笔试编程题</a>
+    <a href="/my_blog/archives/60bf0728.html"><i class="iconfont iconleft"></i>5G终端协同场景下的通信系统技术</a>
   
   
-    <a href="/archives/7fd01c5b.html">怎么样使用Git？<i class="iconfont iconright"></i></a>
+    <a href="/my_blog/archives/7fd01c5b.html">怎么样使用Git？<i class="iconfont iconright"></i></a>
   
 </nav>
 
@@ -455,10 +423,10 @@
 
 
 
-<script src="/js/utils.js"></script>
-<script src="/js/modules.js"></script>
-<script src="/js/zui.js"></script>
-<script src="/js/script.js"></script>
+<script src="/my_blog/js/utils.js"></script>
+<script src="/my_blog/js/modules.js"></script>
+<script src="/my_blog/js/zui.js"></script>
+<script src="/my_blog/js/script.js"></script>
 
 
 
