@@ -79,7 +79,7 @@
         alwaysShow: false
       },
       carrier: {
-        enable: true
+        enable: false
       },
       daovoice: {
         enable: true
@@ -158,7 +158,7 @@
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>四月 16, 2019</span
         class="post-info-item">
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1365</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1361</span>
     </div>
   </div>
 </section>
@@ -167,53 +167,67 @@
         <p>怎么样使用Python才会显得高大上呢！，用Python来解决一些问题相当简单，有了思路就可以动手去做了，但是既然知道了Python的特性，就要在coding中注意代码的质量和简洁性。</p>
 <p>一、首先，Python含有很多类库、可扩展库，还有很多开源项目，但是不能忽略其中的内置函数库，下面通过演示使用内置函数，提高编写代码的质量的简洁性。</p>
 <ol>
-<li><p>内置函数enumerate来代替range()进行迭代。enumerate可以返回每个元素的索引和值。</p>
-<p> enumerate(list, start=num)# 可以通过设置start来设置其实偏移量</p>
+<li>
+<p>内置函数enumerate来代替range()进行迭代。enumerate可以返回每个元素的索引和值。</p>
+<p>enumerate(list, start=num)# 可以通过设置start来设置其实偏移量</p>
 </li>
-<li><p>列表推导式比map和filter函数表达更加清晰</p>
-<p> 列表推导式更容易使得代码变得可读。</p>
+<li>
+<p>列表推导式比map和filter函数表达更加清晰</p>
+<p>列表推导式更容易使得代码变得可读。</p>
 </li>
-</ol>
-<ol>
-<li><p>使用breakpoint来进行调试而不是print</p>
-<p> 事实情况就是在编码过程中使用print很不美观并且导致代码很乱</p>
+<li>
+<p>使用breakpoint来进行调试而不是print</p>
+<p>事实情况就是在编码过程中使用print很不美观并且导致代码很乱</p>
 </li>
-<li><p>使用f-string来格式化字符串</p>
-<p> f-string支持使用字符串格式化迷你语言和字符串插值</p>
-<p> name, age = cook, 12</p>
-<p> return f’my name is {name} and i`m {age/10.5f} decades old.’</p>
+<li>
+<p>使用f-string来格式化字符串</p>
+<p>f-string支持使用字符串格式化迷你语言和字符串插值</p>
+<p>name, age = cook, 12</p>
+<p>return f’my name is {name} and i`m {age/10.5f} decades old.’</p>
 </li>
-<li><p>使用sorted()对复杂列表进行排序</p>
-<p> sorted()#设置reverse可以进行降序排序，设置key可以设置以什么字段排序</p>
+<li>
+<p>使用sorted()对复杂列表进行排序</p>
+<p>sorted()#设置reverse可以进行降序排序，设置key可以设置以什么字段排序</p>
 </li>
 </ol>
 <p>二、以后其次进行算法面试过程中，数据结构是考察的重点，在编码过程中要注意选择合适的数据结构来实现思路。</p>
 <ol>
-<li><p>使用set存储唯一值</p>
-<p> 可以在数据集中删除重复的值</p>
+<li>
+<p>使用set存储唯一值</p>
+<p>可以在数据集中删除重复的值</p>
 </li>
-<li><p>利用生成器来生成大量序列，这样更省内存。在读取大量数据到内存中进行计算中有明显优势。</p>
+<li>
+<p>利用生成器来生成大量序列，这样更省内存。在读取大量数据到内存中进行计算中有明显优势。</p>
 </li>
-<li><p>使用字典的get(key, default)方法，它的作用就是检查key是否在字典中，在的话返回key的value不在的话返回默认。</p>
-<p> 但是如果想用默认值来更新key中的value 呢，则需要使用字典的setdefault(key, default)方法.即查找key是否在dict中，如果存在返回value，如果不存在使用default值更新字典。</p>
+<li>
+<p>使用字典的get(key, default)方法，它的作用就是检查key是否在字典中，在的话返回key的value不在的话返回默认。</p>
+<p>但是如果想用默认值来更新key中的value 呢，则需要使用字典的setdefault(key, default)方法.即查找key是否在dict中，如果存在返回value，如果不存在使用default值更新字典。</p>
 </li>
 </ol>
 <p>三、学会使用标准库将会事半功倍</p>
 <ol>
-<li><p>使用collections.defaultdict处理缺少的字典键，</p>
-<p> from import defaultdict<br> new_dict = defaultdict(list)#使用无参数的list作为默认值，当名字不存在时返回一个空列表[]</p>
-<p>  这一部分不太明白找时间看源码</p>
+<li>
+<p>使用collections.defaultdict处理缺少的字典键，</p>
+<p>from import defaultdict<br />
+new_dict = defaultdict(list)#使用无参数的list作为默认值，当名字不存在时返回一个空列表[]</p>
+<p>这一部分不太明白找时间看源码</p>
 </li>
-<li><p>collections.Counter来计算Hashable对象</p>
-<p> Couter是dict的子类，使用0作为任何缺失元素的默认值，并且更容易计算对象的出现次数。<br> 将单词传入给Counter时，会存储每个单词和单词在列表中出现的次数。<br> 调用most_common可以返回最多出现的单词</p>
+<li>
+<p>collections.Counter来计算Hashable对象</p>
+<p>Couter是dict的子类，使用0作为任何缺失元素的默认值，并且更容易计算对象的出现次数。<br />
+将单词传入给Counter时，会存储每个单词和单词在列表中出现的次数。<br />
+调用most_common可以返回最多出现的单词</p>
 </li>
-<li><p>使用字符串常量访问公共字符串组</p>
+<li>
+<p>使用字符串常量访问公共字符串组</p>
 </li>
 </ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> string</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">string.ascii_uppercase<span class="comment"># "ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span></span></pre></td></tr></table></figure>
-<ol>
-<li><p>使用Itertools生成排列和组合</p>
-<p> itertools.permutations()#生成所有可能，顺序有效<br> itertools.combinations()#去掉重复可能，无关顺序</p>
+<ol start="4">
+<li>
+<p>使用Itertools生成排列和组合</p>
+<p>itertools.permutations()#生成所有可能，顺序有效<br />
+itertools.combinations()#去掉重复可能，无关顺序</p>
 </li>
 </ol>
 
@@ -274,7 +288,7 @@
     
     
     
-    <a href="tencent://message/?Menu=yes&uin=894519210 " target="_blank" onMouseOver="this.style.color= '#12B7F5'"
+    <a href="tencent://message/?Menu=yes&uin=1337055758 " target="_blank" onMouseOver="this.style.color= '#12B7F5'"
       onMouseOut="this.style.color=''">
       <i class="iconfont footer-social-item  iconQQ "></i>
     </a>
@@ -292,16 +306,7 @@
     
     
     
-    <a href="https://www.instagram.com/izhaoo/ " target="_blank" onMouseOver="this.style.color= '#DA2E76'"
-      onMouseOut="this.style.color=''">
-      <i class="iconfont footer-social-item  iconinstagram "></i>
-    </a>
-    
-    
-    
-    
-    
-    <a href="https://github.com/izhaoo " target="_blank" onMouseOver="this.style.color= '#24292E'"
+    <a href="https://github.com/caixp " target="_blank" onMouseOver="this.style.color= '#24292E'"
       onMouseOut="this.style.color=''">
       <i class="iconfont footer-social-item  icongithub-fill "></i>
     </a>
@@ -310,7 +315,7 @@
     
     
     
-    <a href="mailto:izhaoo@163.com " target="_blank" onMouseOver="this.style.color='#FF3B00'"
+    <a href="mailto:caixp0612@163.com " target="_blank" onMouseOver="this.style.color='#FF3B00'"
       onMouseOut="this.style.color=''">
       <i class="iconfont footer-social-item  iconmail"></i>
     </a>
@@ -331,6 +336,21 @@
     <i class="iconfont iconcaret-up"></i>
   </div>
   
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
