@@ -159,21 +159,18 @@
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>十二月 01, 2019</span
         class="post-info-item">
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>689</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>681</span>
     </div>
   </div>
 </section>
     <section class="main">
       <section class="content">
         <blockquote>
-<p>解决的问题：换电脑使得原来的博客环境失效，现在需要将在新电脑上写博客。<br />
-解决方法：在新电脑上重新配置hexo</p>
+<p>解决的问题：换电脑使得原来的博客环境失效，现在需要将在新电脑上写博客。<br>解决方法：在新电脑上重新配置hexo</p>
 </blockquote>
 <p>步骤：</p>
 <ul>
-<li>
-<p>1、准备工作</p>
-<ul>
+<li>1、准备工作<ul>
 <li>将原来博客中的文件拷贝，然后在新电脑上创建一个Blog文件夹；</li>
 <li>下载node.js,<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">官网下载</a>，之后安装，测试安装成功的方法是在cmd下，使用npm –V可以看到输出内容安装成功；</li>
 <li>使用npm包管理工具下载hexo，命令为：npm install hexo-cli –g；<a href="https://hexo.io/" target="_blank" rel="noopener">参考官网</a></li>
@@ -181,19 +178,14 @@
 <li>安装git，<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">官网</a>。然后和配置博客时一样同样需要使用生成公钥，链接GitHub；</li>
 </ul>
 </li>
-<li>
-<p>2、开始配置</p>
+<li><p>2、开始配置</p>
 <ul>
-<li>所有的操作都在git bash中操作；在Blog的上一层文件夹下，使用hexo init Blog/命令进行初始化，然后将上面拷贝好的文件中的一下几个文件和文件夹替换Blog文件下的文件：<br />
-source<br />
-themes<br />
-_config.yml</li>
-<li>然后 切换到Blog文件夹下，使用命令安装所需要的依赖，这都要看你原本博客中的依赖是什么，因为依赖版本的更新比较快，建议自己重新安装依赖：npm install xxx1 xxx2 xxx3 --save</li>
-<li>依赖安装完成后，基本上就可以使用了，同样可以使用hexo s –g 来检查下博客是否能够重新显示，如果没有问题可以写博客部署到服务器试一下，一定要在本地看一下能不能使用成功，否则直接推到服务器很可能使得博客网站不显示。</li>
+<li>所有的操作都在git bash中操作；在Blog的上一层文件夹下，使用hexo init Blog/命令进行初始化，然后将上面拷贝好的文件中的一下几个文件和文件夹替换Blog文件下的文件：<br>source<br>themes<br>_config.yml</li>
+<li>然后 切换到Blog文件夹下，使用命令安装所需要的依赖，这都要看你原本博客中的依赖是什么，因为依赖版本的更新比较快，建议自己重新安装依赖：npm install xxx1 xxx2 xxx3 —save</li>
+<li>依赖安装完成后，基本上就可以使用了，同样可以使用hexo s –g 来检查下博客是否能够重新显示，如果没有问题可以写博客部署到服务器试一下，一定要在本地看一下能不能使用成功，否则直接推到服务器很可能使得博客网站不显示。 </li>
 </ul>
 </li>
-<li>
-<p>参考：</p>
+<li><p>参考：</p>
 <p><a href="https://blog.csdn.net/littlehaes/article/details/81503455" target="_blank" rel="noopener">https://blog.csdn.net/littlehaes/article/details/81503455</a></p>
 </li>
 </ul>
@@ -310,21 +302,6 @@ _config.yml</li>
     <i class="iconfont iconcaret-up"></i>
   </div>
   
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
